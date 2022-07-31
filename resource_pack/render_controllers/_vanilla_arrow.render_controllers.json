@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.arrow": {
+      "arrays": {
+      	"textures": {
+      	  "Array.textures": [
+      	  	"Texture.default",
+      	  	"Texture.organ_shard",
+            "Texture.elorgan_shard",
+            "Texture.wander_broom",
+            "Texture.organ_wand_shard"
+      	  ]
+      	},
+        "geometries": {
+          "Array.geometries": [ 
+            "Geometry.default", 
+            "Geometry.organ_shard", 
+            "Geometry.organ_shard", 
+            "Geometry.wander_broom", 
+            "Geometry.organ_shard"
+          ]
+        },
+        "materials": {
+          "Array.materials": [ 
+            "Material.default", 
+            "Material.emissive", 
+            "Material.emissive", 
+            "Material.default", 
+            "Material.emissive"
+          ]
+        }
+      },
+      "geometry": "Array.geometries[query.variant]",
+      "materials": [ { "*": "Array.materials[query.variant]" } ],
+      "textures": [ "Array.textures[query.variant]" ]
+    }
+  }
+}

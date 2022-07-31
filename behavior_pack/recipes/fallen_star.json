@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:fallen_star"
+        },
+        "key": {
+            "S": {
+                "item": "mabe:fallen_star_shard"
+            }
+        },
+        "pattern": [
+            "SS",
+            "SS"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 1,
+            "item": "mabe:fallen_star"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

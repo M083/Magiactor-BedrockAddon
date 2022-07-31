@@ -1,0 +1,29 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "mabe:wool_tower_feature"
+		},
+		"structure_name": "mystructure:wool_tower",
+		"facing_direction": "south",
+		"adjustment_radius": 1,
+		"constraints": {
+			"block_intersection": {
+				"block_whitelist": [
+					"minecraft:air",
+					"minecraft:leaves",
+					"minecraft:dirt",
+					"minecraft:tallgrass",
+					"minecraft:grass",
+					"minecraft:water",
+					"minecraft:log",
+					"minecraft:log2",
+					"minecraft:lava",
+					"minecraft:magma",
+					"minecraft:stone",
+					"minecraft:obsidian"
+				]
+			}
+		}
+	}
+}

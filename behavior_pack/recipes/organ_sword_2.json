@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:organ_sword_2"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:magia_crystal_block"
+            },
+            "l": {
+                "item": "mabe:fallen_star_shard"
+            },
+            "r": {
+                "item": "mabe:magia_light_crystal_shard"
+            },
+            "p": {
+                "item": "mabe:organ_craftor_2"
+            }
+        },
+        "pattern": [
+            " lc",
+            "lc ",
+            "r p"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:organ_sword_2"
+            },
+            {
+                "count": 1,
+                "item": "mabe:organ_craftor_2"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

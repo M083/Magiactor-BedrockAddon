@@ -1,0 +1,508 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:arrow",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "mabe:start_riding": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "ride"
+            }
+          ]
+        }
+      },
+      "mabe:start_riding_star": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "ride_and_star"
+            }
+          ]
+        }
+      },
+      "mabe:start_riding_entity": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "ride_entity"
+            }
+          ]
+        }
+      },
+      "mabe:star_particle": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "mabe:star_particle_event"
+            }
+          ]
+        }
+      },
+      "minecraft:hard_arrow": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": [ 1, 5 ],
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": true
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 1.6,
+          "gravity": 0.05,
+          "uncertainty_base": 16,
+          "uncertainty_multiplier": 4,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "minecraft:player_arrow": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 1,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 5.0,
+          "gravity": 0.05,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ],
+          "liquid_inertia": 1
+        }
+      },
+
+      "mabe:wander_broom_arrow": {
+        "minecraft:variant": {
+          "value": 3
+        },
+
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "interact_text": "action.interact.ride.boat",
+          "family_types": [
+            "player"
+          ],
+          "seats": [
+            {
+              "position": [ 0.0, 0.15, 0.0 ]
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 6,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw","power": 3,
+          
+          "gravity": 0.015,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ],
+          "potion_effect": 20
+        }
+      },
+
+      "mabe:organ_shard_arrow": {
+        "minecraft:variant": {
+          "value": 1
+        },
+
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": true
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw","power": 3,
+          
+          "gravity": 0.015,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": true,
+          "offset": [ 0, -0.1, 0 ],
+          "potion_effect": 20
+        }
+      },
+
+      "mabe:elorgan_shard_arrow": {
+        "minecraft:variant": {
+          "value": 2
+        },
+
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 12,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": true
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            }
+          },
+          "liquid_inertia": 0.99,
+          
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 3,
+          
+          "gravity": 0.015,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": true,
+          "offset": [ 0, -0.1, 0 ],
+          "potion_effect": 20
+        }
+      },
+
+      "mabe:organ_wand_shard_arrow": {
+        "minecraft:variant": {
+          "value": 4
+        },
+
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": true
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw","power": 3,
+          
+          "gravity": 0.015,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": true,
+          "offset": [ 0, -0.1, 0 ],
+          "potion_effect": 20
+        }
+      },
+
+      "minecraft:pillager_arrow": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": [ 3, 6 ],
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": true
+            },
+            "stick_in_ground": {
+              "shake_time": 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 1.6,
+          "gravity": 0.05,
+          "uncertainty_base": 16,
+          "uncertainty_multiplier": 4,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      }
+    },
+
+    "components": {
+        "minecraft:variant": {
+          "value": 0
+        },
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": [ 1, 4 ],
+            "knockback": true,
+            "semi_random_diff_damage": false,
+            "destroy_on_hit": true
+          },
+          "stick_in_ground": {
+            "shake_time" : 0.35
+          },
+          "arrow_effect": {
+          }
+        },
+        "hit_sound": "bow.hit",
+        "power": 1.6,
+        "gravity": 0.05,
+        "uncertainty_base": 16,
+        "uncertainty_multiplier": 4,
+        "anchor": 1,
+        "should_bounce": true,
+        "offset": [ 0, -0.1, 0 ]
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80.0,
+          "max_dropped_ticks": 10,
+          "use_motion_prediction_hints": true
+        }
+      }
+    },
+
+    "events": {
+
+      "mabe:soul_flame_particle_event": {
+        "run_command": {
+          "command": "particle minecraft:blue_flame_particle ~ ~ ~"
+        }
+      },
+      "mabe:flame_particle_event": {
+        "run_command": {
+          "command": "particle minecraft:mobflame_single ~ ~ ~"
+        }
+      },
+      "mabe:star_particle_event": {
+        "run_command": {
+          "command": "particle minecraft:falling_dust_sand_particle ~ ~ ~"
+        }
+      },
+      "mabe:end_particle_event": {
+        "run_command": {
+          "command": "particle minecraft:eyeofender_death_explode_particle ~ ~ ~"
+        }
+      },
+      "mabe:remove": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "kill @s"
+            }
+          }
+        ]
+      },
+      "ride": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "ride @p start_riding @s"
+            }
+          },
+          {
+            "remove": {
+              "component_groups": [
+                "mabe:start_riding"
+              ]
+            }
+          }
+        ]
+      },
+      "ride_and_star": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "ride @p start_riding @s"
+            }
+          },
+          {
+            "remove": {
+              "component_groups": [
+                "mabe:start_riding"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "mabe:star_particle"
+              ]
+            }
+          }
+        ]
+      },
+      "ride_entity": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "ride @e [r = 6] start_riding @s"
+            }
+          },
+          {
+            "remove": {
+              "component_groups": [
+                "mabe:start_riding_entity"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": {"test": "is_difficulty", "value": "hard"},
+            "add": {
+              "component_groups": [ "minecraft:hard_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "operator": "!=", "value": "mabe:wander_broom" }
+              ]
+            },
+            "add": {
+              "component_groups" : [ "minecraft:player_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:wander_broom" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "mabe:wander_broom_arrow", "mabe:start_riding_star" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {"test": "is_family", "subject": "other", "value": "organ_shard"},
+            "sequence": [
+              {
+                "add": {
+                  "component_groups": [ "mabe:organ_shard_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "event entity @e[type=mabe:organ_shard,c=1] death"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {"test": "is_family", "subject": "other", "value": "elorgan_shard"},
+            "sequence": [
+              {
+                "add": {
+                  "component_groups": [ "mabe:elorgan_shard_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "event entity @e[type=mabe:elorgan_shard,c=1] death"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {"test": "is_family", "subject": "other", "value": "organ_wand_shard"},
+            "sequence": [
+              {
+                "add": {
+                  "component_groups": [ "mabe:organ_wand_shard_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "event entity @e[type=mabe:organ_wand_shard,c=1] death"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {"test": "is_family", "subject": "other", "value": "pillager"},
+            "add": {
+              "component_groups": [ "minecraft:pillager_arrow" ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

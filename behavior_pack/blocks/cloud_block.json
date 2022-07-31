@@ -1,0 +1,15 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "mabe:cloud_block"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/cloud_block.json",
+      "minecraft:map_color": "#ffffff",
+      "minecraft:block_light_absorption": 0,
+      "minecraft:block_light_emission": 0.3,
+      "minecraft:destroy_time": 0.25
+    }
+  }
+}

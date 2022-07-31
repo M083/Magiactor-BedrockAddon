@@ -1,0 +1,44 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:helmet_craftor_2"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:magia_quill_pen"
+            },
+            "d": {
+                "item": "minecraft:gold_block"
+            },
+            "e": {
+                "item": "mabe:helmet_craftor_1"
+            },
+            "f": {
+                "item": "minecraft:weathered_copper"
+            },
+            "g": {
+                "item": "mabe:magia_crystal_block"
+            },
+            "h": {
+                "item": "mabe:fallen_star"
+            },
+            "i": {
+                "item": "minecraft:diamond"
+            }
+        },
+        "pattern": [
+            "  c",
+            "def",
+            "ghi"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 1,
+            "item": "mabe:helmet_craftor_2"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

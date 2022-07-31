@@ -1,0 +1,30 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mabe:magia_crystal_block"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
+            "tag:ore": {},
+            "minecraft:loot": "loot_tables/blocks/magia_crystal_block.json",
+            "minecraft:destroy_time": 3,
+            "minecraft:explosion_resistance": 10,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#70CCCB",
+            "minecraft:block_light_absorption": 1,
+            "minecraft:block_light_emission": 0.8,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "magia_crystal_block",
+                    "render_method": "blend"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:helmet_craftor_4"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:magia_quill_pen"
+            },
+            "d": {
+                "item": "minecraft:end_bricks"
+            },
+            "e": {
+                "item": "mabe:helmet_craftor_3"
+            },
+            "f": {
+                "item": "minecraft:netherite_ingot"
+            },
+            "g": {
+                "item": "minecraft:amethyst_block"
+            },
+            "h": {
+                "item": "minecraft:crying_obsidian"
+            },
+            "i": {
+                "item": "minecraft:emerald_block"
+            }
+        },
+        "pattern": [
+            "  c",
+            "def",
+            "ghi"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 1,
+            "item": "mabe:helmet_craftor_4"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

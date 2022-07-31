@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "mabe:exposed_copper"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "mabe:organ_oil"
+      },
+      {
+        "item": "minecraft:copper_block"
+      }
+    ],
+    "result": {
+      "item": "minecraft:exposed_copper",
+      "count": 1
+    }
+  }
+}

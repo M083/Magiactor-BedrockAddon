@@ -1,0 +1,89 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:organ_sword_3",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.sword"
+      },
+      "minecraft:icon": {
+        "texture": "organ_sword"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 1280
+      },
+      "minecraft:enchantable":{
+        "value": 10,
+        "slot": "sword"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "mabe:fallen_star_shard", "mabe:magia_crystal_shard" ],
+            "repair_amount": 260
+          },
+          {
+            "items": [ "mabe:magia_crystal_block" ],
+            "repair_amount": 780
+          }
+        ]
+      },
+      "minecraft:damage": 11,
+      "minecraft:weapon": {
+        "on_hurt_entity": {
+          "event": "mabe:attacked",
+          "target": "self"
+        }
+      },
+      "minecraft:cooldown": {
+        "category": "weapon",
+        "duration": 2
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "mabe:rotate_attack"
+        }
+      }
+    },
+    "events": {
+      "mabe:attacked": {
+        "sequence": [
+          {
+            "damage": {
+              "type": "void",
+              "amount": 1
+            }
+          }
+        ]
+      },
+      "mabe:rotate_attack": {
+        "sequence": [
+          {
+            "swing": {}
+          },
+          {
+            "damage": {
+              "type": "void",
+              "amount": 3
+            }
+          },
+          {
+            "run_command": {
+              "command": [
+                "playanimation @s animation.attack_animation.sword_rotate",
+                "damage @e[type=!player,type=!mabe:griffonis,type=!item,r=6] 11 entity_attack",
+                "playsound item.trident.throw @e[type=player] ~ ~ ~ 5 0.6"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

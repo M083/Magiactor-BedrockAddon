@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:polished_sky_stone"
+        },
+        "key": {
+            "S": {
+                "item": "mabe:cloud_block"
+            }
+        },
+        "pattern": [
+            "SS",
+            "SS"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 4,
+            "item": "mabe:polished_sky_stone"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

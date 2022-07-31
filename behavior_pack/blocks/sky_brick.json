@@ -1,0 +1,28 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mabe:sky_brick"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
+            "minecraft:loot": "loot_tables/blocks/sky_brick.json",
+            "tag:stone": {},
+            "tag:diamond_pick_diggable": {},
+            "tag:gold_pick_diggable": {},
+            "tag:iron_pick_diggable": {},
+            "tag:stone_pick_diggable": {},
+            "minecraft:destroy_time": 3,
+            "minecraft:explosion_resistance": 5.0,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#C7F3F3",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0
+        }
+    }
+}

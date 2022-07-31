@@ -1,0 +1,34 @@
+{
+  "mabe:cloud_block": {
+    "textures": "cloud_block",
+    "isotropic": true,
+    "sound": "cloth"
+  },
+  "mabe:polished_sky_stone": {
+    "textures": "polished_sky_stone",
+    "sound": "nether_brick"
+  },
+  "mabe:sky_brick": {
+    "textures": "sky_brick",
+    "sound": "nether_brick"
+  },
+  "mabe:sky_tile": {
+    "textures": "sky_tile",
+    "sound": "nether_brick"
+  },
+  "mabe:magia_crystal_block": {
+    "textures": "magia_crystal_block",
+    "isotropic": true,
+    "sound": "amethyst_block"
+  },
+  "mabe:magia_light_crystal_block": {
+    "textures": "magia_light_crystal_block",
+    "isotropic": true,
+    "sound": "amethyst_block"
+  },
+  "mabe:fallen_star": {
+    "textures": "fallen_star",
+    "isotropic": true,
+    "sound": "amethyst_block"
+  }
+}

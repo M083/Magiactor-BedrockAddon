@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:light_helmet_1"
+        },
+        "key": {
+            "c": {
+                "item": "minecraft:copper_block"
+            },
+            "g": {
+                "item": "minecraft:gold_ingot"
+            },
+            "l": {
+                "item": "mabe:fallen_star"
+            },
+            "p": {
+                "item": "mabe:helmet_craftor_1"
+            }
+        },
+        "pattern": [
+            "clc",
+            "gpg",
+            "   "
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:light_helmet_1"
+            },
+            {
+                "count": 1,
+                "item": "mabe:helmet_craftor_1"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

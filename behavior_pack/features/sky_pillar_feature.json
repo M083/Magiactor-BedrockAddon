@@ -1,0 +1,20 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "mabe:sky_pillar_feature"
+		},
+		"structure_name": "mystructure:sky_pillar",
+		"facing_direction": "random",
+		"adjustment_radius": 0,
+		"constraints": {
+			"grounded": {},
+			"block_intersection": {
+				"block_whitelist": [
+					"minecraft:air",
+					"mabe:cloud_block"
+				]
+			}
+		}
+	}
+}

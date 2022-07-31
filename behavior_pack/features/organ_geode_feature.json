@@ -1,0 +1,29 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:geode_feature": {
+    "description": {
+      "identifier": "mabe:organ_geode_feature"
+    },
+    "filler": "minecraft:water",
+    "inner_layer": "minecraft:water",
+    "alternate_inner_layer": "minecraft:water",
+    "middle_layer": "minecraft:water",
+    "outer_layer": "minecraft:cobbled_deepslate",
+    "inner_placements": ["mabe:magia_light_crystal_block"],
+    "min_outer_wall_distance": 3,
+    "max_outer_wall_distance": 5,
+    "min_distribution_points": 8,
+    "max_distribution_points": 12,
+    "min_point_offset": 1,
+    "max_point_offset": 7,
+    "max_radius": 196,
+    "crack_point_offset": 2,
+    "generate_crack_chance": 1.0,
+    "base_crack_size": 2.2,
+    "noise_multiplier": 0.026,
+    "use_potential_placements_chance": 0.0015,
+    "use_alternate_layer0_chance": 0.0015,
+    "placements_require_layer0_alternate": false,
+    "invalid_blocks_threshold": 10
+  }
+}

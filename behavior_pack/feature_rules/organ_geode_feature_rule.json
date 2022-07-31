@@ -1,0 +1,37 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "mabe:organ_geode_feature_rule",
+            "places_feature": "mabe:organ_geode_feature"
+        },
+        "conditions": {
+            "placement_pass": "surface_pass"
+        },
+        "distribution": {
+            "iterations": 1,
+            "scatter_chance": 1.0,
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            },
+            "y": {
+                "distribution": "uniform",
+                "extent": [
+                    -64,
+                    0
+                ]
+            },
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            }
+        }
+    }
+}

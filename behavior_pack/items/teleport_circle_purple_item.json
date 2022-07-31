@@ -1,0 +1,19 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:teleport_circle_purple_item",
+      "category": "Items"
+    },
+    
+    "components": {
+      "minecraft:icon": {
+        "texture": "teleport_circle_purple_item"
+      },
+      "minecraft:foil": true,
+      "minecraft:entity_placer": {
+        "entity": "mabe:teleport_circle_purple"
+      }
+    }
+  }
+}

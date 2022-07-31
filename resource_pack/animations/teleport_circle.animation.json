@@ -1,0 +1,16 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.teleport_circle.roll" : {
+			"loop" : true,
+			"bones" : {
+				"in" : {
+					"rotation" : [ 0.0, "((query.life_time * 0.5) * 6.32)", 0.0 ]
+				},
+				"out" : {
+					"rotation" : [ 0.0, "-((query.life_time * 1.6) * 9.32)", 0.0 ]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.slag_organ.move": {
+			"loop": true,
+			"animation_length": 1,
+			"override_previous_animation": true,
+			"bones": {
+				"neck": {
+					"rotation": {
+						"0.0": ["query.target_x_rotation/2", -30, 0],
+						"0.25": ["query.target_x_rotation/2", 0, 0],
+						"0.5": ["query.target_x_rotation/2", 30, 0],
+						"0.75": ["query.target_x_rotation/2", 0, 0],
+						"1.0": ["query.target_x_rotation/2", -30, 0]
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": ["query.target_x_rotation/2", 0, 0],
+						"0.25": ["query.target_x_rotation/2", -40, 0],
+						"0.5": ["query.target_x_rotation/2", 0, 0],
+						"0.75": ["query.target_x_rotation/2", 40, 0],
+						"1.0": ["query.target_x_rotation/2", 0, 0]
+					}
+				},
+				"tail1": {
+					"rotation": {
+						"0.0": ["Math.cos(query.life_time * 500) * 10.0", 50, 0],
+						"0.25": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"0.5": ["Math.cos(query.life_time * 500) * 10.0", -50, 0],
+						"0.75": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"1.0": ["Math.cos(query.life_time * 500) * 10.0", 50, 0]
+					}
+				},
+				"tail2": {
+					"rotation": {
+						"0.0": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"0.25": ["Math.cos(query.life_time * 500) * 10.0", 60, 0],
+						"0.5": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"0.75": ["Math.cos(query.life_time * 500) * 10.0", -60, 0],
+						"1.0": ["Math.cos(query.life_time * 500) * 10.0", 0, 0]
+					}
+				},
+				"tail3": {
+					"rotation": {
+						"0.0": ["Math.cos(query.life_time * 500) * 10.0", 70, 0],
+						"0.25": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"0.5": ["Math.cos(query.life_time * 500) * 10.0", -70, 0],
+						"0.75": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"1.0": ["Math.cos(query.life_time * 500) * 10.0", 70, 0]
+					}
+				}
+			}
+		},
+		"animation.slag_organ.roll": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"fin1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"84.0": [0, 0, -8640]
+					}
+				},
+
+				"fin2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"84.0": [0, 0, 4320]
+					}
+				}
+			}
+		}
+	}
+}

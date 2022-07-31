@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:organ_oil",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:icon":{
+        "texture": "organ_oil"
+      },
+      "minecraft:fuel": {
+        "duration" : 120
+      }
+    }
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mabe:slag_organ",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 40,
+          "max": 40
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 80,
+          "max": 80
+        }
+      },
+      "follow": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": [3.55, 5.55],
+          "time_down_event": {
+            "event": "to_avoid"
+          }
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 4
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 3,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of" : [
+                  {
+                    "all_of" : [
+                      {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "inanimate"},
+                      {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "monster"}
+                    ]
+                  },
+                  {"test" : "is_family", "subject" : "other", "value" :  "necrocancer"}
+                ]
+              },
+              "max_dist": 70
+            }
+          ],
+          "must_see": false
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "snow_storm"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "avoid": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": [3.55, 5.55],
+          "time_down_event": {
+            "event": "to_follow"
+          }
+        },
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 1,
+          "entity_types":{
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "operator": "!=", "value": "organ" }
+              ]
+            },
+            "max_dist": 15,
+            "walk_speed_multiplier": 1.25,
+            "sprint_speed_multiplier": 1.25
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": "organ"
+                  }
+                ]
+              }
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 25: 0"
+      },
+      "minecraft:variant": {
+        "value": 0
+      },
+      "minecraft:behavior.flee_sun": {
+        "priority": 2,
+        "speed_multiplier": 1
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:type_family": {
+        "family": [ "slag_organ", "monster", "organ", "arthropod" ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/slag_organ.json"
+      },
+      "minecraft:health": {
+        "value": 60,
+        "max": 60
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathes_solids": true,
+        "breathes_water": true
+      },
+      "minecraft:attack": {
+        "damage": 12
+      },
+      "minecraft:collision_box": {
+        "width": 1.4,
+        "height": 0.8
+      },
+      "minecraft:movement": {
+        "value": 1.0
+      },
+      "minecraft:navigation.hover": {
+        "can_path_over_water": true,
+        "can_breach": true,
+        "can_sink": true,
+        "can_path_from_air": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": false,
+        "avoid_sun": true
+      },
+      "minecraft:behavior.random_hover": {
+        "priority": 11,
+        "xz_dist": 8,
+        "y_dist": 12,
+        "y_offset": -1,
+        "interval": 1,
+        "hover_height": [6, 12]
+      },
+      "minecraft:movement.hover": {},
+      "minecraft:flying_speed": {
+        "value": 0.3
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.3
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 9,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.look_at_entity": {
+        "priority": 9,
+        "look_distance": 6.0,
+        "probability": 0.02,
+        "filters": { "test" :  "is_family", "subject" : "other", "value" :  "mob"}
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
+      }
+    },
+    "events": {
+      "death_event": {
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          },
+          {
+            "randomize": [
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "avoid" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "follow" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "to_avoid": {
+        "remove": { "component_groups": [ "follow" ] },
+        "add": { "component_groups": [ "avoid" ] }
+      },
+      "to_follow": {
+        "remove": { "component_groups": [ "avoid" ] },
+        "add": { "component_groups": [ "follow" ] }
+      }
+    }
+  }
+}

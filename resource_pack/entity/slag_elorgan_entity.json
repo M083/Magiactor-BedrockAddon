@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:slag_elorgan",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/elorgan"
+      },
+      "geometry": {
+        "default": "geometry.slag_elorgan"
+      },
+      "animations": {
+        "move": "animation.slag_organ.move",
+        "roll": "animation.slag_organ.roll"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.slag_organ" }
+      ],
+      "render_controllers": [ "controller.render.organ" ],
+      "spawn_egg": {
+        "base_color": "#181632",
+        "overlay_color": "#7CD09E"
+      }
+    }
+  }
+}

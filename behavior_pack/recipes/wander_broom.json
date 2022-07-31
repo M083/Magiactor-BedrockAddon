@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:wander_broom"
+        },
+        "key": {
+            "f": {
+                "item": "mabe:fallen_star"
+            },
+            "s": {
+                "item": "minecraft:stick"
+            }
+        },
+        "pattern": [
+            "  s",
+            " s ",
+            "f  "
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:wander_broom"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

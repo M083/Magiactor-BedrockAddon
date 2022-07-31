@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:griff_feed_food"
+        },
+        "key": {
+            "s": {
+                "item": "mabe:organ_oil"
+            },
+            "r": {
+                "item": "minecraft:rotten_flesh"
+            }
+        },
+        "pattern": [
+            "rr ",
+            "rsr",
+            " rr"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 1,
+            "item": "mabe:griff_feed_food"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

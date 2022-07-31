@@ -1,0 +1,134 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.griffonis.attack": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack": "query.variant == 1 && query.is_item_equipped(0) && variable.attack_time > 0.0"
+            }
+          ]
+        },
+        "attack": {
+          "animations": [ { "attack": [] } ],
+          "transitions": [
+            {
+              "default": "variable.attack_time <= 0.0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.griffonis.saddled": {
+      "states": {
+        "default": {
+          "animations": [ { "saddled": [] } ]
+        }
+      }
+    },
+    "controller.animation.griffonis.health": {
+      "states": {
+        "default": {
+          "animations": [ { "health": [] } ]
+        }
+      }
+    },
+    "controller.animation.griffonis.pose": {
+      "states": {
+        "standing": {
+          "animations": [
+            { "stand_pose": [] }
+          ],
+          "transitions": [
+            {
+              "sitting": "query.is_sitting && !query.has_rider"
+            },
+            {
+              "flying" : "!query.is_on_ground"
+            },
+            {
+              "sleeping": "query.is_on_ground && !query.has_rider && query.modified_move_speed < 0.01 && (query.health / query.max_health) < 1"
+            }
+          ]
+        },
+        "sitting": {
+          "animations": [
+            { "sitting_pose": [] }
+          ],
+          "transitions": [
+            {
+              "standing" : "!query.is_sitting || query.has_rider"
+            },
+            {
+              "flying" : "!query.is_on_ground"
+            },
+            {
+              "sleeping": "query.is_on_ground && !query.has_rider && query.modified_move_speed < 0.01 && (query.health / query.max_health) < 1"
+            }
+          ]
+        },
+        "sleeping": {
+          "animations": [
+            { "sleeping": [] }
+          ],
+          "transitions": [
+            {
+              "standing" : "query.has_rider || query.modified_move_speed > 0.01 || !query.is_on_ground || (query.health / query.max_health) == 1"
+            }
+          ]
+        },
+        "flying": {
+          "animations": [
+            { "fly_pose": [] }
+          ],
+          "transitions": [
+            {
+              "standing" : "query.is_on_ground"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.griffonis.move": {
+      "states": {
+        "walking": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ],
+          "transitions": [
+            {
+              "flying" : "!query.is_on_ground"
+            }
+          ]
+        },
+        "flying": {
+          "parameters": [ "0.5 + query.modified_move_speed" ],
+          "animations": [
+            {
+              "fly": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ],
+          "transitions": [
+            {
+              "walking" : "query.is_on_ground"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

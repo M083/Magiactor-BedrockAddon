@@ -1,0 +1,68 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.griffonis": {
+      "arrays": {
+        /*
+        "geometries": {
+          "Array.geometries": [ 
+            "Geometry.default", 
+            "Geometry.saddled"
+          ]
+        },
+        */
+        "textures": {
+          "Array.textures": [
+            "Texture.brown_brown",
+            "Texture.brown_white",
+            "Texture.brown_black",
+            "Texture.white_brown",
+            "Texture.white_white",
+            "Texture.white_black",
+            "Texture.black_brown",
+            "Texture.black_white",
+            "Texture.black_black",
+
+            "Texture.brown_green",
+            "Texture.white_green",
+            "Texture.black_green",
+            "Texture.green_green",
+            "Texture.green_brown",
+            "Texture.green_white",
+            "Texture.green_black",
+
+            "Texture.brown_sky",
+            "Texture.white_sky",
+            "Texture.black_sky",
+            "Texture.green_sky",
+            "Texture.sky_green",
+            "Texture.sky_brown",
+            "Texture.sky_white",
+            "Texture.sky_black",
+            "Texture.sky_sky",
+
+            "Texture.brown_night",
+            "Texture.white_night",
+            "Texture.black_night",
+            "Texture.green_night",
+            "Texture.sky_night",
+            "Texture.night_green",
+            "Texture.night_brown",
+            "Texture.night_white",
+            "Texture.night_black",
+            "Texture.night_sky",
+            "Texture.night_night"
+          ]
+        }
+      },
+      //"geometry": "Array.geometries[query.variant]",
+      "geometry": "Geometry.default",
+      "materials": [
+        { "*": "Material.default" }
+      ],
+      "textures": [
+        "Array.textures[query.mark_variant]"
+      ]
+    }
+  }
+}

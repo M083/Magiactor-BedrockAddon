@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "mabe:oxidized_copper"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "mabe:organ_oil"
+      },
+      {
+        "item": "minecraft:weathered_copper"
+      }
+    ],
+    "result": {
+      "item": "minecraft:oxidized_copper",
+      "count": 1
+    }
+  }
+}

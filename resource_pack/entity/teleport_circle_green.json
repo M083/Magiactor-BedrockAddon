@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:teleport_circle_green",
+      "materials": { "default": "default_alpha" },
+      "textures": {
+        "default": "textures/entity/teleport_circle_green"
+      },
+      "geometry": {
+        "default": "geometry.teleport_circle"
+      },
+      "animations": {
+        "roll": "animation.teleport_circle.roll"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.teleport_circle" }
+      ],
+      "render_controllers": [ "controller.render.teleport_circle" ]
+    }
+  }
+}

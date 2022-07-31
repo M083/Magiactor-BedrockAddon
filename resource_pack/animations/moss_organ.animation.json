@@ -1,0 +1,66 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.moss_organ.move": {
+			"loop": true,
+			"animation_length": 1,
+			"override_previous_animation": true,
+			"bones": {
+				"head": {
+					"rotation": {
+						"0.0": ["query.target_x_rotation/2", 0, -30],
+						"0.25": ["query.target_x_rotation/2", 0, 0],
+						"0.5": ["query.target_x_rotation/2", 0, 30],
+						"0.75": ["query.target_x_rotation/2", 0, 0],
+						"1.0": ["query.target_x_rotation/2", 0, -30]
+					}
+				},
+				"neck": {
+					"rotation": {
+						"0.0": ["query.target_x_rotation/2", 0, -30],
+						"0.25": ["query.target_x_rotation/2", 0, 0],
+						"0.5": ["query.target_x_rotation/2", 0, 30],
+						"0.75": ["query.target_x_rotation/2", 0, 0],
+						"1.0": ["query.target_x_rotation/2", 0, -30]
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": ["query.target_x_rotation/2", 0, -30],
+						"0.25": ["query.target_x_rotation/2", 0, 0],
+						"0.5": ["query.target_x_rotation/2", 0, 30],
+						"0.75": ["query.target_x_rotation/2", 0, 0],
+						"1.0": ["query.target_x_rotation/2", 0, -30]
+					}
+				}
+			}
+		},
+		"animation.moss_organ.roll": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"shard1": {
+					"rotation": {
+						"0.0": [0, 0, 30],
+						"42.0": [0, -4320, -30],
+						"84.0": [0, -8640, 30]
+					}
+				},
+
+				"shard2": {
+					"rotation": {
+						"0.0": [0, 0, -45],
+						"42.0": [0, 2160, 45],
+						"84.0": [0, 4320, -45]
+					}
+				},
+				"foot": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"84.0": [0, 1800, 0]
+					}
+				}
+			}
+		}
+	}
+}

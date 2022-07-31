@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.organ_wand.roll": {
+			"loop": true,
+			"animation_length": 1.04,
+			"bones": {
+				"wand": {
+					"position": [
+						"c.is_first_person ? 0.0 : 0.0", 
+						"c.is_first_person ? 20.0 : 20.0", 
+						"c.is_first_person ? 10.0 : 0.0"
+					],
+					"rotation": [
+						"c.is_first_person ? 30.0 : 90.0",
+						"c.is_first_person ? 5.0 : 0.0",
+						"c.is_first_person ? -165.0 : -90.0"
+					]
+				},
+				"shard": {
+					"rotation": {
+						"0.0": [30, 0, 0],
+						"1.04": [30, 360, 0]
+					}
+				}
+			}
+		}
+	}
+}

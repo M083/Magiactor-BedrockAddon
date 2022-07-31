@@ -1,0 +1,35 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:magia_quill_pen"
+        },
+        "key": {
+            "o": {
+                "item": "mabe:organ_oil"
+            },
+            "f": {
+                "item": "minecraft:feather"
+            },
+            "i": {
+                "item": "minecraft:glow_ink_sac"
+            },
+            "s": {
+                "item": "mabe:magia_crystal_shard"
+            }
+        },
+        "pattern": [
+            "  f",
+            " s ",
+            "io "
+        ],
+        "priority": 1,
+        "result": {
+            "count": 1,
+            "item": "mabe:magia_quill_pen"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

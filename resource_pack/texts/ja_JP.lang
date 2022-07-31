@@ -1,0 +1,109 @@
+﻿entity.mabe:slag_organ.name=蛞蝓の異形	#
+entity.mabe:slag_elorgan.name=蛞蝓の畏形	#
+entity.mabe:moss_organ.name=苔の異形	#
+entity.mabe:griffonis.name=グリフォニス	#
+entity.mabe:lunasta.name=ルナースタ	#
+entity.mabe:organ_shard.name=異形の破片	#
+entity.mabe:organ_shard<>.name=異形の破片	#
+entity.mabe:elorgan_shard.name=畏形の破片	#
+entity.mabe:elorgan_shard<>.name=畏形の破片	#
+
+entity.mabe:teleport_circle_black.name=転送陣・黒	#
+entity.mabe:teleport_circle_blue.name=転送陣・青	#
+entity.mabe:teleport_circle_brown.name=転送陣・茶	#
+entity.mabe:teleport_circle_cyan.name=転送陣・水	#
+entity.mabe:teleport_circle_gray.name=転送陣・灰	#
+entity.mabe:teleport_circle_green.name=転送陣・緑	#
+entity.mabe:teleport_circle_light_blue.name=転送陣・空	#
+entity.mabe:teleport_circle_light_gray.name=転送陣・鼠	#
+entity.mabe:teleport_circle_lime.name=転送陣・翠	#
+entity.mabe:teleport_circle_magenta.name=転送陣・紅	#
+entity.mabe:teleport_circle_orange.name=転送陣・橙	#
+entity.mabe:teleport_circle_pink.name=転送陣・桃	#
+entity.mabe:teleport_circle_purple.name=転送陣・紫	#
+entity.mabe:teleport_circle_red.name=転送陣・赤	#
+entity.mabe:teleport_circle_white.name=転送陣・白	#
+entity.mabe:teleport_circle_yellow.name=転送陣・黄	#
+
+item.spawn_egg.entity.mabe:slag_organ.name=蛞蝓の異形を出現させる	#
+item.spawn_egg.entity.mabe:slag_elorgan.name=蛞蝓の畏形を出現させる	#
+item.spawn_egg.entity.mabe:moss_organ.name=苔の異形を出現させる	#
+item.spawn_egg.entity.mabe:griffonis.name=グリフォニスを出現させる	#
+item.spawn_egg.entity.mabe:lunasta.name=ルナースタを出現させる	#
+
+item.mabe:wander_broom=飛翔の箒	#
+item.mabe:teleport_circle_black_item=転送陣・黒	#
+item.mabe:teleport_circle_blue_item=転送陣・青	#
+item.mabe:teleport_circle_brown_item=転送陣・茶	#
+item.mabe:teleport_circle_cyan_item=転送陣・水	#
+item.mabe:teleport_circle_gray_item=転送陣・灰	#
+item.mabe:teleport_circle_green_item=転送陣・緑	#
+item.mabe:teleport_circle_light_blue_item=転送陣・空	#
+item.mabe:teleport_circle_light_gray_item=転送陣・鼠	#
+item.mabe:teleport_circle_lime_item=転送陣・翠	#
+item.mabe:teleport_circle_magenta_item=転送陣・紅	#
+item.mabe:teleport_circle_orange_item=転送陣・橙	#
+item.mabe:teleport_circle_pink_item=転送陣・桃	#
+item.mabe:teleport_circle_purple_item=転送陣・紫	#
+item.mabe:teleport_circle_red_item=転送陣・赤	#
+item.mabe:teleport_circle_white_item=転送陣・白	#
+item.mabe:teleport_circle_yellow_item=転送陣・黄	#
+item.mabe:organ_wand_1=異形の杖I	#
+item.mabe:organ_wand_2=異形の杖II	#
+item.mabe:organ_wand_3=異形の杖III	#
+item.mabe:organ_wand_4=異形の杖IV	#
+item.mabe:organ_sword_1=異形の剣I	#
+item.mabe:organ_sword_2=異形の剣II	#
+item.mabe:organ_sword_3=異形の剣III	#
+item.mabe:organ_sword_4=異形の剣IV	#
+
+item.mabe:light_helmet_1=発光ヘルメットI	#
+item.mabe:light_helmet_2=発光ヘルメットII	#
+item.mabe:light_helmet_3=発光ヘルメットIII	#
+item.mabe:light_helmet_4=発光ヘルメットIV	#
+item.mabe:air_helmet_1=潜水ヘルメットI	#
+item.mabe:air_helmet_2=潜水ヘルメットII	#
+item.mabe:air_helmet_3=潜水ヘルメットIII	#
+item.mabe:air_helmet_4=潜水ヘルメットIV	#
+
+item.mabe:star_axe=煌星の斧	#
+item.mabe:star_pickaxe=煌星のツルハシ	#
+item.mabe:star_shovel=煌星のシャベル	#
+
+item.mabe:helmet_craftor_1=特殊ヘルメットの製法I	#
+item.mabe:helmet_craftor_2=特殊ヘルメットの製法II	#
+item.mabe:helmet_craftor_3=特殊ヘルメットの製法III	#
+item.mabe:helmet_craftor_4=特殊ヘルメットの製法IV	#
+
+item.mabe:organ_craftor_1=異形武具の製法I	#
+item.mabe:organ_craftor_2=異形武具の製法II	#
+item.mabe:organ_craftor_3=異形武具の製法III	#
+item.mabe:organ_craftor_4=異形武具の製法IV	#
+
+item.mabe:organ_oil=発光する粘油	#
+item.mabe:fallen_star_shard=煌星の欠片	#
+item.mabe:magia_crystal_shard=魔水晶の欠片	#
+item.mabe:magia_light_crystal_shard=魔光水晶の欠片	#
+item.mabe:magia_quill_pen=輝く羽ペン	#
+
+item.mabe:lunasta_meat=月光エビのむき身	#
+
+item.mabe:griff_breed_food=グリフォニスの繫殖餌	#
+item.mabe:griff_feed_food=グリフォニスの懐き餌	#
+item.mabe:griff_growth_food=グリフォニスの成長餌	#
+
+tile.mabe:cloud_block.name=雲	#
+tile.mabe:polished_sky_stone.name=青空の石	#
+tile.mabe:sky_brick.name=青空のレンガ	#
+tile.mabe:sky_tile.name=青空のタイル	#
+tile.mabe:magia_crystal_block.name=魔水晶	#
+tile.mabe:magia_light_crystal_block.name=魔光水晶	#
+tile.mabe:fallen_star.name=煌星の雫	#
+
+enchantment.damage.arthropods=虫・異形殺し	#
+
+action.hint.exit.arrow=スニークで降りる	#
+action.hint.exit.mabe:griffonis=攻撃で飛翔/スニークで降りる	#
+action.interact.teleport_white=転送	#
+
+death.attack.mob=%1$s は %2$s に倒された	#

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:lunasta",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/lunasta"
+      },
+      "geometry": {
+        "default": "geometry.lunasta"
+      },
+      "animations": {
+        "swim": "animation.lunasta.swim",
+        "look": "animation.lunasta.look"
+      },
+      "animation_controllers": [
+        { "swim": "controller.animation.lunasta.swim" },
+        { "look": "controller.animation.lunasta.look" }
+      ],
+      "render_controllers": [ "controller.render.lunasta" ],
+      "spawn_egg": {
+        "base_color": "#211344",
+        "overlay_color": "#E7CD3A"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:sky_tile"
+        },
+        "key": {
+            "S": {
+                "item": "mabe:sky_brick"
+            }
+        },
+        "pattern": [
+            "SS",
+            "SS"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 4,
+            "item": "mabe:sky_tile"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

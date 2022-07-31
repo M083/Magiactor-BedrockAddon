@@ -1,0 +1,129 @@
+{
+  "resource_pack_name": "mabe",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "organ_craftor_1": {
+      "textures": "textures/items/organ_craftor_1"
+    },
+    "organ_craftor_2": {
+      "textures": "textures/items/organ_craftor_2"
+    },
+    "organ_craftor_3": {
+      "textures": "textures/items/organ_craftor_3"
+    },
+    "organ_craftor_4": {
+      "textures": "textures/items/organ_craftor_4"
+    },
+    "helmet_craftor_1": {
+      "textures": "textures/items/helmet_craftor_1"
+    },
+    "helmet_craftor_2": {
+      "textures": "textures/items/helmet_craftor_2"
+    },
+    "helmet_craftor_3": {
+      "textures": "textures/items/helmet_craftor_3"
+    },
+    "helmet_craftor_4": {
+      "textures": "textures/items/helmet_craftor_4"
+    },
+    "organ_wand": {
+      "textures": "textures/items/organ_wand"
+    },
+    "organ_sword": {
+      "textures": "textures/items/organ_sword"
+    },
+    "star_pickaxe": {
+      "textures": "textures/items/star_pickaxe"
+    },
+    "star_axe": {
+      "textures": "textures/items/star_axe"
+    },
+    "star_shovel": {
+      "textures": "textures/items/star_shovel"
+    },
+    "air_helmet": {
+      "textures": "textures/items/air_helmet"
+    },
+    "light_helmet": {
+      "textures": "textures/items/light_helmet"
+    },
+    "teleport_circle_black_item": {
+      "textures": "textures/items/teleport_circle_black_item"
+    },
+    "teleport_circle_blue_item": {
+      "textures": "textures/items/teleport_circle_blue_item"
+    },
+    "teleport_circle_brown_item": {
+      "textures": "textures/items/teleport_circle_brown_item"
+    },
+    "teleport_circle_cyan_item": {
+      "textures": "textures/items/teleport_circle_cyan_item"
+    },
+    "teleport_circle_gray_item": {
+      "textures": "textures/items/teleport_circle_gray_item"
+    },
+    "teleport_circle_green_item": {
+      "textures": "textures/items/teleport_circle_green_item"
+    },
+    "teleport_circle_light_blue_item": {
+      "textures": "textures/items/teleport_circle_light_blue_item"
+    },
+    "teleport_circle_light_gray_item": {
+      "textures": "textures/items/teleport_circle_light_gray_item"
+    },
+    "teleport_circle_lime_item": {
+      "textures": "textures/items/teleport_circle_lime_item"
+    },
+    "teleport_circle_magenta_item": {
+      "textures": "textures/items/teleport_circle_magenta_item"
+    },
+    "teleport_circle_orange_item": {
+      "textures": "textures/items/teleport_circle_orange_item"
+    },
+    "teleport_circle_pink_item": {
+      "textures": "textures/items/teleport_circle_pink_item"
+    },
+    "teleport_circle_purple_item": {
+      "textures": "textures/items/teleport_circle_purple_item"
+    },
+    "teleport_circle_red_item": {
+      "textures": "textures/items/teleport_circle_red_item"
+    },
+    "teleport_circle_white_item": {
+      "textures": "textures/items/teleport_circle_white_item"
+    },
+    "teleport_circle_yellow_item": {
+      "textures": "textures/items/teleport_circle_yellow_item"
+    },
+    "wander_broom": {
+      "textures": "textures/items/wander_broom"
+    },
+    "lunasta_meat": {
+      "textures": "textures/items/lunasta_meat"
+    },
+    "magia_crystal_shard": {
+      "textures": "textures/items/magia_crystal_shard"
+    },
+    "magia_light_crystal_shard": {
+      "textures": "textures/items/magia_light_crystal_shard"
+    },
+    "fallen_star_shard": {
+      "textures": "textures/items/fallen_star_shard"
+    },
+    "magia_quill_pen": {
+      "textures": "textures/items/magia_quill_pen"
+    },
+    "organ_oil": {
+      "textures": "textures/items/organ_oil"
+    },
+    "griff_feed_food": {
+      "textures": "textures/items/griff_feed_food"
+    },
+    "griff_breed_food": {
+      "textures": "textures/items/griff_breed_food"
+    },
+    "griff_growth_food": {
+      "textures": "textures/items/griff_growth_food"
+    }
+  }
+}

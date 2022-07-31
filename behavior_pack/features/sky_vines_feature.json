@@ -1,0 +1,22 @@
+{
+  "format_version": "1.15.0",
+  "minecraft:tree_feature": {
+    "description": {
+      "identifier": "mabe:sky_vines_feature"
+    },
+    "may_grow_on": [
+      "mabe:cloud_block"
+    ],
+    "may_replace": [
+      "minecraft:air",
+      "mabe:cloud_block"
+    ],
+    "trunk": {
+      "trunk_block": "minecraft:twisting_vines",
+      "trunk_height": {
+        "range_min": 6,
+        "range_max": 16
+      }
+    }
+  }
+}

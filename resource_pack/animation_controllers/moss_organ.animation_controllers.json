@@ -1,0 +1,30 @@
+{
+	"format_version" : "1.8.0",
+	"animation_controllers" : {
+		"controller.animation.moss_organ" : {
+			"states" : {
+				"default": {
+					"parameters": [ "query.modified_move_speed + 0.1" ],
+					"animations": [
+						{ 
+							"move": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						},
+						{ 
+							"roll": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						}
+					]
+				}
+			}
+		}
+	}
+}

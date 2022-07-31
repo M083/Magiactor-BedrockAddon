@@ -1,0 +1,16 @@
+{
+	"format_version" : "1.8.0",
+	"animation_controllers" : {
+		"controller.animation.teleport_circle" : {
+			"states" : {
+				"default": {
+					"animations": [
+						{ 
+							"roll": []
+						}
+					]
+				}
+			}
+		}
+	}
+}

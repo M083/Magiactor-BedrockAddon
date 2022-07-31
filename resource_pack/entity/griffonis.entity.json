@@ -1,0 +1,78 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:griffonis",
+      "materials": { "default": "default_alpha" },
+      "textures": {
+        "brown_brown": "textures/entity/griffonis/griffonis_brown_brown",
+        "brown_white": "textures/entity/griffonis/griffonis_brown_white",
+        "brown_black": "textures/entity/griffonis/griffonis_brown_black",
+        "white_brown": "textures/entity/griffonis/griffonis_white_brown",
+        "white_white": "textures/entity/griffonis/griffonis_white_white",
+        "white_black": "textures/entity/griffonis/griffonis_white_black",
+        "black_brown": "textures/entity/griffonis/griffonis_black_brown",
+        "black_white": "textures/entity/griffonis/griffonis_black_white",
+        "black_black": "textures/entity/griffonis/griffonis_black_black",
+
+        "brown_green": "textures/entity/griffonis/griffonis_brown_black",
+        "white_green": "textures/entity/griffonis/griffonis_white_brown",
+        "black_green": "textures/entity/griffonis/griffonis_black_brown",
+        "green_brown": "textures/entity/griffonis/griffonis_green_brown",
+        "green_white": "textures/entity/griffonis/griffonis_green_white",
+        "green_black": "textures/entity/griffonis/griffonis_green_black",
+        "green_green": "textures/entity/griffonis/griffonis_green_green",
+
+        "brown_sky": "textures/entity/griffonis/griffonis_brown_sky",
+        "white_sky": "textures/entity/griffonis/griffonis_white_sky",
+        "black_sky": "textures/entity/griffonis/griffonis_black_sky",
+        "green_sky": "textures/entity/griffonis/griffonis_green_sky",
+        "sky_brown": "textures/entity/griffonis/griffonis_sky_brown",
+        "sky_white": "textures/entity/griffonis/griffonis_sky_white",
+        "sky_black": "textures/entity/griffonis/griffonis_sky_black",
+        "sky_green": "textures/entity/griffonis/griffonis_sky_green",
+        "sky_sky": "textures/entity/griffonis/griffonis_sky_sky",
+
+        "brown_night": "textures/entity/griffonis/griffonis_brown_night",
+        "white_night": "textures/entity/griffonis/griffonis_white_night",
+        "black_night": "textures/entity/griffonis/griffonis_black_night",
+        "green_night": "textures/entity/griffonis/griffonis_green_night",
+        "sky_night": "textures/entity/griffonis/griffonis_sky_night",
+        "night_brown": "textures/entity/griffonis/griffonis_night_brown",
+        "night_white": "textures/entity/griffonis/griffonis_night_white",
+        "night_black": "textures/entity/griffonis/griffonis_night_black",
+        "night_green": "textures/entity/griffonis/griffonis_night_green",
+        "night_sky": "textures/entity/griffonis/griffonis_night_sky",
+        "night_night": "textures/entity/griffonis/griffonis_night_night"
+      },
+      "geometry": {
+        //"default": "geometry.griffonis",
+        //"saddled": "geometry.griffonis_saddled"
+        "default": "geometry.griffonis_saddled"
+      },
+      "animations": {
+        "attack": "animation.griffonis.attack",
+        "stand_pose": "animation.griffonis.stand_pose",
+        "sitting_pose": "animation.griffonis.sitting",
+        "sleeping": "animation.griffonis.sleeping",
+        "fly_pose": "animation.griffonis.fly_pose",
+        "walk": "animation.griffonis.walk",
+        "fly": "animation.griffonis.fly",
+        "health": "animation.griffonis.health",
+        "saddled": "animation.griffonis.saddled"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.griffonis.pose" },
+        { "move": "controller.animation.griffonis.move" },
+        { "health": "controller.animation.griffonis.health" },
+        { "saddled": "controller.animation.griffonis.saddled" },
+        { "attack": "controller.animation.griffonis.attack" }
+      ],
+      "render_controllers": [ "controller.render.griffonis" ],
+      "spawn_egg": {
+        "base_color": "#CBCBC1",
+        "overlay_color": "#3EC1D7"
+      }
+    }
+  }
+}

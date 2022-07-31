@@ -1,0 +1,45 @@
+{
+	"format_version": "1.15.0",
+	"minecraft:tree_feature": {
+		"description": {
+			"identifier": "mabe:sky_tree_feature"
+		},
+		"may_grow_on": [
+			"mabe:cloud_block"
+		],
+		"may_replace": [
+			"minecraft:air",
+			"mabe:cloud_block",
+			"minecraft:leaves"
+		],
+		"fancy_trunk": {
+			"trunk_block": {
+				"name": "minecraft:stripped_birch_log"
+			},
+			"trunk_width": 1,
+			"trunk_height": {
+				"base": 12,
+				"variance": 4,
+				"scale": 1.0
+			},
+			"foliage_altitude_factor": 0.7,
+			"width_scale": 1.5,
+			"branches": {
+				"slope": 0.3,
+				"density": 0.3,
+				"min_altitude_factor": 0.1
+			}
+		},
+	    "mega_canopy": {
+	      "leaf_block": {
+	        "name": "minecraft:leaves",
+	        "states": {
+	          "old_leaf_type": "birch"
+	        }
+	      },
+	      "canopy_height": 4,
+	      "base_radius": 0,
+	      "core_width": 3
+	    }
+	}
+}

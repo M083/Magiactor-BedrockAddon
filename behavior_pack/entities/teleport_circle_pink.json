@@ -1,0 +1,104 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "mabe:teleport_circle_pink",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+        "component_groups": {
+            "despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+		"components": {
+			"minecraft:type_family": {
+				"family": [ "teleport_circle_pink", "inanimate" ]
+			},
+			"minecraft:health": {
+				"value": 1,
+				"max": 1
+			},
+			"minecraft:physics": {
+                "has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:nameable": {
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/teleport_circle_pink.json"
+			},
+			"minecraft:collision_box": {
+				"width": 3.4,
+				"height": 0.1
+			},
+			"minecraft:knockback_resistance": {
+				"value": 2.0
+			},
+			"minecraft:on_death": {
+				"event": "death_event"
+			},
+			"minecraft:interact": {
+				"interactions": {
+					"on_interact": {
+						"filters": {
+							"all_of": [
+								{ "test": "is_family", "subject": "other", "value": "player" }
+							]
+						},
+						"event": "mabe:teleport_pink",
+						"target": "self"
+					},
+					"swing": true,
+					"interact_text": "action.interact.teleport_pink"
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"run_command": {
+					"command": "tickingarea add circle ~ ~ ~ 1"
+				}
+			},
+			"death_event": {
+				"sequence": [
+					{
+						"run_command": {
+							"command":"tickingarea remove ~ ~ ~"
+						}
+					},
+					{
+		                "add": {
+		                  "component_groups": ["despawn"]
+		                }
+					}
+				]
+			},
+			"mabe:teleport_pink": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": "kill @e[type = arrow, c = 1, r = 20]"
+						}
+					},
+					{
+						"run_command": {
+							"command": "tp @p @e[type = mabe:teleport_circle_pink, c = -1]"
+						}
+					},
+					{
+						"run_command": {
+							"command": "playsound mob.shulker.teleport"
+						}
+					}
+				]
+			}
+		}
+	}
+}

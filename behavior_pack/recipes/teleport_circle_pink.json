@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:teleport_circle_pink"
+        },
+        "key": {
+            "d": {
+                "item": "minecraft:pink_dye"
+            },
+            "p": {
+                "item": "mabe:magia_quill_pen"
+            }
+        },
+        "pattern": [
+            " dp",
+            "d d",
+            " d "
+        ],
+        "priority": 1,
+        "result": {
+            "count": 2,
+            "item": "mabe:teleport_circle_pink_item"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

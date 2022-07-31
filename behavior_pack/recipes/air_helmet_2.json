@@ -1,0 +1,38 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:air_helmet_2"
+        },
+        "key": {
+            "c": {
+                "item": "minecraft:copper_block"
+            },
+            "s": {
+                "item": "minecraft:gold_ingot"
+            },
+            "p": {
+                "item": "mabe:helmet_craftor_2"
+            }
+        },
+        "pattern": [
+            "sss",
+            "cps",
+            "   "
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:air_helmet_2"
+            },
+            {
+                "count": 1,
+                "item": "mabe:helmet_craftor_2"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

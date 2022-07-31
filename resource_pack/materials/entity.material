@@ -1,0 +1,13 @@
+{
+    "materials": {
+        "version": "1.0.0",
+        "default_alpha:entity_alphatest": {},
+        "default_blending:entity": {
+            "+states": [ "Blending" ]
+        },
+    	"default_emmisive:entity_emissive_alpha": {},
+    	"default_emissive_invisible:entity_emissive_alpha": {
+      		"+defines": [ "USE_ONLY_EMISSIVE" ]
+    	}
+    }
+}

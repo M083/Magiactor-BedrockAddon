@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.teleport_circle",
+				"texture_width": 256,
+				"texture_height": 128,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "in",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-32, 4, -32], "size": [64, 0, 64], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "out",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-32, 4, -32], "size": [64, 0, 64], "uv": [0, 64]}
+					]
+				}
+			]
+		}
+	]
+}

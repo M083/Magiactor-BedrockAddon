@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:organ_craftor_3"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:magia_quill_pen"
+            },
+            "d": {
+                "item": "minecraft:gold_block"
+            },
+            "e": {
+                "item": "mabe:organ_craftor_2"
+            },
+            "f": {
+                "item": "minecraft:oxidized_copper"
+            },
+            "g": {
+                "item": "minecraft:amethyst_block"
+            },
+            "h": {
+                "item": "mabe:magia_light_crystal_block"
+            }
+        },
+        "pattern": [
+            "  c",
+            "dee",
+            "ghf"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 1,
+            "item": "mabe:organ_craftor_3"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

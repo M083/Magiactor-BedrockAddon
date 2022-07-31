@@ -55,11 +55,11 @@ PCならダブルクリック、スマートフォンなら[開く → Minecraft
 
 以下の画像のように設定を編集します。
 
-<img width="1200" alt="" src="">
+<img width="1200" alt="" src="https://github.com/M083/Magiactor-BedrockAddon/blob/main/screenshots/experiments.PNG?raw=true">
 
 ビヘイビアーパック→マイパックを開き、アドオンを有効にします。
 
-<img width="1200" alt="" src="">
+<img width="1200" alt="" src="https://github.com/M083/Magiactor-BedrockAddon/blob/main/screenshots/behavior.PNG?raw=true">
 
 マルチプレイのホストをする場合はリソースパックを開き、「参加にはリソースパックの受け入れが必要」にチェックを入れてください。
 

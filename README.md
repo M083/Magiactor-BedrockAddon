@@ -1,4 +1,4 @@
-# GaiaWanderer-BedrockAddon
+# Magiactor-BedrockAddon
 Addon for Minecraft Bedrock Edition
 
 ## 目次

@@ -15,7 +15,9 @@ Addon for Minecraft Bedrock Edition
 - [更新履歴](#更新履歴)
 
 ## お知らせ
-
+2022/8/5
+ver1.02.000をリリースしました。
+ver1.01.000とはワールド生成が異なります。新しくワールドを作り直してください。
 
 ## はじめに
 このアドオンはMinecraft Bedrock Edition(以下MCBE)専用です。
@@ -34,9 +36,9 @@ v1.19.11以降のMCBEがインストールされた端末。
 Windows 10、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
 ## ダウンロード
-### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver1.01.000/Magiactor_1_01_000.mcaddon)
+### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver1.02.000/Magiactor_1_02_000.mcaddon)
 
-### [過去のバージョンをダウンロード]()
+### [過去のバージョンをダウンロード](https://github.com/M083/Magiactor-BedrockAddon/releases)
 
 ## 導入方法
 

@@ -1,0 +1,92 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.butterfly_organ.swim": {
+			"loop": true,
+			"animation_length": 0.96,
+			"bones": {
+				"lleg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [0, 0, -30],
+						"0.8": [0, 0, 30],
+						"0.96": [0, 0, 0]
+					}
+				},
+				"lleg2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.32": [0, 0, -30],
+						"0.64": [0, 0, 30],
+						"0.96": [0, 0, 0]
+					}
+				},
+				"lleg3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.16": [0, 0, -30],
+						"0.48": [0, 0, 30],
+						"0.96": [0, 0, 0]
+					}
+				},
+				"rleg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [0, 0, 30],
+						"0.8": [0, 0, -27.5],
+						"0.96": [0, 0, 0]
+					}
+				},
+				"rleg2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.32": [0, 0, 30],
+						"0.64": [0, 0, -27.5],
+						"0.96": [0, 0, 0]
+					}
+				},
+				"rleg3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.16": [0, 0, 30],
+						"0.48": [0, 0, -27.5],
+						"0.96": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.butterfly_organ.stay": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"core": {
+					"rotation": {
+						"0.0": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"0.24": ["Math.cos(query.life_time * 500) * 10.0", 10, 0],
+						"0.52": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"0.76": ["Math.cos(query.life_time * 500) * 10.0", -10, 0],
+						"1.0": ["Math.cos(query.life_time * 500) * 10.0", 0, 0]
+					}
+				},
+				"core2": {
+					"rotation": {
+						"0.0": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"0.24": ["Math.cos(query.life_time * 500) * 10.0", 10, 0],
+						"0.52": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"0.76": ["Math.cos(query.life_time * 500) * 10.0", -10, 0],
+						"1.0": ["Math.cos(query.life_time * 500) * 10.0", 0, 0]
+					}
+				},
+				"core3": {
+					"rotation": {
+						"0.0": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"0.24": ["Math.cos(query.life_time * 500) * 10.0", 10, 0],
+						"0.52": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"0.76": ["Math.cos(query.life_time * 500) * 10.0", -10, 0],
+						"1.0": ["Math.cos(query.life_time * 500) * 10.0", 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

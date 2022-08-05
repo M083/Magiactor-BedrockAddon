@@ -9,7 +9,10 @@
         "invisible": "default_emissive_invisible"
       },
       "textures": {
-        "default": "textures/entity/elorgan"
+        "default": "textures/entity/organ",
+        "green": "textures/entity/organ_green",
+        "white": "textures/entity/organ_white",
+        "yellow": "textures/entity/organ_yellow"
       },
       "geometry": {
         "default": "geometry.slag_elorgan"

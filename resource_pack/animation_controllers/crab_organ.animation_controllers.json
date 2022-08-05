@@ -1,0 +1,74 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.crab_organ.look": {
+      "states": {
+        "walking": {
+          "animations": [
+            {
+              "look": []
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.crab_organ.walk": {
+      "states": {
+        "walking": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.crab_organ.pose": {
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "stand_pose": []
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.crab_organ.stay": {
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "stay": []
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.crab_organ.attack": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack": "variable.attack_time > 0.0"
+            }
+          ]
+        },
+        "attack": {
+          "animations": [ { "attack": [] } ],
+          "transitions": [
+            {
+              "default": "variable.attack_time <= 0.0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

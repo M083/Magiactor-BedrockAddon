@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:cloud_sheep",
+      "materials": { "default": "default_alpha" },
+      "textures": {
+        "default": "textures/entity/cloud_sheep"
+      },
+      "geometry": {
+        "default": "geometry.cloud_sheep"
+      },
+      "animations": {
+        "roll": "animation.cloud_sheep.roll",
+        "walk": "animation.cloud_sheep.walk"
+      },
+      "animation_controllers": [
+        {
+          "roll": "controller.animation.cloud_sheep.roll",
+          "walk": "controller.animation.cloud_sheep.walk"
+        }
+      ],
+      "render_controllers": [ "controller.render.cloud_sheep" ],
+      "spawn_egg": {
+        "base_color": "#F0FCFC",
+        "overlay_color": "#F9FAFA"
+      }
+    }
+  }
+}

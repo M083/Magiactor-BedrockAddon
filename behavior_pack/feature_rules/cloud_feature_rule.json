@@ -39,7 +39,7 @@
             ]
         },
         "distribution": {
-            "iterations": 12,
+            "iterations": 16,
             "scatter_chance": 25.0,
             "x": {
                 "distribution": "uniform",

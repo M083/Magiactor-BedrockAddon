@@ -1,7 +1,43 @@
 {
 	"entity_sounds" : {
 		"entities" : {
+            "mabe:butterfly_organ" : {
+                "events" : {
+                    "ambient" : {
+                        "sound": "mob.allay.hurt",
+                        "volume": 5,
+                        "pitch": [0.15, 0.25]
+                    },
+                    "shoot":{
+                        "sound": "firework.launch",
+                        "volume": 1,
+                        "pitch": [0.15, 0.25]
+                    },
+                    "death" : "mob.allay.death",
+                    "hurt" : "mob.allay.hurt"
+                },
+                "pitch" : [ 0.3, 0.45 ],
+                "volume" : 3
+            },
             "mabe:moss_organ" : {
+                "events" : {
+                    "ambient" : {
+                        "sound": "mob.allay.hurt",
+                        "volume": 5,
+                        "pitch": [0.15, 0.25]
+                    },
+                    "shoot":{
+                        "sound": "firework.launch",
+                        "volume": 1,
+                        "pitch": [0.15, 0.25]
+                    },
+                    "death" : "mob.allay.death",
+                    "hurt" : "mob.allay.hurt"
+                },
+                "pitch" : [ 0.3, 0.45 ],
+                "volume" : 3
+            },
+            "mabe:crab_organ" : {
                 "events" : {
                     "ambient" : {
                         "sound": "mob.allay.hurt",
@@ -70,6 +106,20 @@
                         "pitch": 0.5
                     }
                 }
+            },
+            "mabe:cloud_sheep" : {
+                "events" : {
+                    "ambient" : "mob.sheep.say",
+                    "death" : "mob.sheep.say",
+                    "hurt" : "mob.sheep.say",
+                    "step" : {
+                        "pitch" : 1.0,
+                        "sound" : "mob.sheep.step",
+                        "volume" : 0.40
+                    }
+                },
+                "pitch" : [ 0.80, 1.20 ],
+                "volume" : 1.0
             }
 		}
 	}

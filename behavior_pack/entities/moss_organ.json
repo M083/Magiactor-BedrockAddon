@@ -29,6 +29,19 @@
             "event": "to_range"
           }
         },
+        "minecraft:flying_speed": {
+          "value": 0.25
+        },
+        "minecraft:navigation.hover": {
+          "can_path_over_water": true,
+          "can_breach": true,
+          "can_sink": true,
+          "can_path_from_air": true,
+          "avoid_water": true,
+          "avoid_damage_blocks": false,
+          "avoid_sun": true
+        },
+        "minecraft:movement.hover": {},
         "minecraft:movement": {
           "value": 0.16
         },
@@ -43,6 +56,8 @@
           "time_down_event": {
             "event": "to_melee"
           }
+        },
+        "minecraft:movement.basic": {
         },
         "minecraft:navigation.float": {
           "can_path_over_water": true
@@ -73,6 +88,9 @@
       }
     },
     "components": {
+      "minecraft:mark_variant": {
+        "value": 0
+      },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 14 : 0"
       },
@@ -151,10 +169,8 @@
         "must_see": true
       },
       "minecraft:collision_box": {
-        "width": 1.75,
+        "width": 1.25,
         "height": 1.5
-      },
-      "minecraft:movement.basic": {
       },
       "minecraft:jump.static": {
       },
@@ -176,7 +192,7 @@
       "minecraft:nameable": {
       },
       "minecraft:physics": {
-        "has_gravity": false,
+        "has_gravity": true,
         "has_collision": false
       },
       "minecraft:on_death": {

@@ -34,6 +34,11 @@
         "textures/blocks/magia_light_crystal_block"
       ]
     },
+    "magia_white_crystal_block": {
+      "textures": [
+        "textures/blocks/magia_white_crystal_block"
+      ]
+    },
     "fallen_star": {
       "textures": [
         "textures/blocks/fallen_star"

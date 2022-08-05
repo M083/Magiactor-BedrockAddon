@@ -46,6 +46,13 @@
             }
           },
           {
+            "block": "mabe:magia_white_crystal_block",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
             "block": "mabe:polished_sky_stone",
             "speed": 40,
             "on_dig": {
@@ -753,7 +760,7 @@
             "block": "minecraft:amethyst_cluster",
             "speed": 40,
             "on_dig": {
-              "event": "yes:amethyst_cluster",
+              "event": "mabe:on_digged",
               "target": "self"
             }
           },
@@ -1418,6 +1425,34 @@
           },
           {
             "block": "minecraft:iron_ore",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:diamond_ore",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:deepslate_diamond_ore",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:emerald_ore",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:deepslate_emerald_ore",
             "speed": 40,
             "on_dig": {
               "event": "mabe:on_digged"

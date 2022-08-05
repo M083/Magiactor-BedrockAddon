@@ -22,6 +22,9 @@
       }
     },
     "components": {
+      "minecraft:mark_variant": {
+        "value": 3
+      },
       "minecraft:breathable": {
         "total_supply": 15,
         "suffocate_time": 0

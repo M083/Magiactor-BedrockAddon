@@ -9,7 +9,7 @@
                 "item": "mabe:magia_quill_pen"
             },
             "d": {
-                "item": "minecraft:gold_ingot"
+                "item": "minecraft:coal_block"
             },
             "e": {
                 "item": "minecraft:paper"
@@ -18,10 +18,10 @@
                 "item": "minecraft:copper_block"
             },
             "g": {
-                "item": "mabe:magia_crystal_shard"
+                "item": "minecraft:stonebrick"
             },
             "h": {
-                "item": "minecraft:brick"
+                "item": "minecraft:flint"
             },
             "i": {
                 "item": "minecraft:iron_ingot"

@@ -11,14 +11,16 @@
       "textures": {
         "default": "textures/entity/arrows",
         "organ_shard":  "textures/entity/organ",
-        "elorgan_shard": "textures/entity/elorgan",
-        "organ_wand_shard":  "textures/entity/organ_wand",
-        "wander_broom": "textures/entity/wander_broom"
+        "elorgan_shard": "textures/entity/organ_green",
+        "organ_wand_shard":  "textures/entity/organ_yellow",
+        "wander_broom": "textures/entity/wander_broom",
+        "magia_white_crystal_spear": "textures/entity/magia_white_crystal_spear"
       },
       "geometry": {
         "default": "geometry.arrow",
         "organ_shard": "geometry.organ_shard",
-        "wander_broom": "geometry.wander_broom"
+        "wander_broom": "geometry.wander_broom",
+        "spear": "geometry.spear"
       },
       "animations": {
         "move": "animation.arrow.move"

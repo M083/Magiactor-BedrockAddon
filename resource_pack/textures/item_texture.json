@@ -2,6 +2,42 @@
   "resource_pack_name": "mabe",
   "texture_name": "atlas.items",
   "texture_data": {
+    "magia_white_crystal_spear": {
+      "textures": "textures/items/magia_white_crystal_spear"
+    },
+    "magia_white_crystal_pickaxe": {
+      "textures": "textures/items/magia_white_crystal_pickaxe"
+    },
+    "magia_white_crystal_axe": {
+      "textures": "textures/items/magia_white_crystal_axe"
+    },
+    "magia_white_crystal_shovel": {
+      "textures": "textures/items/magia_white_crystal_shovel"
+    },
+    "magia_crystal_helmet": {
+      "textures": "textures/items/magia_crystal_helmet"
+    },
+    "magia_crystal_chestplate": {
+      "textures": "textures/items/magia_crystal_chestplate"
+    },
+    "magia_crystal_leggings": {
+      "textures": "textures/items/magia_crystal_leggings"
+    },
+    "magia_crystal_boots": {
+      "textures": "textures/items/magia_crystal_boots"
+    },
+    "magia_white_crystal_helmet": {
+      "textures": "textures/items/magia_white_crystal_helmet"
+    },
+    "magia_white_crystal_chestplate": {
+      "textures": "textures/items/magia_white_crystal_chestplate"
+    },
+    "magia_white_crystal_leggings": {
+      "textures": "textures/items/magia_white_crystal_leggings"
+    },
+    "magia_white_crystal_boots": {
+      "textures": "textures/items/magia_white_crystal_boots"
+    },
     "organ_craftor_1": {
       "textures": "textures/items/organ_craftor_1"
     },
@@ -106,6 +142,9 @@
     },
     "magia_light_crystal_shard": {
       "textures": "textures/items/magia_light_crystal_shard"
+    },
+    "magia_white_crystal_shard": {
+      "textures": "textures/items/magia_white_crystal_shard"
     },
     "fallen_star_shard": {
       "textures": "textures/items/fallen_star_shard"

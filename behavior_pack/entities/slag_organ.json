@@ -91,6 +91,9 @@
       }
     },
     "components": {
+      "minecraft:mark_variant": {
+        "value": 0
+      },
       "minecraft:damage_sensor": {
         "triggers": [
           {

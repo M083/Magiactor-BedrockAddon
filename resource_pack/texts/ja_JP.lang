@@ -1,8 +1,12 @@
 ﻿entity.mabe:slag_organ.name=蛞蝓の異形	#
 entity.mabe:slag_elorgan.name=蛞蝓の畏形	#
 entity.mabe:moss_organ.name=苔の異形	#
+entity.mabe:crab_organ.name=蟹の異形	#
+entity.mabe:butterfly_organ.name=蝶の異形	#
+entity.mabe:butterfly_organ<>.name=蝶の異形	#
 entity.mabe:griffonis.name=グリフォニス	#
 entity.mabe:lunasta.name=ルナースタ	#
+entity.mabe:cloud_sheep.name=綿雲羊	#
 entity.mabe:organ_shard.name=異形の破片	#
 entity.mabe:organ_shard<>.name=異形の破片	#
 entity.mabe:elorgan_shard.name=畏形の破片	#
@@ -28,10 +32,14 @@ entity.mabe:teleport_circle_yellow.name=転送陣・黄	#
 item.spawn_egg.entity.mabe:slag_organ.name=蛞蝓の異形を出現させる	#
 item.spawn_egg.entity.mabe:slag_elorgan.name=蛞蝓の畏形を出現させる	#
 item.spawn_egg.entity.mabe:moss_organ.name=苔の異形を出現させる	#
+item.spawn_egg.entity.mabe:crab_organ.name=蟹の異形を出現させる	#
+item.spawn_egg.entity.mabe:butterfly_organ.name=蝶の異形を出現させる	#
 item.spawn_egg.entity.mabe:griffonis.name=グリフォニスを出現させる	#
 item.spawn_egg.entity.mabe:lunasta.name=ルナースタを出現させる	#
+item.spawn_egg.entity.mabe:cloud_sheep.name=綿雲羊を出現させる	#
 
 item.mabe:wander_broom=飛翔の箒	#
+item.mabe:magia_white_crystal_spear=魔白晶の投擲槍	#
 item.mabe:teleport_circle_black_item=転送陣・黒	#
 item.mabe:teleport_circle_blue_item=転送陣・青	#
 item.mabe:teleport_circle_brown_item=転送陣・茶	#
@@ -66,6 +74,18 @@ item.mabe:air_helmet_2=潜水ヘルメットII	#
 item.mabe:air_helmet_3=潜水ヘルメットIII	#
 item.mabe:air_helmet_4=潜水ヘルメットIV	#
 
+item.mabe:magia_crystal_helmet=魔水晶のヘルメット	#
+item.mabe:magia_crystal_chestplate=魔水晶のチェストプレート	#
+item.mabe:magia_crystal_leggings=魔水晶のレギンス	#
+item.mabe:magia_crystal_boots=魔水晶のブーツ	#
+item.mabe:magia_white_crystal_helmet=魔白晶のヘルメット	#
+item.mabe:magia_white_crystal_chestplate=魔白晶のチェストプレート	#
+item.mabe:magia_white_crystal_leggings=魔白晶のレギンス	#
+item.mabe:magia_white_crystal_boots=魔白晶のブーツ	#
+
+item.mabe:magia_white_crystal_axe=魔白晶の斧	#
+item.mabe:magia_white_crystal_pickaxe=魔白晶のツルハシ	#
+item.mabe:magia_white_crystal_shovel=魔白晶のシャベル	#
 item.mabe:star_axe=煌星の斧	#
 item.mabe:star_pickaxe=煌星のツルハシ	#
 item.mabe:star_shovel=煌星のシャベル	#
@@ -84,6 +104,7 @@ item.mabe:organ_oil=発光する粘油	#
 item.mabe:fallen_star_shard=煌星の欠片	#
 item.mabe:magia_crystal_shard=魔水晶の欠片	#
 item.mabe:magia_light_crystal_shard=魔光水晶の欠片	#
+item.mabe:magia_white_crystal_shard=魔白晶の欠片	#
 item.mabe:magia_quill_pen=輝く羽ペン	#
 
 item.mabe:lunasta_meat=月光エビのむき身	#
@@ -98,6 +119,7 @@ tile.mabe:sky_brick.name=青空のレンガ	#
 tile.mabe:sky_tile.name=青空のタイル	#
 tile.mabe:magia_crystal_block.name=魔水晶	#
 tile.mabe:magia_light_crystal_block.name=魔光水晶	#
+tile.mabe:magia_white_crystal_block.name=魔白晶	#
 tile.mabe:fallen_star.name=煌星の雫	#
 
 enchantment.damage.arthropods=虫・異形殺し	#

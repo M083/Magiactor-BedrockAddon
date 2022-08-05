@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "loot_tables/gameplay/fishing/underground_junk.json",
+          "weight": 10,
+          "quality": -2
+        },
+        {
+          "type": "loot_table",
+          "name": "loot_tables/gameplay/fishing/underground_treasure.json",
+          "weight": 5,
+          "quality": 2
+        },
+        {
+          "type": "loot_table",
+          "name": "loot_tables/gameplay/fishing/underground_fish.json",
+          "weight": 85,
+          "quality": -1
+        }
+      ]
+    }
+  ]
+}

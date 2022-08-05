@@ -96,6 +96,10 @@
       }
     },
     "components": {
+      "minecraft:mark_variant": {
+        "value": 2
+      },
+      "minecraft:persistent": {},
       "minecraft:scale": {
         "value": 1.8
       },

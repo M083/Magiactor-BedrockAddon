@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:magia_white_crystal_pickaxe"
+        },
+        "key": {
+            "s": {
+                "item": "minecraft:stick"
+            },
+            "f": {
+                "item": "mabe:magia_white_crystal_shard"
+            }
+        },
+        "pattern": [
+            "fff",
+            " s ",
+            " s "
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:magia_white_crystal_pickaxe"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mabe:magia_white_crystal_spear"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X  ",
+      "X# ",
+      "  #"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "mabe:magia_white_crystal_shard"
+      }
+    },
+    "result": {
+      "item": "mabe:magia_white_crystal_spear",
+      "count": 4
+    }
+  }
+}

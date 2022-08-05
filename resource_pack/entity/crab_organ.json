@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:crab_organ",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/organ",
+        "green": "textures/entity/organ_green",
+        "white": "textures/entity/organ_white",
+        "yellow": "textures/entity/organ_yellow"
+      },
+      "geometry": {
+        "default": "geometry.crab_organ"
+      },
+      "animations": {
+        "stand_pose": "animation.crab_organ.stand_pose",
+        "walk": "animation.crab_organ.walk",
+        "attack": "animation.crab_organ.attack",
+        "stay": "animation.crab_organ.stay",
+        "look": "animation.crab_organ.look"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.crab_organ.pose" },
+        { "stay": "controller.animation.crab_organ.stay" },
+        { "walk": "controller.animation.crab_organ.walk" },
+        { "attack": "controller.animation.crab_organ.attack" },
+        { "look": "controller.animation.crab_organ.look" }
+      ],
+      "render_controllers": [ "controller.render.organ" ],
+      "spawn_egg": {
+        "base_color": "#181632",
+        "overlay_color": "#AEE5E4"
+      }
+    }
+  }
+}

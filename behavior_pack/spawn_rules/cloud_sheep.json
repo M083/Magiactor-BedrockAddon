@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "mabe:cloud_sheep",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underground": {},
+        "minecraft:spawns_on_block_filter": "mabe:cloud_block",
+        "minecraft:brightness_filter": {
+          "min": 7,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 25
+        },
+        "minecraft:herd": {
+          "min_size":2,
+          "max_size":4
+        }
+      }
+    ]
+  }
+}

@@ -8,7 +8,7 @@
         "enchanted": "entity_alphatest_glint"
       },
       "textures": {
-        "default": "textures/entity/organ_wand",
+        "default": "textures/entity/organ_yellow",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {

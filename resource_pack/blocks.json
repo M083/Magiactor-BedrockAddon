@@ -26,6 +26,11 @@
     "isotropic": true,
     "sound": "amethyst_block"
   },
+  "mabe:magia_white_crystal_block": {
+    "textures": "magia_white_crystal_block",
+    "isotropic": true,
+    "sound": "amethyst_block"
+  },
   "mabe:fallen_star": {
     "textures": "fallen_star",
     "isotropic": true,

@@ -1,0 +1,28 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:magia_crystal_leggings"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:magia_crystal_shard"
+            }
+        },
+        "pattern": [
+            "ccc",
+            "c c",
+            "c c"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:magia_crystal_leggings"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

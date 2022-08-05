@@ -246,9 +246,12 @@
 
       "mabe:griff_angry": {
         "minecraft:angry": {
-          "duration": 5,
+          "duration": 10,
           "broadcast_anger": true,
           "broadcast_range": 20,
+          "broadcast_targets": [
+            "griffonis"
+          ],
           "calm_event": {
             "event": "minecraft:on_calm",
             "target": "self"

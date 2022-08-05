@@ -1,0 +1,28 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:magia_crystal_chestplate"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:magia_crystal_shard"
+            }
+        },
+        "pattern": [
+            "c c",
+            "ccc",
+            "ccc"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:magia_crystal_chestplate"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

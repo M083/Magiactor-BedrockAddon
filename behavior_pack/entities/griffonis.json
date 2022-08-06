@@ -576,7 +576,8 @@
             },
             {
               "event": "mabe:hover"
-            },
+            }
+            /*,
             {
               "filters": {
                 "all_of": [
@@ -585,7 +586,7 @@
                 ]
               },
               "event": "mabe:mode_fly"
-            }
+            }*/
           ]
         }
       },

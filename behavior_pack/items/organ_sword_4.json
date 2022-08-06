@@ -77,7 +77,7 @@
             "run_command": {
               "command": [
                 "playanimation @s animation.attack_animation.sword_rotate",
-                "damage @e[type=!player,type=!mabe:griffonis,type=!item,r=6] 12 entity_attack entity @s",
+                "damage @e[type=!player,type=!inanimate,type=!mabe:griffonis,type=!item,r=6] 12 entity_attack entity @s",
                 "playsound item.trident.throw @e[type=player] ~ ~ ~ 5 0.6"
               ]
             }

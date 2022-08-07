@@ -22,7 +22,7 @@
                 "distribution": "uniform",
                 "extent": [
                     0,
-                    64
+                    60
                 ]
             },
             "z": {

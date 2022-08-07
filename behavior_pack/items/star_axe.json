@@ -36,6 +36,13 @@
           },
           */
           {
+            "block": "minecraft:bamboo",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
             "block": "minecraft:chest",
             "speed": 40,
             "on_dig": {

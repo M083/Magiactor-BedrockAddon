@@ -85,6 +85,27 @@
           },
           */
           {
+            "block": "minecraft:red_sandstone",
+            "speed": 15,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:red_sandstone_stairs",
+            "speed": 15,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:crying_obsidian",
+            "speed": 15,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
             "block": "minecraft:ice",
             "speed": 15,
             "on_dig": {

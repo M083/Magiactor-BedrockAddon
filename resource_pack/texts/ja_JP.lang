@@ -126,6 +126,22 @@ enchantment.damage.arthropods=虫・異形殺し	#
 
 action.hint.exit.arrow=スニークで降りる	#
 action.hint.exit.mabe:griffonis=攻撃で飛翔/スニークで降りる	#
-action.interact.teleport_white=転送	#
+
+action.interact.mabe:teleport_circle_black=転送	#
+action.interact.mabe:teleport_circle_blue=転送	#
+action.interact.mabe:teleport_circle_brown=転送	#
+action.interact.mabe:teleport_circle_cyan=転送	#
+action.interact.mabe:teleport_circle_gray=転送	#
+action.interact.mabe:teleport_circle_green=転送	#
+action.interact.mabe:teleport_circle_light_blue=転送	#
+action.interact.mabe:teleport_circle_light_gray=転送	#
+action.interact.mabe:teleport_circle_lime=転送	#
+action.interact.mabe:teleport_circle_magenta=転送	#
+action.interact.mabe:teleport_circle_orange=転送	#
+action.interact.mabe:teleport_circle_pink=転送	#
+action.interact.mabe:teleport_circle_purple=転送	#
+action.interact.mabe:teleport_circle_red=転送	#
+action.interact.mabe:teleport_circle_white=転送	#
+action.interact.mabe:teleport_circle_yellow=転送	#
 
 death.attack.mob=%1$s は %2$s に倒された	#

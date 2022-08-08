@@ -41,6 +41,30 @@
             "entries": [
                 {
                     "type": "item",
+                    "name": "minecraft:experience_bottle",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 10,
+                                "max": 20
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
                     "name": "mabe:magia_light_crystal_shard",
                     "weight": 1,
                     "functions": [

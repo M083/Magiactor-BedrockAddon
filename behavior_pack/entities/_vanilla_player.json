@@ -282,6 +282,76 @@
               ]
             },
             "event": "air_on"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_equipment",
+                      "domain": "feet",
+                      "operator": "==",
+                      "value": "mabe:speed_boots_1"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "feet",
+                      "operator": "==",
+                      "value": "mabe:speed_boots_2"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "feet",
+                      "operator": "==",
+                      "value": "mabe:speed_boots_3"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "feet",
+                      "operator": "==",
+                      "value": "mabe:speed_boots_4"
+                    }
+                  ]
+                }
+              ]
+            },
+            "event": "speed"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_equipment",
+                      "domain": "feet",
+                      "operator": "==",
+                      "value": "mabe:wing_boots_1"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "feet",
+                      "operator": "==",
+                      "value": "mabe:wing_boots_2"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "feet",
+                      "operator": "==",
+                      "value": "mabe:wing_boots_3"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "feet",
+                      "operator": "==",
+                      "value": "mabe:wing_boots_4"
+                    }
+                  ]
+                }
+              ]
+            },
+            "event": "wing"
           }
         ]
       }
@@ -315,7 +385,30 @@
         "sequence": [
           {
             "run_command": {
-              "command": "effect @s conduit_power 1"
+              "command": "effect @s conduit_power 1 0 true"
+            }
+          }
+        ]
+      },
+      "speed": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s speed 1 1 true"
+            }
+          }
+        ]
+      },
+      "wing": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s jump_boost 1 2 true"
+            }
+          },
+          {
+            "run_command": {
+              "command": "effect @s slow_falling 1 0 true"
             }
           }
         ]

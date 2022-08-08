@@ -1,0 +1,38 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:speed_boots_2"
+        },
+        "key": {
+            "c": {
+                "item": "minecraft:feather"
+            },
+            "s": {
+                "item": "mabe:magia_crystal_block"
+            },
+            "p": {
+                "item": "mabe:boots_craftor_2"
+            }
+        },
+        "pattern": [
+            "c c",
+            "sps",
+            "   "
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:speed_boots_2"
+            },
+            {
+                "count": 1,
+                "item": "mabe:boots_craftor_2"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

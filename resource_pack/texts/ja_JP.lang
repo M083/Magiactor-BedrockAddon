@@ -74,6 +74,15 @@ item.mabe:air_helmet_2=潜水ヘルメットII	#
 item.mabe:air_helmet_3=潜水ヘルメットIII	#
 item.mabe:air_helmet_4=潜水ヘルメットIV	#
 
+item.mabe:wing_boots_1=飛翼のブーツI	#
+item.mabe:wing_boots_2=飛翼のブーツII	#
+item.mabe:wing_boots_3=飛翼のブーツIII	#
+item.mabe:wing_boots_4=飛翼のブーツIV	#
+item.mabe:speed_boots_1=疾風のブーツI	#
+item.mabe:speed_boots_2=疾風のブーツII	#
+item.mabe:speed_boots_3=疾風のブーツIII	#
+item.mabe:speed_boots_4=疾風のブーツIV	#
+
 item.mabe:magia_crystal_helmet=魔水晶のヘルメット	#
 item.mabe:magia_crystal_chestplate=魔水晶のチェストプレート	#
 item.mabe:magia_crystal_leggings=魔水晶のレギンス	#
@@ -94,6 +103,11 @@ item.mabe:helmet_craftor_1=特殊ヘルメットの製法I	#
 item.mabe:helmet_craftor_2=特殊ヘルメットの製法II	#
 item.mabe:helmet_craftor_3=特殊ヘルメットの製法III	#
 item.mabe:helmet_craftor_4=特殊ヘルメットの製法IV	#
+
+item.mabe:boots_craftor_1=特殊ブーツの製法I	#
+item.mabe:boots_craftor_2=特殊ブーツの製法II	#
+item.mabe:boots_craftor_3=特殊ブーツの製法III	#
+item.mabe:boots_craftor_4=特殊ブーツの製法IV	#
 
 item.mabe:organ_craftor_1=異形武具の製法I	#
 item.mabe:organ_craftor_2=異形武具の製法II	#

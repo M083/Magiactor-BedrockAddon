@@ -3,12 +3,12 @@
 
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "mabe:water_hole_feature_rule",
-			"places_feature": "mabe:water_hole_feature"
+			"identifier": "mabe:magia_white_tree_feature_rule",
+			"places_feature": "mabe:magia_white_tree_feature"
 		},
 
 		"conditions": {
-			"placement_pass": "after_underground_pass",
+			"placement_pass": "final_pass",
 
 			"minecraft:biome_filter": {
 				"all_of": [
@@ -27,8 +27,8 @@
 		},
 
 		"distribution": {
-			"iterations": 16,
-
+			"iterations": 1,
+            "scatter_chance": 1.0,
 			"x": {
                 "distribution": "uniform",
                 "extent": [
@@ -46,8 +46,8 @@
 			"y": {
 				"distribution": "uniform",
 				"extent": [
-					"q.noise(v.worldx / 1024, v.worldz / 1024) + q.noise(v.worldx, v.worldz) * 0.05 > 0.35 ? -48 : -9999",
-					"q.noise(v.worldx / 1024, v.worldz / 1024) + q.noise(v.worldx, v.worldz) * 0.05 > 0.35 ? 30 : -9999"
+					"q.noise(v.worldx / 1024, v.worldz / 1024) + q.noise(v.worldx, v.worldz) * 0.05 > 0.35 ? query.above_top_solid(variable.worldx, variable.worldz) : -9999",
+					"q.noise(v.worldx / 1024, v.worldz / 1024) + q.noise(v.worldx, v.worldz) * 0.05 > 0.35 ? query.above_top_solid(variable.worldx, variable.worldz) : -9999"
 				]
 			}
 		}

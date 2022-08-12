@@ -3,7 +3,9 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "minecraft:salmon",
-      "materials": { "default": "salmon" },
+      "materials": { 
+        "default": "salmon"
+      },
       "textures": {
         "default": "textures/entity/fish/salmon",
         "abyss": "textures/entity/abyss_salmon"

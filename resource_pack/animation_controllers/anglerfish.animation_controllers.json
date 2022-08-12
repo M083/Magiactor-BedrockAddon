@@ -1,0 +1,56 @@
+{
+	"format_version" : "1.8.0",
+	"animation_controllers" : {
+		"controller.animation.anglerfish.swim" : {
+			"states" : {
+				"default": {
+					"parameters": [ "query.modified_move_speed + 0.1" ],
+					"animations": [
+						{ 
+							"swim": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.anglerfish.look" : {
+			"states" : {
+				"default": {
+					"animations": [
+						{ 
+							"look": []
+						}
+					]
+				}
+			}
+		},
+	    "controller.animation.anglerfish.attack": {
+	      "states": {
+	        "default": {
+	          "transitions": [
+	            {
+	              "attacking" : "query.is_delayed_attacking == 1"
+	            }
+	          ]
+	        },
+	        "attacking": {
+	          "animations": [
+	            {
+	              "attack": []
+	            }
+	          ],
+	          "transitions": [
+	            {
+	              "default" : "query.is_delayed_attacking == 0"
+	            }
+	          ]
+	        }
+	      }
+	    }
+	}
+}

@@ -107,6 +107,19 @@
                     }
                 }
             },
+            "mabe:anglerfish": {
+                "volume": 1,
+                "pitch": 0.4,
+                "events": {
+                    "ambient": "mob.drowned.say",
+                    "hurt": "mob.drowned.hurt",
+                    "death": "mob.drowned.death",
+                    "ambient.in.water": "mob.drowned.say_water",
+                    "hurt.in.water": "mob.drowned.hurt_water",
+                    "death.in.water": "mob.drowned.death_water",
+                    "step": "mob.drowned.step"
+                }
+            },
             "mabe:cloud_sheep" : {
                 "events" : {
                     "ambient" : "mob.sheep.say",

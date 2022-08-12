@@ -1,0 +1,205 @@
+{
+  "format_version": "1.18.10",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mabe:anglerfish",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "status_easy": {
+        "minecraft:attack": {
+          "damage": 4
+        },
+        "minecraft:health": {
+          "value": 60,
+          "max": 60
+        }
+      },
+      "status_hard": {
+        "minecraft:attack": {
+          "damage": 8
+        },
+        "minecraft:health": {
+          "value": 120,
+          "max": 120
+        }
+      },
+      "collision_box": {
+        "minecraft:collision_box": {
+          "width": 9.25,
+          "height": 5.25
+        }
+      }
+    },
+    "components": {
+      "minecraft:scale": {
+        "value": 0.5
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 19 : 0"
+      },
+      "minecraft:type_family": {
+        "family": [ "anglerfish", "monster"]
+      },
+      "minecraft:collision_box": {
+        "width": 4.25,
+        "height": 2.25
+      },
+      "minecraft:health": {
+        "value": 80,
+        "max": 80
+      },
+
+      "minecraft:loot": {
+        "table": "loot_tables/entities/anglerfish.json"
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesAir": true,
+        "breathesWater": true
+      },
+
+      "minecraft:attack": {
+        "damage": 25
+      },
+      "minecraft:movement.sway": {
+        "sway_amplitude": 0.0
+      },
+
+      "minecraft:movement": {
+        "value": 0.15
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.45
+      },
+
+      "minecraft:navigation.generic": {
+        "is_amphibious": true,
+        "can_path_over_water": true,
+        "can_swim": true,
+        "can_walk": false,
+        "can_breach": true,
+        "can_sink": false
+      },
+
+      "minecraft:behavior.random_swim": {
+        "priority": 5,
+        "interval": 0,
+        "xz_dist": 20
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:behavior.random_breach": {
+        "priority": 6,
+        "interval": 50,
+        "xz_dist": 6,
+        "cooldown_time": 2.0
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.move_to_water": {
+        "priority": 1,
+        "search_range": 15,
+        "search_height": 5
+      },
+      "minecraft:can_climb": {
+      },
+
+      "minecraft:physics": {
+      },
+
+      "minecraft:nameable": {
+      },
+
+      "minecraft:behavior.delayed_attack": {
+        "attack_duration": 0.8,
+        "hit_delay_pct": 0.65,
+        "reach_multiplier": 1.25,
+        "track_target": true
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of" : [
+                {
+                  "all_of" : [
+                    {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "inanimate"},
+                    {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "monster"}
+                  ]
+                },
+                {"test" : "is_family", "subject" : "other", "value" :  "necrocancer"}
+              ]
+            },
+            "max_dist": 8
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "snow_storm"
+                }
+              ]
+            }
+          }
+        ]
+      },
+
+      "minecraft:on_death": {
+        "event": "death_event"
+      }
+    },
+    "events": {
+      "death_event": {
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "collision_box"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

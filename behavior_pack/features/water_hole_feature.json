@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "mabe:water_hole_feature"  
 		},
-		"count": 96,
+		"count": 112,
 		"discard_chance_on_air_exposure": 1,
 		"replace_rules": [
 			{
@@ -15,8 +15,6 @@
 					"minecraft:rail",
 					"minecraft:fence",
 					"minecraft:web",
-					"minecraft:water",
-					"minecraft:lava",
 					"minecraft:gravel",
 					"minecraft:sand",
 					"minecraft:dirt",
@@ -39,13 +37,24 @@
 					"minecraft:packed_ice",
 					"minecraft:blue_ice",
 					"minecraft:tuff",
+					"minecraft:magma",
+					"minecraft:glow_lichen",
+					"minecraft:raw_iron_block",
 					"minecraft:deepslate",
+					"minecraft:cobbled_deepslate",
+					"minecraft:deepslate_copper_ore",
 					"minecraft:deepslate_coal_ore",
 					"minecraft:deepslate_gold_ore",
 					"minecraft:deepslate_iron_ore",
 					"minecraft:deepslate_lapis_ore",
 					"minecraft:deepslate_diamond_ore",
 					"minecraft:deepslate_redstone_ore"
+				]
+			},
+			{
+				"places_block": "minecraft:obsidian",
+				"may_replace": [
+					"minecraft:lava"
 				]
 			}
 		]

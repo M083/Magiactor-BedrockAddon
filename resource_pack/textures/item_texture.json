@@ -155,6 +155,12 @@
     "lunasta_meat": {
       "textures": "textures/items/lunasta_meat"
     },
+    "abyss_salmon_raw": {
+      "textures": "textures/items/abyss_salmon_raw"
+    },
+    "abyss_salmon_cooked": {
+      "textures": "textures/items/abyss_salmon_cooked"
+    },
     "magia_crystal_shard": {
       "textures": "textures/items/magia_crystal_shard"
     },

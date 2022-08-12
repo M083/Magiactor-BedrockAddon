@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.salmon": {
+      "arrays": {
+        "textures": {
+          "Array.textures": [
+            "Texture.default",
+            "Texture.abyss"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.textures[query.mark_variant]" ]
+    }
+  }
+}

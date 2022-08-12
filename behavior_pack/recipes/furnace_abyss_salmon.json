@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "mabe:furnace_abyss_salmon"
+    },
+
+    "tags": ["furnace", "smoker", "campfire"],
+    "input": "mabe:abyss_salmon_raw",
+    "output": "mabe:abyss_salmon_cooked"
+  }
+  
+}

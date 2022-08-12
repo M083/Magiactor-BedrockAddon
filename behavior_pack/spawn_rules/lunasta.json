@@ -3,14 +3,14 @@
   "minecraft:spawn_rules": {
     "description": {
       "identifier": "mabe:lunasta",
-      "population_control": "animal"
+      "population_control": "monster"
     },
     "conditions": [
       {
         "minecraft:spawns_underground": {},
         "minecraft:spawns_underwater": {},
         "minecraft:weight": {
-          "default": 8
+          "default": 30
         },
         "minecraft:height_filter": {
           "min": -64,

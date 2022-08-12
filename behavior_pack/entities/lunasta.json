@@ -78,7 +78,7 @@
       },
 
       "minecraft:behavior.random_swim": {
-        "priority": 2,
+        "priority": 5,
         "interval": 0,
         "xz_dist": 20
       },
@@ -118,6 +118,7 @@
         "probability": 0.02
       },
       "minecraft:behavior.hurt_by_target": {
+        "priority": 2,
         "entity_types": [
           {
             "filters": {

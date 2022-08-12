@@ -385,7 +385,7 @@
         "sequence": [
           {
             "run_command": {
-              "command": "effect @s conduit_power 1 0 true"
+              "command": "effect @s water_breathing 1 0 true"
             }
           }
         ]

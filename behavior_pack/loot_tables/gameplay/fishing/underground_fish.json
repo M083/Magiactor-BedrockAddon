@@ -15,13 +15,13 @@
         },
         {
           "type": "item",
-          "name": "minecraft:clownfish",
-          "weight": 2
+          "name": "mabe:lunasta_meat",
+          "weight": 10
         },
         {
           "type": "item",
           "name": "minecraft:pufferfish",
-          "weight": 13
+          "weight": 5
         }
       ]
     }

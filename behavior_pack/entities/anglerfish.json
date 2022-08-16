@@ -45,8 +45,8 @@
         "family": [ "anglerfish", "monster"]
       },
       "minecraft:collision_box": {
-        "width": 4.25,
-        "height": 2.25
+        "width": 1.85,
+        "height": 1.85
       },
       "minecraft:health": {
         "value": 80,

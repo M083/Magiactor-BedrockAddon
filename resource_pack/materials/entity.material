@@ -8,6 +8,7 @@
     	"default_emmisive:entity_emissive_alpha": {},
     	"default_emissive_invisible:entity_emissive_alpha": {
       		"+defines": [ "USE_ONLY_EMISSIVE" ]
-    	}
+    	},
+        "default_color_changeable:entity_change_color": {}
     }
 }

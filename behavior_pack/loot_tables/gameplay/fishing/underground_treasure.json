@@ -5,6 +5,11 @@
             "entries": [
                 {
                     "type": "item",
+                    "name": "mabe:enchanted_bookshelf",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
                     "name": "mabe:organ_craftor_1",
                     "weight": 5
                 },

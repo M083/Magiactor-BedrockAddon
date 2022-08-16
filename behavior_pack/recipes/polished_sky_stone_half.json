@@ -1,0 +1,24 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:polished_sky_stone_half"
+        },
+        "key": {
+            "S": {
+                "item": "mabe:polished_sky_stone"
+            }
+        },
+        "pattern": [
+            "SSS"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 6,
+            "item": "mabe:polished_sky_stone_half"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

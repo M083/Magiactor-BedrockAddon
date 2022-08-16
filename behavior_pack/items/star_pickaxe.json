@@ -73,6 +73,27 @@
               "event": "mabe:on_digged"
             }
           },
+          {
+            "block": "mabe:polished_sky_stone_tile",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "mabe:sky_tile_tile",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "mabe:sky_brick_tile",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
           /*
           {
             "block": {

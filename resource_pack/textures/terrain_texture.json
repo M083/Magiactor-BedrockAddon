@@ -9,6 +9,16 @@
         "textures/blocks/cloud_block"
       ]
     },
+    "enchanted_bookshelf_top": {
+      "textures": [
+        "textures/blocks/enchanted_bookshelf_top"
+      ]
+    },
+    "enchanted_bookshelf_side": {
+      "textures": [
+        "textures/blocks/enchanted_bookshelf_side"
+      ]
+    },
     "polished_sky_stone": {
       "textures": [
         "textures/blocks/polished_sky_stone"

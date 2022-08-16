@@ -1,0 +1,24 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:sky_brick_half"
+        },
+        "key": {
+            "S": {
+                "item": "mabe:sky_brick"
+            }
+        },
+        "pattern": [
+            "SSS"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 6,
+            "item": "mabe:sky_brick_half"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

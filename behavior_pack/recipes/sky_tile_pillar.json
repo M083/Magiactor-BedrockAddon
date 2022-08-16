@@ -1,0 +1,26 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:sky_tile_pillar"
+        },
+        "key": {
+            "S": {
+                "item": "mabe:sky_tile"
+            }
+        },
+        "pattern": [
+            "S",
+            "S",
+            "S"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 6,
+            "item": "mabe:sky_tile_pillar"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mabe:sky_tile_pillar",
+            "properties": {
+                "mabe:block_direction": [ 0, 1, 2, 3, 4, 5, 6]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category":"Construction",
+                "group": "itemGroup.name.slab"
+            },
+            "minecraft:loot": "loot_tables/blocks/sky_tile_pillar.json",
+            "tag:stone": {},
+            "tag:diamond_pick_diggable": {},
+            "tag:gold_pick_diggable": {},
+            "tag:iron_pick_diggable": {},
+            "tag:stone_pick_diggable": {},
+            "minecraft:destroy_time": 3,
+            "minecraft:explosion_resistance": 5.0,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:on_player_placing": {
+                "event": "mabe:placed"
+            },
+            "minecraft:geometry": "geometry.block_pillar",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "sky_tile",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:entity_collision": {
+                "origin": [ -4.0, 0.0, -4.0],
+                "size": [ 8.0, 16.0, 8.0 ]
+            },
+            "minecraft:pick_collision": {
+                "origin": [ -4.0, 0.0, -4.0],
+                "size": [ 8.0, 16.0, 8.0 ]
+            },
+            "minecraft:map_color": "#C7F3F3",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0
+        },
+        "events": {
+            "mabe:placed": {
+                "set_block_property": {
+                    "mabe:block_direction": "q.block_face"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('mabe:block_direction') == 0.0 || q.block_property('mabe:block_direction') == 1.0",
+                "components": {
+                    "minecraft:rotation": [0, 0, 0]
+                }
+            },
+            {
+                "condition": "q.block_property('mabe:block_direction') == 2.0 || q.block_property('mabe:block_direction') == 3.0",
+                "components": {
+                    "minecraft:rotation": [90, 0, 0]
+                }
+            },
+            {
+                "condition": "q.block_property('mabe:block_direction') == 4.0 || q.block_property('mabe:block_direction') == 5.0",
+                "components": {
+                    "minecraft:rotation": [90, 90, 0]
+                }
+            }
+        ]
+    }
+}

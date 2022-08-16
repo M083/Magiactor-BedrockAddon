@@ -1,0 +1,23 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mabe:enchanted_bookshelf"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
+            "minecraft:loot": "loot_tables/blocks/enchanted_bookshelf.json",
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 5.0,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#CC45A0",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 1
+        }
+    }
+}

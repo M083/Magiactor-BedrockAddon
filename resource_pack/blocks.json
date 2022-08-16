@@ -4,6 +4,17 @@
     "isotropic": true,
     "sound": "cloth"
   },
+  "mabe:enchanted_bookshelf" : {
+    "sound" : "wood",
+    "textures" : {
+      "down" : "enchanted_bookshelf_top",
+      "east" : "enchanted_bookshelf_side",
+      "north" : "enchanted_bookshelf_side",
+      "south" : "enchanted_bookshelf_side",
+      "up" : "enchanted_bookshelf_top",
+      "west" : "enchanted_bookshelf_side"
+    }
+  },
   "mabe:polished_sky_stone": {
     "textures": "polished_sky_stone",
     "sound": "nether_brick"
@@ -13,6 +24,30 @@
     "sound": "nether_brick"
   },
   "mabe:sky_tile": {
+    "textures": "sky_tile",
+    "sound": "nether_brick"
+  },
+  "mabe:polished_sky_stone_pillar": {
+    "textures": "polished_sky_stone",
+    "sound": "nether_brick"
+  },
+  "mabe:sky_brick_pillar": {
+    "textures": "sky_brick",
+    "sound": "nether_brick"
+  },
+  "mabe:sky_tile_pillar": {
+    "textures": "sky_tile",
+    "sound": "nether_brick"
+  },
+  "mabe:polished_sky_stone_half": {
+    "textures": "polished_sky_stone",
+    "sound": "nether_brick"
+  },
+  "mabe:sky_brick_half": {
+    "textures": "sky_brick",
+    "sound": "nether_brick"
+  },
+  "mabe:sky_tile_half": {
     "textures": "sky_tile",
     "sound": "nether_brick"
   },

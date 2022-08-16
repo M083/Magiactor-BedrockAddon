@@ -24,6 +24,13 @@
         },
         "use_efficiency": true,
         "destroy_speeds": [
+          {
+            "block": "mabe:enchanted_bookshelf",
+            "speed": 15,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
           /*
           {
             "block": {

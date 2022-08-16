@@ -133,12 +133,19 @@ item.mabe:griff_growth_food=グリフォニスの成長餌	#
 
 tile.mabe:cloud_block.name=雲	#
 tile.mabe:polished_sky_stone.name=青空の石	#
-tile.mabe:sky_brick.name=青空のレンガ	#
+tile.mabe:polished_sky_stone_pillar.name=青空の石の柱	#
+tile.mabe:polished_sky_stone_half.name=青空の石のハーフブロック	#
+tile.mabe:sky_brick.name=青空のレンガ	##
+tile.mabe:sky_brick_pillar.name=青空のレンガの柱	#
+tile.mabe:sky_brick_half.name=青空のレンガのハーフブロック	#
 tile.mabe:sky_tile.name=青空のタイル	#
+tile.mabe:sky_tile_pillar.name=青空のタイルの柱	#
+tile.mabe:sky_tile_half.name=青空のタイルのハーフブロック	#
 tile.mabe:magia_crystal_block.name=魔水晶	#
 tile.mabe:magia_light_crystal_block.name=魔光水晶	#
 tile.mabe:magia_white_crystal_block.name=魔白晶	#
 tile.mabe:fallen_star.name=煌星の雫	#
+tile.mabe:enchanted_bookshelf.name=エンチャントされた本棚	#
 
 enchantment.damage.arthropods=虫・異形殺し	#
 

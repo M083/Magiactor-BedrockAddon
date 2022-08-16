@@ -10,7 +10,7 @@
         "minecraft:spawns_underground": {},
         "minecraft:spawns_underwater": {},
         "minecraft:weight": {
-          "default": 10
+          "default": 30
         },
         "minecraft:height_filter": {
           "min": -64,

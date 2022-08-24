@@ -43,6 +43,13 @@
           },
           */
           {
+            "block": "minecraft:clay",
+            "speed": 15,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
             "block": "minecraft:soul_sand",
             "speed": 15,
             "on_dig": {

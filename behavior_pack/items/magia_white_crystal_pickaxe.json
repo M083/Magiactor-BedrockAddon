@@ -106,6 +106,20 @@
           },
           */
           {
+            "block": "minecraft:brick_stairs",
+            "speed": 15,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:bell",
+            "speed": 15,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
             "block": "minecraft:red_sandstone",
             "speed": 15,
             "on_dig": {

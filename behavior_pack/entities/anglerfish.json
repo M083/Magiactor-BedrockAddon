@@ -26,17 +26,11 @@
           "value": 120,
           "max": 120
         }
-      },
-      "collision_box": {
-        "minecraft:collision_box": {
-          "width": 9.25,
-          "height": 5.25
-        }
       }
     },
     "components": {
       "minecraft:scale": {
-        "value": 0.5
+        "value": 1
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 19 : 0"
@@ -188,13 +182,6 @@
             "add": {
               "component_groups": [
                 "status_hard"
-              ]
-            }
-          },
-          {
-            "add": {
-              "component_groups": [
-                "collision_box"
               ]
             }
           }

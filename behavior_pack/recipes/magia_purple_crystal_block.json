@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:magia_purple_crystal_block"
+        },
+        "key": {
+            "S": {
+                "item": "mabe:magia_purple_crystal_shard"
+            }
+        },
+        "pattern": [
+            "SS",
+            "SS"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 1,
+            "item": "mabe:magia_purple_crystal_block"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

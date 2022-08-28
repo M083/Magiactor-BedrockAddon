@@ -1,0 +1,49 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "mabe:nether_tree_feature_rule",
+			"places_feature": "mabe:nether_tree_feature"
+		},
+
+		"conditions": {
+			"placement_pass": "final_pass",
+
+			"minecraft:biome_filter": {
+				"all_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "=",
+						"value": "nether"
+					}
+				]
+			}
+		},
+
+		"distribution": {
+			"iterations": 24,
+			"x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+			},
+			"z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+			},
+			"y": {
+				"distribution": "uniform",
+				"extent": [
+                    0,
+                    127
+				]
+			}
+		}
+	}
+}

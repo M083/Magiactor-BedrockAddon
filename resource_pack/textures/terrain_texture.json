@@ -24,6 +24,11 @@
         "textures/blocks/polished_sky_stone"
       ]
     },
+    "sky_stone": {
+      "textures": [
+        "textures/blocks/sky_stone"
+      ]
+    },
     "sky_tile": {
       "textures": [
         "textures/blocks/sky_tile"
@@ -47,6 +52,16 @@
     "magia_white_crystal_block": {
       "textures": [
         "textures/blocks/magia_white_crystal_block"
+      ]
+    },
+    "magia_purple_crystal_block": {
+      "textures": [
+        "textures/blocks/magia_purple_crystal_block"
+      ]
+    },
+    "magia_red_crystal_block": {
+      "textures": [
+        "textures/blocks/magia_red_crystal_block"
       ]
     },
     "fallen_star": {

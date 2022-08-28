@@ -53,6 +53,20 @@
             }
           },
           {
+            "block": "mabe:magia_purple_crystal_block",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "mabe:sky_stone",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
             "block": "mabe:polished_sky_stone",
             "speed": 40,
             "on_dig": {
@@ -89,6 +103,62 @@
           },
           {
             "block": "mabe:sky_brick_tile",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "mabe:sky_stone_pillar",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "mabe:polished_sky_stone_pillar",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "mabe:sky_tile_pillar",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "mabe:sky_brick_pillar",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "mabe:sky_stone_half",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "mabe:polished_sky_stone_half",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "mabe:sky_tile_half",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "mabe:sky_brick_half",
             "speed": 40,
             "on_dig": {
               "event": "mabe:on_digged"

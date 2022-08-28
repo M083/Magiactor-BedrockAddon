@@ -1,0 +1,18 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "mabe:magia_purple_crystal_shard"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "mabe:magia_purple_crystal_block"
+      }
+    ],
+    "result": {
+      "item": "mabe:magia_purple_crystal_shard",
+      "count": 4
+    }
+  }
+}

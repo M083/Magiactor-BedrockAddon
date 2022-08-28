@@ -2,28 +2,23 @@
     "format_version": "1.13.0",
     "minecraft:feature_rules": {
         "description": {
-            "identifier": "mabe:magia_crystal_block_feature_rule",
-            "places_feature": "mabe:magia_crystal_block_feature"
+            "identifier": "mabe:magia_red_crystal_block_feature_rule",
+            "places_feature": "mabe:magia_red_crystal_block_feature"
         },
         "conditions": {
             "minecraft:biome_filter": {
                 "all_of": [
                     {
                         "test": "has_biome_tag",
-                        "operator": "!=",
+                        "operator": "=",
                         "value": "nether"
-                    },
-                    {
-                        "test": "has_biome_tag",
-                        "operator": "!=",
-                        "value": "the_end"
                     }
                 ]
             },
             "placement_pass": "final_pass"
         },
         "distribution": {
-            "iterations": 2,
+            "iterations": 12,
             "scatter_chance": 16.0,
             "x": {
                 "distribution": "uniform",
@@ -35,8 +30,8 @@
             "y": {
                 "distribution": "uniform",
                 "extent": [
-                    -64,
-                    0
+                    0,
+                    127
                 ]
             },
             "z": {

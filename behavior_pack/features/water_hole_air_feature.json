@@ -17,7 +17,9 @@
 			{
 				"places_block": "minecraft:obsidian",
 				"may_replace": [
-					"minecraft:lava"
+					"minecraft:lava",
+					"minecraft:flowing_lava",
+					"minecraft:flowing_water"
 				]
 			}
 		]

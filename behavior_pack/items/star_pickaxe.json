@@ -60,6 +60,13 @@
             }
           },
           {
+            "block": "mabe:magia_red_crystal_block",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
             "block": "mabe:sky_stone",
             "speed": 40,
             "on_dig": {

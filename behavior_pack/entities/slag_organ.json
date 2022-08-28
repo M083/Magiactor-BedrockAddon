@@ -19,6 +19,21 @@
           "max": 80
         }
       },
+      "nether": {
+        "minecraft:attack": {
+          "damage": 14,
+          "effect_name": "wither",
+          "effect_duration": 7
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/slag_organ_purple.json"
+        },
+        "minecraft:fire_immune": {
+        },
+        "minecraft:mark_variant": {
+          "value": 4
+        }
+      },
       "follow": {
         "minecraft:timer": {
           "looping": false,
@@ -220,6 +235,21 @@
             "add": {
               "component_groups": [
                 "status_hard"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "nether"
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "nether"
               ]
             }
           },

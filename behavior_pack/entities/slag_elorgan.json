@@ -24,6 +24,21 @@
           "max": 400
         }
       },
+      "nether": {
+        "minecraft:attack": {
+          "damage": 26,
+          "effect_name": "wither",
+          "effect_duration": 7
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/slag_elorgan_red.json"
+        },
+        "minecraft:fire_immune": {
+        },
+        "minecraft:mark_variant": {
+          "value": 5
+        }
+      },
       "follow": {
         "minecraft:timer": {
           "looping": false,
@@ -247,6 +262,21 @@
               "test": "has_biome_tag", "operator": "==", "value": "nether"
             },
             "add": { "component_groups": [ "nether" ] }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "nether"
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "nether"
+              ]
+            }
           },
           {
             "run_command" : {

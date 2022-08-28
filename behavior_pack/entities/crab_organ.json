@@ -30,6 +30,44 @@
         "minecraft:loot": {
           "table": "loot_tables/entities/crab_organ_white.json"
         }
+      },
+      "nether": {
+        "minecraft:lava_movement": {
+          "value": 0.7
+        },
+        "minecraft:navigation.walk": {
+          "can_path_over_lava": true,
+          "avoid_water": true,
+          "can_sink": false,
+          "can_walk_in_lava": true
+        },
+        "minecraft:behavior.rise_to_liquid_level": {
+          "priority": 0,
+          "liquid_y_offset": 0.15,
+          "rise_delta": 0.01,
+          "sink_delta": 0.01
+        },
+        "minecraft:behavior.move_to_liquid": {
+          "priority": 7,
+          "search_range": 16,
+          "search_height": 10,
+          "goal_radius": 0.9,
+          "material_type": "Lava",
+          "search_count": 30
+        },
+        "minecraft:attack": {
+          "damage": 16,
+          "effect_name": "wither",
+          "effect_duration": 7
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/crab_organ_purple.json"
+        },
+        "minecraft:fire_immune": {
+        },
+        "minecraft:mark_variant": {
+          "value": 4
+        }
       }
     },
     "components": {
@@ -192,6 +230,21 @@
                 "add": { "component_groups": [ "white" ] }
               }
             ]
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "nether"
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "nether"
+              ]
+            }
           }
         ]
       }

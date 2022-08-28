@@ -10,7 +10,9 @@
             "Texture.elorgan_shard",
             "Texture.wander_broom",
             "Texture.organ_wand_shard",
-            "Texture.magia_white_crystal_spear"
+            "Texture.magia_white_crystal_spear",
+            "Texture.organ_purple_shard",
+            "Texture.organ_red_shard"
       	  ]
       	},
         "geometries": {
@@ -20,7 +22,9 @@
             "Geometry.organ_shard", 
             "Geometry.wander_broom", 
             "Geometry.organ_shard",
-            "Geometry.spear"
+            "Geometry.spear",
+            "Geometry.organ_shard" ,
+            "Geometry.organ_shard" 
           ]
         },
         "materials": {
@@ -30,7 +34,9 @@
             "Material.emissive", 
             "Material.default", 
             "Material.emissive",
-            "Material.default"
+            "Material.default",
+            "Material.emissive",
+            "Material.emissive"
           ]
         }
       },

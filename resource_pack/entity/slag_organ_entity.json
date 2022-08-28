@@ -12,7 +12,9 @@
         "default": "textures/entity/organ",
         "green": "textures/entity/organ_green",
         "white": "textures/entity/organ_white",
-        "yellow": "textures/entity/organ_yellow"
+        "yellow": "textures/entity/organ_yellow",
+        "purple": "textures/entity/organ_purple",
+        "red": "textures/entity/organ_red"
       },
       "geometry": {
         "default": "geometry.slag_organ"

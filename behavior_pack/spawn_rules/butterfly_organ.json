@@ -26,6 +26,21 @@
           "min_size":2,
           "max_size":3
         }
+      },
+      {
+        "minecraft:spawns_underground": {},
+        "minecraft:weight": {
+          "default": 15
+        },
+        "minecraft:herd": {
+          "min_size":2,
+          "max_size":3
+        },
+        "minecraft:biome_filter": { 
+          "all_of": [
+            {"test": "has_biome_tag", "operator":"==", "value": "nether"}
+          ]
+        }
       }
     ]
   }

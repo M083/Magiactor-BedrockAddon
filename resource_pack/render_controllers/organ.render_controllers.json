@@ -11,7 +11,9 @@
             "Texture.default",
             "Texture.white",
             "Texture.green",
-            "Texture.yellow"
+            "Texture.yellow",
+            "Texture.purple",
+            "Texture.red"
           ]
         }
       },

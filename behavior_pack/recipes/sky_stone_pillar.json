@@ -2,7 +2,7 @@
     "format_version": "1.16",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "mabe:polished_sky_stone"
+            "identifier": "mabe:sky_stone_pillar"
         },
         "key": {
             "S": {
@@ -10,13 +10,14 @@
             }
         },
         "pattern": [
-            "SS",
-            "SS"
+            "S",
+            "S",
+            "S"
         ],
         "priority": 1,
         "result": {
-            "count": 4,
-            "item": "mabe:polished_sky_stone"
+            "count": 6,
+            "item": "mabe:sky_stone_pillar"
         },
         "tags": [
             "crafting_table"

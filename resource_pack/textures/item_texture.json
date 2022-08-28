@@ -170,6 +170,12 @@
     "magia_white_crystal_shard": {
       "textures": "textures/items/magia_white_crystal_shard"
     },
+    "magia_purple_crystal_shard": {
+      "textures": "textures/items/magia_purple_crystal_shard"
+    },
+    "magia_red_crystal_shard": {
+      "textures": "textures/items/magia_red_crystal_shard"
+    },
     "fallen_star_shard": {
       "textures": "textures/items/fallen_star_shard"
     },

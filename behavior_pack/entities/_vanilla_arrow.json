@@ -656,6 +656,21 @@
             ]
           },
           {
+            "filters": {
+              "all_of": [
+                {"test": "is_family", "subject": "other", "value": "elorgan"},
+                {"test": "is_mark_variant", "subject": "other", "value": 5}
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups": [ "mabe:red_elorgan_shard_arrow" ]
+                }
+              }
+            ]
+          },
+          {
             "filters": {"test": "is_family", "subject": "other", "value": "organ_wand_shard"},
             "sequence": [
               {

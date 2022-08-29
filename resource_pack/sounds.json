@@ -19,6 +19,24 @@
                 "pitch" : [ 0.3, 0.45 ],
                 "volume" : 3
             },
+            "mabe:butterfly_elorgan" : {
+                "events" : {
+                    "ambient" : {
+                        "sound": "mob.allay.hurt",
+                        "volume": 5,
+                        "pitch": [0.15, 0.25]
+                    },
+                    "shoot":{
+                        "sound": "firework.launch",
+                        "volume": 1,
+                        "pitch": [0.15, 0.25]
+                    },
+                    "death" : "mob.allay.death",
+                    "hurt" : "mob.allay.hurt"
+                },
+                "pitch" : [ 0.3, 0.45 ],
+                "volume" : 3
+            },
             "mabe:moss_organ" : {
                 "events" : {
                     "ambient" : {

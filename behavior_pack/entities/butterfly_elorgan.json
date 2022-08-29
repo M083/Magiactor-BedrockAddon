@@ -2,36 +2,41 @@
   "format_version": "1.16.100",
   "minecraft:entity": {
     "description": {
-      "identifier": "mabe:butterfly_organ",
+      "identifier": "mabe:butterfly_elorgan",
       "is_spawnable": true,
       "is_summonable": true
     },
     "component_groups": {
+      "boss_bar": {
+        "minecraft:boss": {
+          "name": "entity.mabe:butterfly_elorgan.name"
+        }
+      },
       "status_easy": {
         "minecraft:health": {
-          "value": 20,
-          "max": 20
+          "value": 100,
+          "max": 100
         }
       },
       "status_hard": {
         "minecraft:health": {
-          "value": 40,
-          "max": 40
+          "value": 200,
+          "max": 200
         }
       },
       "nether": {
         "minecraft:attack": {
-          "damage": 12,
+          "damage": 18,
           "effect_name": "wither",
           "effect_duration": 7
         },
         "minecraft:loot": {
-          "table": "loot_tables/entities/butterfly_organ_purple.json"
+          "table": "loot_tables/entities/butterfly_elorgan_red.json"
         },
         "minecraft:fire_immune": {
         },
         "minecraft:mark_variant": {
-          "value": 4
+          "value": 5
         }
       },
       "follow": {
@@ -112,7 +117,7 @@
           "entity_types":{
             "filters": {
               "any_of": [
-                { "test": "is_family", "subject": "other", "operator": "!=", "value": "organ" }
+                { "test": "is_family", "subject": "other", "operator": "!=", "value": "elorgan" }
               ]
             },
             "max_dist": 6,
@@ -125,6 +130,10 @@
     "components": {
       "minecraft:mark_variant": {
         "value": 3
+      },
+      "minecraft:persistent": {},
+      "minecraft:scale": {
+        "value": 1.8
       },
       "minecraft:damage_sensor": {
         "triggers": [
@@ -142,11 +151,16 @@
               }
             },
             "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "event": "add_boss"
+            }
           }
         ]
       },
       "minecraft:experience_reward": {
-        "on_death": "query.last_hit_by_player ? 25: 0"
+        "on_death": "query.last_hit_by_player ? 125: 0"
       },
       "minecraft:variant": {
         "value": 0
@@ -158,14 +172,14 @@
       "minecraft:nameable": {
       },
       "minecraft:type_family": {
-        "family": [ "butterfly_organ", "monster", "organ", "arthropod" ]
+        "family": [ "butterfly_elorgan", "monster", "elorgan", "arthropod" ]
       },
       "minecraft:loot": {
-        "table": "loot_tables/entities/butterfly_organ.json"
+        "table": "loot_tables/entities/butterfly_elorgan.json"
       },
       "minecraft:health": {
-        "value": 30,
-        "max": 30
+        "value": 150,
+        "max": 150
       },
       "minecraft:breathable": {
         "totalSupply": 15,
@@ -174,7 +188,7 @@
         "breathes_water": true
       },
       "minecraft:attack": {
-        "damage": 9
+        "damage": 14
       },
       "minecraft:collision_box": {
         "width": 1.4,
@@ -233,6 +247,9 @@
     "events": {
       "death_event": {
       },
+      "add_boss": {
+        "add": { "component_groups": [ "boss_bar" ] }
+      },
       "minecraft:entity_spawned": {
         "sequence": [
           {
@@ -267,6 +284,14 @@
             }
           },
           {
+            "run_command" : {
+              "command": [
+                "effect @e[type=player, r=64] blindness 2 1 true",
+                "execute @e[type=player, r=64] ~ ~ ~ playsound mob.allay.death @s ~ ~ ~ 5 0.25 5"
+              ]
+            }
+          },
+          {
             "randomize": [
               {
                 "weight": 1,
@@ -282,11 +307,25 @@
       },
       "to_avoid": {
         "remove": { "component_groups": [ "follow" ] },
-        "add": { "component_groups": [ "avoid" ] }
+        "add": { "component_groups": [ "avoid" ] },
+        "run_command": {
+          "command": [
+            "summon mabe:elorgan_shard",
+            "summon mabe:elorgan_shard",
+            "summon mabe:elorgan_shard"
+          ]
+        }
       },
       "to_follow": {
         "remove": { "component_groups": [ "avoid" ] },
-        "add": { "component_groups": [ "follow" ] }
+        "add": { "component_groups": [ "follow" ] },
+        "run_command": {
+          "command": [
+            "summon mabe:elorgan_shard",
+            "summon mabe:elorgan_shard",
+            "summon mabe:elorgan_shard"
+          ]
+        }
       }
     }
   }

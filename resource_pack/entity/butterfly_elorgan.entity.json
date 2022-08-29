@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:butterfly_elorgan",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/organ",
+        "green": "textures/entity/organ_green",
+        "white": "textures/entity/organ_white",
+        "yellow": "textures/entity/organ_yellow",
+        "purple": "textures/entity/organ_purple",
+        "red": "textures/entity/organ_red"
+      },
+      "geometry": {
+        "default": "geometry.butterfly_elorgan"
+      },
+      "animations": {
+        "swim": "animation.butterfly_organ.swim",
+        "stay": "animation.butterfly_organ.stay"
+      },
+      "animation_controllers": [
+        { "stay": "controller.animation.butterfly_organ.stay" },
+        { "swim": "controller.animation.butterfly_organ.swim" }
+      ],
+      "render_controllers": [ "controller.render.organ" ],
+      "spawn_egg": {
+        "base_color": "#181632",
+        "overlay_color": "#7CD09E"
+      }
+    }
+  }
+}

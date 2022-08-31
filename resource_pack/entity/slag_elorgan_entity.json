@@ -24,7 +24,7 @@
         "roll": "animation.slag_organ.roll"
       },
       "animation_controllers": [
-        { "move": "controller.animation.slag_organ" }
+        { "move": "controller.animation.slag_organ.move" }
       ],
       "render_controllers": [ "controller.render.organ" ],
       "spawn_egg": {

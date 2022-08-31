@@ -19,6 +19,113 @@
           "max": 80
         }
       },
+      "stun_enable": {
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "on_damage": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": "organ"
+                    }
+                  ]
+                }
+              },
+              "deals_damage": false
+            },
+            {
+              "on_damage": {
+                "filters": {
+                  "any_of": [
+                    {"test": "has_damage", "value": "projectile"},
+                    {"test": "has_damage", "value": "entity_explosion"},
+                    {"test": "has_damage", "value": "block_explosion"}
+                  ]
+                },
+                "event": "stun"
+              },
+              "on_damage_sound_event": "break"
+            }
+          ]
+        }
+      },
+      "stun_disable": {
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "on_damage": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": "organ"
+                    }
+                  ]
+                }
+              },
+              "deals_damage": false
+            }
+          ]
+        }
+      },
+      "stun": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": [12, 12],
+          "time_down_event": {
+            "event": "wakeup"
+          }
+        },
+        "minecraft:physics": {
+          "has_gravity": true,
+          "has_collision": true
+        }
+      },
+      "wake": {
+        "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:navigation.hover": {
+          "can_path_over_water": true,
+          "can_breach": true,
+          "can_sink": true,
+          "can_path_from_air": true,
+          "avoid_water": true,
+          "avoid_damage_blocks": false,
+          "avoid_sun": true
+        },
+        "minecraft:behavior.random_hover": {
+          "priority": 11,
+          "xz_dist": 8,
+          "y_dist": 12,
+          "y_offset": -1,
+          "interval": 1,
+          "hover_height": [6, 12]
+        },
+        "minecraft:movement.hover": {},
+        "minecraft:flying_speed": {
+          "value": 0.3
+        },
+        "minecraft:underwater_movement": {
+          "value": 0.3
+        },
+        "minecraft:movement": {
+          "value": 1.0
+        },
+        "minecraft:physics": {
+          "has_gravity": false,
+          "has_collision": false
+        }
+      },
       "nether": {
         "minecraft:attack": {
           "damage": 14,
@@ -110,30 +217,8 @@
       "minecraft:mark_variant": {
         "value": 0
       },
-      "minecraft:damage_sensor": {
-        "triggers": [
-          {
-            "on_damage": {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "operator": "==",
-                    "value": "organ"
-                  }
-                ]
-              }
-            },
-            "deals_damage": false
-          }
-        ]
-      },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 25: 0"
-      },
-      "minecraft:variant": {
-        "value": 0
       },
       "minecraft:behavior.flee_sun": {
         "priority": 2,
@@ -164,33 +249,6 @@
         "width": 1.4,
         "height": 0.8
       },
-      "minecraft:movement": {
-        "value": 1.0
-      },
-      "minecraft:navigation.hover": {
-        "can_path_over_water": true,
-        "can_breach": true,
-        "can_sink": true,
-        "can_path_from_air": true,
-        "avoid_water": true,
-        "avoid_damage_blocks": false,
-        "avoid_sun": true
-      },
-      "minecraft:behavior.random_hover": {
-        "priority": 11,
-        "xz_dist": 8,
-        "y_dist": 12,
-        "y_offset": -1,
-        "interval": 1,
-        "hover_height": [6, 12]
-      },
-      "minecraft:movement.hover": {},
-      "minecraft:flying_speed": {
-        "value": 0.3
-      },
-      "minecraft:underwater_movement": {
-        "value": 0.3
-      },
       "minecraft:jump.static": {
       },
       "minecraft:can_climb": {
@@ -208,10 +266,6 @@
         "look_distance": 6.0,
         "probability": 0.02,
         "filters": { "test" :  "is_family", "subject" : "other", "value" :  "mob"}
-      },
-      "minecraft:physics": {
-        "has_gravity": false,
-        "has_collision": false
       },
       "minecraft:on_death": {
         "event": "death_event"
@@ -264,6 +318,14 @@
                 "add": { "component_groups": [ "follow" ] }
               }
             ]
+          },
+          {
+            "add": {
+              "component_groups": [
+                "stun_enable",
+                "wake"
+              ]
+            }
           }
         ]
       },
@@ -274,6 +336,14 @@
       "to_follow": {
         "remove": { "component_groups": [ "avoid" ] },
         "add": { "component_groups": [ "follow" ] }
+      },
+      "stun": {
+        "remove": { "component_groups": [ "avoid", "follow", "stun_enable", "wake" ] },
+        "add": { "component_groups": [ "stun", "stun_disable" ] }
+      },
+      "wakeup": {
+        "remove": { "component_groups": [ "stun" ] },
+        "add": { "component_groups": [ "avoid","wake"] }
       }
     }
   }

@@ -21,10 +21,12 @@
       },
       "animations": {
         "move": "animation.slag_organ.move",
-        "roll": "animation.slag_organ.roll"
+        "roll": "animation.slag_organ.roll",
+        "stun": "animation.slag_organ.stun"
       },
       "animation_controllers": [
-        { "move": "controller.animation.slag_organ" }
+        { "move": "controller.animation.slag_organ.move" },
+        { "stun": "controller.animation.slag_organ.stun" }
       ],
       "render_controllers": [ "controller.render.organ" ],
       "spawn_egg": {

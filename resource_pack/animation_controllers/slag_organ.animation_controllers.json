@@ -1,7 +1,26 @@
 {
 	"format_version" : "1.8.0",
 	"animation_controllers" : {
-		"controller.animation.slag_organ" : {
+	    "controller.animation.slag_organ.stun": {
+	      "states": {
+	        "default": {
+	          "transitions": [
+	            {
+	              "stun": "q.variant == 1"
+	            }
+	          ]
+	        },
+	        "stun": {
+	          "animations": [ { "stun": [] } ],
+	          "transitions": [
+	            {
+	              "default": "q.variant != 1"
+	            }
+	          ]
+	        }
+	      }
+	    },
+		"controller.animation.slag_organ.move" : {
 			"states" : {
 				"default": {
 					"parameters": [ "query.modified_move_speed + 0.1" ],

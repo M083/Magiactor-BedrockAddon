@@ -6,6 +6,20 @@
             "places_feature": "mabe:organ_geode_feature"
         },
         "conditions": {
+            "minecraft:biome_filter": {
+                "all_of": [
+                    {
+                        "test": "has_biome_tag",
+                        "operator": "!=",
+                        "value": "nether"
+                    },
+                    {
+                        "test": "has_biome_tag",
+                        "operator": "!=",
+                        "value": "the_end"
+                    }
+                ]
+            },
             "placement_pass": "surface_pass"
         },
         "distribution": {

@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:magia_purple_crystal_boots"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:magia_purple_crystal_shard"
+            }
+        },
+        "pattern": [
+            "c c",
+            "c c"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:magia_purple_crystal_boots"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

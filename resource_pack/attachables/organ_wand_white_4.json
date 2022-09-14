@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "mabe:organ_wand_white_4",
+      "materials": {
+        "default": "default_emmisive",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/organ_white",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.organ_wand"
+      },
+      "animations": {
+        "roll": "animation.organ_wand.roll"
+      },
+      "scripts": {
+        "animate": ["roll"]
+      },
+      "render_controllers": ["controller.render.organ_wand"]
+    }
+  }
+}

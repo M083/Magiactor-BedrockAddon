@@ -214,6 +214,41 @@
         }
       },
 
+      "mabe:organ_wand_blue_arrow": {
+        "minecraft:variant": {
+          "value": 1
+        },
+
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": true
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw","power": 3,
+          
+          "gravity": 0.015,
+          "uncertainty_base": 12,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": true,
+          "offset": [ 0, -0.1, 0 ],
+          "potion_effect": 20
+        }
+      },
+
       "mabe:yellow_organ_shard_arrow": {
         "minecraft:variant": {
           "value": 4
@@ -596,6 +631,28 @@
               {
                 "add": {
                   "component_groups" : [ "mabe:magia_white_crystal_spear_arrow" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                {
+                  "any_of": [
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:organ_wand_blue_1" },
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:organ_wand_blue_2" },
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:organ_wand_blue_3" },
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:organ_wand_blue_4" }
+                  ]
+                }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "mabe:organ_wand_blue_arrow" ]
                 }
               }
             ]

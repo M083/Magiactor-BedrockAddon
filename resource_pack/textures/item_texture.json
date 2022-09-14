@@ -38,6 +38,27 @@
     "magia_white_crystal_boots": {
       "textures": "textures/items/magia_white_crystal_boots"
     },
+    "magia_purple_crystal_helmet": {
+      "textures": "textures/items/magia_purple_crystal_helmet"
+    },
+    "magia_purple_crystal_chestplate": {
+      "textures": "textures/items/magia_purple_crystal_chestplate"
+    },
+    "magia_purple_crystal_leggings": {
+      "textures": "textures/items/magia_purple_crystal_leggings"
+    },
+    "magia_purple_crystal_boots": {
+      "textures": "textures/items/magia_purple_crystal_boots"
+    },
+    "magia_purple_crystal_pickaxe": {
+      "textures": "textures/items/magia_purple_crystal_pickaxe"
+    },
+    "magia_purple_crystal_axe": {
+      "textures": "textures/items/magia_purple_crystal_axe"
+    },
+    "magia_purple_crystal_shovel": {
+      "textures": "textures/items/magia_purple_crystal_shovel"
+    },
     "organ_craftor_1": {
       "textures": "textures/items/organ_craftor_1"
     },
@@ -77,6 +98,12 @@
     "organ_wand": {
       "textures": "textures/items/organ_wand"
     },
+    "organ_wand_blue": {
+      "textures": "textures/items/organ_wand_blue"
+    },
+    "organ_wand_white": {
+      "textures": "textures/items/organ_wand_white"
+    },
     "organ_sword": {
       "textures": "textures/items/organ_sword"
     },
@@ -95,11 +122,17 @@
     "light_helmet": {
       "textures": "textures/items/light_helmet"
     },
+    "gas_mask": {
+      "textures": "textures/items/gas_mask"
+    },
     "speed_boots": {
       "textures": "textures/items/speed_boots"
     },
     "wing_boots": {
       "textures": "textures/items/wing_boots"
+    },
+    "fire_resist_boots": {
+      "textures": "textures/items/fire_resist_boots"
     },
     "teleport_circle_black_item": {
       "textures": "textures/items/teleport_circle_black_item"

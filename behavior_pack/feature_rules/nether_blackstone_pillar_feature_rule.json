@@ -1,9 +1,10 @@
 {
 	"format_version": "1.13.0",
+
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "mabe:nether_tree_feature_rule",
-			"places_feature": "mabe:nether_tree_feature"
+			"identifier": "mabe:nether_blackstone_pillar_feature_rule",
+			"places_feature": "mabe:nether_blackstone_pillar_feature"
 		},
 
 		"conditions": {
@@ -21,7 +22,8 @@
 		},
 
 		"distribution": {
-			"iterations": 24,
+			"iterations": 1,
+            "scatter_chance": 10.0,
 			"x": {
                 "distribution": "uniform",
                 "extent": [

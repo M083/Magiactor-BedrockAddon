@@ -1,0 +1,20 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "mabe:cloud_lighthouse_feature"
+		},
+		"structure_name": "mystructure:cloud_lighthouse",
+		"facing_direction": "south",
+		"adjustment_radius": 16,
+		"constraints": {
+			"grounded": {},
+			"block_intersection": {
+				"block_whitelist": [
+					"minecraft:air",
+					"mabe:cloud_block"
+				]
+			}
+		}
+	}
+}

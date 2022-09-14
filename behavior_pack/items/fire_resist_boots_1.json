@@ -1,0 +1,72 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:fire_resist_boots_1",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": {
+        "texture": "fire_resist_boots"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.boots"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:durability": {
+        "damage_chance": {
+          "min": 50,
+          "max": 100
+        },
+        "max_durability": 300
+      },
+      "minecraft:knockback_resistance": {
+        "protection": 0.0
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.feet"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["mabe:fire_resist_boots_1"],
+            "repair_amount": 300
+          },
+          {
+            "items": ["mabe:fire_resist_boots_2"],
+            "repair_amount": 300
+          },
+          {
+            "items": ["mabe:fire_resist_boots_3"],
+            "repair_amount": 300
+          },
+          {
+            "items": ["mabe:fire_resist_boots_4"],
+            "repair_amount": 300
+          }
+        ]
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "wear_sound"
+        }
+      },
+      "minecraft:enchantable": {
+        "value": 10,
+        "slot": "armor_feet"
+      },
+      "minecraft:armor": {
+        "protection": 0,
+        "texture_type": "diamond"
+      }
+    },
+    "events": {
+      "wear_sound": {
+        "run_command": {
+          "command": "playsound armor.equip_iron"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:magia_purple_crystal_shovel",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.shovel"
+      },
+      "minecraft:icon": {
+        "texture": "magia_purple_crystal_shovel"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 800
+      },
+      "minecraft:digger": {
+        "on_dig": {
+          "event": "mabe:on_digged",
+          "target": "self"
+        },
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": "mabe:cloud_block",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          /*
+          {
+            "block": {
+              "tags": "q.any_tag('dirt', 'sand', 'gravel', 'grass', 'snow')"
+            },
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          */
+          {
+            "block": "minecraft:clay",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:soul_sand",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:soul_soil",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:dirt_with_roots",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged",
+              "target": "self"
+            }
+          },
+          {
+            "block": "minecraft:mycelium",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged",
+              "target": "self"
+            }
+          },
+          {
+            "block": "minecraft:podzol",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged",
+              "target": "self"
+            }
+          },
+          {
+            "block": "minecraft:dirt",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged",
+              "target": "self"
+            }
+          },
+          {
+            "block": "minecraft:farmland",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged",
+              "target": "self"
+            }
+          },
+          {
+            "block": "minecraft:sand",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged",
+              "target": "self"
+            }
+          },
+          {
+            "block": "minecraft:gravel",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged",
+              "target": "self"
+            }
+          },
+          {
+            "block": "minecraft:grass",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged",
+              "target": "self"
+            }
+          },
+          {
+            "block": "minecraft:grass_path",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged",
+              "target": "self"
+            }
+          },
+          {
+            "block": "minecraft:snow",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged",
+              "target": "self"
+            }
+          },
+          {
+            "block": "minecraft:mud",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged",
+              "target": "self"
+            }
+          },
+          {
+            "block": "minecraft:packed_mud",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged",
+              "target": "self"
+            }
+          }
+        ]
+      },
+      "minecraft:enchantable": {
+        "value": 30,
+        "slot": "shovel"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "mabe:magia_purple_crystal_shard"
+            ],
+            "repair_amount": 360
+          },
+          {
+            "items": [
+              "mabe:magia_purple_crystal_shovel"
+            ],
+            "repair_amount": 800
+          }
+        ]
+      },
+      "minecraft:damage": 3,
+      "minecraft:weapon": {
+        "on_hurt_entity": {
+          "event": "mabe:attacked",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "mabe:attacked": {
+        "sequence": [
+          {
+            "damage": {
+              "type": "void",
+              "amount": 1
+            }
+          }
+        ]
+      },
+      "mabe:on_digged": {
+        "damage": {
+          "type": "void",
+          "amount": 1
+        }
+      }
+    }
+  }
+}

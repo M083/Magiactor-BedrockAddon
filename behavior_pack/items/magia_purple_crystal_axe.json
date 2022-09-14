@@ -1,0 +1,941 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:magia_purple_crystal_axe",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.axe"
+      },
+      "minecraft:icon": {
+        "texture": "magia_purple_crystal_axe"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 800
+      },
+      "minecraft:digger": {
+        "on_dig": {
+          "event": "mabe:on_digged",
+          "target": "self"
+        },
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": "mabe:enchanted_bookshelf",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          /*
+          {
+            "block": {
+              "tags": "q.any_tag('wood', 'pumpkin', 'plant')"
+            },
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          */
+          {
+            "block": "minecraft:bamboo",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:chest",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:bookshelf",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:melon_block",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:warped_stem",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:crimson_stem",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:warped_stem",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:crimson_stem",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:crafting_table",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:crimson_planks",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:warped_planks",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:warped_stairs",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:warped_trapdoor",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:crimson_stairs",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:crimson_trapdoor",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:crimson_door",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:crimson_double_slab",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:warped_door",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:warped_double_slab",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:crafting_table",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:composter",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cartography_table",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:lectern",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_crimson_stem",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_warped_stem",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:trapdoor",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:spruce_trapdoor",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:birch_trapdoor",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:jungle_trapdoor",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:acacia_trapdoor",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:dark_oak_trapdoor",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:wooden_door",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:spruce_door",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:birch_door",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:jungle_door",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:acacia_door",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:dark_oak_door",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:fence",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:fence_gate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:spruce_fence_gate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:birch_fence_gate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:jungle_fence_gate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:acacia_fence_gate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:dark_oak_fence_gate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:log2",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:wood",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:planks",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:wooden_slab",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:double_wooden_slab",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:oak_stairs",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:spruce_stairs",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:birch_stairs",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:jungle_stairs",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:acacia_stairs",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:dark_oak_stairs",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:wall_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:spruce_wall_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:birch_wall_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:jungle_wall_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:acacia_wall_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:darkoak_wall_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:wooden_pressure_plate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:spruce_pressure_plate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:birch_pressure_plate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:jungle_pressure_plate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:acacia_pressure_plate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:dark_oak_pressure_plate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:smithing_table",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:fletching_table",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:barrel",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:beehive",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:bee_nest",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:ladder",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:pumpkin",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:carved_pumpkin",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:lit_pumpkin",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_door",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_double_slab",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_fence",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_fence_gate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_planks",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_pressure_plate",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_slab",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_stairs",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_wall_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_wood",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:wooden_button",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:spruce_button",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:birch_button",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:jungle_button",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:acacia_button",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:dark_oak_button",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_button",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_oak_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_spruce_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_birch_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_jungle_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_acacia_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_dark_oak_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_mangrove_wood",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_oak_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_spruce_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_birch_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_jungle_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_acacia_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_dark_oak_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:stripped_mangrove_log",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:standing_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:spruce_standing_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:birch_standing_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:jungle_standing_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:acacia_standing_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:darkoak_standing_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_standing_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:mangrove_trapdoor",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:warped_standing_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:warped_wall_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:crimson_standing_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:crimson_wall_sign",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          }
+        ]
+      },
+      "minecraft:enchantable": {
+        "value": 30,
+        "slot": "axe"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "mabe:magia_purple_crystal_shard"
+            ],
+            "repair_amount": 360
+          },
+          {
+            "items": [
+              "mabe:magia_purple_crystal_axe"
+            ],
+            "repair_amount": 800
+          }
+        ]
+      },
+      "minecraft:damage": 4,
+      "minecraft:weapon": {
+        "on_hurt_entity": {
+          "event": "mabe:attacked",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "mabe:attacked": {
+        "sequence": [
+          {
+            "damage": {
+              "type": "void",
+              "amount": 1
+            }
+          }
+        ]
+      },
+      "mabe:on_digged": {
+        "damage": {
+          "type": "void",
+          "amount": 1
+        }
+      }
+    }
+  }
+}

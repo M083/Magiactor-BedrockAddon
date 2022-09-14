@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:torch_by_organ_oil"
+        },
+        "key": {
+            "l": {
+                "item": "minecraft:stick"
+            },
+            "o": {
+                "item": "mabe:organ_oil"
+            }
+        },
+        "pattern": [
+            "o",
+            "l"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 8,
+                "item": "minecraft:torch"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

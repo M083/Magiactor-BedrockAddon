@@ -69,6 +69,11 @@
         "textures/blocks/fallen_star"
       ]
     },
+    "luciberry": {
+      "textures": [
+        "textures/blocks/luciberry"
+      ]
+    },
     "none": {
       "textures": [
         "textures/blocks/none"

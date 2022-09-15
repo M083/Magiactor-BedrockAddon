@@ -1,4 +1,9 @@
 {
+  "mabe:luciberry_plant": {
+    "textures": "luciberry",
+    "isotropic": true,
+    "sound": "vines"
+  },
   "mabe:cloud_block": {
     "textures": "cloud_block",
     "isotropic": true,

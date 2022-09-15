@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "mabe:luciberry_plant_feature"
+    },
+    "places_block": {
+      "name": "mabe:luciberry_plant"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "min_sides_must_attach": 2,
+      "auto_rotate": false,
+      "top": [
+        "minecraft:air"
+      ],
+      "bottom": [
+        "minecraft:deepslate"
+      ]
+    },
+    "may_replace": [
+      "minecraft:air"
+    ]
+  }
+}

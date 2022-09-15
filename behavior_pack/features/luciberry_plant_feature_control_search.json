@@ -1,0 +1,14 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:search_feature": {
+		"description": {
+			"identifier": "mabe:luciberry_plant_feature_control_search"
+		},
+		"places_feature": "mabe:luciberry_plant_feature_control_scatter",
+		"search_volume": {
+			"min": [ 0, -30, 0],
+			"max": [ 0, 10, 0]
+		},
+		"search_axis": "-y"
+	}
+}

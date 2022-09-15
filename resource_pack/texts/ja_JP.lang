@@ -154,6 +154,7 @@ item.mabe:magia_quill_pen=輝く羽ペン	#
 item.mabe:lunasta_meat=月光エビのむき身	#
 item.mabe:abyss_salmon_raw=生深海鮭	#
 item.mabe:abyss_salmon_cooked=調理した深海鮭	#
+item.mabe:luciberry=ルシベリー	#
 
 item.mabe:griff_breed_food=グリフォニスの繫殖餌	#
 item.mabe:griff_feed_food=グリフォニスの懐き餌	#
@@ -179,6 +180,7 @@ tile.mabe:magia_purple_crystal_block.name=魔紫晶	#
 tile.mabe:magia_red_crystal_block.name=魔紅晶	#
 tile.mabe:fallen_star.name=煌星の雫	#
 tile.mabe:enchanted_bookshelf.name=エンチャントされた本棚	#
+tile.mabe:luciberry_plant.name=ルシベリーの木	#
 
 enchantment.damage.arthropods=虫・異形殺し	#
 

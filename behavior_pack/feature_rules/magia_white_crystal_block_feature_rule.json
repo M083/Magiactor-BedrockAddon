@@ -5,7 +5,8 @@
             "identifier": "mabe:magia_white_crystal_block_feature_rule",
             "places_feature": "mabe:magia_white_crystal_block_feature"
         },
-        "conditions": {            "minecraft:biome_filter": {
+        "conditions": {
+            "minecraft:biome_filter": {
                 "all_of": [
                     {
                         "test": "has_biome_tag",

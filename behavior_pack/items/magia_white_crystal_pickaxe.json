@@ -162,6 +162,13 @@
           },
           */
           {
+            "block": "minecraft:smooth_quartz_stairs",
+            "speed": 15,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
             "block": "minecraft:brick_stairs",
             "speed": 15,
             "on_dig": {

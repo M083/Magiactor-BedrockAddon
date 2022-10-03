@@ -95,27 +95,6 @@
             }
           },
           {
-            "block": "mabe:polished_sky_stone_tile",
-            "speed": 40,
-            "on_dig": {
-              "event": "mabe:on_digged"
-            }
-          },
-          {
-            "block": "mabe:sky_tile_tile",
-            "speed": 40,
-            "on_dig": {
-              "event": "mabe:on_digged"
-            }
-          },
-          {
-            "block": "mabe:sky_brick_tile",
-            "speed": 40,
-            "on_dig": {
-              "event": "mabe:on_digged"
-            }
-          },
-          {
             "block": "mabe:sky_stone_pillar",
             "speed": 40,
             "on_dig": {
@@ -182,6 +161,13 @@
             }
           },
           */
+          {
+            "block": "minecraft:smooth_quartz_stairs",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
           {
             "block": "minecraft:brick_stairs",
             "speed": 40,

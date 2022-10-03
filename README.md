@@ -37,7 +37,7 @@ v1.19.11以降のMCBEがインストールされた端末。
 Windows 10、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
 ## ダウンロード
-### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver1.04.000/Magiactor_1_04_000.mcaddon)
+### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver1.04.000/Magiactor_1_04_010.mcaddon)
 
 ### [過去のバージョンをダウンロード](https://github.com/M083/Magiactor-BedrockAddon/releases)
 

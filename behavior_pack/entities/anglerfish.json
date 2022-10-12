@@ -11,7 +11,7 @@
     "component_groups": {
       "status_easy": {
         "minecraft:attack": {
-          "damage": 18
+          "damage": 12
         },
         "minecraft:health": {
           "value": 60,
@@ -20,7 +20,7 @@
       },
       "status_hard": {
         "minecraft:attack": {
-          "damage": 31
+          "damage": 18
         },
         "minecraft:health": {
           "value": 120,
@@ -58,7 +58,7 @@
       },
 
       "minecraft:attack": {
-        "damage": 25
+        "damage": 15
       },
       "minecraft:movement.sway": {
         "sway_amplitude": 0.0

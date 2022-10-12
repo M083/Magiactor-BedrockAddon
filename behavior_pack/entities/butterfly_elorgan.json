@@ -26,7 +26,7 @@
       },
       "nether": {
         "minecraft:attack": {
-          "damage": 18,
+          "damage": 8,
           "effect_name": "wither",
           "effect_duration": 7
         },
@@ -188,7 +188,7 @@
         "breathes_water": true
       },
       "minecraft:attack": {
-        "damage": 14
+        "damage": 8
       },
       "minecraft:collision_box": {
         "width": 1.4,

@@ -9,6 +9,16 @@
     },
 
     "component_groups": {
+      "mabe:fire_resist_boots":{
+        "minecraft:lava_movement": {
+          "value": 0.125
+        }
+      },
+      "mabe:remove_fire_resist_boots":{
+        "minecraft:lava_movement": {
+          "value": 0.015
+        }
+      },
       "minecraft:add_bad_omen": {
         "minecraft:spell_effects": {
           "add_effects": [
@@ -396,6 +406,37 @@
               ]
             },
             "event": "fire_resist"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "feet",
+                  "operator": "!=",
+                  "value": "mabe:fire_resist_boots_1"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "feet",
+                  "operator": "!=",
+                  "value": "mabe:fire_resist_boots_2"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "feet",
+                  "operator": "!=",
+                  "value": "mabe:fire_resist_boots_3"
+                },
+                {
+                  "test": "has_equipment",
+                  "domain": "feet",
+                  "operator": "!=",
+                  "value": "mabe:fire_resist_boots_4"
+                }
+              ]
+            },
+            "event": "remove_fire_resist"
           }
         ]
       }
@@ -502,6 +543,24 @@
           {
             "run_command": {
               "command": "effect @s fire_resistance 1 1 true"
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "mabe:fire_resist_boots"
+              ]
+            }
+          }
+        ]
+      },
+      "remove_fire_resist": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "mabe:remove_fire_resist_boots"
+              ]
             }
           }
         ]

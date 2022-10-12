@@ -8,6 +8,8 @@ entity.mabe:butterfly_elorgan.name=蝶の畏形	#
 entity.mabe:butterfly_elorgan<>.name=蝶の畏形	#
 entity.mabe:griffonis.name=グリフォニス	#
 entity.mabe:lunasta.name=月光エビ	#
+entity.mabe:lavasta.name=溶岩エビ	#
+entity.mabe:lavasta<>.name=溶岩エビ	#
 entity.mabe:anglerfish.name=ホシアンコウ	#
 entity.mabe:cloud_sheep.name=綿雲羊	#
 entity.mabe:organ_shard.name=異形の破片	#
@@ -40,6 +42,7 @@ item.spawn_egg.entity.mabe:butterfly_organ.name=蝶の異形を出現させる	#
 item.spawn_egg.entity.mabe:butterfly_elorgan.name=蝶の畏形を出現させる	#
 item.spawn_egg.entity.mabe:griffonis.name=グリフォニスを出現させる	#
 item.spawn_egg.entity.mabe:lunasta.name=月光エビを出現させる	#
+item.spawn_egg.entity.mabe:lavasta.name=溶岩エビを出現させる	#
 item.spawn_egg.entity.mabe:anglerfish.name=ホシアンコウを出現させる	#
 item.spawn_egg.entity.mabe:cloud_sheep.name=綿雲羊を出現させる	#
 
@@ -151,6 +154,7 @@ item.mabe:magia_purple_crystal_shard=魔紫晶の欠片	#
 item.mabe:magia_red_crystal_shard=魔紅晶の欠片	#
 item.mabe:magia_quill_pen=輝く羽ペン	#
 
+item.mabe:lavasta_meat=溶岩エビのむき身	#
 item.mabe:lunasta_meat=月光エビのむき身	#
 item.mabe:abyss_salmon_raw=生深海鮭	#
 item.mabe:abyss_salmon_cooked=調理した深海鮭	#

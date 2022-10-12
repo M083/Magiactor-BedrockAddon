@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:lavasta",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/lavasta"
+      },
+      "geometry": {
+        "default": "geometry.lavasta"
+      },
+      "animations": {
+        "swim": "animation.lavasta.swim",
+        "walk": "animation.lavasta.walk",
+        "curve": "animation.lavasta.curve",
+        "swim_pose": "animation.lavasta.swim_pose",
+        "stand_pose": "animation.lavasta.stand_pose"
+      },
+      "animation_controllers": [
+        { "swim": "controller.animation.lavasta.move" },
+        { "pose": "controller.animation.lavasta.pose" }
+      ],
+      "render_controllers": [ "controller.render.lavasta" ],
+      "spawn_egg": {
+        "base_color": "#611C1A",
+        "overlay_color": "#3BE994"
+      }
+    }
+  }
+}

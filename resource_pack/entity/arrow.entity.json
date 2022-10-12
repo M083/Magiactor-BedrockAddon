@@ -16,7 +16,8 @@
         "organ_purple_shard":  "textures/entity/organ_purple",
         "organ_red_shard":  "textures/entity/organ_red",
         "wander_broom": "textures/entity/wander_broom",
-        "magia_white_crystal_spear": "textures/entity/magia_white_crystal_spear"
+        "magia_white_crystal_spear": "textures/entity/magia_white_crystal_spear",
+        "void": "textures/entity/void"
       },
       "geometry": {
         "default": "geometry.arrow",

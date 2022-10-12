@@ -188,6 +188,9 @@
     "wander_broom": {
       "textures": "textures/items/wander_broom"
     },
+    "lavasta_meat": {
+      "textures": "textures/items/lavasta_meat"
+    },
     "lunasta_meat": {
       "textures": "textures/items/lunasta_meat"
     },

@@ -2,8 +2,47 @@
   "resource_pack_name": "mabe",
   "texture_name": "atlas.items",
   "texture_data": {
+    "artifact": {
+      "textures": "textures/items/artifact"
+    },
+    "artifact_orb": {
+      "textures": "textures/items/artifact_orb"
+    },
+    "artifact_shard_r": {
+      "textures": "textures/items/artifact_shard_r"
+    },
+    "artifact_shard_rd": {
+      "textures": "textures/items/artifact_shard_rd"
+    },
+    "artifact_shard_ru": {
+      "textures": "textures/items/artifact_shard_ru"
+    },
+    "artifact_shard_l": {
+      "textures": "textures/items/artifact_shard_l"
+    },
+    "artifact_shard_ld": {
+      "textures": "textures/items/artifact_shard_ld"
+    },
+    "artifact_shard_lu": {
+      "textures": "textures/items/artifact_shard_lu"
+    },
+    "artifact_shard_d": {
+      "textures": "textures/items/artifact_shard_d"
+    },
+    "artifact_shard_u": {
+      "textures": "textures/items/artifact_shard_u"
+    },
     "luciberry": {
       "textures": "textures/items/luciberry"
+    },
+    "magia_blade_white": {
+      "textures": "textures/items/magia_blade_white"
+    },
+    "magia_blade_blue": {
+      "textures": "textures/items/magia_blade_blue"
+    },
+    "magia_blade_red": {
+      "textures": "textures/items/magia_blade_red"
     },
     "magia_white_crystal_spear": {
       "textures": "textures/items/magia_white_crystal_spear"

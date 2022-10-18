@@ -1,0 +1,52 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:artifact"
+        },
+        "key": {
+            "a": {
+                "item": "mabe:artifact_shard_lu"
+            },
+            "b": {
+                "item": "mabe:artifact_shard_u"
+            },
+            "c": {
+                "item": "mabe:artifact_shard_ru"
+            },
+            "d": {
+                "item": "mabe:artifact_shard_l"
+            },
+            "e": {
+                "item": "mabe:artifact_orb"
+            },
+            "f": {
+                "item": "mabe:artifact_shard_r"
+            },
+            "g": {
+                "item": "mabe:artifact_shard_ld"
+            },
+            "h": {
+                "item": "mabe:artifact_shard_d"
+            },
+            "i": {
+                "item": "mabe:artifact_shard_rd"
+            }
+        },
+        "pattern": [
+            "abc",
+            "def",
+            "ghi"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:artifact"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

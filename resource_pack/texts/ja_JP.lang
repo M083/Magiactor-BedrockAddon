@@ -129,6 +129,9 @@ item.mabe:magia_purple_crystal_shovel=魔紫晶のシャベル	#
 item.mabe:star_axe=煌星の斧	#
 item.mabe:star_pickaxe=煌星のツルハシ	#
 item.mabe:star_shovel=煌星のシャベル	#
+item.mabe:magia_blade_white=魔白晶のブレード	#
+item.mabe:magia_blade_blue=魔水晶のブレード	#
+item.mabe:magia_blade_red=魔紅晶のブレード	#
 
 item.mabe:helmet_craftor_1=特殊ヘルメットの製法I	#
 item.mabe:helmet_craftor_2=特殊ヘルメットの製法II	#
@@ -153,6 +156,16 @@ item.mabe:magia_white_crystal_shard=魔白晶の欠片	#
 item.mabe:magia_purple_crystal_shard=魔紫晶の欠片	#
 item.mabe:magia_red_crystal_shard=魔紅晶の欠片	#
 item.mabe:magia_quill_pen=輝く羽ペン	#
+item.mabe:artifact=古代の石版	#
+item.mabe:artifact_shard_r=古代の石片	#
+item.mabe:artifact_shard_rd=古代の石片	#
+item.mabe:artifact_shard_ru=古代の石片	#
+item.mabe:artifact_shard_l=古代の石片	#
+item.mabe:artifact_shard_ld=古代の石片	#
+item.mabe:artifact_shard_lu=古代の石片	#
+item.mabe:artifact_shard_d=古代の石片	#
+item.mabe:artifact_shard_u=古代の石片	#
+item.mabe:artifact_orb=古代の光玉	#
 
 item.mabe:lavasta_meat=溶岩エビのむき身	#
 item.mabe:lunasta_meat=月光エビのむき身	#

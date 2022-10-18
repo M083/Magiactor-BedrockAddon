@@ -2,22 +2,22 @@
     "format_version": 1,
     "header": {
         "description": "Twitter : @M0_83",
-        "name": "Magiactor Behavior Pack ver1,04,020",
+        "name": "Magiactor Behavior Pack ver1,04,057",
         "uuid": "ef649bcf-256c-4013-9068-6a802b891083",
-        "version":[1,04,020]
+        "version":[1,04,057]
     },
     "modules": [
         {
             "description": "Magiactor behavior pack",
             "type": "data",
             "uuid": "fe6e90c8-c925-460f-8155-c8a60b751083",
-            "version":[1,04,020]
+            "version":[1,04,057]
         }
     ],
     "dependencies": [
         {
             "uuid": "6ec6e9a8-3093-462a-9c36-dbb6a4cd1083",
-            "version":[1,04,020]
+            "version":[1,04,057]
         }
     ]
 }

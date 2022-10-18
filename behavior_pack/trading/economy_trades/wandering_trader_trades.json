@@ -3,7 +3,7 @@
     {
       "groups": [
         {
-          "num_to_select": 1,
+          "num_to_select": 9,
           "trades": [
             {
               "max_uses": 64,
@@ -18,12 +18,175 @@
                   "item": "minecraft:emerald"
                 }
               ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "mabe:artifact_orb",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "mabe:artifact_shard_d",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "mabe:artifact_shard_u",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "mabe:artifact_shard_r",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "mabe:artifact_shard_l",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "mabe:artifact_shard_rd",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "mabe:artifact_shard_ld",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "mabe:artifact_shard_ru",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "mabe:artifact_shard_lu",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ]
             }
           ]
         },
         {
           "num_to_select": 5,
           "trades": [
+            {
+              "max_uses": 5,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 7
+                }
+              ],
+              "gives": [
+                {
+                  "item": "mabe:helmet_craftor_1"
+                }
+              ]
+            },
+            {
+              "max_uses": 5,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 7
+                }
+              ],
+              "gives": [
+                {
+                  "item": "mabe:boots_craftor_1"
+                }
+              ]
+            },
             {
               "max_uses": 5,
               "wants": [

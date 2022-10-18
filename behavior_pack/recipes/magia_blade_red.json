@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:magia_blade_red"
+        },
+        "key": {
+            "s": {
+                "item": "mabe:magia_red_crystal_block"
+            },
+            "f": {
+                "item": "mabe:magia_red_crystal_shard"
+            }
+        },
+        "pattern": [
+            " f",
+            "fs",
+            "fs"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:magia_blade_red"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

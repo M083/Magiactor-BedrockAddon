@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "mabe:magia_blade_red",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/magia_blade/magia_blade_red",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.magia_blade"
+      },
+      "animations": {
+        "wield": "animation.magia_blade"
+      },
+      "scripts": {
+        "animate": ["wield"]
+      },
+      "render_controllers": ["controller.render.magia_blade"]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:magia_blade_blue"
+        },
+        "key": {
+            "s": {
+                "item": "mabe:magia_crystal_block"
+            },
+            "f": {
+                "item": "mabe:magia_crystal_shard"
+            }
+        },
+        "pattern": [
+            " f",
+            "fs",
+            "fs"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:magia_blade_blue"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

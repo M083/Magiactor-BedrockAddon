@@ -7,7 +7,13 @@
         "components": {
             "minecraft:loot": "",
             "minecraft:destroy_time": 0,
-            "minecraft:explosion_resistance": 0,
+            "minecraft:explosion_resistance": 9999,
+            "minecraft:queued_ticking": {
+                "on_tick": {
+                    "event": "delete_event"
+                },
+                "interval_range": [7, 7]
+            },
             "minecraft:map_color": "#ffffff",
             "minecraft:block_light_absorption": 0,
             "minecraft:block_light_emission": 1.0,
@@ -24,6 +30,13 @@
                 "size": [ 8.0, 0.0, 0.0 ]
             },
             "minecraft:breathability": "air"
+        },
+        "events": {
+            "delete_event": {
+                "set_block": {
+                    "block_type": "air"
+                }
+            }
         }
     }
 }

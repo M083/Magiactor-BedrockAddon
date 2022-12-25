@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mabe:organ_craft_table_white"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
+            "minecraft:crafting_table": {
+                "grid_size": 3,
+                "crafting_tags": ["organ_craft_table_white"],
+                "custom_description": "tile.mabe:organ_craft_table_white.name"
+            },
+            "minecraft:loot": "loot_tables/blocks/organ_craft_table_white.json",
+            "minecraft:geometry": "geometry.organ_craft_table",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "organ_craft_table_white",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:destroy_time": 0.4,
+            "minecraft:explosion_resistance": 20,
+            "minecraft:map_color": "#B5AAA1",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0
+        }
+    }
+}

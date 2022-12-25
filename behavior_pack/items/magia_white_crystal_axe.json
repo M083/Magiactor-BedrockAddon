@@ -43,6 +43,13 @@
           },
           */
           {
+            "block": "minecraft:campfire",
+            "speed": 15,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
             "block": "minecraft:bamboo",
             "speed": 15,
             "on_dig": {
@@ -907,7 +914,7 @@
             "items": [
               "mabe:magia_white_crystal_axe"
             ],
-            "repair_amount": 800
+            "repair_amount": "query.remaining_durability * 1.1"
           }
         ]
       },

@@ -1,0 +1,48 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:depth_reaper_4"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:organ_fin_purple"
+            },
+            "b": {
+                "item": "mabe:magia_purple_crystal_shard"
+            },
+            "p": {
+                "item": "mabe:relikarma_craftor"
+            },
+            "q": {
+                "item": "mabe:organ_craftor_4"
+            },
+            "h": {
+                "item": "mabe:replikar_heart"
+            }
+        },
+        "pattern": [
+            "cch",
+            "  b",
+            "pqb"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:depth_reaper"
+            },
+            {
+                "count": 1,
+                "item": "mabe:relikarma_craftor"
+            },
+            {
+                "count": 1,
+                "item": "mabe:organ_craftor_4"
+            }
+        ],
+        "tags": [
+            "organ_craft_table_white"
+        ]
+    }
+}

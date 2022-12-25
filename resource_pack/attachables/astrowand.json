@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "mabe:astrowand",
+      "materials": {
+        "default": "default_emmisive",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/weapons/astrowand",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.astrowand"
+      },
+      "animations": {
+        "roll": "animation.astrowand.roll"
+      },
+      "scripts": {
+        "animate": ["roll"]
+      },
+      "render_controllers": ["controller.render.astrowand"]
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mabe:astrowand_bit",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "death": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": [0.5, 0.5],
+          "time_down_event": {
+            "event": "remove"
+          }
+        }
+      },
+      "remove": {
+        "minecraft:instant_despawn":{}
+      }
+    },
+    "components": {
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:timer": {
+        "looping": false,
+        "time": [20, 25],
+        "time_down_event": {
+          "event": "death"
+        }
+      },
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 0.9
+      },
+      "minecraft:movement": {
+        "value": 0.06
+      },
+      "minecraft:navigation.float": {
+        "can_path_over_water": true
+      },
+      "minecraft:behavior.float_wander": {
+        "priority": 2,
+        "must_reach": true
+      },
+      "minecraft:can_fly": {
+      },
+      "minecraft:loot": {
+        "table": ""
+      },
+      "minecraft:behavior.sonic_boom": {
+        "priority": 3,
+        "duration": 3.0,
+        "speed_multiplier": 1.2,
+        "attack_damage": 35,
+        "attack_range_horizontal": 15,
+        "attack_range_vertical": 20,
+        "attack_cooldown": 2,
+        "knockback_vertical_strength": 0.5,
+        "knockback_horizontal_strength": 2.5,
+        "knockback_height_cap": 0.5,
+        "duration_until_attack_sound": 1.7,
+        "charge_sound": "sonic_charge",
+        "attack_sound": "sonic_boom"
+      },
+      "minecraft:type_family": {
+        "family": [ "astrowand_bit", "inanimate" ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:follow_range": {
+        "value": 64,
+        "max": 64
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "entity_types": [
+            {
+              "filters": {
+                "any_of" : [
+                  {
+                    "all_of" : [
+                      {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "inanimate"},
+                      {"test" : "is_family", "subject" : "other", "operator": "=", "value" :  "monster"}
+                    ]
+                  }
+                ]
+              },
+              "max_dist": 70
+            }
+        ],
+        "must_see": true
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
+      }
+    },
+    "events": {
+      "death": {
+        "add" : {
+          "component_groups": ["death"]
+        },
+        "run_command": {
+          "command": "effect @s invisibility 5 0 true"
+        }
+      },
+      "remove": {
+        "add" : {
+          "component_groups": ["remove"]
+        }
+      }
+    }
+  }
+}

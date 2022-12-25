@@ -1,0 +1,365 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mabe:fish_organ",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "status_easy": {
+        "minecraft:attack": {
+          "damage": 5
+        },
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        }
+      },
+      "status_hard": {
+        "minecraft:attack": {
+          "damage": 7
+        },
+        "minecraft:health": {
+          "value": 40,
+          "max": 40
+        }
+      },
+      "stun_enable": {
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "on_damage": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": "organ"
+                    }
+                  ]
+                }
+              },
+              "deals_damage": false
+            },
+            {
+              "on_damage": {
+                "filters": {
+                  "any_of": [
+                    {"test": "has_damage", "value": "projectile"},
+                    {"test": "has_damage", "value": "entity_explosion"},
+                    {"test": "has_damage", "value": "block_explosion"}
+                  ]
+                },
+                "event": "stun"
+              },
+              "on_damage_sound_event": "break"
+            }
+          ]
+        }
+      },
+      "stun_disable": {
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "on_damage": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": "organ"
+                    }
+                  ]
+                }
+              },
+              "deals_damage": false
+            }
+          ]
+        }
+      },
+      "stun": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:physics": {},
+        "minecraft:timer": {
+          "looping": false,
+          "time": [12, 12],
+          "time_down_event": {
+            "event": "wakeup"
+          }
+        }
+      },
+      "wake": {
+        "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:navigation.hover": {
+          "can_path_over_water": true,
+          "can_breach": true,
+          "can_sink": true,
+          "can_path_from_air": true,
+          "avoid_water": true,
+          "avoid_damage_blocks": false,
+          "avoid_sun": true
+        },
+        "minecraft:behavior.random_hover": {
+          "priority": 11,
+          "xz_dist": 8,
+          "y_dist": 12,
+          "y_offset": -1,
+          "interval": 1,
+          "hover_height": [6, 12]
+        },
+        "minecraft:movement.hover": {},
+        "minecraft:flying_speed": {
+          "value": 0.3
+        },
+        "minecraft:underwater_movement": {
+          "value": 0.3
+        },
+        "minecraft:movement": {
+          "value": 1.0
+        },
+        "minecraft:physics": {
+          "has_gravity": false,
+          "has_collision": false
+        }
+      },
+      "nether": {
+        "minecraft:attack": {
+          "damage": 7,
+          "effect_name": "wither",
+          "effect_duration": 7
+        },
+        "minecraft:loot": {
+          "table": ""
+        },
+        "minecraft:fire_immune": {
+        },
+        "minecraft:mark_variant": {
+          "value": 4
+        }
+      },
+      "follow": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": [1.55, 2.55],
+          "time_down_event": {
+            "event": "to_avoid"
+          }
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 4,
+          "cooldown_time": 1.5
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 3,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of" : [
+                  {
+                    "all_of" : [
+                      {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "inanimate"},
+                      {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "monster"}
+                    ]
+                  },
+                  {"test" : "is_family", "subject" : "other", "value" :  "necrocancer"}
+                ]
+              },
+              "max_dist": 70
+            }
+          ],
+          "must_see": false
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "snow_storm"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "avoid": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": [1.55, 2.55],
+          "time_down_event": {
+            "event": "to_follow"
+          }
+        },
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 1,
+          "entity_types":{
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "operator": "!=", "value": "organ" }
+              ]
+            },
+            "max_dist": 15,
+            "walk_speed_multiplier": 1.25,
+            "sprint_speed_multiplier": 1.25
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:mark_variant": {
+        "value": 3
+      },
+      "minecraft:attack": {
+        "damage": 6
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 25: 0"
+      },
+      "minecraft:behavior.flee_sun": {
+        "priority": 2,
+        "speed_multiplier": 1
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:type_family": {
+        "family": [ "fish_organ", "monster", "organ", "organ_baby", "arthropod" ]
+      },
+      "minecraft:loot": {
+        "table": ""
+      },
+      "minecraft:health": {
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathes_solids": true,
+        "breathes_water": true
+      },
+      "minecraft:collision_box": {
+        "width": 1.4,
+        "height": 0.8
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 9,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.look_at_entity": {
+        "priority": 9,
+        "look_distance": 6.0,
+        "probability": 0.02,
+        "filters": { "test" :  "is_family", "subject" : "other", "value" :  "mob"}
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
+      }
+    },
+    "events": {
+      "death_event": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "damage @e[family=organ_totem,r=64] 3500"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "nether"
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "nether"
+              ]
+            }
+          },
+          {
+            "randomize": [
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "avoid" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "follow" ] }
+              }
+            ]
+          },
+          {
+            "add": {
+              "component_groups": [
+                "stun_enable",
+                "wake"
+              ]
+            }
+          }
+        ]
+      },
+      "to_avoid": {
+        "remove": { "component_groups": [ "follow" ] },
+        "add": { "component_groups": [ "avoid" ] }
+      },
+      "to_follow": {
+        "remove": { "component_groups": [ "avoid" ] },
+        "add": { "component_groups": [ "follow" ] }
+      },
+      "stun": {
+        "remove": { "component_groups": [ "avoid", "follow", "stun_enable", "wake" ] },
+        "add": { "component_groups": [ "stun", "stun_disable" ] }
+      },
+      "wakeup": {
+        "remove": { "component_groups": [ "stun" ] },
+        "add": { "component_groups": [ "avoid","wake"] }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "mabe:magia_astro_tree_red_feature_rule",
+            "places_feature": "mabe:magia_astro_tree_red_feature"
+        },
+        "conditions": {
+            "placement_pass": "surface_pass",
+            "minecraft:biome_filter": [
+                {
+                    "all_of": [
+                        {
+                            "any_of": [
+                                {
+                                    "test": "has_biome_tag",
+                                    "operator": "==",
+                                    "value": "the_end"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "distribution": {
+            "iterations": 8,
+            "scatter_chance": 15.0,
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            },
+            "y": {
+                "distribution": "uniform",
+                "extent": [
+                    "(math.abs(v.worldx) > 600 || math.abs(v.worldz) > 600) ? (query.above_top_solid(variable.worldx, variable.worldz) > 10)? query.above_top_solid(variable.worldx, variable.worldz) : -100",
+                    "(math.abs(v.worldx) > 600 || math.abs(v.worldz) > 600) ? (query.above_top_solid(variable.worldx, variable.worldz) < 175)? query.above_top_solid(variable.worldx, variable.worldz) : -100"
+                ]
+            },
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:replikarma_axe",
+      "materials": {
+        "default": "default_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/replikarma/replikarma_sniper"
+      },
+      "geometry": {
+        "default": "geometry.replikarma_axe"
+      },
+      "animations": {
+        "attack": "animation.replikarma_axe.attack",
+        "move": "animation.replikarma_axe.move",
+        "look": "animation.replikarma_axe.look"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.replikarma_axe.move" },
+        { "attack": "controller.animation.replikarma_axe.attack" },
+        { "look": "controller.animation.replikarma_axe.look" }
+      ],
+      "render_controllers": [ "controller.render.replikarma_sniper" ],
+      "spawn_egg": {
+        "base_color": "#4B4C4F",
+        "overlay_color": "#CE8D83"
+      }
+    }
+  }
+}

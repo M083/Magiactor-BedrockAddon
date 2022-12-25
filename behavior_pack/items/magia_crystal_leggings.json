@@ -31,7 +31,7 @@
         "repair_items": [
           {
             "items": ["mabe:magia_crystal_leggings"],
-            "repair_amount": 300
+            "repair_amount": "query.remaining_durability * 1.1"
           },
           {
             "items": ["mabe:magia_crystal_shard"],

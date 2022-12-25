@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "mabe:moon_gazer",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/replikarma/repliarch",
+        "sleep": "textures/entity/replikarma/replikarma_sniper",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.moon_gazer"
+      },
+      "animations": {
+        "wield": "animation.moon_gazer",
+        "sleep": "animation.moon_gazer.sleep",
+        "roll": "animation.moon_gazer.roll"
+      },
+      "scripts": {
+        "animate": ["wield", "roll", "sleep"]
+      },
+      "render_controllers": ["controller.render.moon_gazer"]
+    }
+  }
+}

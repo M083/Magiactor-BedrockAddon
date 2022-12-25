@@ -1,0 +1,32 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:skull_wand_craftor"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:magia_quill_pen"
+            },
+            "d": {
+                "item": "mabe:skull_wand"
+            },
+            "e": {
+                "item": "minecraft:paper"
+            }
+        },
+        "pattern": [
+            "  c",
+            "de ",
+            "   "
+        ],
+        "priority": 1,
+        "result": {
+            "count": 1,
+            "item": "mabe:skull_wand_craftor"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

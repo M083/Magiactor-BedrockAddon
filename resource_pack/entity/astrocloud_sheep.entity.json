@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:astrocloud_sheep",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/astrocloud_sheep"
+      },
+      "geometry": {
+        "default": "geometry.cloud_sheep"
+      },
+      "animations": {
+        "roll": "animation.cloud_sheep.roll",
+        "walk": "animation.cloud_sheep.walk"
+      },
+      "animation_controllers": [
+        {
+          "roll": "controller.animation.cloud_sheep.roll",
+          "walk": "controller.animation.cloud_sheep.walk"
+        }
+      ],
+      "render_controllers": [ "controller.render.astrocloud_sheep" ],
+      "spawn_egg": {
+        "base_color": "#2EC77B",
+        "overlay_color": "#0C5454"
+      }
+    }
+  }
+}

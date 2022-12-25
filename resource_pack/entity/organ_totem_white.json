@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:organ_totem_white",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/organ",
+        "green": "textures/entity/organ_green",
+        "white": "textures/entity/organ_white",
+        "yellow": "textures/entity/organ_yellow",
+        "purple": "textures/entity/organ_purple",
+        "red": "textures/entity/organ_red"
+      },
+      "geometry": {
+        "default": "geometry.organ_totem"
+      },
+      "animations": {
+        "rotation": "animation.organ_totem.rotation",
+        "shard_rot": "animation.organ_totem.shard_rot",
+        "pop": "animation.organ_totem.pop",
+        "rot_pose": "animation.organ_totem.rot_pose"
+      },
+      "animation_controllers": [
+        { "rot": "controller.animation.organ_totem" }
+      ],
+      "render_controllers": [ "controller.render.organ" ],
+      "spawn_egg": {
+        "base_color": "#181632",
+        "overlay_color": "#AEE5E4"
+      }
+    }
+  }
+}

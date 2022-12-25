@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:astrowand_bit",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/weapons/astrowand"
+      },
+      "geometry": {
+        "default": "geometry.astro_bit"
+      },
+      "animations": {
+        "look": "animation.organ_shard.look"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.organ_shard" }
+      ],
+      "render_controllers": [ "controller.render.astro_bit" ]
+    }
+  }
+}

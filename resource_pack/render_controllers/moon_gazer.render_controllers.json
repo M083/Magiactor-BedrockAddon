@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.moon_gazer": {
+      "arrays": {
+        "textures": {
+          "Array.textures": [
+            "Texture.default",
+            "Texture.sleep"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+      "textures": [ "Array.textures[(60 < query.position(1) && !query.biome_has_any_tag('nether', 'the_end') && (query.time_of_day < 0.25 || query.time_of_day > 0.75) && query.moon_brightness > 0) ? 0 : 1]" ]
+    }
+  }
+}

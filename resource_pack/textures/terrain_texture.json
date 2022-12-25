@@ -4,6 +4,26 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
+    "ender_craft_table": {
+      "textures": [
+        "textures/blocks/ender_craft_table"
+      ]
+    },
+    "organ_craft_table_white": {
+      "textures": [
+        "textures/blocks/organ_craft_table_white"
+      ]
+    },
+    "organ_craft_table_yellow": {
+      "textures": [
+        "textures/blocks/organ_craft_table_yellow"
+      ]
+    },
+    "astrocloud_block": {
+      "textures": [
+        "textures/blocks/astrocloud"
+      ]
+    },
     "cloud_block": {
       "textures": [
         "textures/blocks/cloud_block"
@@ -72,6 +92,11 @@
     "luciberry": {
       "textures": [
         "textures/blocks/luciberry"
+      ]
+    },
+    "floatberry": {
+      "textures": [
+        "textures/blocks/floatberry"
       ]
     },
     "none": {

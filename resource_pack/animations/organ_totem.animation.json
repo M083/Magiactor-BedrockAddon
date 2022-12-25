@@ -1,0 +1,65 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.organ_totem.rotation": {
+			"loop": true,
+			"animation_length": 3.20833,
+			"bones": {
+				"shard1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"3.2083": [0, -360, 0]
+					}
+				},
+				"shard2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"3.2083": [0, 360, 0]
+					}
+				}
+			}
+		},
+		"animation.organ_totem.rot_pose": {
+			"loop": true,
+			"bones": {
+				"rot1": {
+					"rotation": [30, 0, 0]
+				},
+				"rot2": {
+					"rotation": [0, 0, 30]
+				}
+			}
+		},
+		"animation.organ_totem.shard_rot": {
+			"loop": true,
+			"animation_length": 4.70833,
+			"bones": {
+				"rot1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.7083": [0, -720, 0]
+					}
+				},
+				"rot2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.7083": [0, 1080, 0]
+					}
+				}
+			}
+		},
+		"animation.organ_totem.pop": {
+			"loop": true,
+			"animation_length": 4.25,
+			"bones": {
+				"body": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.9167": [0, 5, 0],
+						"4.25": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

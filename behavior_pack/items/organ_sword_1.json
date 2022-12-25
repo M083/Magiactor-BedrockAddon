@@ -31,6 +31,10 @@
           {
             "items": [ "mabe:magia_crystal_block" ],
             "repair_amount": 780
+          },
+          {
+            "items": [ "mabe:organ_sword_1" ],
+            "repair_amount": "query.remaining_durability * 1.1"
           }
         ]
       },
@@ -42,8 +46,8 @@
         }
       },
       "minecraft:cooldown": {
-        "category": "weapon",
-        "duration": 4
+        "category": "sword",
+        "duration": 1
       },
       "minecraft:on_use": {
         "on_use": {

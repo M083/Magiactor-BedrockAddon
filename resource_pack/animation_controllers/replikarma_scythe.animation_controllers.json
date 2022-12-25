@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.replikarma_scythe.look": {
+      "states": {
+        "walking": {
+          "animations": [
+            {
+              "look": []
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.replikarma_scythe.roll": {
+      "states": {
+        "walking": {
+          "animations": [
+            {
+              "roll": []
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.replikarma_scythe.throw": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attacking" : "query.is_delayed_attacking == 1"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            {
+              "throw": []
+            }
+          ],
+          "transitions": [
+            {
+              "default" : "query.is_delayed_attacking == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

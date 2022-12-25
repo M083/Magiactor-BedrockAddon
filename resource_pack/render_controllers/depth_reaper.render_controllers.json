@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.depth_reaper": {
+      "arrays": {
+        "textures": {
+          "Array.textures": [
+            "Texture.default",
+            "Texture.arousal"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+      "textures": [ "Array.textures[(query.position(1) < 0 || query.biome_has_any_tag('nether', 'the_end')) ? 1 : 0]" ]
+    }
+  }
+}

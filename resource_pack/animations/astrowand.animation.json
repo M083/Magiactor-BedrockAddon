@@ -1,0 +1,51 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.astrowand.roll": {
+			"loop": true,
+			"animation_length": 1.04167,
+			"bones": {
+				"wand": {
+					"rotation": ["c.is_first_person ? 30.0 : 90.0", "c.is_first_person ? 5.0 : 0.0", "c.is_first_person ? -165.0 : -90.0"],
+					"position": ["c.is_first_person ? 0.0 : 0.0", "c.is_first_person ? 20.0 : 20.0", "c.is_first_person ? 10.0 : 0.0"]
+				},
+				"satelite_1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0417": [0, 360, 0]
+					}
+				},
+				"satelite_2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0417": [0, 360, 0]
+					}
+				},
+				"satelite_3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0417": [0, 360, 0]
+					}
+				},
+				"bit_1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0417": [0, 360, 0]
+					}
+				},
+				"bit_2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0417": [0, 360, 0]
+					}
+				},
+				"bit_3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0417": [0, 360, 0]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,75 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:skull_wand",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.sword"
+      },
+      "minecraft:icon": {
+        "texture": "skull_wand"
+      },
+      "minecraft:enchantable":{
+        "value": 10,
+        "slot": "shield"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 40
+      },
+      "minecraft:weapon": {
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "minecraft:bone" ],
+            "repair_amount": 15
+          },
+          {
+            "items": [ "minecraft:skull", "minecraft:bone_block" ],
+            "repair_amount": 15
+          },
+          {
+            "items": [ "mabe:skull_wand" ],
+            "repair_amount": "query.remaining_durability * 1.1"
+          }
+        ]
+      },
+      "minecraft:cooldown": {
+        "category": "weapon",
+        "duration": 4
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "mabe:summon"
+        }
+      }
+    },
+    "events": {
+      "mabe:summon": {
+        "sequence": [
+          {
+            "swing": {}
+          },
+          {
+            "shoot": {
+              "projectile": "minecraft:wither_skull",
+              "launch_power": 1.0
+            }
+          },
+          {
+            "damage": {
+              "type": "void",
+              "amount": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

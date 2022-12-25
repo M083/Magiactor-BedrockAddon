@@ -1,0 +1,88 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:moon_gazer",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.sword"
+      },
+      "minecraft:icon": {
+        "texture": "moon_gazer"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 1280
+      },
+      "minecraft:enchantable":{
+        "value": 10,
+        "slot": "sword"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "mabe:fallen_star_shard" ],
+            "repair_amount": 400
+          },
+          {
+            "items": [ "mabe:larva_tooth" ],
+            "repair_amount": 400
+          },
+          {
+            "items": [ "mabe:replikar_heart" ],
+            "repair_amount": 800
+          },
+          {
+            "items": [ "mabe:moon_gazer" ],
+            "repair_amount": "query.remaining_durability * 1.1"
+          }
+        ]
+      },
+      "minecraft:damage": 7,
+      "minecraft:weapon": {
+        "on_hurt_entity": {
+          "event": "mabe:attacked",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "mabe:attacked": {
+        "sequence": [
+          {
+            "damage": {
+              "type": "void",
+              "amount": 3
+            }
+          },
+          {
+            "condition": "60 < query.position(1) && !query.biome_has_any_tag('nether', 'the_end') && (query.time_of_day < 0.25 || query.time_of_day > 0.75) && query.moon_brightness > 0",
+            "run_command": {
+              "command": [
+                "playanimation @s animation.attack_animation.sword_rotate",
+                "damage @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!item,r=9] 12 entity_attack entity @s",
+                "playsound item.trident.throw @e[type=player] ~ ~ ~ 5 0.6"
+              ]
+            }
+          },
+          {
+            "condition": "60 < query.position(1) && !query.biome_has_any_tag('nether', 'the_end') && (query.time_of_day < 0.25 || query.time_of_day > 0.75) && query.moon_brightness == 1",
+            "run_command": {
+              "command": [
+                "effect @s regeneration 4 1",
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=9] ~ ~ ~ summon mabe:organ_wand_shard",
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=9] ~ ~ ~ summon mabe:organ_wand_shard",
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=9] ~ ~ ~ summon mabe:organ_wand_shard",
+                "damage @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!item,r=9] 40 entity_attack entity @s"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

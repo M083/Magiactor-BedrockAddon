@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:replikarma_sniper",
+      "materials": {
+        "default": "default_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/replikarma/replikarma_sniper"
+      },
+      "geometry": {
+        "default": "geometry.replikarma_sniper"
+      },
+      "animations": {
+        "sleep_pose": "animation.replikarma_sniper.sleep_pose",
+        "wakeup": "animation.replikarma_sniper.wakeup",
+        "part": "animation.replikarma_sniper.part",
+        "stone": "animation.replikarma_sniper.stone",
+        "look_at": "animation.replikarma_sniper.look_at",
+        "bolt_roll": "animation.replikarma_sniper.bolt_roll",
+        "shoot": "animation.replikarma_sniper.shoot",
+        "mode_aim": "animation.replikarma_sniper.mode_aim",
+        "mode_calm": "animation.replikarma_sniper.mode_calm",
+        "to_aim": "animation.replikarma_sniper.to_aim",
+        "to_calm": "animation.replikarma_sniper.to_calm"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.replikarma_sniper.general"
+        },
+        {
+          "mode": "controller.animation.replikarma_sniper.mode"
+        }
+      ],
+      "render_controllers": [ "controller.render.replikarma_sniper" ],
+      "spawn_egg": {
+        "base_color": "#4B4C4F",
+        "overlay_color": "#CE8D83"
+      }
+    }
+  }
+}

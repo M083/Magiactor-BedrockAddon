@@ -17,6 +17,11 @@
                         "test": "has_biome_tag",
                         "operator": "!=",
                         "value": "the_end"
+                    },
+                    {
+                        "test": "has_biome_tag",
+                        "operator": "!=",
+                        "value": "forest"
                     }
                 ]
             },

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "mabe:stag_honey_larva",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_underground": {},
+        "minecraft:spawns_on_block_filter": "minecraft:honeycomb_block",
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 7,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 25
+        },
+        "minecraft:height_filter": {
+          "min": -64,
+          "max": 30
+        },
+        "minecraft:herd": {
+          "min_size":2,
+          "max_size":4
+        }
+      }
+    ]
+  }
+}

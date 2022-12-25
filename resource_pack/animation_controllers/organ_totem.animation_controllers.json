@@ -1,0 +1,25 @@
+{
+	"format_version" : "1.8.0",
+	"animation_controllers" : {
+		"controller.animation.organ_totem" : {
+			"states" : {
+				"default": {
+					"animations": [
+						{ 
+							"rotation": []
+						},
+						{ 
+							"shard_rot": []
+						},
+						{ 
+							"rot_pose": []
+						},
+						{ 
+							"pop": []
+						}
+					]
+				}
+			}
+		}
+	}
+}

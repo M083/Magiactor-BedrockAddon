@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "mabe:astrocloud_block"
+    },
+    "components": {
+      "minecraft:creative_category": {
+          "category":"Construction"
+      },
+      "minecraft:loot": "loot_tables/blocks/astrocloud_block.json",
+      "minecraft:map_color": "#24155E",
+      "minecraft:block_light_absorption": 0,
+      "minecraft:block_light_emission": 0.3,
+      "minecraft:destroy_time": 0.25
+    }
+  }
+}

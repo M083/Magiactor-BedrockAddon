@@ -9,24 +9,24 @@
                 "item": "mabe:magia_quill_pen"
             },
             "d": {
-                "item": "minecraft:gold_block"
+                "item": "mabe:organ_scissor_blue"
             },
             "e": {
                 "item": "mabe:organ_craftor_1"
             },
             "f": {
-                "item": "minecraft:weathered_copper"
+                "item": "mabe:organ_catalyst_blue"
             },
             "g": {
                 "item": "mabe:magia_crystal_block"
             },
             "h": {
-                "item": "mabe:fallen_star"
+                "item": "mabe:magia_light_crystal_block"
             }
         },
         "pattern": [
             "  c",
-            "dee",
+            "ded",
             "gfh"
         ],
         "priority": 1,

@@ -1,0 +1,37 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:item_magnet"
+        },
+        "key": {
+            "a": {
+                "item": "mabe:organ_oil"
+            },
+            "b": {
+                "item": "minecraft:magma_cream"
+            },
+            "s": {
+                "item": "minecraft:copper_ingot"
+            },
+            "b": {
+                "item": "mabe:replikar_heart"
+            }
+        },
+        "pattern": [
+            "b a",
+            "s s",
+            "sss"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:item_magnet"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "mabe:magia_crystal_block_ground_feature_rule",
+            "places_feature": "mabe:magia_crystal_block_ground_feature"
+        },
+        "conditions": {
+            "minecraft:biome_filter": {
+                "all_of": [
+                    {
+                        "test": "has_biome_tag",
+                        "operator": "!=",
+                        "value": "nether"
+                    },
+                    {
+                        "test": "has_biome_tag",
+                        "operator": "!=",
+                        "value": "the_end"
+                    }
+                ],
+                "any_of": [
+                    {
+                        "test": "has_biome_tag",
+                        "operator": "==",
+                        "value": "forest"
+                    }
+                ]
+            },
+            "placement_pass": "final_pass"
+        },
+        "distribution": {
+            "iterations": 48,
+            "scatter_chance": 25.0,
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            },
+            "y": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    150
+                ]
+            },
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            }
+        }
+    }
+}

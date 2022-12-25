@@ -1,0 +1,40 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:ender_craft_table"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:astrocloud_block"
+            },
+            "e": {
+                "item": "mabe:ender_dust"
+            },
+            "t": {
+                "item": "mabe:astrowalker_tentacle"
+            },
+            "w": {
+                "item": "mabe:organ_craft_table_white"
+            },
+            "y": {
+                "item": "mabe:organ_craft_table_yellow"
+            }
+        },
+        "pattern": [
+            "ewe",
+            "tct",
+            "eye"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:ender_craft_table"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

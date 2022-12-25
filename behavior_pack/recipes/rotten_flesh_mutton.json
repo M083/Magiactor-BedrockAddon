@@ -1,0 +1,28 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:rotten_flesh_mutton"
+        },
+        "key": {
+            "o": {
+                "item": "mabe:organ_oil"
+            },
+            "m": {
+                "item": "minecraft:mutton"
+            }
+        },
+        "pattern": [
+            "o",
+            "m"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 1,
+            "item": "minecraft:rotten_flesh"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

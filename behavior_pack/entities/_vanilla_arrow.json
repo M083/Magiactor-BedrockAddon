@@ -403,7 +403,7 @@
         "minecraft:projectile": {
           "on_hit": {
             "impact_damage": {
-              "damage": 8,
+              "damage": 12,
               "knockback": true,
               "semi_random_diff_damage": false,
               "destroy_on_hit": true
@@ -427,6 +427,42 @@
           "potion_effect": 20
         }
       },
+
+      "mabe:replikarma_sniper_arrow": {
+        "minecraft:variant": {
+          "value": 8
+        },
+
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 12,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "mob.enderdragon.hit",
+          "hit_ground_sound": "mob.enderdragon.hit",
+          "power": 6,
+          "gravity": 0.10,
+          "uncertainty_base": 0,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+
       "mabe:lavasta_arrow": {
         "minecraft:variant": {
           "value": 8
@@ -795,6 +831,25 @@
               {
                 "run_command": {
                   "command": "event entity @e[type=mabe:organ_wand_shard,c=1] death"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "replikarma_sniper" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "mabe:replikarma_sniper_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "playanimation @e[type = mabe:replikarma_sniper, c = 1] shoot"
                 }
               }
             ]

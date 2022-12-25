@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:stag_honey_larva",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "default_blending",
+        "outer": "default_blending"
+      },
+      "textures": {
+        "default": "textures/entity/stag_honey_larva"
+      },
+      "geometry": {
+        "default": "geometry.stag_honey_larva"
+      },
+      "animations": {
+        "swim": "animation.stag_honey_larva.swim",
+        "walk": "animation.stag_honey_larva.walk",
+        "curve": "animation.stag_honey_larva.curve",
+        "swim_pose": "animation.stag_honey_larva.swim_pose",
+        "stand_pose": "animation.stag_honey_larva.stand_pose",
+        "stag_open_pose": "animation.stag_honey_larva.stag_open_pose",
+        "stag_close_pose": "animation.stag_honey_larva.stag_close_pose",
+        "stag_attack": "animation.stag_honey_larva.stag_attack"
+      },
+      "animation_controllers": [
+        { "ramp": "controller.animation.stag_honey_larva.ramp" },
+        { "swim": "controller.animation.stag_honey_larva.move" },
+        { "pose": "controller.animation.stag_honey_larva.pose" },
+        { "stag_attack": "controller.animation.stag_honey_larva.stag_attack" }
+      ],
+      "render_controllers": [ "controller.render.stag_honey_larva" ],
+      "spawn_egg": {
+        "base_color": "#3B2616",
+        "overlay_color": "#FAD365"
+      }
+    }
+  }
+}

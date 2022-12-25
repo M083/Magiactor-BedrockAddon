@@ -9,25 +9,25 @@
                 "item": "mabe:magia_quill_pen"
             },
             "d": {
-                "item": "minecraft:gold_block"
+                "item": "minecraft:diamond"
             },
             "e": {
                 "item": "mabe:organ_craftor_2"
             },
             "f": {
-                "item": "minecraft:oxidized_copper"
+                "item": "mabe:organ_catalyst_green"
             },
             "g": {
-                "item": "minecraft:amethyst_block"
+                "item": "mabe:fallen_star"
             },
             "h": {
-                "item": "mabe:magia_light_crystal_block"
+                "item": "mabe:organ_wing_yellow"
             }
         },
         "pattern": [
             "  c",
-            "dee",
-            "ghf"
+            "ded",
+            "gfh"
         ],
         "priority": 1,
         "result": {

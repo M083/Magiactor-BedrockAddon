@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:astroworm",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/astroworm"
+      },
+      "geometry": {
+        "default": "geometry.astroworm"
+      },
+      "animations": {
+        "swim": "animation.astroworm.swim",
+        "walk": "animation.astroworm.walk",
+        "curve": "animation.astroworm.curve",
+        "swim_pose": "animation.astroworm.swim_pose",
+        "stand_pose": "animation.astroworm.stand_pose"
+      },
+      "animation_controllers": [
+        { "swim": "controller.animation.astroworm.move" },
+        { "pose": "controller.animation.astroworm.pose" }
+      ],
+      "render_controllers": [ "controller.render.astroworm" ],
+      "spawn_egg": {
+        "base_color": "#2EC77B",
+        "overlay_color": "#0C5454"
+      }
+    }
+  }
+}

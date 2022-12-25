@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:organ_craftor_1"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:magia_quill_pen"
+            },
+            "d": {
+                "item": "mabe:organ_scissor_white"
+            },
+            "e": {
+                "item": "minecraft:paper"
+            },
+            "f": {
+                "item": "mabe:magia_white_crystal_block"
+            },
+            "g": {
+                "item": "mabe:organ_moss_blue"
+            },
+            "h": {
+                "item": "mabe:organ_fin_blue"
+            }
+        },
+        "pattern": [
+            "  c",
+            "ded",
+            "gfh"
+        ],
+        "priority": 1,
+        "result": {
+            "count": 1,
+            "item": "mabe:organ_craftor_1"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

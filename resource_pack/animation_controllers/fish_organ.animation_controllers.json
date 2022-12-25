@@ -1,0 +1,49 @@
+{
+	"format_version" : "1.8.0",
+	"animation_controllers" : {
+	    "controller.animation.fish_organ.stun": {
+	      "states": {
+	        "default": {
+	          "transitions": [
+	            {
+	              "stun": "q.variant == 1"
+	            }
+	          ]
+	        },
+	        "stun": {
+	          "animations": [ { "stun": [] } ],
+	          "transitions": [
+	            {
+	              "default": "q.variant != 1"
+	            }
+	          ]
+	        }
+	      }
+	    },
+		"controller.animation.fish_organ.move" : {
+			"states" : {
+				"default": {
+					"parameters": [ "query.modified_move_speed + 0.1" ],
+					"animations": [
+						{ 
+							"move": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						},
+						{ 
+							"roll": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						}
+					]
+				}
+			}
+		}
+	}
+}

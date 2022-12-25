@@ -1,0 +1,143 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "mabe:organ_totem_white",
+			"is_spawnable": true,
+			"is_summonable": true
+		},
+		"component_groups":{
+			"battle_mode": {
+				"minecraft:boss": {
+					"name": "entity.mabe:organ_totem_white.name"
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "fall",
+							"deals_damage": false
+						}
+					]
+				},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 1,
+					"entity_types": [
+						{
+							"filters": {
+								"any_of" : [
+									{
+										"all_of" : [
+											{"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "inanimate"},
+											{"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "monster"}
+										]
+									},
+									{"test" : "is_family", "subject" : "other", "value" :  "necrocancer"}
+								]
+							},
+							"max_dist": 70
+						}
+					],
+					"reselect_targets": true,
+					"must_see": true
+				}
+			}
+		},
+		"components": {
+
+			"minecraft:scale": {
+				"value": 1.7
+			},
+			"minecraft:mark_variant": {
+				"value": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": false
+					},
+					{
+						"on_damage": {
+							"event": "battle_mode"
+						}
+					}
+				]
+			},
+			"minecraft:health": {
+				"value": 100000,
+				"max": 100000
+			},
+			"minecraft:type_family": {
+				"family": [ "organ_totem", "boss", "monster", "organ", "arthropod" ]
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+			},
+			"minecraft:loot": {
+				"table": ""
+			},
+			"minecraft:collision_box": {
+				"width": 1.35,
+				"height": 3.25
+			},
+			"minecraft:physics": {
+			},
+			"minecraft:behavior.ranged_attack": {
+				"priority": 0,
+				"attack_radius": 64,
+				"charge_shoot_trigger": 2.25,
+				"charge_charged_trigger": 8.6,
+				"burst_shots": 6,
+				"burst_interval": 0.3
+			},
+			"minecraft:navigation.walk": {
+			},
+			"minecraft:movement.basic": {
+			},
+			"minecraft:movement": {
+				"value": 0.0
+			},
+			"minecraft:shooter": {
+				"def": "mabe:crab_organ_baby"
+			},
+			"minecraft:knockback_resistance": {
+				"value": 2.0
+			},
+			"minecraft:on_death": {
+				"event": "death_event"
+			}
+		},
+		"events": {
+			"boss_heal_event": {
+				"run_command": {
+					"command": [
+						"effect @s instant_health 1 14"
+					]
+				}
+			},
+			"death_event": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"kill @e[family=organ_baby,r=64]",
+								"structure load mystructure:reward_organ_totem_white ~ ~ ~",
+								"effect @e[type=player] village_hero 1800 3",
+								"xp 50 @e[type=player]"
+							]
+						}
+					}
+				]
+			},
+			"battle_mode": {
+				"sequence": [
+					{
+						"add": { "component_groups": [ "battle_mode" ] }
+					}
+				]
+			}
+		}
+	}
+}

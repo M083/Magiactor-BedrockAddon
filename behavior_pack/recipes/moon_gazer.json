@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:moon_gazer"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:replikar_heart"
+            },
+            "b": {
+                "item": "mabe:fallen_star_shard"
+            },
+            "p": {
+                "item": "mabe:relikarma_craftor"
+            },
+            "w": {
+                "item": "mabe:larva_tooth"
+            }
+        },
+        "pattern": [
+            "  b",
+            " wb",
+            "p c"
+        ],
+        "priority": 0,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:moon_gazer"
+            },
+            {
+                "count": 1,
+                "item": "mabe:relikarma_craftor"
+            }
+        ],
+        "tags": [
+            "organ_craft_table_yellow"
+        ]
+    }
+}

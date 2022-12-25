@@ -45,7 +45,7 @@
         "height": 0.9
       },
       "minecraft:movement": {
-        "value": 0.02
+        "value": 0.06
       },
       "minecraft:navigation.float": {
         "can_path_over_water": true
@@ -63,10 +63,14 @@
         "def": "minecraft:arrow"
       },
       "minecraft:type_family": {
-        "family": [ "organ_wand_shard" ]
+        "family": [ "organ_wand_shard", "inanimate" ]
       },
       "minecraft:damage_sensor": {
         "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": false
+          },
           {
             "on_damage": {
               "event": "remove"
@@ -85,6 +89,8 @@
       },
       "minecraft:behavior.ranged_attack": {
         "priority": 1,
+        "attack_interval_min": 1, 
+        "attack_interval_max": 10,
         "attack_radius": 24,
         "charge_shoot_trigger": 4,
         "charge_charged_trigger": 1

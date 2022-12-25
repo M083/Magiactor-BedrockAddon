@@ -1,0 +1,80 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:reliarch_scythe",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.sword"
+      },
+      "minecraft:icon": {
+        "texture": "reliarch_scythe"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 1280
+      },
+      "minecraft:enchantable":{
+        "value": 10,
+        "slot": "sword"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "mabe:fallen_star" ],
+            "repair_amount": 400
+          },
+          {
+            "items": [ "mabe:sky_brick" ],
+            "repair_amount": 400
+          },
+          {
+            "items": [ "mabe:replikar_heart" ],
+            "repair_amount": 800
+          },
+          {
+            "items": [ "mabe:reliarch_scythe" ],
+            "repair_amount": "query.remaining_durability * 1.1"
+          }
+        ]
+      },
+      "minecraft:damage": 14,
+      "minecraft:weapon": {
+        "on_hurt_entity": {
+          "event": "mabe:attacked",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "mabe:attacked": {
+        "sequence": [
+          {
+            "damage": {
+              "type": "void",
+              "amount": 3
+            }
+          },
+          {
+            "run_command": {
+              "command": [
+                "playanimation @s animation.attack_animation.sword_rotate",
+                "damage @s 10 freezing",
+                "effect @s regeneration 4 3",
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=9] ~ ~ ~ summon mabe:organ_wand_shard",
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=9] ~ ~ ~ summon mabe:organ_wand_shard",
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=9] ~ ~ ~ summon mabe:organ_wand_shard",
+                "damage @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!item,r=9] 14 entity_attack entity @s",
+                "playsound item.trident.throw @e[type=player] ~ ~ ~ 5 0.6"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

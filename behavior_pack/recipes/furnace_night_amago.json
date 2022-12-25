@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "mabe:furnace_night_amago"
+    },
+
+    "tags": ["furnace", "smoker", "campfire"],
+    "input": "mabe:night_amago_raw",
+    "output": "mabe:night_amago_cooked"
+  }
+  
+}

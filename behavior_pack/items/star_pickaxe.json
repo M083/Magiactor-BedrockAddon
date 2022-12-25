@@ -1728,7 +1728,7 @@
             "items": [
               "mabe:star_pickaxe"
             ],
-            "repair_amount": 1200
+            "repair_amount": "query.remaining_durability * 1.1"
           }
         ]
       },

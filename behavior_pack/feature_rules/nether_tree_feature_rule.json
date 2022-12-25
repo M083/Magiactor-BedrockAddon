@@ -13,7 +13,7 @@
 				"all_of": [
 					{
 						"test": "has_biome_tag",
-						"operator": "=",
+						"operator": "==",
 						"value": "nether"
 					}
 				]

@@ -9,6 +9,12 @@
     },
 
     "component_groups": {
+      "mabe:ender_dragon_slayer": {
+        "minecraft:type_family": {
+          "family": [ "player", "ender_dragon_slayer" ]
+        }
+      },
+
       "mabe:fire_resist_boots":{
         "minecraft:lava_movement": {
           "value": 0.125
@@ -196,25 +202,7 @@
                       "test": "has_equipment",
                       "domain": "head",
                       "operator": "==",
-                      "value": "mabe:light_helmet_1"
-                    },
-                    {
-                      "test": "has_equipment",
-                      "domain": "head",
-                      "operator": "==",
-                      "value": "mabe:light_helmet_2"
-                    },
-                    {
-                      "test": "has_equipment",
-                      "domain": "head",
-                      "operator": "==",
-                      "value": "mabe:light_helmet_3"
-                    },
-                    {
-                      "test": "has_equipment",
-                      "domain": "head",
-                      "operator": "==",
-                      "value": "mabe:light_helmet_4"
+                      "value": "mabe:light_helmet"
                     }
                   ]
                 },
@@ -225,44 +213,6 @@
               ]
             },
             "event": "light_on"
-          },
-          {
-            "filters": {
-              "any_of": [
-                {
-                  "all_of": [
-                    {
-                      "test": "has_equipment",
-                      "domain": "head",
-                      "operator": "!=",
-                      "value": "mabe:light_helmet_1"
-                    },
-                    {
-                      "test": "has_equipment",
-                      "domain": "head",
-                      "operator": "!=",
-                      "value": "mabe:light_helmet_2"
-                    },
-                    {
-                      "test": "has_equipment",
-                      "domain": "head",
-                      "operator": "!=",
-                      "value": "mabe:light_helmet_3"
-                    },
-                    {
-                      "test": "has_equipment",
-                      "domain": "head",
-                      "operator": "!=",
-                      "value": "mabe:light_helmet_4"
-                    }
-                  ]
-                },
-                {
-                  "test": "in_water"
-                }
-              ]
-            },
-            "event": "light_off"
           },
           {
             "filters": {
@@ -439,10 +389,23 @@
             "event": "remove_fire_resist"
           }
         ]
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
       }
     },
 
     "events": {
+      "ender_dragon_slay_event": {
+        "add": {
+          "component_groups": [ "mabe:ender_dragon_slayer" ]
+        }
+      },
+      "death_event": {
+        "run_command": {
+          "command": "event entity @e[family = boss, r = 200, c = 1] boss_heal_event"
+        }
+      },
       "hurt_event": {
         "sequence": [
           {
@@ -487,21 +450,7 @@
         "sequence": [
           {
             "run_command": {
-              "command": "fill ~-2 ~-1 ~-2 ~2 ~3 ~2 air 0 replace mabe:light"
-            }
-          },
-          {
-            "run_command": {
               "command": "fill ~ ~1 ~ ~ ~1 ~ mabe:light 0 replace air"
-            }
-          }
-        ]
-      },
-      "light_off": {
-        "sequence": [
-          {
-            "run_command": {
-              "command": "fill ~-2 ~-1 ~-2 ~2 ~3 ~2 air 0 replace mabe:light"
             }
           }
         ]
@@ -598,7 +547,3 @@
     }
   }
 }
-
-
-
-

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mabe:organ_sword_white_2"
+    },
+    "tags": [ "organ_craft_table_white" ],
+    "key": {
+        "c": {
+            "item": "mabe:magia_white_crystal_block"
+        },
+        "l": {
+            "item": "mabe:organ_scissor_white"
+        },
+        "r": {
+            "item": "mabe:organ_fin_blue"
+        },
+        "p": {
+            "item": "mabe:organ_craftor_2"
+        }
+    },
+    "pattern": [
+        " lc",
+        "lc ",
+        "r p"
+    ],
+    "result": ["mabe:organ_sword_white_2", "mabe:organ_craftor_2"]
+  }
+}

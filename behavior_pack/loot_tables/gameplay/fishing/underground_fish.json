@@ -6,7 +6,12 @@
         {
           "type": "item",
           "name": "mabe:abyss_salmon_raw",
-          "weight": 60
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "mabe:night_amago_raw",
+          "weight": 25
         },
         {
           "type": "item",

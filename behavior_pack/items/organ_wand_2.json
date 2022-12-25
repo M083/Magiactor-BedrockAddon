@@ -27,6 +27,10 @@
           {
             "items": [ "mabe:magia_crystal_block" ],
             "repair_amount": 780
+          },
+          {
+            "items": [ "mabe:organ_wand_2" ],
+            "repair_amount": "query.remaining_durability * 1.1"
           }
         ]
       },
@@ -58,6 +62,16 @@
         "sequence": [
           {
             "swing": {}
+          },
+          {
+            "run_command": {
+              "command": [
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard",
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard",
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard",
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard"
+              ]
+            }
           },
           {
             "shoot": {

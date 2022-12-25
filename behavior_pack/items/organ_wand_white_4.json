@@ -27,6 +27,10 @@
           {
             "items": [ "mabe:magia_crystal_block" ],
             "repair_amount": 780
+          },
+          {
+            "items": [ "mabe:organ_wand_white_4" ],
+            "repair_amount": "query.remaining_durability * 1.1"
           }
         ]
       },
@@ -73,7 +77,10 @@
           },
           {
             "run_command": {
-              "command": "playsound firework.launch @s ~ ~ ~ 5 0.25"
+              "command": [
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_sphere",
+                "playsound firework.launch @s ~ ~ ~ 5 0.25"
+              ]
             }
           }
         ]

@@ -1,0 +1,81 @@
+{
+	"format_version" : "1.8.0",
+	"animation_controllers" : {
+		"controller.animation.astroworm.move" : {
+			"states" : {
+				"swim": {
+					"parameters": [ "query.modified_move_speed + 0.3" ],
+					"transitions": [
+						{
+							"walk" : "query.is_on_ground"
+						}
+					],
+					"animations": [
+						{ 
+							"swim": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						}
+					]
+				},
+				"walk": {
+					"parameters": [ "query.modified_move_speed" ],
+					"transitions": [
+						{
+							"swim" : "!query.is_on_ground"
+						}
+					],
+					"animations": [
+						{ 
+							"walk": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.astroworm.pose" : {
+			"states" : {
+				"swim_pose": {
+					"parameters": [ "query.modified_move_speed + 0.3" ],
+					"transitions": [
+						{
+							"stand_pose" : "query.is_on_ground"
+						}
+					],
+					"animations": [
+						{ 
+							"swim_pose": []
+						},
+						{ 
+							"curve": []
+						}
+					]
+				},
+				"stand_pose": {
+					"parameters": [ "query.modified_move_speed" ],
+					"transitions": [
+						{
+							"swim_pose" : "!query.is_on_ground"
+						}
+					],
+					"animations": [
+						{ 
+							"stand_pose": []
+						},
+						{ 
+							"curve": []
+						}
+					]
+				}
+			}
+		}
+	}
+}

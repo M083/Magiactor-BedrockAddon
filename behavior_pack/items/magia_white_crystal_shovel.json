@@ -177,7 +177,7 @@
             "items": [
               "mabe:magia_white_crystal_shovel"
             ],
-            "repair_amount": 800
+            "repair_amount": "query.remaining_durability * 1.1"
           }
         ]
       },

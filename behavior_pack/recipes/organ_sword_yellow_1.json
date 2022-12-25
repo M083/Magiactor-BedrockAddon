@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mabe:organ_sword_yellow_1"
+    },
+    "tags": [ "organ_craft_table_yellow" ],
+    "key": {
+        "c": {
+            "item": "mabe:fallen_star_shard"
+        },
+        "l": {
+            "item": "mabe:organ_wing_yellow"
+        },
+        "r": {
+            "item": "mabe:organ_moss_blue"
+        },
+        "p": {
+            "item": "mabe:organ_craftor_1"
+        }
+    },
+    "pattern": [
+        " lc",
+        "lc ",
+        "r p"
+    ],
+    "result": ["mabe:organ_sword_yellow_1", "mabe:organ_craftor_1"]
+  }
+}

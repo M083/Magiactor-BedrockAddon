@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "mabe:light_helmet_4",
+      "identifier": "mabe:light_helmet",
       "category": "Equipment"
     },
 
@@ -30,20 +30,8 @@
       "minecraft:repairable": {
         "repair_items": [
           {
-            "items": ["mabe:light_helmet_1"],
-            "repair_amount": 300
-          },
-          {
-            "items": ["mabe:light_helmet_2"],
-            "repair_amount": 300
-          },
-          {
-            "items": ["mabe:light_helmet_3"],
-            "repair_amount": 300
-          },
-          {
-            "items": ["mabe:light_helmet_4"],
-            "repair_amount": 300
+            "items": ["mabe:light_helmet"],
+            "repair_amount": "query.remaining_durability * 1.1"
           }
         ]
       },
@@ -57,7 +45,7 @@
         "slot": "armor_head"
       },
       "minecraft:armor": {
-        "protection": 3,
+        "protection": 1,
         "texture_type": "diamond"
       }
     },

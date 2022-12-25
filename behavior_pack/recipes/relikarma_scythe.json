@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:relikarma_scythe"
+        },
+        "key": {
+            "c": {
+                "item": "minecraft:exposed_copper"
+            },
+            "b": {
+                "item": "minecraft:deepslate_bricks"
+            },
+            "p": {
+                "item": "mabe:relikarma_craftor"
+            },
+            "h": {
+                "item": "mabe:replikar_heart"
+            }
+        },
+        "pattern": [
+            "cch",
+            "  b",
+            "p b"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:relikarma_scythe"
+            },
+            {
+                "count": 1,
+                "item": "mabe:relikarma_craftor"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

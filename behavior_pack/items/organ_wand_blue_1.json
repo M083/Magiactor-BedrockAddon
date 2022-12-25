@@ -27,12 +27,16 @@
           {
             "items": [ "mabe:magia_crystal_block" ],
             "repair_amount": 780
+          },
+          {
+            "items": [ "mabe:organ_wand_blue_1" ],
+            "repair_amount": "query.remaining_durability * 1.1"
           }
         ]
       },
       "minecraft:cooldown": {
         "category": "weapon",
-        "duration": 4
+        "duration": 1
       },
       "minecraft:damage": 5,
       "minecraft:weapon": {

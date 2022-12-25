@@ -1,0 +1,44 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:astrowand"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:fallen_star"
+            },
+            "l": {
+                "item": "mabe:ender_dust"
+            },
+            "r": {
+                "item": "mabe:astrowalker_tentacle"
+            },
+            "s": {
+                "item": "mabe:astroworm_shell"
+            },
+            "p": {
+                "item": "mabe:organ_craftor_4"
+            }
+        },
+        "pattern": [
+            " ls",
+            "lcl",
+            "rlp"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:astrowand"
+            },
+            {
+                "count": 1,
+                "item": "mabe:organ_craftor_4"
+            }
+        ],
+        "tags": [
+            "ender_craft_table"
+        ]
+    }
+}

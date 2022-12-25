@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:fish_organ",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/organ",
+        "green": "textures/entity/organ_green",
+        "white": "textures/entity/organ_white",
+        "yellow": "textures/entity/organ_yellow",
+        "purple": "textures/entity/organ_purple",
+        "red": "textures/entity/organ_red"
+      },
+      "geometry": {
+        "default": "geometry.fish_organ"
+      },
+      "animations": {
+        "move": "animation.fish_organ.move",
+        "roll": "animation.fish_organ.roll",
+        "stun": "animation.fish_organ.stun"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.fish_organ.move" },
+        { "stun": "controller.animation.fish_organ.stun" }
+      ],
+      "render_controllers": [ "controller.render.organ" ],
+      "spawn_egg": {
+        "base_color": "#181632",
+        "overlay_color": "#AEE5E4"
+      }
+    }
+  }
+}

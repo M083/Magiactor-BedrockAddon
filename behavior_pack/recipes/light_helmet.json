@@ -1,0 +1,33 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:light_helmet"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:magia_white_crystal_shard"
+            },
+            "g": {
+                "item": "minecraft:cobblestone"
+            },
+            "l": {
+                "item": "minecraft:torch"
+            }
+        },
+        "pattern": [
+            "clc",
+            "g g"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:light_helmet"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

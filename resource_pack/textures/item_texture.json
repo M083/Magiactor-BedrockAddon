@@ -2,6 +2,45 @@
   "resource_pack_name": "mabe",
   "texture_name": "atlas.items",
   "texture_data": {
+    "astrowand": {
+      "textures": "textures/items/astrowand"
+    },
+    "astroworm_shell": {
+      "textures": "textures/items/astroworm_shell"
+    },
+    "astrowalker_tentacle": {
+      "textures": "textures/items/astrowalker_tentacle"
+    },
+    "ender_dust": {
+      "textures": "textures/items/ender_dust"
+    },
+    "larva_tooth": {
+      "textures": "textures/items/larva_tooth"
+    },
+    "royal_honey": {
+      "textures": "textures/items/royal_honey"
+    },
+    "moon_gazer": {
+      "textures": "textures/items/moon_gazer"
+    },
+    "depth_reaper": {
+      "textures": [
+        "textures/items/depth_reaper/depth_reaper_0",
+        "textures/items/depth_reaper/depth_reaper_1"
+      ]
+    },
+    "item_magnet": {
+      "textures": "textures/items/item_magnet"
+    },
+    "skull_wand": {
+      "textures": "textures/items/skull_wand"
+    },
+    "organ_drink": {
+      "textures": "textures/items/organ_drink"
+    },
+    "replikar_heart": {
+      "textures": "textures/items/replikar_heart"
+    },
     "artifact": {
       "textures": "textures/items/artifact"
     },
@@ -34,6 +73,21 @@
     },
     "luciberry": {
       "textures": "textures/items/luciberry"
+    },
+    "floatberry": {
+      "textures": "textures/items/floatberry"
+    },
+    "reliarch_scythe": {
+      "textures": "textures/items/reliarch_scythe"
+    },
+    "reliarch_axe": {
+      "textures": "textures/items/reliarch_axe"
+    },
+    "relikarma_scythe": {
+      "textures": "textures/items/relikarma_scythe"
+    },
+    "relikarma_axe": {
+      "textures": "textures/items/relikarma_axe"
     },
     "magia_blade_white": {
       "textures": "textures/items/magia_blade_white"
@@ -101,6 +155,30 @@
     "magia_purple_crystal_shovel": {
       "textures": "textures/items/magia_purple_crystal_shovel"
     },
+    "organ_catalyst_white": {
+      "textures": "textures/items/organ_catalyst_white"
+    },
+    "organ_catalyst_blue": {
+      "textures": "textures/items/organ_catalyst_blue"
+    },
+    "organ_catalyst_green": {
+      "textures": "textures/items/organ_catalyst_green"
+    },
+    "organ_catalyst_yellow": {
+      "textures": "textures/items/organ_catalyst_yellow"
+    },
+    "organ_catalyst_purple": {
+      "textures": "textures/items/organ_catalyst_purple"
+    },
+    "organ_catalyst_red": {
+      "textures": "textures/items/organ_catalyst_red"
+    },
+    "relikarma_craftor": {
+      "textures": "textures/items/relikarma_craftor"
+    },
+    "skull_wand_craftor": {
+      "textures": "textures/items/skull_wand_craftor"
+    },
     "organ_craftor_1": {
       "textures": "textures/items/organ_craftor_1"
     },
@@ -148,6 +226,36 @@
     },
     "organ_sword": {
       "textures": "textures/items/organ_sword"
+    },
+    "organ_sword_white": {
+      "textures": "textures/items/organ_sword_white"
+    },
+    "organ_sword_yellow": {
+      "textures": "textures/items/organ_sword_yellow"
+    },
+    "organ_scissor_white": {
+      "textures": "textures/items/organ_scissor_white"
+    },
+    "organ_scissor_blue": {
+      "textures": "textures/items/organ_scissor_blue"
+    },
+    "organ_scissor_purple": {
+      "textures": "textures/items/organ_scissor_purple"
+    },
+    "organ_wing_yellow": {
+      "textures": "textures/items/organ_wing_yellow"
+    },
+    "organ_wing_purple": {
+      "textures": "textures/items/organ_wing_purple"
+    },
+    "organ_fin_blue": {
+      "textures": "textures/items/organ_fin_blue"
+    },
+    "organ_fin_purple": {
+      "textures": "textures/items/organ_fin_purple"
+    },
+    "organ_moss_blue": {
+      "textures": "textures/items/organ_moss_blue"
     },
     "star_pickaxe": {
       "textures": "textures/items/star_pickaxe"
@@ -238,6 +346,12 @@
     },
     "abyss_salmon_cooked": {
       "textures": "textures/items/abyss_salmon_cooked"
+    },
+    "night_amago_raw": {
+      "textures": "textures/items/night_amago_raw"
+    },
+    "night_amago_cooked": {
+      "textures": "textures/items/night_amago_cooked"
     },
     "magia_crystal_shard": {
       "textures": "textures/items/magia_crystal_shard"

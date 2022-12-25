@@ -172,10 +172,10 @@
       "minecraft:nameable": {
       },
       "minecraft:type_family": {
-        "family": [ "butterfly_elorgan", "monster", "elorgan", "arthropod" ]
+        "family": [ "butterfly_elorgan", "monster", "boss", "elorgan", "arthropod" ]
       },
       "minecraft:loot": {
-        "table": "loot_tables/entities/butterfly_elorgan.json"
+        "table": ""
       },
       "minecraft:health": {
         "value": 150,
@@ -245,7 +245,26 @@
       }
     },
     "events": {
+      "boss_heal_event": {
+        "run_command": {
+          "command": [
+            "effect @s instant_health 1 4"
+          ]
+        }
+      },
       "death_event": {
+        "sequence": [
+          {
+            "filters": {"test": "is_mark_variant", "subject": "self", "value": 5},
+            "run_command": {
+              "command": [
+                "structure load mystructure:reward_elorgan_red ~ ~ ~",
+                "effect @e[type=player] village_hero 1800 3",
+                "xp 50 @e[type=player]"
+              ]
+            }
+          }
+        ]
       },
       "add_boss": {
         "add": { "component_groups": [ "boss_bar" ] }
@@ -287,7 +306,7 @@
             "run_command" : {
               "command": [
                 "effect @e[type=player, r=64] blindness 2 1 true",
-                "execute @e[type=player, r=64] ~ ~ ~ playsound mob.allay.death @s ~ ~ ~ 5 0.25 5"
+                "execute as @e[type=player, r=64] run playsound mob.allay.death @s ~ ~ ~ 5 0.25 5"
               ]
             }
           },

@@ -21,7 +21,7 @@
         "repair_items": [
           {
             "items": [ "mabe:wander_broom" ],
-            "repair_amount": 640
+            "repair_amount": "query.remaining_durability * 1.1"
           }
         ]
       },

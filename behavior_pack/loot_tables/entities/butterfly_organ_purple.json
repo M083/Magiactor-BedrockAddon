@@ -91,6 +91,7 @@
                 }
             ]
         },
+        /*
         {
             "rolls": 1,
             "conditions": [
@@ -107,6 +108,36 @@
                 {
                     "type": "item",
                     "name": "mabe:organ_craftor_1",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        */
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                  "condition": "random_chance_with_looting",
+                  "chance": 0.65,
+                  "looting_multiplier": 0.01
+                },
+                {
+                    "condition": "killed_by_player"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "mabe:organ_wing_purple",
                     "weight": 1,
                     "functions": [
                         {

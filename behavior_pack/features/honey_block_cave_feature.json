@@ -1,0 +1,48 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "mabe:honey_block_cave_feature"  
+		},
+		"count": 12,
+		"replace_rules": [
+			{
+				"places_block": "minecraft:honey_block",
+				"may_replace": [
+					"minecraft:honeycomb_block"
+				]
+			}
+		]
+
+		// "places_block": "minecraft:air",
+		// "may_replace": [
+		// 	{"name": "minecraft:stone"},
+		// 	{"name": "minecraft:planks"},
+		// 	{"name": "minecraft:rail"},
+		// 	{"name": "minecraft:fence"},
+		// 	{"name": "minecraft:web"},
+		// 	{"name": "minecraft:water"},
+		// 	{"name": "minecraft:lava"},
+		// 	{"name": "minecraft:gravel"},
+		// 	{"name": "minecraft:sand"},
+		// 	{"name": "minecraft:dirt"},
+		// 	{"name": "minecraft:grass"},
+		// 	{"name": "minecraft:seagrass"},
+		// 	{"name": "minecraft:kelp"},
+		// 	{"name": "minecraft:coal_ore"},
+		// 	{"name": "minecraft:diamond_ore"},
+		// 	{"name": "minecraft:emerald_ore"},
+		// 	{"name": "minecraft:gold_ore"},
+		// 	{"name": "minecraft:iron_ore"},
+		// 	{"name": "minecraft:lapis_ore"},
+		// 	{"name": "minecraft:lit_redstone_ore"},
+		// 	{"name": "minecraft:redstone_ore"},
+		// 	{"name": "minecraft:ancient_debris"},
+		// 	{"name": "minecraft:shroomlight"},
+		// 	{"name": "minecraft:snow_layer"},
+		// 	{"name": "minecraft:ice"},
+		// 	{"name": "minecraft:packed_ice"},
+		// 	{"name": "minecraft:blue_ice"}
+		// ]
+	}	
+}

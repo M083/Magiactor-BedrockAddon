@@ -31,10 +31,14 @@
           {
             "items": [ "mabe:magia_crystal_block" ],
             "repair_amount": 780
+          },
+          {
+            "items": [ "mabe:organ_sword_2" ],
+            "repair_amount": "query.remaining_durability * 1.1"
           }
         ]
       },
-      "minecraft:damage": 10,
+      "minecraft:damage": 12,
       "minecraft:weapon": {
         "on_hurt_entity": {
           "event": "mabe:attacked",
@@ -42,8 +46,8 @@
         }
       },
       "minecraft:cooldown": {
-        "category": "weapon",
-        "duration": 3
+        "category": "sword",
+        "duration": 1
       },
       "minecraft:on_use": {
         "on_use": {
@@ -77,7 +81,7 @@
             "run_command": {
               "command": [
                 "playanimation @s animation.attack_animation.sword_rotate",
-                "damage @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!item,r=6] 10 entity_attack entity @s",
+                "damage @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!item,r=6] 12 entity_attack entity @s",
                 "playsound item.trident.throw @e[type=player] ~ ~ ~ 5 0.6"
               ]
             }

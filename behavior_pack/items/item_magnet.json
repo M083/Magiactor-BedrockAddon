@@ -1,0 +1,68 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:item_magnet",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "item_magnet"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 60
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "mabe:item_magnet" ],
+            "repair_amount": "query.remaining_durability * 1.1"
+          },
+          {
+            "items": [ "mabe:organ_oil" ],
+            "repair_amount": 20
+          },
+          {
+            "items": [ "mabe:replikar_heartar" ],
+            "repair_amount": 20
+          },
+          {
+            "items": [ "minecraft:copper_ingot" ],
+            "repair_amount": 20
+          }
+        ]
+      },
+      "minecraft:cooldown": {
+        "category": "magnet",
+        "duration": 3
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "mabe:magnet"
+        }
+      }
+    },
+    "events": {
+      "mabe:magnet": {
+        "sequence": [
+          {
+            "damage": {
+              "type": "void",
+              "amount": 1
+            }
+          },
+          {
+            "swing": {}
+          },
+          {
+            "run_command": {
+              "command": "tp @e[type=item,r=128] @s"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

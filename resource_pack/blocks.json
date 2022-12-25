@@ -1,8 +1,18 @@
 {
+  "mabe:floatberry_plant": {
+    "textures": "floatberry",
+    "isotropic": true,
+    "sound": "vines"
+  },
   "mabe:luciberry_plant": {
     "textures": "luciberry",
     "isotropic": true,
     "sound": "vines"
+  },
+  "mabe:astrocloud_block": {
+    "textures": "astrocloud_block",
+    "isotropic": true,
+    "sound": "cloth"
   },
   "mabe:cloud_block": {
     "textures": "cloud_block",
@@ -68,34 +78,43 @@
     "textures": "sky_tile",
     "sound": "nether_brick"
   },
+  "mabe:ender_craft_table": {
+    "textures": "ender_craft_table",
+    "isotropic": true,
+    "sound": "amethyst_block"
+  },
+  "mabe:organ_craft_table_white": {
+    "textures": "organ_craft_table_white",
+    "isotropic": true,
+    "sound": "amethyst_block"
+  },
+  "mabe:organ_craft_table_yellow": {
+    "textures": "organ_craft_table_yellow",
+    "isotropic": true,
+    "sound": "amethyst_block"
+  },
   "mabe:magia_crystal_block": {
     "textures": "magia_crystal_block",
-    "isotropic": true,
     "sound": "amethyst_block"
   },
   "mabe:magia_light_crystal_block": {
     "textures": "magia_light_crystal_block",
-    "isotropic": true,
     "sound": "amethyst_block"
   },
   "mabe:magia_white_crystal_block": {
     "textures": "magia_white_crystal_block",
-    "isotropic": true,
     "sound": "amethyst_block"
   },
   "mabe:magia_purple_crystal_block": {
     "textures": "magia_purple_crystal_block",
-    "isotropic": true,
     "sound": "amethyst_block"
   },
   "mabe:magia_red_crystal_block": {
     "textures": "magia_red_crystal_block",
-    "isotropic": true,
     "sound": "amethyst_block"
   },
   "mabe:fallen_star": {
     "textures": "fallen_star",
-    "isotropic": true,
     "sound": "amethyst_block"
   }
 }

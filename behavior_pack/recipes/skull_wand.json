@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:skull_wand"
+        },
+        "key": {
+            "s": {
+                "item": "minecraft:skull"
+            },
+            "l": {
+                "item": "minecraft:bone"
+            },
+            "b": {
+                "item": "minecraft:bone_block"
+            },
+            "p": {
+                "item": "mabe:skull_wand_craftor"
+            }
+        },
+        "pattern": [
+            "  s",
+            " l ",
+            "b p"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:skull_wand"
+            },
+            {
+                "count": 1,
+                "item": "mabe:skull_wand_craftor"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

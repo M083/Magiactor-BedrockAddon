@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:reliarch_axe"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:fallen_star"
+            },
+            "b": {
+                "item": "mabe:sky_brick"
+            },
+            "p": {
+                "item": "mabe:relikarma_craftor"
+            },
+            "h": {
+                "item": "mabe:replikar_heart"
+            }
+        },
+        "pattern": [
+            " ch",
+            " cb",
+            "p b"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:reliarch_axe"
+            },
+            {
+                "count": 1,
+                "item": "mabe:relikarma_craftor"
+            }
+        ],
+        "tags": [
+            "organ_craft_table_yellow"
+        ]
+    }
+}

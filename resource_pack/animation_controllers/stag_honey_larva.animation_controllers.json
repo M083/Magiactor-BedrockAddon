@@ -1,0 +1,122 @@
+{
+	"format_version" : "1.8.0",
+	"animation_controllers" : {
+	    "controller.animation.stag_honey_larva.stag_attack": {
+	      "states": {
+	        "default": {
+	          "transitions": [
+	            {
+	              "attack": "variable.attack_time > 0.0"
+	            }
+	          ]
+	        },
+	        "attack": {
+	          "animations": [ { "stag_attack": [] } ],
+	          "transitions": [
+	            {
+	              "default": "variable.attack_time <= 0.0"
+	            }
+	          ]
+	        }
+	      }
+	    },
+		"controller.animation.stag_honey_larva.ramp" : {
+			"states" : {
+		        "calm": {
+		          "animations": [
+		            {
+		              "stag_close_pose": []
+		            }
+		          ],
+		          "transitions": [
+		            {
+		              "ramp" : "query.has_target == 1"
+		            }
+		          ]
+		        },
+		        "ramp": {
+		          "animations": [
+		            {
+		              "stag_open_pose": []
+		            }
+		          ],
+		          "transitions": [
+		            {
+		              "calm" : "query.has_target == 0"
+		            }
+		          ]
+		        }
+			}
+		},
+		"controller.animation.stag_honey_larva.move" : {
+			"states" : {
+				"swim": {
+					"transitions": [
+						{
+							"walk" : "query.is_on_ground"
+						}
+					],
+					"animations": [
+						{ 
+							"swim": []
+						}
+					]
+				},
+				"walk": {
+					"parameters": [ "query.modified_move_speed" ],
+					"transitions": [
+						{
+							"swim" : "!query.is_on_ground"
+						}
+					],
+					"animations": [
+						{ 
+							"walk": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.stag_honey_larva.pose" : {
+			"states" : {
+				"swim_pose": {
+					"parameters": [ "query.modified_move_speed + 0.3" ],
+					"transitions": [
+						{
+							"stand_pose" : "query.is_on_ground"
+						}
+					],
+					"animations": [
+						{ 
+							"swim_pose": []
+						},
+						{ 
+							"curve": []
+						}
+					]
+				},
+				"stand_pose": {
+					"parameters": [ "query.modified_move_speed" ],
+					"transitions": [
+						{
+							"swim_pose" : "!query.is_on_ground"
+						}
+					],
+					"animations": [
+						{ 
+							"stand_pose": []
+						},
+						{ 
+							"curve": []
+						}
+					]
+				}
+			}
+		}
+	}
+}

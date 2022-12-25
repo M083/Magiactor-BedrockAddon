@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.depth_reaper": {
+			"loop": true,
+			"animation_length": 1.04,
+			"bones": {
+				"blade": {
+					"rotation": ["c.is_first_person ? 30.0 : 90.0", "c.is_first_person ? 5.0 : 0.0", "c.is_first_person ? -165.0 : -90.0"],
+					"position": ["c.is_first_person ? 0.0 : 0.0", "c.is_first_person ? 20.0 : 20.0", "17+c.is_first_person ? 10.0 : 0.0"]
+				}
+			}
+		},
+		"animation.depth_reaper.arousal": {
+			"loop": true,
+			"bones": {
+				"blade2": {
+					"rotation": [0, 0, 0],
+					"position": [
+						"-14 * ((query.position(1) < 0 || query.biome_has_any_tag('nether', 'the_end')) ? 1 : 0)",
+						"15 * ((query.position(1) < 0 || query.biome_has_any_tag('nether', 'the_end')) ? 1 : 0)",
+						0
+					]
+				}
+			}
+		}
+	}
+}

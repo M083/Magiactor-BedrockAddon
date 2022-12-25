@@ -1,0 +1,34 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:organ_craft_table_yellow"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:fallen_star"
+            },
+            "s": {
+                "item": "mabe:organ_wing_yellow"
+            },
+            "o": {
+                "item": "mabe:organ_catalyst_yellow"
+            }
+        },
+        "pattern": [
+            " o ",
+            "sss",
+            "ccc"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:organ_craft_table_yellow"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

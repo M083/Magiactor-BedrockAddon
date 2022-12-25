@@ -17,7 +17,7 @@
                 "burn_odds": 0
             },
             "minecraft:map_color": "#70CCCB",
-            "minecraft:block_light_absorption": 1,
+            "minecraft:block_light_absorption": 0,
             "minecraft:block_light_emission": 0.8,
             "minecraft:material_instances": {
                 "*": {

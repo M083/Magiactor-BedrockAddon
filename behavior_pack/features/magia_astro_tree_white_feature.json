@@ -1,0 +1,33 @@
+{
+	"format_version": "1.15.0",
+	"minecraft:tree_feature": {
+		"description": {
+			"identifier": "mabe:magia_astro_tree_white_feature"
+		},
+		"may_grow_on": [
+			"minecraft:end_stone",
+			"mabe:astrocloud_block"
+		],
+		"may_replace": [
+			"minecraft:air"
+		],
+		"fancy_trunk": {
+			"trunk_block": {
+				"name": "mabe:magia_white_crystal_block"
+			},
+			"trunk_width": 1,
+			"trunk_height": {
+				"base": 3,
+				"variance": 9,
+				"scale": 1.0
+			},
+			"foliage_altitude_factor": 0.7,
+			"width_scale": 3.5,
+			"branches": {
+				"slope": 0.3,
+				"density": 0.3,
+				"min_altitude_factor": 0.1
+			}
+		}
+	}
+}

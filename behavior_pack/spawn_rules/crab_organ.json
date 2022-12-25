@@ -7,11 +7,12 @@
     },
     "conditions": [
       {
+        "minecraft:spawns_on_surface": {},
         "minecraft:spawns_underground": {},
 
         "minecraft:brightness_filter": {
           "min": 0,
-          "max": 0,
+          "max": 7,
           "adjust_for_weather": true
         },
 
@@ -22,11 +23,11 @@
 
         "minecraft:height_filter": {
           "min": -64,
-          "max": 75
+          "max": 150
         },
 
         "minecraft:weight": {
-          "default": 50
+          "default": 20
         },
 
         "minecraft:density_limit": {

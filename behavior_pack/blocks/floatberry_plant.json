@@ -1,0 +1,106 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mabe:floatberry_plant",
+            "properties": {
+                "mabe:block_direction": [ 0, 1, 2, 3]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category":"Construction",
+                "group": "itemGroup.name.sapling"
+            },
+            "minecraft:loot": "loot_tables/blocks/floatberry_plant.json",
+            "minecraft:destroy_time": 0,
+            "minecraft:explosion_resistance": 0.0,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [ "up" ],
+                        "block_filter": [ "mabe:cloud_block" ]
+                    }
+                ]
+            },
+            // "minecraft:queued_ticking": {
+            //     "on_tick": {
+            //         "event": "mabe:placed"
+            //     },
+            //     "interval_range": [1, 1],
+            //     "looping": false
+            // },
+            "minecraft:geometry": "geometry.luciberry",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "floatberry",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:entity_collision": false,
+            "minecraft:pick_collision": {
+                "origin": [ -4.0, 0.0, -4.0],
+                "size": [ 8.0, 12.0, 8.0 ]
+            },
+            "minecraft:map_color": "#F7FF18",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0.75
+        },
+        "events": {
+            "mabe:placed": {
+                "randomize":[
+                    {
+                        "set_block_property": {
+                            "mabe:block_direction": "0"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "mabe:block_direction": "1"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "mabe:block_direction": "2"
+                        }
+                    },
+                    {
+                        "set_block_property": {
+                            "mabe:block_direction": "3"
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('mabe:block_direction') == 0.0",
+                "components": {
+                    "minecraft:rotation": [0, 0, 0]
+                }
+            },
+            {
+                "condition": "q.block_property('mabe:block_direction') == 1.0",
+                "components": {
+                    "minecraft:rotation": [0, 90, 0]
+                }
+            },
+            {
+                "condition": "q.block_property('mabe:block_direction') == 2.0",
+                "components": {
+                    "minecraft:rotation": [0, 180, 0]
+                }
+            },
+            {
+                "condition": "q.block_property('mabe:block_direction') == 3.0",
+                "components": {
+                    "minecraft:rotation": [0, 270, 0]
+                }
+            }
+        ]
+    }
+}

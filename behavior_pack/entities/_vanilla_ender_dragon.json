@@ -1,0 +1,258 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:ender_dragon",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 400,
+          "max": 400
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 1000,
+          "max": 1000
+        }
+      },
+      "dragon_sitting": {
+        /* default
+        "minecraft:behavior.dragonlanding": {
+          "priority": 0
+        },
+        "minecraft:behavior.dragonflaming": {
+          "priority": 1
+        },
+        "minecraft:behavior.dragonscanning": {
+          "priority": 2
+        },
+        */
+
+        "minecraft:behavior.dragonchargeplayer": {
+          "priority": 0
+        },
+        "minecraft:behavior.dragonstrafeplayer": {
+          "priority": 1
+        },
+        "minecraft:behavior.dragonflaming": {
+          "priority": 2
+        },
+        "minecraft:behavior.dragontakeoff": {
+          "priority": 3
+        },
+        "minecraft:behavior.dragonholdingpattern": {
+          "priority": 4
+        },
+        "minecraft:behavior.dragonlanding": {
+          "priority": 5
+        },
+        "minecraft:shooter": {
+          "type": "dragonfireball",
+          "def": "minecraft:dragon_fireball"
+        }
+      },
+      "dragon_flying": {
+        /* default
+        "minecraft:behavior.dragontakeoff": {
+          "priority": 0
+        },
+        "minecraft:behavior.dragonchargeplayer": {
+          "priority": 1
+        },
+        "minecraft:behavior.dragonstrafeplayer": {
+          "priority": 2
+        },
+        "minecraft:behavior.dragonholdingpattern": {
+          "priority": 3
+        },
+        */
+        "minecraft:behavior.dragonflaming": {
+          "priority": 0
+        },
+        "minecraft:behavior.dragonchargeplayer": {
+          "priority": 1
+        },
+        "minecraft:behavior.dragonscanning": {
+          "priority": 2
+        },
+        "minecraft:behavior.dragontakeoff": {
+          "priority": 3
+        },
+        "minecraft:behavior.dragonholdingpattern": {
+          "priority": 5
+        },
+        "minecraft:behavior.dragonlanding": {
+          "priority": 6
+        }
+      },
+      "dragon_death": {
+        "minecraft:behavior.dragondeath": {
+          "priority": 0
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:type_family": {
+        "family": [ "dragon", "mob", "monster", "arthropod", "organ", "boss" ]
+      },
+      "minecraft:health": {
+        "value": 700,
+        "max": 700
+      },
+      "minecraft:boss": {
+        "should_darken_sky": false,
+        "hud_range": 125
+      },
+      "minecraft:collision_box": {
+        "width": 13,
+        "height": 4
+      },
+      "minecraft:movement": {
+        "value": 0.3
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:flying_speed": {
+        "value": 0.6
+      },
+      "minecraft:attack": {
+        "damage": 12
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      },
+      "minecraft:on_start_landing": {
+        "event": "minecraft:start_land",
+        "target": "self"
+      },
+      "minecraft:on_start_takeoff": {
+        "event": "minecraft:start_fly",
+        "target": "self"
+      },
+      "minecraft:on_death": {
+        "event": "minecraft:start_death",
+        "target": "self"
+      },
+      "minecraft:persistent": {
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:game_event_movement_tracking": {
+        "emit_flap": true
+      }
+    },
+
+    "events": {
+      "boss_heal_event": {
+        "run_command": {
+          "command": [
+            "effect @s instant_health 1 8"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          },
+          {        
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "dragon_flying"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:start_land": {
+        "remove": {
+          "component_groups": [
+            "dragon_flying"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "dragon_sitting"
+          ]
+        },
+        "run_command": {
+          "command": [
+            "execute at @e[type=enderman,r=24.5] run summon ender_crystal",
+            "kill @e[type=enderman,r=24.5]"
+          ]
+        }
+      },
+      "minecraft:start_fly": {
+        "remove": {
+          "component_groups": [
+            "dragon_sitting"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "dragon_flying"
+          ]
+        },
+        "run_command": {
+          "command": [
+            "execute at @e[type=enderman,r=24.5] run summon ender_crystal",
+            "kill @e[type=enderman,r=24.5]"
+          ]
+        }
+      },
+      "minecraft:start_death": {
+        "remove": {
+          "component_groups": [
+            "dragon_sitting",
+            "dragon_flying"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "dragon_death"
+          ]
+        },
+        "run_command": {
+          "command" : [
+            "event entity @e[type=player] ender_dragon_slay_event",
+            "structure load mystructure:reward_ender_dragon ~ ~ ~",
+            "effect @e[type=player] village_hero 1800 3",
+            "xp 150 @e[type=player]"
+          ]
+        }
+      }
+    }
+  }
+}

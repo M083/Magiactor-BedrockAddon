@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "mabe:floatberry_plant_feature"
+    },
+    "places_block": {
+      "name": "mabe:floatberry_plant"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "min_sides_must_attach": 2,
+      "auto_rotate": false,
+      "top": [
+        "minecraft:air"
+      ],
+      "bottom": [
+        "mabe:cloud_block"
+      ]
+    },
+    "may_replace": [
+      "minecraft:air"
+    ]
+  }
+}

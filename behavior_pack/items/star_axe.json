@@ -43,6 +43,13 @@
             }
           },
           {
+            "block": "minecraft:campfire",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
             "block": "minecraft:bamboo",
             "speed": 40,
             "on_dig": {
@@ -907,7 +914,7 @@
             "items": [
               "mabe:star_axe"
             ],
-            "repair_amount": 1200
+            "repair_amount": "query.remaining_durability * 1.1"
           }
         ]
       },

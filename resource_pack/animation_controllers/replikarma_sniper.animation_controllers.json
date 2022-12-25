@@ -1,0 +1,80 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.replikarma_sniper.general": {
+      "states": {
+        "sleep": {
+          "transitions": [
+            {
+              "default" : "query.variant == 1"
+            }
+          ],
+          "animations": [
+            { "sleep_pose": [] }
+          ]
+        },
+        "default": {
+          "transitions": [
+            {
+              "sleep" : "query.variant == 0"
+            }
+          ],
+          "animations": [
+            { "wakeup": [] },
+            { "part": [] },
+            { "stone": [] },
+            { "bolt_roll": [] },
+            { "look_at": [] }
+          ]
+        }
+      }
+    },
+    "controller.animation.replikarma_sniper.mode": {
+      "states": {
+        "sleep": {
+          "transitions": [
+            {
+              "calm" : "query.variant == 1"
+            }
+          ]
+        },
+        "calm": {
+          "animations": [
+            {
+              "to_calm": []
+            },
+            {
+              "mode_calm": []
+            }
+          ],
+          "transitions": [
+            {
+              "sleep" : "query.variant == 0"
+            },
+            {
+              "aim" : "query.has_target == 1"
+            }
+          ]
+        },
+        "aim": {
+          "animations": [
+            {
+              "to_aim": []
+            },
+            {
+              "mode_aim": []
+            }
+          ],
+          "transitions": [
+            {
+              "sleep" : "query.variant == 0"
+            },
+            {
+              "calm" : "query.has_target == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "mabe:astrocloud_sheep",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underground": {},
+        "minecraft:spawns_on_block_filter": "mabe:astrocloud_block",
+        "minecraft:weight": {
+          "default": 25
+        },
+        "minecraft:height_filter": {
+          "min": 0,
+          "max": 150
+        },
+        "minecraft:herd": {
+          "min_size":2,
+          "max_size":4
+        }
+      }
+    ]
+  }
+}

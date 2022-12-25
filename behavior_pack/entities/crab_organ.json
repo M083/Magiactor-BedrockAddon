@@ -71,6 +71,9 @@
       }
     },
     "components": {
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
@@ -227,7 +230,21 @@
           },
           {
             "filters": {
-              "test": "is_altitude", "operator": ">", "value": 0
+              "all_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "!=",
+                  "value": "nether"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "!=",
+                  "value": "forest"
+                },
+                {
+                  "test": "is_altitude", "operator": ">", "value": 0
+                }
+              ]
             },
             "sequence": [
               {

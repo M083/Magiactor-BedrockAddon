@@ -31,19 +31,19 @@
         "repair_items": [
           {
             "items": ["mabe:wing_boots_1"],
-            "repair_amount": 300
+            "repair_amount": "query.remaining_durability * 1.1"
           },
           {
             "items": ["mabe:wing_boots_2"],
-            "repair_amount": 300
+            "repair_amount": "query.remaining_durability * 1.1"
           },
           {
             "items": ["mabe:wing_boots_3"],
-            "repair_amount": 300
+            "repair_amount": "query.remaining_durability * 1.1"
           },
           {
             "items": ["mabe:wing_boots_4"],
-            "repair_amount": 300
+            "repair_amount": "query.remaining_durability * 1.1"
           }
         ]
       },

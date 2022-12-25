@@ -29,6 +29,9 @@
       }
     },
     "components": {
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
       "minecraft:scale": {
         "value": 1
       },

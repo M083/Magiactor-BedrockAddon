@@ -9,25 +9,25 @@
                 "item": "mabe:magia_quill_pen"
             },
             "d": {
-                "item": "minecraft:end_bricks"
+                "item": "mabe:organ_wing_purple"
             },
             "e": {
                 "item": "mabe:organ_craftor_3"
             },
             "f": {
-                "item": "minecraft:netherite_ingot"
+                "item": "mabe:organ_catalyst_red"
             },
             "g": {
-                "item": "minecraft:amethyst_block"
+                "item": "mabe:organ_scissor_purple"
             },
             "h": {
-                "item": "minecraft:crying_obsidian"
+                "item": "mabe:organ_fin_purple"
             }
         },
         "pattern": [
             "  c",
-            "dee",
-            "ghf"
+            "ded",
+            "gfh"
         ],
         "priority": 1,
         "result": {

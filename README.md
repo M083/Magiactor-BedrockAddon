@@ -37,7 +37,7 @@ v1.19.50以降のMCBEがインストールされた端末。
 Windows10、Windows11、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
 ## ダウンロード
-### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver1.04.020/Magiactor_1_04_020.mcaddon)
+### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver2.01.000/Magiactor_2_01_000.mcaddon)
 
 ### [過去のバージョンをダウンロード](https://github.com/M083/Magiactor-BedrockAddon/releases)
 
@@ -67,6 +67,11 @@ PCならダブルクリック、スマートフォンなら[開く → Minecraft
 マルチプレイのホストをする場合はリソースパックを開き、「参加にはリソースパックの受け入れが必要」にチェックを入れてください。
 
 ワールド名やシード値などを任意で入力し、ワールド作成を実行すれば完了です。
+
+#### 難易度
+イージー：スマホ環境の場合はこちらを推奨
+ノーマル：PC環境向け
+ハード：二周目以降の人向け
 
 ## スクリーンショット
 準備中...

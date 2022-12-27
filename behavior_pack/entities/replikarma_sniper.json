@@ -9,6 +9,9 @@
     },
 
     "component_groups": {
+      "mabe:apoptosis": {
+        "minecraft:instant_despawn": {}
+      },
       "status_easy": {
         "minecraft:health": {
           "value": 150,
@@ -244,8 +247,22 @@
           }
         ]
       },
+      "mabe:apoptosis": {
+        "add": {
+          "component_groups": [
+            "mabe:apoptosis"
+          ]
+        }
+      },
       "minecraft:entity_spawned": {
         "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "execute if entity @e[type=mabe:replikarma_sniper,rm=1,r=128] run event entity @s mabe:apoptosis"
+              ]
+            }
+          },
           {
             "filters": { "test": "is_difficulty", "value": "easy" },
             "add": {

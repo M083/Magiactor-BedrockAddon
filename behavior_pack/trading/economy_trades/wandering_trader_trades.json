@@ -31,15 +31,6 @@
                       "functions": [
                         {
                           "function": "exploration_map",
-                          "destination": "fortress"
-                        }
-                      ]
-                    },
-                    {
-                      "item": "minecraft:map",
-                      "functions": [
-                        {
-                          "function": "exploration_map",
                           "destination": "ancient_city"
                         }
                       ]
@@ -130,6 +121,31 @@
                     {
                       "item": "mabe:organ_catalyst_blue",
                       "quantity": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 64,
+              "weight":4,
+              "wants": [
+                {
+                  "item": "mabe:organ_catalyst_yellow",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "mabe:organ_wing_yellow",
+                      "quantity": 10
                     }
                   ]
                 }

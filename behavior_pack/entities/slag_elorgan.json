@@ -7,6 +7,9 @@
       "is_summonable": true
     },
     "component_groups": {
+      "mabe:apoptosis": {
+        "minecraft:instant_despawn": {}
+      },
       "boss_bar": {
         "minecraft:boss": {
           "name": "entity.mabe:slag_elorgan.name"
@@ -26,7 +29,7 @@
       },
       "nether": {
         "minecraft:attack": {
-          "damage": 26,
+          "damage": 12,
           "effect_name": "wither",
           "effect_duration": 7
         },
@@ -172,7 +175,7 @@
         "breathes_water": true
       },
       "minecraft:attack": {
-        "damage": 24,
+        "damage": 9,
         "effect_name": "darkness",
         "effect_duration": 10
       },
@@ -268,8 +271,22 @@
       "add_boss": {
         "add": { "component_groups": [ "boss_bar" ] }
       },
+      "mabe:apoptosis": {
+        "add": {
+          "component_groups": [
+            "mabe:apoptosis"
+          ]
+        }
+      },
       "minecraft:entity_spawned": {
         "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "execute if entity @e[type=mabe:slag_elorgan,rm=1,r=128] run event entity @s mabe:apoptosis"
+              ]
+            }
+          },
           {
             "filters": { "test": "is_difficulty", "value": "easy" },
             "add": {
@@ -304,14 +321,6 @@
             "add": {
               "component_groups": [
                 "nether"
-              ]
-            }
-          },
-          {
-            "run_command" : {
-              "command": [
-                "effect @e[type=player, r=64] blindness 2 1 true",
-                "execute as @e[type=player, r=64] run playsound mob.allay.death @s ~ ~ ~ 5 0.25 5"
               ]
             }
           },

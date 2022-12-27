@@ -7,6 +7,9 @@
       "is_summonable": true
     },
     "component_groups": {
+      "mabe:apoptosis": {
+        "minecraft:instant_despawn": {}
+      },
       "boss_bar": {
         "minecraft:boss": {
           "name": "entity.mabe:butterfly_elorgan.name"
@@ -272,6 +275,13 @@
       "minecraft:entity_spawned": {
         "sequence": [
           {
+            "run_command": {
+              "command": [
+                "execute if entity @e[type=mabe:slag_elorgan,rm=1,r=128] run event entity @s mabe:apoptosis"
+              ]
+            }
+          },
+          {
             "filters": { "test": "is_difficulty", "value": "easy" },
             "add": {
               "component_groups": [
@@ -299,14 +309,6 @@
             "add": {
               "component_groups": [
                 "nether"
-              ]
-            }
-          },
-          {
-            "run_command" : {
-              "command": [
-                "effect @e[type=player, r=64] blindness 2 1 true",
-                "execute as @e[type=player, r=64] run playsound mob.allay.death @s ~ ~ ~ 5 0.25 5"
               ]
             }
           },

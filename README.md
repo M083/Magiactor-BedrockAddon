@@ -37,7 +37,7 @@ v1.19.50以降のMCBEがインストールされた端末。
 Windows10、Windows11、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
 ## ダウンロード
-### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver2.01.000/Magiactor_2_01_000.mcaddon)
+### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver2.01.100/Magiactor_2_01_100.mcaddon)
 
 ### [過去のバージョンをダウンロード](https://github.com/M083/Magiactor-BedrockAddon/releases)
 
@@ -89,6 +89,17 @@ Twitter ([@M0_83](https://twitter.com/M0_83))
 	- 手懐けたグリフォニスの名前が「不明」と表示される。
 
 ## 更新履歴
+	ver2.01.100
+	不具合修正
+	・行商人から地図を購入すると何も書かれていない地図を売られることがある不具合の修正
+	・行商人の取引に黄なる異形の触媒が含まれていない不具合の修正
+
+	バランス調整
+	・蛞蝓の畏形の攻撃力を下方修正
+	・同じ種類のボスが複数体近くにスポーンしないように変更
+	・蛞蝓の畏形と蝶の畏形の出現演出を削除
+
+
 	ver2.01.000
 	※変更点多すぎるのでほぼ新作だと思ってください。
 	・不具合の修正
@@ -98,6 +109,7 @@ Twitter ([@M0_83](https://twitter.com/M0_83))
 	・多数のブロックを追加
 	・多数の生成物を追加
 	・一部のアイテムの効果を変更
+
 
 	ver1.03.000
 	不具合修正

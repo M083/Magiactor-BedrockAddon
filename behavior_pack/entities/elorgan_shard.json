@@ -137,12 +137,6 @@
         "sequence": [
           {
             "filters": {
-              "test": "has_biome_tag", "operator": "==", "value": "nether"
-            },
-            "add": { "component_groups": [ "nether" ] }
-          },
-          {
-            "filters": {
               "any_of": [
                 {
                   "test": "has_biome_tag",

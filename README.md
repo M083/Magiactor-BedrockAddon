@@ -37,7 +37,7 @@ v1.19.50以降のMCBEがインストールされた端末。
 Windows10、Windows11、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
 ## ダウンロード
-### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver2.01.100/Magiactor_2_01_100.mcaddon)
+### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver2.02.000/Magiactor_2_02_000.mcaddon)
 
 ### [過去のバージョンをダウンロード](https://github.com/M083/Magiactor-BedrockAddon/releases)
 
@@ -89,6 +89,15 @@ Twitter ([@M0_83](https://twitter.com/M0_83))
 	- 手懐けたグリフォニスの名前が「不明」と表示される。
 
 ## 更新履歴
+	ver2.02.000
+	不具合修正
+	・異形化したエンダードラゴン戦でゲームがクラッシュする不具合の修正
+
+	バランス調整
+	・異形化したエンダードラゴンのステータスや行動パターンを変更
+	・ハサミハチノコの名前を変更
+
+
 	ver2.01.100
 	不具合修正
 	・行商人から地図を購入すると何も書かれていない地図を売られることがある不具合の修正
@@ -102,7 +111,7 @@ Twitter ([@M0_83](https://twitter.com/M0_83))
 
 	ver2.01.000
 	※変更点多すぎるのでほぼ新作だと思ってください。
-	・不具合の修正
+	・不具合修正
 	・多数の武器を追加
 	・多数のアイテムを追加
 	・多数のモブを追加

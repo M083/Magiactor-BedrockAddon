@@ -5,23 +5,52 @@
       "identifier": "minecraft:ender_dragon",
       "is_spawnable": false,
       "is_summonable": true,
-      "is_experimental": false
+      "is_experimental": false,
+      "animations": {
+        "dragon_trigger": "controller.animation.dragon_trigger",
+        "dragon_roar": "controller.animation.dragon_roar"
+      },
+      "scripts": {
+        "animate": [
+          "dragon_trigger",
+          "dragon_roar"
+        ]
+      }
     },
-
     "component_groups": {
+      "health_100": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "health_75": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "health_50": {
+        "minecraft:variant": {
+          "value": 2
+        }
+      },
+      "health_25": {
+        "minecraft:variant": {
+          "value": 3
+        }
+      },
       "status_easy": {
         "minecraft:health": {
-          "value": 400,
-          "max": 400
+          "value": 200,
+          "max": 200
         }
       },
       "status_hard": {
         "minecraft:health": {
-          "value": 1000,
-          "max": 1000
+          "value": 500,
+          "max": 500
         }
       },
-      "dragon_sitting": {
+      "dragon_sitting_100": {
         /* default
         "minecraft:behavior.dragonlanding": {
           "priority": 0
@@ -34,31 +63,311 @@
         },
         */
 
-        "minecraft:behavior.dragonchargeplayer": {
+        "minecraft:behavior.dragonlanding": {
           "priority": 0
         },
-        "minecraft:behavior.dragonstrafeplayer": {
+        "minecraft:behavior.dragonflaming": {
           "priority": 1
         },
-        "minecraft:behavior.dragonflaming": {
+        "minecraft:behavior.knockback_roar": {
+          "priority": 2,
+          "duration": 5,
+          "attack_time": 4.5,
+          "knockback_damage": 12,
+          "knockback_horizontal_strength": 6,
+          "knockback_vertical_strength": 6,
+          "knockback_range": 4,
+          "on_roar_end": {
+            "event": "minecraft:start_fly"
+          },
+          "cooldown_time": 5
+        },
+        "minecraft:behavior.dragonscanning": {
+          "priority": 3
+        }
+      },
+      "dragon_flying_100": {
+        /* default
+        "minecraft:behavior.dragontakeoff": {
+          "priority": 0
+        },
+        "minecraft:behavior.dragonchargeplayer": {
+          "priority": 1
+        },
+        "minecraft:behavior.dragonstrafeplayer": {
           "priority": 2
         },
-        "minecraft:behavior.dragontakeoff": {
+        "minecraft:behavior.dragonholdingpattern": {
           "priority": 3
         },
-        "minecraft:behavior.dragonholdingpattern": {
-          "priority": 4
+        */
+        "minecraft:behavior.dragontakeoff": {
+          "priority": 0
         },
-        "minecraft:behavior.dragonlanding": {
-          "priority": 5
+        "minecraft:behavior.dragonchargeplayer": {
+          "priority": 1
+        },
+        "minecraft:behavior.dragonstrafeplayer": {
+          "priority": 2
+        },
+        "minecraft:behavior.dragonholdingpattern": {
+          "priority": 3
         },
         "minecraft:shooter": {
           "type": "dragonfireball",
           "def": "minecraft:dragon_fireball"
         }
       },
-      "dragon_flying": {
-        /* default
+      "dragon_sitting_75": {
+        "minecraft:behavior.dragonlanding": {
+          "priority": 0
+        },
+        "minecraft:behavior.dragonflaming": {
+          "priority": 1
+        },
+        "minecraft:behavior.summon_entity": {
+          "priority": 2,
+          "summon_choices": [
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 32.0,
+              "cooldown_time": 5.0,
+              "weight": 3,
+              "cast_duration": 2.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "cast.spell",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 1.5,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 5,
+                  "entity_type": "mabe:fish_organ",
+                  "size": 4.5,
+                  "entity_lifespan": 20,
+                  "sound_event": "prepare.attack"
+                },
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 0.15,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 8,
+                  "entity_type": "mabe:crab_organ_baby",
+                  "size": 6.5,
+                  "entity_lifespan": 20
+                }
+              ]
+            },
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 32.0,
+              "weight": 3,
+              "cooldown_time": 0.5,
+              "cast_duration": 2.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "cast.spell",
+              "sequence": [
+                {
+                  "shape": "line",
+                  "target": "self",
+                  "base_delay": 1.0,
+                  "delay_per_summon": 0.125,
+                  "num_entities_spawned": 32,
+                  "entity_type": "minecraft:lightning_bolt",
+                  "size": 32,
+                  "entity_lifespan": 1.1
+                },
+                {
+                  "shape": "line",
+                  "target": "self",
+                  "base_delay": 3.0,
+                  "delay_per_summon": 0.125,
+                  "num_entities_spawned": 32,
+                  "entity_type": "minecraft:lightning_bolt",
+                  "size": 32,
+                  "entity_lifespan": 1.1
+                },
+                {
+                  "shape": "line",
+                  "target": "self",
+                  "base_delay": 7.0,
+                  "delay_per_summon": 0.125,
+                  "num_entities_spawned": 32,
+                  "entity_type": "minecraft:lightning_bolt",
+                  "size": 32,
+                  "entity_lifespan": 1.1
+                }
+              ]
+            }
+          ]
+        },
+        "minecraft:behavior.dragonscanning": {
+          "priority": 3
+        }
+      },
+      "dragon_flying_75": {
+        "minecraft:behavior.dragontakeoff": {
+          "priority": 0
+        },
+        "minecraft:behavior.dragonchargeplayer": {
+          "priority": 1
+        },
+        "minecraft:behavior.dragonstrafeplayer": {
+          "priority": 2
+        },
+        "minecraft:behavior.summon_entity": {
+          "priority": 3,
+          "summon_choices": [
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 128.0,
+              "weight": 3,
+              "cooldown_time": 0.5,
+              "cast_duration": 1.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "cast.spell",
+              "sequence": [
+                {
+                  "shape": "line",
+                  "target": "self",
+                  "base_delay": 1.0,
+                  "delay_per_summon": 0.125,
+                  "num_entities_spawned": 32,
+                  "entity_type": "minecraft:lightning_bolt",
+                  "size": 128,
+                  "entity_lifespan": 1.1
+                },
+                {
+                  "shape": "line",
+                  "target": "self",
+                  "base_delay": 3.0,
+                  "delay_per_summon": 1.125,
+                  "num_entities_spawned": 32,
+                  "entity_type": "minecraft:lightning_bolt",
+                  "size": 128,
+                  "entity_lifespan": 1.1
+                },
+                {
+                  "shape": "line",
+                  "target": "self",
+                  "base_delay": 5.0,
+                  "delay_per_summon": 2.125,
+                  "num_entities_spawned": 32,
+                  "entity_type": "minecraft:lightning_bolt",
+                  "size": 128,
+                  "entity_lifespan": 1.1
+                }
+              ]
+            }
+          ]
+        },
+        "minecraft:behavior.dragonholdingpattern": {
+          "priority": 4
+        },
+        "minecraft:shooter": {
+          "type": "dragonfireball",
+          "def": "minecraft:dragon_fireball"
+        }
+      },
+      "dragon_sitting_50": {
+        "minecraft:behavior.dragonlanding": {
+          "priority": 0
+        },
+        "minecraft:behavior.dragonflaming": {
+          "priority": 1
+        },
+        "minecraft:behavior.summon_entity": {
+          "priority": 2,
+          "summon_choices": [
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 32.0,
+              "cooldown_time": 5.0,
+              "weight": 3,
+              "cast_duration": 2.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "cast.spell",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 1.5,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 5,
+                  "entity_type": "mabe:organ_shard",
+                  "size": 4.5,
+                  "entity_lifespan": 20,
+                  "sound_event": "prepare.attack"
+                },
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 0.15,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 8,
+                  "entity_type": "mabe:organ_shard",
+                  "size": 6.5,
+                  "entity_lifespan": 20
+                }
+              ]
+            },
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 32.0,
+              "weight": 3,
+              "cooldown_time": 0.5,
+              "cast_duration": 2.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "cast.spell",
+              "sequence": [
+                {
+                  "shape": "line",
+                  "target": "self",
+                  "base_delay": 1.0,
+                  "delay_per_summon": 0.125,
+                  "num_entities_spawned": 32,
+                  "entity_type": "minecraft:lightning_bolt",
+                  "size": 32,
+                  "entity_lifespan": 1.1
+                },
+                {
+                  "shape": "line",
+                  "target": "self",
+                  "base_delay": 3.0,
+                  "delay_per_summon": 0.125,
+                  "num_entities_spawned": 32,
+                  "entity_type": "minecraft:lightning_bolt",
+                  "size": 32,
+                  "entity_lifespan": 1.1
+                },
+                {
+                  "shape": "line",
+                  "target": "self",
+                  "base_delay": 7.0,
+                  "delay_per_summon": 0.125,
+                  "num_entities_spawned": 32,
+                  "entity_type": "minecraft:lightning_bolt",
+                  "size": 32,
+                  "entity_lifespan": 1.1
+                }
+              ]
+            }
+          ]
+        },
+        "minecraft:behavior.dragonscanning": {
+          "priority": 3
+        }
+      },
+      "dragon_flying_50": {
+        "minecraft:timer": {
+          "looping": true,
+          "time": [2, 2],
+          "time_down_event": {
+            "event": "mabe:summon_shard"
+          }
+        },
         "minecraft:behavior.dragontakeoff": {
           "priority": 0
         },
@@ -69,26 +378,125 @@
           "priority": 2
         },
         "minecraft:behavior.dragonholdingpattern": {
-          "priority": 3
+          "priority": 4
         },
-        */
+        "minecraft:shooter": {
+          "type": "dragonfireball",
+          "def": "minecraft:dragon_fireball"
+        }
+      },
+      "dragon_sitting_25": {
+        "minecraft:behavior.dragonlanding": {
+          "priority": 0
+        },
         "minecraft:behavior.dragonflaming": {
+          "priority": 1
+        },
+        "minecraft:behavior.summon_entity": {
+          "priority": 2,
+          "summon_choices": [
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 32.0,
+              "cooldown_time": 5.0,
+              "weight": 3,
+              "cast_duration": 2.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "cast.spell",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 1.5,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 5,
+                  "entity_type": "mabe:organ_shard",
+                  "size": 4.5,
+                  "entity_lifespan": 20,
+                  "sound_event": "prepare.attack"
+                },
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 0.15,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 8,
+                  "entity_type": "mabe:organ_shard",
+                  "size": 6.5,
+                  "entity_lifespan": 20
+                }
+              ]
+            },
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 32.0,
+              "weight": 3,
+              "cooldown_time": 0.5,
+              "cast_duration": 2.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "cast.spell",
+              "sequence": [
+                {
+                  "shape": "line",
+                  "target": "self",
+                  "base_delay": 1.0,
+                  "delay_per_summon": 0.125,
+                  "num_entities_spawned": 32,
+                  "entity_type": "minecraft:lightning_bolt",
+                  "size": 32,
+                  "entity_lifespan": 1.1
+                },
+                {
+                  "shape": "line",
+                  "target": "self",
+                  "base_delay": 3.0,
+                  "delay_per_summon": 0.125,
+                  "num_entities_spawned": 32,
+                  "entity_type": "minecraft:lightning_bolt",
+                  "size": 32,
+                  "entity_lifespan": 1.1
+                },
+                {
+                  "shape": "line",
+                  "target": "self",
+                  "base_delay": 7.0,
+                  "delay_per_summon": 0.125,
+                  "num_entities_spawned": 32,
+                  "entity_type": "minecraft:lightning_bolt",
+                  "size": 32,
+                  "entity_lifespan": 1.1
+                }
+              ]
+            }
+          ]
+        },
+        "minecraft:behavior.dragonscanning": {
+          "priority": 3
+        }
+      },
+      "dragon_flying_25": {
+        "minecraft:timer": {
+          "looping": true,
+          "time": [0.5, 0.5],
+          "time_down_event": {
+            "event": "mabe:summon_shard"
+          }
+        },
+        "minecraft:behavior.dragontakeoff": {
           "priority": 0
         },
         "minecraft:behavior.dragonchargeplayer": {
           "priority": 1
         },
-        "minecraft:behavior.dragonscanning": {
+        "minecraft:behavior.dragonstrafeplayer": {
           "priority": 2
         },
-        "minecraft:behavior.dragontakeoff": {
-          "priority": 3
-        },
         "minecraft:behavior.dragonholdingpattern": {
-          "priority": 5
+          "priority": 4
         },
-        "minecraft:behavior.dragonlanding": {
-          "priority": 6
+        "minecraft:shooter": {
+          "type": "dragonfireball",
+          "def": "minecraft:dragon_fireball"
         }
       },
       "dragon_death": {
@@ -105,8 +513,8 @@
         "family": [ "dragon", "mob", "monster", "arthropod", "organ", "boss" ]
       },
       "minecraft:health": {
-        "value": 700,
-        "max": 700
+        "value": 350,
+        "max": 350
       },
       "minecraft:boss": {
         "should_darken_sky": false,
@@ -190,53 +598,150 @@
             },
             "add": {
               "component_groups": [
-                "dragon_flying"
+                "dragon_flying_100"
               ]
             }
           }
         ]
       },
-      "minecraft:start_land": {
-        "remove": {
-          "component_groups": [
-            "dragon_flying"
-          ]
-        },
+      "mabe:health_change_100": {
         "add": {
           "component_groups": [
-            "dragon_sitting"
-          ]
-        },
-        "run_command": {
-          "command": [
-            "execute at @e[type=enderman,r=24.5] run summon ender_crystal",
-            "kill @e[type=enderman,r=24.5]"
+            "health_100"
           ]
         }
       },
-      "minecraft:start_fly": {
-        "remove": {
-          "component_groups": [
-            "dragon_sitting"
-          ]
-        },
+      "mabe:health_change_75": {
         "add": {
           "component_groups": [
-            "dragon_flying"
-          ]
-        },
-        "run_command": {
-          "command": [
-            "execute at @e[type=enderman,r=24.5] run summon ender_crystal",
-            "kill @e[type=enderman,r=24.5]"
+            "health_75"
           ]
         }
+      },
+      "mabe:health_change_50": {
+        "add": {
+          "component_groups": [
+            "health_50"
+          ]
+        }
+      },
+      "mabe:health_change_25": {
+        "add": {
+          "component_groups": [
+            "health_25"
+          ]
+        }
+      },
+      "mabe:summon_shard": {
+        "run_command": {
+          "command": [
+            "summon mabe:organ_shard ~ ~-12 ~"
+          ]
+        }
+      },
+      "minecraft:start_land": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [
+                "dragon_flying_100",
+                "dragon_flying_75",
+                "dragon_flying_50",
+                "dragon_flying_25"
+              ]
+            }
+          },
+          {
+            "filters": {"test": "is_variant", "subject": "self", "value": 0},
+            "add": {
+              "component_groups": [
+                "dragon_sitting_100"
+              ]
+            }
+          },
+          {
+            "filters": {"test": "is_variant", "subject": "self", "value": 1},
+            "add": {
+              "component_groups": [
+                "dragon_sitting_75"
+              ]
+            }
+          },
+          {
+            "filters": {"test": "is_variant", "subject": "self", "value": 2},
+            "add": {
+              "component_groups": [
+                "dragon_sitting_50"
+              ]
+            }
+          },
+          {
+            "filters": {"test": "is_variant", "subject": "self", "value": 3},
+            "add": {
+              "component_groups": [
+                "dragon_sitting_25"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:start_fly": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [
+                "dragon_sitting_100",
+                "dragon_sitting_75",
+                "dragon_sitting_50",
+                "dragon_sitting_25"
+              ]
+            }
+          },
+          {
+            "filters": {"test": "is_variant", "subject": "self", "value": 0},
+            "add": {
+              "component_groups": [
+                "dragon_flying_100"
+              ]
+            }
+          },
+          {
+            "filters": {"test": "is_variant", "subject": "self", "value": 1},
+            "add": {
+              "component_groups": [
+                "dragon_flying_75"
+              ]
+            }
+          },
+          {
+            "filters": {"test": "is_variant", "subject": "self", "value": 2},
+            "add": {
+              "component_groups": [
+                "dragon_flying_50"
+              ]
+            }
+          },
+          {
+            "filters": {"test": "is_variant", "subject": "self", "value": 3},
+            "add": {
+              "component_groups": [
+                "dragon_flying_25"
+              ]
+            }
+          }
+        ]
       },
       "minecraft:start_death": {
         "remove": {
           "component_groups": [
-            "dragon_sitting",
-            "dragon_flying"
+            "dragon_sitting_100",
+            "dragon_sitting_75",
+            "dragon_sitting_50",
+            "dragon_sitting_25",
+            "dragon_flying_100",
+            "dragon_flying_75",
+            "dragon_flying_50",
+            "dragon_flying_25"
           ]
         },
         "add": {

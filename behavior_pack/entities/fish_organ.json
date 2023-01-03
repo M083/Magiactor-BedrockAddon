@@ -313,6 +313,10 @@
                 {
                   "test": "has_biome_tag",
                   "value": "nether"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "value": "the_end"
                 }
               ]
             },

@@ -1,0 +1,104 @@
+{
+	"format_version" :"1.10.0",
+	"animation_controllers": {
+		"controller.animation.dragon_trigger":{
+			"initial_state": "health_100",
+			"states": {
+				"health_100": {
+					"on_entry": [
+						"@s mabe:health_change_100",
+						"@s minecraft:start_land",
+						"@s minecraft:start_fly"
+					],
+					"transitions": [
+						{
+							"health_75": "query.health / query.max_health > 0.50 && query.health / query.max_health <= 0.75"
+						},
+						{
+							"health_50": "query.health / query.max_health > 0.25 && query.health / query.max_health <= 0.50"
+						},
+						{
+							"health_25": "query.health / query.max_health <= 0.25"
+						}
+					]
+				},
+				"health_75": {
+					"on_entry": [
+						"@s mabe:health_change_75",
+						"@s minecraft:start_land",
+						"@s minecraft:start_fly"
+					],
+					"transitions": [
+						{
+							"health_100": "query.health / query.max_health > 0.75"
+						},
+						{
+							"health_50": "query.health / query.max_health > 0.25 && query.health / query.max_health <= 0.50"
+						},
+						{
+							"health_25": "query.health / query.max_health <= 0.25"
+						}
+					]
+				},
+				"health_50": {
+					"on_entry": [
+						"@s mabe:health_change_50",
+						"@s minecraft:start_land",
+						"@s minecraft:start_fly"
+					],
+					"transitions": [
+						{
+							"health_100": "query.health / query.max_health > 0.75"
+						},
+						{
+							"health_75": "query.health / query.max_health > 0.50 && query.health / query.max_health <= 0.75"
+						},
+						{
+							"health_25": "query.health / query.max_health <= 0.25"
+						}
+					]
+				},
+				"health_25": {
+					"on_entry": [
+						"@s mabe:health_change_25",
+						"@s minecraft:start_land",
+						"@s minecraft:start_fly"
+					],
+					"transitions": [
+						{
+							"health_100": "query.health / query.max_health > 0.75"
+						},
+						{
+							"health_75": "query.health / query.max_health > 0.50 && query.health / query.max_health <= 0.75"
+						},
+						{
+							"health_50": "query.health / query.max_health > 0.25 && query.health / query.max_health <= 0.50"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.dragon_roar": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"roaring": "query.is_roaring"
+						}
+					]
+				},
+				"roaring": {
+					"on_entry": [
+						"/playanimation @s animation.ender_dragon.roaring"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_roaring"
+						}
+					]
+				}
+			}
+		}
+	}
+}

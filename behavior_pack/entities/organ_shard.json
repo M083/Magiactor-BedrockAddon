@@ -17,6 +17,13 @@
           }
         }
       },
+      "nether": {
+        "minecraft:fire_immune": {
+        },
+        "minecraft:mark_variant": {
+          "value": 4
+        }
+      },
       "remove": {
         "minecraft:instant_despawn":{}
       }
@@ -126,6 +133,29 @@
       }
     },
     "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "value": "nether"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "value": "the_end"
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "nether"
+              ]
+            }
+          }
+        ]
+      },
       "death": {
         "add" : {
           "component_groups": ["death"]

@@ -1,0 +1,151 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ender_dragon.setup": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"position": [-10, "30.0 + variable.rotation_factor_translate * 10.0", 30],
+					"rotation": ["variable.clamped_pitch", 180, "variable.clamped_roll"]
+				}
+			}
+		},
+		"animation.ender_dragon.roaring": {
+			"animation_length": 5,
+			"bones": {
+				"neck1": {
+					"rotation":	{
+						"0.0": [0, 0, 0],
+						"4.3333": [ "variable.neck_1_rotation_x", "variable.neck_1_rotation_y", "variable.neck_1_rotation_z" ],
+						"4.5": [ "-(variable.neck_1_rotation_x)", "-(variable.neck_1_rotation_y)", "-(variable.neck_1_rotation_z)" ],
+						"4.9167": ["-0.6 * (variable.neck_1_rotation_x)", "-0.6 * (variable.neck_1_rotation_y)", "-0.6 * (variable.neck_1_rotation_z)"],
+						"5.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.3333": [ "variable.neck_1_position_x", 0, 0 ],
+						"4.5": [ "-(variable.neck_1_position_x)", 0, 0 ],
+						"4.9167": ["-0.6 * (variable.neck_1_position_x)", 0, 0],
+						"5.0": [0, 0, 0]
+					}
+				},
+				"neck2": {
+					"rotation":	{
+						"0.0": [0, 0, 0],
+						"4.3333": [ "variable.neck_2_rotation_x", "variable.neck_2_rotation_y", "variable.neck_2_rotation_z" ],
+						"4.5": [ "-(variable.neck_2_rotation_x)", "-(variable.neck_2_rotation_y)", "-(variable.neck_2_rotation_z)" ],
+						"4.9167": ["-0.6 * (variable.neck_2_rotation_x)", "-0.6 * (variable.neck_2_rotation_y)", "-0.6 * (variable.neck_2_rotation_z)"],
+						"5.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.3333": [ "variable.neck_2_position_x", "variable.neck_2_position_y - variable.neck_1_position_y", 0 ],
+						"4.5": [ "-(variable.neck_2_position_x)", "-(variable.neck_2_position_y - variable.neck_1_position_y)", 0 ],
+						"4.9167": ["-0.6 * (variable.neck_2_position_x)", "-0.6 * (variable.neck_2_position_y - variable.neck_1_position_y)", 0],
+						"5.0": [0, 0, 0]
+					}
+				},
+				"neck3": {
+					"rotation":	{
+						"0.0": [0, 0, 0],
+						"4.3333": [ "variable.neck_3_rotation_x", "variable.neck_3_rotation_y", "variable.neck_3_rotation_z" ],
+						"4.5": [ "-(variable.neck_3_rotation_x)", "-(variable.neck_3_rotation_y)", "-(variable.neck_3_rotation_z)" ],
+						"4.9167": ["-0.6 * (variable.neck_3_rotation_x)", "-0.6 * (variable.neck_3_rotation_y)", "-0.6 * (variable.neck_3_rotation_z)"],
+						"5.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.3333": [ "variable.neck_3_position_x", "variable.neck_3_position_y - variable.neck_1_position_y", 0 ],
+						"4.5": [ "-(variable.neck_3_position_x)", "-(variable.neck_3_position_y - variable.neck_1_position_y)", 0 ],
+						"4.9167": ["-0.6 * (variable.neck_3_position_x)", "-0.6 * (variable.neck_3_position_y - variable.neck_1_position_y)", 0],
+						"5.0": [0, 0, 0]
+					}
+				},
+				"neck4": {
+					"rotation":	{
+						"0.0": [0, 0, 0],
+						"4.3333": [ "variable.neck_4_rotation_x", "variable.neck_4_rotation_y", "variable.neck_4_rotation_z" ],
+						"4.5": [ "-(variable.neck_4_rotation_x)", "-(variable.neck_4_rotation_y)", "-(variable.neck_4_rotation_z)" ],
+						"4.9167": ["-0.6 * (variable.neck_4_rotation_x)", "-0.6 * (variable.neck_4_rotation_y)", "-0.6 * (variable.neck_4_rotation_z)"],
+						"5.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.3333": [ "variable.neck_4_position_x", "variable.neck_4_position_y - variable.neck_1_position_y", 0 ],
+						"4.5": [ "-(variable.neck_4_position_x)", "-(variable.neck_4_position_y - variable.neck_1_position_y)", 0 ],
+						"4.9167": ["-0.6 * (variable.neck_4_position_x)", "-0.6 * (variable.neck_4_position_y - variable.neck_1_position_y)", 0],
+						"5.0": [0, 0, 0]
+					}
+				},
+				"neck5": {
+					"rotation":	{
+						"0.0": [0, 0, 0],
+						"4.3333": [ "variable.neck_5_rotation_x", "variable.neck_5_rotation_y", "variable.neck_5_rotation_z" ],
+						"4.5": [ "-(variable.neck_5_rotation_x)", "-(variable.neck_5_rotation_y)", "-(variable.neck_5_rotation_z)" ],
+						"4.9167": ["-0.6 * (variable.neck_5_rotation_x)", "-0.6 * (variable.neck_5_rotation_y)", "-0.6 * (variable.neck_5_rotation_z)"],
+						"5.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.3333": [ "variable.neck_5_position_x", "variable.neck_5_position_y - variable.neck_1_position_y", 0 ],
+						"4.5": [ "-(variable.neck_5_position_x)", "-(variable.neck_5_position_y - variable.neck_1_position_y)", 0 ],
+						"4.9167": ["-0.6 * (variable.neck_5_position_x)", "-0.6 * (variable.neck_5_position_y - variable.neck_1_position_y)", 0],
+						"5.0": [0, 0, 0]
+					}
+				},
+				"head": {
+					"rotation":	{
+						"0.0": [0, 0, 0],
+						"4.3333": [ "variable.head_rotation_x", "variable.head_rotation_y", "variable.head_rotation_z" ],
+						"4.5": [ "-(variable.head_rotation_x)", "-(variable.head_rotation_y)", "-(variable.head_rotation_z)" ],
+						"4.9167": ["-0.6 * (variable.head_rotation_x)", "-0.6 * (variable.head_rotation_y)", "-0.6 * (variable.head_rotation_z)"],
+						"5.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"4.3333": [ "variable.head_position_x", "variable.head_position_y - variable.neck_1_position_y", 0 ],
+						"4.5": [ "-(variable.head_position_x)", "-(variable.head_position_y - variable.neck_1_position_y)", 0 ],
+						"4.9167": ["-0.6 * (variable.head_position_x)", "-0.6 * (variable.head_position_y - variable.neck_1_position_y)", 0],
+						"5.0": [0, 0, 0]
+					}
+				},
+				"wing": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.3333": [0, 0, -70],
+						"4.5": [0, 0, 70],
+						"4.9167": [0, 0, -47],
+						"5.0": [0, 0, 0]
+					}
+				},
+				"wing1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.3333": [0, 0, 70],
+						"4.5": [0, 0, -70],
+						"4.9167": [0, 0, 47],
+						"5.0": [0, 0, 0]
+					}
+				},
+				"wingtip1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.3333": [0, 0, 70],
+						"4.5": [0, 0, -70],
+						"4.9167": [0, 0, 47],
+						"5.0": [0, 0, 0]
+					}
+				},
+				"wingtip": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.3333": [0, 0, -70],
+						"4.5": [0, 0, 70],
+						"4.9167": [0, 0, -47],
+						"5.0": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

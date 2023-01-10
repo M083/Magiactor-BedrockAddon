@@ -15,10 +15,10 @@ Addon for Minecraft Bedrock Edition
 - [更新履歴](#更新履歴)
 
 ## お知らせ
-2022/9/15
+2022/1/6
 
-ver1.04.000をリリースしました。
-ver1.03.000とはワールド生成が異なります。新しくワールドを作り直してください。
+ver2.02.000をリリースしました。
+以前のバージョンとはワールド生成が異なります。新しくワールドを作り直してください。
 
 ## はじめに
 このアドオンはMinecraft Bedrock Edition(以下MCBE)専用です。
@@ -70,11 +70,19 @@ PCならダブルクリック、スマートフォンなら[開く → Minecraft
 
 #### 難易度
 イージー：スマホ環境の場合はこちらを推奨
+
 ノーマル：PC環境向け
+
 ハード：二周目以降の人向け
 
+
 ## スクリーンショット
-準備中...
+
+<img width="1200" alt="" src="https://github.com/M083/Magiactor-BedrockAddon/blob/main/screenshots/pic1.jpg?raw=true">
+
+<img width="1200" alt="" src="https://github.com/M083/Magiactor-BedrockAddon/blob/main/screenshots/pic2.jpg?raw=true">
+
+<img width="1200" alt="" src="https://github.com/M083/Magiactor-BedrockAddon/blob/main/screenshots/pic3.jpg?raw=true">
 
 
 ## 免責

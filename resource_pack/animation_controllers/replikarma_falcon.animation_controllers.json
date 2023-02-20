@@ -1,0 +1,62 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.replikarma_falcon.general": {
+      "states": {
+        "sleep": {
+          "transitions": [
+            {
+              "default" : "query.variant == 1"
+            }
+          ],
+          "animations": [
+            { "sleep": [] }
+          ]
+        },
+        "default": {
+          "transitions": [
+            {
+              "sleep" : "query.variant == 0"
+            }
+          ],
+          "animations": [
+            { "wake_up": [] },
+            { "part": [] },
+            { "stone": [] },
+            { "bolt": [] },
+            { "look_at": [] }
+          ]
+        }
+      }
+    },
+    "controller.animation.replikarma_falcon.mode": {
+      "states": {
+        "sleep": {
+          "transitions": [
+            {
+              "battle_mode" : "query.variant == 1"
+            }
+          ]
+        },
+        "battle_mode": {
+          "transitions": [
+            {
+              "sleep" : "query.variant == 0"
+            }
+          ],
+          "parameters": [ "query.modified_move_speed + 0.25" ],
+          "animations": [
+            {
+              "unit": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

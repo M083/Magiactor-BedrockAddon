@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mabe:canon_explode",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "mabe:apoptosis": {
+          "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "deals_damage": false
+        }
+      },
+      "minecraft:behavior.knockback_roar": {
+        "duration": 0.05,
+        "attack_time": 0.05,
+        "knockback_damage": 8,
+        "knockback_horizontal_strength": 4,
+        "knockback_vertical_strength": 2,
+        "knockback_range": 4,
+        "on_roar_end": {
+          "event": "mabe:apoptosis_event"
+        },
+        "cooldown_time": 5
+      }
+    },
+    "events": {
+      "mabe:apoptosis_event": {
+        "add": {
+          "component_groups": [ "mabe:apoptosis" ]
+        }
+      }
+    }
+  }
+}

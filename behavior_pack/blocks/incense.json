@@ -1,0 +1,43 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mabe:incense"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
+            "minecraft:loot": "loot_tables/blocks/incense.json",
+            "minecraft:geometry": "geometry.incense",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "incense",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:destroy_time": 0.4,
+            "minecraft:explosion_resistance": 20,
+            "minecraft:map_color": "#B5AAA1",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:queued_ticking": {
+                "on_tick": {
+                    "event": "away_boss"
+                },
+                "looping": true,
+                "interval_range": [20,20]
+            }
+        },
+        "events": {
+            "away_boss": {
+                "run_command": {
+                    "command": [
+                        "event entity @e[family=boss,type=!ender_dragon,r=64] mabe:apoptosis",
+                        "particle minecraft:knockback_roar_particle"
+                    ]
+                }
+            }
+        }
+    }
+}

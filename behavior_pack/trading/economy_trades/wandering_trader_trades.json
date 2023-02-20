@@ -300,6 +300,22 @@
                   "quantity": 10
                 }
               ]
+            },
+            {
+              "max_uses": 64,
+              "weight":4,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "mabe:larva_tooth",
+                  "quantity": 1
+                }
+              ]
             }
           ]
         },

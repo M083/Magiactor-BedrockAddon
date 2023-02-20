@@ -1,0 +1,40 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mabe:candelabra"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
+            "minecraft:loot": "loot_tables/blocks/candelabra.json",
+            "minecraft:geometry": "geometry.candelabra",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "ender_craft_table",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:destroy_time": 0.4,
+            "minecraft:explosion_resistance": 20,
+            "minecraft:map_color": "#B5AAA1",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:on_interact" : {
+                "event": "interact_event"
+            }
+        },
+        "events": {
+            "interact_event": {
+                "run_command": {
+                    "command": [
+                        "event entity @p mabe:arousal",
+                        "particle minecraft:knockback_roar_particle",
+                        "playsound random.totem @p ~ ~ ~"
+                    ]
+                }
+            }
+        }
+    }
+}

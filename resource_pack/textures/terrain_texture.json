@@ -4,6 +4,16 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
+    "wire_mesh": {
+      "textures": [
+        "textures/blocks/wire_mesh"
+      ]
+    },
+    "incense": {
+      "textures": [
+        "textures/blocks/incense"
+      ]
+    },
     "ender_craft_table": {
       "textures": [
         "textures/blocks/ender_craft_table"

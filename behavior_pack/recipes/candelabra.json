@@ -1,0 +1,40 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:candelabra"
+        },
+        "key": {
+            "c": {
+                "item": "mabe:fallen_star"
+            },
+            "l": {
+                "item": "mabe:ender_dust"
+            },
+            "t": {
+                "item": "mabe:astrowalker_tentacle"
+            },
+            "a": {
+                "item": "mabe:astrocloud_block"
+            },
+            "h": {
+                "item": "mabe:warden_horn"
+            }
+        },
+        "pattern": [
+            "tht",
+            "lcl",
+            " a "
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:candelabra"
+            }
+        ],
+        "tags": [
+            "ender_craft_table"
+        ]
+    }
+}

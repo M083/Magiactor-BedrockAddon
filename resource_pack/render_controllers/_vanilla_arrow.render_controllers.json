@@ -13,7 +13,8 @@
             "Texture.magia_white_crystal_spear",
             "Texture.organ_purple_shard",
             "Texture.organ_red_shard",
-            "Texture.void"
+            "Texture.void",
+            "Texture.canon"
       	  ]
       	},
         "geometries": {
@@ -26,7 +27,8 @@
             "Geometry.spear",
             "Geometry.organ_shard" ,
             "Geometry.organ_shard" ,
-            "Geometry.default"
+            "Geometry.default",
+            "Geometry.canon"
           ]
         },
         "materials": {
@@ -39,6 +41,7 @@
             "Material.default",
             "Material.emissive",
             "Material.emissive",
+            "Material.default",
             "Material.default"
           ]
         }

@@ -2,6 +2,8 @@
 
 entity.mabe:replikarma_sniper.name=レプリカルマ・スナイパー	#
 entity.mabe:replikarma_sniper<>.name=レプリカルマ・スナイパー	#
+entity.mabe:replikarma_falcon.name=レプリカルマ・ファルコン	#
+entity.mabe:replikarma_falcon<>.name=レプリカルマ・ファルコン	#
 entity.mabe:replikarma_axe.name=レプリカルマ・アックス	#
 entity.mabe:replikarma_scythe.name=レプリカルマ・サイズ	#
 entity.mabe:slag_organ.name=蛞蝓の異形	#
@@ -54,7 +56,10 @@ entity.mabe:teleport_circle_red.name=転送陣・赤	#
 entity.mabe:teleport_circle_white.name=転送陣・白	#
 entity.mabe:teleport_circle_yellow.name=転送陣・黄	#
 
+entity.mabe:canon_explode.name=爆風	#
+
 item.spawn_egg.entity.mabe:replikarma_sniper.name=レプリカルマ・スナイパーを出現させる	#
+item.spawn_egg.entity.mabe:replikarma_falcon.name=レプリカルマ・ファルコンを出現させる	#
 item.spawn_egg.entity.mabe:replikarma_axe.name=レプリカルマ・アックスを出現させる	#
 item.spawn_egg.entity.mabe:replikarma_scythe.name=レプリカルマ・サイズを出現させる	#
 item.spawn_egg.entity.mabe:slag_organ.name=蛞蝓の異形を出現させる	#
@@ -176,6 +181,7 @@ item.mabe:magia_blade_red=魔紅晶のブレード	#
 item.mabe:skull_wand=スカルワンド	#
 item.mabe:relikarma_scythe=レリカルマサイズ	#
 item.mabe:relikarma_axe=レリカルマアックス	#
+item.mabe:relikarma_knife=レリカルマナイフ	#
 item.mabe:reliarch_scythe=レリアークサイズ	#
 item.mabe:reliarch_axe=レリアークアックス	#
 item.mabe:depth_reaper=デプスリーパー	#
@@ -223,6 +229,7 @@ item.mabe:organ_catalyst_purple=紫なる異形の触媒	#
 item.mabe:organ_catalyst_red=紅き異形の触媒	#
 item.mabe:replikar_heart=レプリカルハート	#
 item.mabe:larva_tooth=ジャングルハチノコの大顎	#
+item.mabe:warden_horn=ウォーデンの角	#
 
 item.mabe:artifact=§8古代の石版§r	#
 item.mabe:artifact_shard_r=§8古代の石片§r	#
@@ -233,13 +240,14 @@ item.mabe:artifact_shard_ld=§8古代の石片§r	#
 item.mabe:artifact_shard_lu=§8古代の石片§r	#
 item.mabe:artifact_shard_d=§8古代の石片§r	#
 item.mabe:artifact_shard_u=§8古代の石片§r	#
-item.mabe:artifact_orb=§8古代の光玉§r	#
+item.mabe:artifact_orb=§8Coming soon§r	#
 item.mabe:ender_dust=§cエンダーダスト§r	#
 item.mabe:astrowalker_tentacle=§cアストロウォーカーの触手§r	#
 item.mabe:astroworm_shell=§cアストロワームの外殻§r	#
 item.mabe:royal_honey=§8ロイヤルハニー§r	#
 
 item.mabe:astrowand=§cアストロワンド§r	#
+item.mabe:astro_knife=§cアストロナイフ§r	#
 
 item.mabe:lavasta_meat=溶岩エビのむき身	#
 item.mabe:lunasta_meat=月光エビのむき身	#
@@ -279,8 +287,11 @@ tile.mabe:luciberry_plant.name=ルシベリーの木	#
 tile.mabe:floatberry_plant.name=フロートベリーの木	#
 tile.mabe:organ_craft_table_white.name=異形の白細工台	#
 tile.mabe:organ_craft_table_yellow.name=異形の黄細工台	#
+tile.mabe:incense.name=退厄の御香	#
+tile.mabe:wire_mesh.name=金網	#
 
 tile.mabe:ender_craft_table.name=アストロクラフター	#
+tile.mabe:candelabra.name=覚醒の燭台	#
 tile.mabe:astrocloud_block.name=アストロクラウド	#
 
 enchantment.damage.arthropods=虫・異形殺し	#

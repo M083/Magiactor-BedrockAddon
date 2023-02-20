@@ -9,6 +9,20 @@
     },
 
     "component_groups": {
+      "mabe:transform_falcon": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {          
+              "max_wait_time": 0,
+              "min_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "mabe:replikarma_falcon",
+              "spawn_event": "minecraft:entity_transformed"
+            }
+          ]
+        },
+        "minecraft:instant_despawn": {}
+      },
       "mabe:apoptosis": {
         "minecraft:instant_despawn": {}
       },
@@ -254,8 +268,30 @@
           ]
         }
       },
+      "mabe:transform_falcon": {
+        "add": {
+          "component_groups": [
+            "mabe:transform_falcon"
+          ]
+        }
+      },
       "minecraft:entity_spawned": {
         "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 6
+              },
+              {
+                "weight": 4,            
+                "run_command": {
+                  "command": [
+                    "execute if entity @p[family=ender_dragon_slayer] run event entity @s mabe:transform_falcon"
+                  ]
+                }
+              }
+            ]
+          },
           {
             "run_command": {
               "command": [

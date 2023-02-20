@@ -8,6 +8,7 @@
       "is_experimental": false
     },
     "component_groups": {
+
       "mabe:start_riding": {
         "minecraft:environment_sensor": {
           "triggers": [
@@ -52,6 +53,9 @@
             }
           ]
         }
+      },
+      "mabe:apoptosis": {
+          "minecraft:instant_despawn": {}
       },
       "minecraft:hard_arrow": {
         "minecraft:projectile": {
@@ -190,6 +194,43 @@
         }
       },
 
+      "mabe:canon_arrow": {
+        "minecraft:variant": {
+          "value": 9
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": [4.0, 4.0],
+          "time_down_event": {
+            "event": "mabe:canon_explode"
+          }
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 1.5,
+          "gravity": 0.015,
+          "uncertainty_base": 20,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": true,
+          "offset": [ 0, -1.15, 0 ]
+        }
+      },
       "mabe:organ_shard_arrow": {
         "minecraft:variant": {
           "value": 1
@@ -680,6 +721,27 @@
           }
         ]
       },
+      "mabe:apoptosis_event": {
+        "add": {
+          "component_groups": [ "mabe:apoptosis" ]
+        }
+      },
+      "mabe:canon_explode": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "summon mabe:canon_explode"
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "mabe:apoptosis"
+              ]
+            }
+          }
+        ]
+      },
       "minecraft:entity_spawned": {
         "sequence": [
           {
@@ -850,6 +912,25 @@
               {
                 "run_command": {
                   "command": "playanimation @e[type = mabe:replikarma_sniper, c = 1] shoot"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "replikarma_falcon" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "mabe:canon_arrow", "mabe:flame_particle" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "playanimation @e[type = mabe:replikarma_falcon, c = 1] shot"
                 }
               }
             ]

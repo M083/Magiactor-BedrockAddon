@@ -9,6 +9,12 @@
     },
 
     "component_groups": {
+      "mabe:arousal": {
+        "minecraft:health": {
+          "value": 40,
+          "max": 40
+        }
+      },
       "mabe:ender_dragon_slayer": {
         "minecraft:type_family": {
           "family": [ "player", "ender_dragon_slayer" ]
@@ -399,6 +405,11 @@
       "ender_dragon_slay_event": {
         "add": {
           "component_groups": [ "mabe:ender_dragon_slayer" ]
+        }
+      },
+      "mabe:arousal": {
+        "add": {
+          "component_groups": [ "mabe:arousal" ]
         }
       },
       "death_event": {

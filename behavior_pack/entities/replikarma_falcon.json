@@ -1,0 +1,359 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mabe:replikarma_falcon",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "mabe:apoptosis": {
+        "minecraft:instant_despawn": {}
+      },
+      "status_easy": {
+        "minecraft:health": {
+          "value": 300,
+          "max": 300
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 600,
+          "max": 600
+        }
+      },
+      "battle_mode": {      
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "time": [1, 4],
+          "time_down_event": {
+            "event": "boost"
+          }
+        },
+        "minecraft:boss": {
+          "name": "entity.mabe:replikarma_falcon.name"
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fall",
+              "deals_damage": false
+            },
+            {
+              "on_damage": {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": "replikarma"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": "boost"
+                    }
+                  ]
+                }
+              },
+              "deals_damage": false
+            }
+          ]
+        },
+        "minecraft:shooter": {
+          "def": "minecraft:arrow"
+        },
+        "minecraft:behavior.ranged_attack": {
+          "attack_radius": 64,
+          "charge_shoot_trigger": 2.15,
+          "charge_charged_trigger": 0.6,
+          "burst_shots": 8,
+          "burst_interval":0.125
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "monster"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "organ"
+                  }
+                ],
+                "all_of": [
+                  {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "inanimate"},
+                  {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "boss"},
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "replikarma"
+                  }
+                ]
+              },
+              "max_dist": 64
+            }
+          ],
+          "must_see": true
+        },
+        "minecraft:behavior.float_wander": {
+          "priority": 10,
+          "xz_dist": 3,
+          "y_dist": 7,
+          "y_offset": -2.0,
+          "random_reselect": true,
+          "float_duration": [ 0.1, 0.35 ]
+        },
+        "minecraft:can_fly": {
+        },
+        "minecraft:behavior.look_at_player": {
+          "priority": 7,
+          "look_distance": 6.0,
+          "probability": 0.02
+        },
+        "minecraft:teleport": {
+          "random_teleports": true,
+          "max_random_teleport_time": 5,
+          "random_teleport_cube": [ 24, 24, 24 ],
+          "target_distance": 16,
+          "target_teleport_chance": 0.15,
+          "light_teleport_chance": 0
+        }
+      }
+    },
+    "components": {
+      "minecraft:variant": {
+        "value": 0
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 14 : 0"
+      },
+      "minecraft:type_family": {
+        "family": [ "replikarma_falcon", "undead", "monster", "replikarma", "boss" ]
+      },
+      "minecraft:breathable":{
+        "total_supply":15,
+        "suffocate_time":0,
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:loot": {
+        "table": ""
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "snow_storm"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 1
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": "replikarma"
+                  }
+                ]
+              }
+            },
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "event": "battle_mode"
+            }
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 2.25,
+        "height": 2.5
+      },
+      "minecraft:movement": {
+        "value": 0.03
+      },
+      "minecraft:navigation.float": {
+        "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.float_wander": {
+        "priority": 10,
+        "xz_dist": 3,
+        "y_dist": 7,
+        "y_offset": -2.0,
+        "random_reselect": true,
+        "float_duration": [ 0.1, 0.35 ]
+      },
+
+      "minecraft:can_fly": {
+      },
+      "minecraft:health": {
+        "value": 500,
+        "max": 500
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
+      }
+    },
+    "events": {
+      "boss_heal_event": {
+        "run_command": {
+          "command": [
+            "effect @s instant_health 1 5"
+          ]
+        }
+      },
+      "battle_mode": {
+        "sequence": [
+          {
+            "add": { "component_groups": [ "battle_mode" ] }
+          }
+        ]
+      },
+      "death_event": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "structure load mystructure:reward_replikarma_falcon ~ ~ ~",
+                "effect @e[type=player] village_hero 1800 3",
+                "xp 50 @e[type=player]"
+              ]
+            }
+          }
+        ]
+      },
+      "mabe:apoptosis": {
+        "add": {
+          "component_groups": [
+            "mabe:apoptosis"
+          ]
+        }
+      },
+      "boost": {
+        "randomize": [
+          {
+            "run_command": {
+              "command": [
+                "summon mabe:boost ^ ^1 ^-1"
+              ]
+            }
+          },
+          {
+            "run_command": {
+              "command": [
+                "summon mabe:boost ^1 ^1 ^"
+              ]
+            }
+          },
+          {
+            "run_command": {
+              "command": [
+                "summon mabe:boost ^-1 ^1 ^"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:entity_transformed": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "execute if entity @e[type=mabe:replikarma_falcon,rm=1,r=128] run event entity @s mabe:apoptosis"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "execute if entity @e[type=mabe:replikarma_falcon,rm=1,r=128] run event entity @s mabe:apoptosis"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

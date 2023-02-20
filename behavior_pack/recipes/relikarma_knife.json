@@ -1,0 +1,44 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:relikarma_knife"
+        },
+        "key": {
+            "g": {
+                "item": "minecraft:gunpowder"
+            },
+            "c": {
+                "item": "minecraft:exposed_copper"
+            },
+            "b": {
+                "item": "minecraft:deepslate_bricks"
+            },
+            "p": {
+                "item": "mabe:relikarma_craftor"
+            },
+            "h": {
+                "item": "mabe:replikar_heart"
+            }
+        },
+        "pattern": [
+            "hg ",
+            " bc",
+            "p b"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:relikarma_knife"
+            },
+            {
+                "count": 1,
+                "item": "mabe:relikarma_craftor"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

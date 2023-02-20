@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:replikarma_falcon",
+      "materials": {
+        "default": "default_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/replikarma/replikarma_sniper"
+      },
+      "geometry": {
+        "default": "geometry.replikarma_falcon"
+      },
+      "animations": {
+        "look_at": "animation.replikarma_falcon.look_at",
+        "part": "animation.replikarma_falcon.part",
+        "stone": "animation.replikarma_falcon.stone",
+        "unit": "animation.replikarma_falcon.unit",
+        "bolt": "animation.replikarma_falcon.bolt",
+        "shot": "animation.replikarma_falcon.shot",
+        "sleep": "animation.replikarma_falcon.sleep",
+        "wake_up": "animation.replikarma_falcon.wake_up"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.replikarma_falcon.general"
+        },
+        {
+          "mode": "controller.animation.replikarma_falcon.mode"
+        }
+      ],
+      "render_controllers": [ "controller.render.replikarma_falcon" ],
+      "spawn_egg": {
+        "base_color": "#4B4C4F",
+        "overlay_color": "#CE8D83"
+      }
+    }
+  }
+}

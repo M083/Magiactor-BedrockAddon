@@ -2,6 +2,12 @@
   "resource_pack_name": "mabe",
   "texture_name": "atlas.items",
   "texture_data": {
+    "astro_knife": {
+      "textures": "textures/items/astro_knife"
+    },
+    "relikarma_knife": {
+      "textures": "textures/items/relikarma_knife"
+    },
     "astrowand": {
       "textures": "textures/items/astrowand"
     },
@@ -40,6 +46,9 @@
     },
     "replikar_heart": {
       "textures": "textures/items/replikar_heart"
+    },
+    "warden_horn": {
+      "textures": "textures/items/warden_horn"
     },
     "artifact": {
       "textures": "textures/items/artifact"

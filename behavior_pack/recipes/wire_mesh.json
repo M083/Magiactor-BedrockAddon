@@ -1,0 +1,28 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:wire_mesh"
+        },
+        "key": {
+            "n": {
+                "item": "minecraft:iron_nugget"
+            }
+        },
+        "pattern": [
+            "n n",
+            "nnn",
+            "n n"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:wire_mesh"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

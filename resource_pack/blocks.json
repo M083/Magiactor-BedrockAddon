@@ -1,4 +1,12 @@
 {
+  "mabe:wire_mesh": {
+    "textures": "wire_mesh",
+    "sound" : "chain"
+  },
+  "mabe:incense": {
+    "textures": "incense",
+    "sound" : "chain"
+  },
   "mabe:floatberry_plant": {
     "textures": "floatberry",
     "isotropic": true,
@@ -79,6 +87,11 @@
     "sound": "nether_brick"
   },
   "mabe:ender_craft_table": {
+    "textures": "ender_craft_table",
+    "isotropic": true,
+    "sound": "amethyst_block"
+  },
+  "mabe:candelabra": {
     "textures": "ender_craft_table",
     "isotropic": true,
     "sound": "amethyst_block"

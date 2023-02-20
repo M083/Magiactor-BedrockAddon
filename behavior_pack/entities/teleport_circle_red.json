@@ -73,11 +73,6 @@
 						"run_command": {
 							"command":"tickingarea remove ~ ~ ~"
 						}
-					},
-					{
-		                "add": {
-		                  "component_groups": ["despawn"]
-		                }
 					}
 				]
 			},

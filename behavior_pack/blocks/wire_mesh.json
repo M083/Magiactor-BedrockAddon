@@ -1,0 +1,43 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mabe:wire_mesh"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
+            "minecraft:loot": "loot_tables/blocks/wire_mesh.json",
+            "tag:stone": {},
+            "tag:diamond_pick_diggable": {},
+            "tag:gold_pick_diggable": {},
+            "tag:iron_pick_diggable": {},
+            "tag:stone_pick_diggable": {},
+            "minecraft:destroy_time": 3,
+            "minecraft:geometry": "geometry.wire_mesh",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "wire_mesh",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:entity_collision": {
+                "origin": [ -8.0, 8.0, -8.0],
+                "size": [ 16.0, 8.0, 16.0 ]
+            },
+            "minecraft:pick_collision": {
+                "origin": [ -8.0, 14.0, -8.0],
+                "size": [ 16.0, 2.0, 16.0 ]
+            },
+            "minecraft:explosion_resistance": 100.0,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#252C3D",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0
+        }
+    }
+}

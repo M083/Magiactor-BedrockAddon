@@ -15,11 +15,11 @@ Addon for Minecraft Bedrock Edition
 - [更新履歴](#更新履歴)
 
 ## お知らせ
-2022/2/20
+2023/7/26
 
-ver2.03.000をリリースしました。
+ver3.0.000をリリースしました。
 以前のバージョンとはワールド生成が異なります。新しくワールドを作り直してください。
-Minecraft v1.19.62現在、過去バージョンのビヘイビアパックが残っていると最新版を適用できない不具合があります。
+Minecraft v1.20.12現在、過去バージョンのビヘイビアパックが残っていると最新版を適用できない不具合があります。
 過去バージョンのアドオンが残っている場合は、設定→ストレージ→ビヘイビアパックから削除してください。
 
 ## はじめに
@@ -35,11 +35,11 @@ Java Edition等、MCBE以外のMinecraftでは動作しません。
 - 日本語
 
 ## 動作環境
-v1.19.50以降のMCBEがインストールされた端末。
+v1.20.12以降のMCBEがインストールされた端末。
 Windows10、Windows11、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
 ## ダウンロード
-### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver2.03.000/Magiactor_2_03_000.mcaddon)
+### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver3.0.000/Magiactor_3_0_000.mcaddon)
 
 ### [過去のバージョンをダウンロード](https://github.com/M083/Magiactor-BedrockAddon/releases)
 
@@ -99,6 +99,9 @@ Twitter ([@M0_83](https://twitter.com/M0_83))
 	- 手懐けたグリフォニスの名前が「不明」と表示される。
 
 ## 更新履歴
+	ver3.0.000
+	・一気に変更しすぎて何が変わったか忘れました
+
 	ver2.03.000
 	不具合修正
 	・マイクラ新バージョンの仕様変更の影響で発生するエラーを修正

@@ -84,10 +84,11 @@
           {
             "run_command": {
               "command": [
-                "summon mabe:boost ^ ^0.5 ^",
+                "summon mabe:boost ~ ~0.5 ~",
                 "playanimation @s animation.attack_animation.sword_rotate",
                 "damage @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!item,r=6] 11 entity_attack entity @s",
-                "playsound item.trident.throw @e[type=player] ~ ~ ~ 5 0.6"
+                "playsound item.trident.throw @e[type=player] ~ ~ ~ 5 0.6",
+                "effect @s slow_falling 2"
               ]
             }
           }

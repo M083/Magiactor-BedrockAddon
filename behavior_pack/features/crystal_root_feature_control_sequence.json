@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:sequence_feature": {
+    "description": {
+      "identifier": "mabe:crystal_root_feature_control_sequence"
+    },
+    "features": [
+      "mabe:crystal_root_feature",
+      "mabe:crystal_root_chain_feature_control_search"
+    ]
+  }
+}

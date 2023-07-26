@@ -1,0 +1,32 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:lunar_globe"
+        },
+        "key": {
+            "G": {
+                "item": "minecraft:gold_ingot"
+            },
+            "S": {
+                "item": "mabe:fallen_star"
+            },
+            "H": {
+                "item": "mabe:replikar_heart"
+            }
+        },
+        "pattern": [
+            "G  ",
+            " SG",
+            "GH "
+        ],
+        "priority": 1,
+        "result": {
+            "count": 1,
+            "item": "mabe:lunar_globe"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

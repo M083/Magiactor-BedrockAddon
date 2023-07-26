@@ -1,0 +1,291 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mabe:silent_hopper",
+      "is_spawnable": false,
+      "is_summonable": false
+    },
+
+    "component_groups": {
+      "status_easy": {
+        "minecraft:behavior.sonic_boom": {
+          "priority": 3,
+          "duration": 3.0,
+          "speed_multiplier": 1.2,
+          "attack_damage": 7,
+          "attack_range_horizontal": 15,
+          "attack_range_vertical": 20,
+          "attack_cooldown": 2,
+          "knockback_vertical_strength": 0.5,
+          "knockback_horizontal_strength": 2.5,
+          "knockback_height_cap": 0.5,
+          "duration_until_attack_sound": 1.7,
+          "charge_sound": "sonic_charge",
+          "attack_sound": "sonic_boom"
+        },
+        "minecraft:health": {
+          "value": 60,
+          "max": 60
+        }
+      },
+      "status_hard": {
+        "minecraft:behavior.sonic_boom": {
+          "priority": 3,
+          "duration": 3.0,
+          "speed_multiplier": 1.2,
+          "attack_damage": 11,
+          "attack_range_horizontal": 15,
+          "attack_range_vertical": 20,
+          "attack_cooldown": 2,
+          "knockback_vertical_strength": 0.5,
+          "knockback_horizontal_strength": 2.5,
+          "knockback_height_cap": 0.5,
+          "duration_until_attack_sound": 1.7,
+          "charge_sound": "sonic_charge",
+          "attack_sound": "sonic_boom"
+        },
+        "minecraft:health": {
+          "value": 120,
+          "max": 120
+        }
+      },
+      "mabe:silent_angry": {
+        "minecraft:angry": {
+          "duration": 30,
+          "broadcast_anger": true,
+          "broadcast_range": 32,
+          "broadcast_targets": [
+            "silent_hopper"
+          ],
+          "calm_event": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+          }
+        }
+      },
+      "mabe:apoptosis": {
+          "minecraft:instant_despawn": {}
+      }
+    },
+
+    "components": {
+      "minecraft:behavior.sonic_boom": {
+        "priority": 3,
+        "duration": 3.0,
+        "speed_multiplier": 1.2,
+        "attack_damage": 9,
+        "attack_range_horizontal": 15,
+        "attack_range_vertical": 20,
+        "attack_cooldown": 2,
+        "knockback_vertical_strength": 0.5,
+        "knockback_horizontal_strength": 2.5,
+        "knockback_height_cap": 0.5,
+        "duration_until_attack_sound": 1.7,
+        "charge_sound": "sonic_charge",
+        "attack_sound": "sonic_boom"
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:lava_movement": {
+        "value": 0.5
+      },
+      "minecraft:knockback_resistance": {
+        "value": 2.0
+      },
+      "minecraft:on_target_acquired": {
+        "event": "minecraft:become_angry",
+        "target": "self"
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_lava": true,
+        "avoid_water": true,
+        "can_sink": false,
+        "can_walk_in_lava": true
+      },
+      "minecraft:behavior.rise_to_liquid_level": {
+        "priority": 0,
+        "liquid_y_offset": 0.05,
+        "rise_delta": 0.01,
+        "sink_delta": 0.01
+      },
+      "minecraft:behavior.move_to_liquid": {
+        "priority": 2,
+        "search_range": 16,
+        "search_height": 10,
+        "goal_radius": 0.9,
+        "material_type": "Lava",
+        "search_count": 30
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/silent_hopper.json"
+      },
+      "minecraft:fire_immune": {
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 18 : 0"
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 1.85,
+        "height": 4.75
+      },
+      "minecraft:nameable": {
+      },
+
+      "minecraft:type_family": {
+        "family": [ "silent_hopper", "monster", "undead" ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/silent_hopper.json"
+      },
+
+      "minecraft:health": {
+        "value": 85,
+        "max": 85
+      },
+      // "minecraft:shooter": {
+      //   "def": "minecraft:arrow"
+      // },
+      // "minecraft:behavior.ranged_attack": {
+      //   "priority": 3,
+      //   "attack_radius": 24,
+      //   "charge_shoot_trigger": 2.25,
+      //   "charge_charged_trigger": 2.6,
+      //   "burst_shots": 4,
+      //   "burst_interval": 0.2
+      // // },
+      // "minecraft:behavior.avoid_mob_type": {
+      //   "priority": 1,
+      //   "entity_types":{
+      //     "filters": {
+      //       "any_of": [
+      //         { "test": "is_family", "subject": "other", "operator": "!=", "value": "silent_hopper" }
+      //       ]
+      //     },
+      //     "max_dist": 8,
+      //     "walk_speed_multiplier": 1.25,
+      //     "sprint_speed_multiplier": 1.25
+      //   }
+      // },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.3
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+
+      "minecraft:behavior.random_stroll": {
+        "priority": 4,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                  {"test": "has_damage", "value": "entity_explosion"},
+                  {"test": "has_damage", "value": "block_explosion"}
+                ]
+              }
+            },
+            "deals_damage": false,
+            "on_damage_sound_event": "break"
+          }
+        ]
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "snow_storm"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:physics": {}
+    },
+    "events": {
+      "mabe:apoptosis": {
+        "add": {
+          "component_groups": [
+            "mabe:apoptosis"
+          ]
+        }
+      },
+      "minecraft:become_angry": {
+        "add": {
+          "component_groups": [
+            "mabe:silent_angry"
+          ]
+        }
+      },
+      "minecraft:on_calm": {
+        "remove": {
+          "component_groups": [
+            "mabe:silent_angry"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "effect @s invisibility 1 1 true",
+                "execute unless entity @p[family=ender_dragon_slayer] run event entity @s mabe:apoptosis"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

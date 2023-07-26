@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:silent_hopper",
+      "materials": { "default": "default_alpha" },
+      "textures": {
+        "default": "textures/entity/silent_hopper"
+      },
+      "geometry": {
+        "default": "geometry.silent_hopper"
+      },
+      "animations": {
+        "stand_pose": "animation.silent_hopper.stand_pose",
+        "walk": "animation.silent_hopper.walk",
+        "look": "animation.silent_hopper.look",
+        "sonic_boom": "animation.silent_hopper.sonic_boom"
+      },
+      "animation_controllers": [
+        {
+          "pose": "controller.animation.silent_hopper.pose"
+        },
+        {
+          "move": "controller.animation.silent_hopper.move"
+        },
+        {
+          "sonic_boom": "controller.animation.silent_hopper.sonic_boom"
+        }
+      ],
+      "render_controllers": [ "controller.render.silent_hopper" ],
+      "spawn_egg": {
+        "base_color": "#978E6A",
+        "overlay_color": "#58312F"
+      }
+    }
+  }
+}

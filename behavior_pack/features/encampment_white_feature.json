@@ -1,0 +1,24 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "mabe:encampment_white_feature"
+		},
+		"structure_name": "mystructure:encampment_white",
+		"facing_direction": "random",
+		"adjustment_radius": 16,
+		"constraints": {
+			"grounded": {},
+			"block_intersection": {
+				"block_whitelist": [
+					"minecraft:air",
+					"minecraft:sand",
+					"minecraft:water",
+					"minecraft:gravel",
+					"minecraft:deepslate",
+					"minecraft:tuff"
+				]
+			}
+		}
+	}
+}

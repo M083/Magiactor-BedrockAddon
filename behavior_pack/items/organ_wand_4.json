@@ -64,38 +64,8 @@
             "swing": {}
           },
           {
-            "run_command": {
-              "command": [
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard"
-              ]
-            }
-          },
-          {
             "shoot": {
-              "projectile": "mabe:organ_wand_shard",
-              "launch_power": 0.7
-            }
-          },
-          {
-            "shoot": {
-              "projectile": "mabe:organ_wand_shard",
-              "launch_power": 0.7
-            }
-          },
-          {
-            "shoot": {
-              "projectile": "mabe:organ_wand_shard",
-              "launch_power": 0.7
-            }
-          },
-          {
-            "shoot": {
-              "projectile": "mabe:organ_wand_shard",
+              "projectile": "mabe:organ_wand_sphere",
               "launch_power": 0.7
             }
           },
@@ -107,7 +77,10 @@
           },
           {
             "run_command": {
-              "command": "playsound firework.launch @s ~ ~ ~ 5 0.25"
+              "command": [
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_sphere",
+                "playsound firework.launch @s ~ ~ ~ 5 0.25"
+              ]
             }
           }
         ]

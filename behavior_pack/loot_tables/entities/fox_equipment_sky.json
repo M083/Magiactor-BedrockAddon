@@ -1,0 +1,76 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.6
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "mabe:fallen_star_shard",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:muttonraw",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "mabe:cloud_salmon_raw",
+          "weight": 2
+        },
+        {
+            "type": "item",
+            "name": "minecraft:fishing_rod",
+            "weight": 5,
+            "functions": [
+                {
+                    "function": "set_damage",
+                    "damage": {
+                        "min": 0,
+                        "max": 0.25
+                    }
+                },
+                {
+                    "function": "enchant_with_levels",
+                    "levels": 30,
+                    "treasure": true
+                }
+            ]
+        },
+        {
+            "type": "item",
+            "name": "minecraft:book",
+            "weight": 6,
+            "functions": [
+                {
+                    "function": "enchant_with_levels",
+                    "levels": 30,
+                    "treasure": true
+                }
+            ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "weight": 6
+        }
+      ]
+    }
+  ]
+}

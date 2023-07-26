@@ -1,0 +1,50 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "mabe:end_cloud_feature_rule",
+			"places_feature": "mabe:end_cloud_feature"
+		},
+
+		"conditions": {
+			"placement_pass": "after_underground_pass",
+
+			"minecraft:biome_filter": {
+				"all_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "=",
+						"value": "the_end"
+					}
+				]
+			}
+		},
+
+		"distribution": {
+			"iterations": 4,
+            "scatter_chance": 15.0,
+			"x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+			},
+			"z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+			},
+			"y": {
+				"distribution": "uniform",
+				"extent": [
+					"(math.pow(v.worldx,2)+math.pow(v.worldz,2) > math.pow(20,2)) && (math.pow(v.worldx,2)+math.pow(v.worldz,2) < math.pow(180,2)) ? 0 : -9999",
+					"(math.pow(v.worldx,2)+math.pow(v.worldz,2) > math.pow(20,2)) && (math.pow(v.worldx,2)+math.pow(v.worldz,2) < math.pow(180,2)) ? 140 : -9999"
+				]
+			}
+		}
+	}
+}

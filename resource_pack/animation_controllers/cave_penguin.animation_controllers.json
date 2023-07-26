@@ -1,0 +1,74 @@
+{
+	"format_version" : "1.8.0",
+	"animation_controllers" : {
+	    "controller.animation.cave_penguin.attack": {
+	      "states": {
+	        "default": {
+	          "transitions": [
+	            {
+	              "attack": "variable.attack_time > 0.0"
+	            }
+	          ]
+	        },
+	        "attack": {
+	          "animations": [ { "attack": [] } ],
+	          "transitions": [
+	            {
+	              "default": "variable.attack_time <= 0.0"
+	            }
+	          ]
+	        }
+	      }
+	    },
+	    "controller.animation.cave_penguin.walk": {
+	      "states": {
+	        "default": {
+	          "transitions": [
+	            {
+	              "walk": "query.modified_move_speed > 0.1"
+	            }
+	          ]
+	        },
+	        "walk": {
+	          "animations": [ { "walk": [] } ],
+	          "transitions": [
+	            {
+	              "default": "query.modified_move_speed <= 0.1"
+	            }
+	          ]
+	        }
+	      }
+	    },
+		"controller.animation.cave_penguin.walk_pose" : {
+			"states" : {
+				"swim": {
+					"parameters": [ "query.modified_move_speed * 3" ],
+					"animations": [
+						{ 
+							"walk_pose": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.cave_penguin.pose" : {
+			"states" : {
+				"stand_pose": {
+					"animations": [
+						{ 
+							"stand_pose": []
+						},
+						{ 
+							"look": []
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,101 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mabe:lunar_globe",
+            "properties": {
+                "mabe:moon_phase": [ 4, 3, 2, 1, 0]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category":"Construction",
+                "group": "itemGroup.name.sapling"
+            },
+            "minecraft:loot": "loot_tables/blocks/lunar_globe.json",
+            "minecraft:destroy_time": 0.75,
+            "minecraft:explosion_resistance": 0.0,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:geometry": "geometry.lunar_globe_full_moon",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "lunar_globe",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:entity_collision": true,
+            "minecraft:pick_collision": {
+                "origin": [ -8.0, 0.0, -8.0],
+                "size": [ 16.0, 16.0, 16.0 ]
+            },
+            "minecraft:map_color": "#35FFFF",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0.75,
+            "minecraft:on_interact" : {
+                "event": "interact_event"
+            },
+            "minecraft:queued_ticking": {
+                "on_tick": {
+                    "event": "lunar"
+                },
+                "looping": true,
+                "interval_range": [20, 20]
+            }
+        },
+        "events": {
+            "lunar": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            //"mabe:moon_phase": "math.mod(q.block_property('mabe:moon_phase') + 1, 5)"
+                            //"mabe:moon_phase": "q.moon_phase"
+                            "mabe:moon_phase": "(query.time_of_day < 0.25 || query.time_of_day > 0.75)? 4 : 0"
+                        }
+                    }
+                ]
+            },
+            "interact_event": {
+                "run_command": {
+                    "command": [
+                        "time set midnight"
+                    ]
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('mabe:moon_phase') == 4",
+                "components": {
+                    "minecraft:geometry": "geometry.lunar_globe_full_moon"
+                }
+            },
+            {
+                "condition": "q.block_property('mabe:moon_phase') == 3",
+                "components": {
+                    "minecraft:geometry": "geometry.lunar_globe_gibbous_moon"
+                }
+            },
+            {
+                "condition": "q.block_property('mabe:moon_phase') == 2",
+                "components": {
+                    "minecraft:geometry": "geometry.lunar_globe_quarter_moon"
+                }
+            },
+            {
+                "condition": "q.block_property('mabe:moon_phase') == 1",
+                "components": {
+                    "minecraft:geometry": "geometry.lunar_globe_crescent_moon"
+                }
+            },
+            {
+                "condition": "q.block_property('mabe:moon_phase') == 0",
+                "components": {
+                    "minecraft:geometry": "geometry.lunar_globe_new_moon"
+                }
+            }
+        ]
+    }
+}

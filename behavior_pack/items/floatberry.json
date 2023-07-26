@@ -23,6 +23,9 @@
           "event": "food_effect",
           "target": "self"
         }
+      },
+      "minecraft:fuel": {
+        "duration" : 40
       }
     },
     "events": {

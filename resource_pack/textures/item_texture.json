@@ -5,6 +5,21 @@
     "astro_knife": {
       "textures": "textures/items/astro_knife"
     },
+    "nether_dust": {
+      "textures": "textures/items/nether_dust"
+    },
+    "silent_hopper_horn": {
+      "textures": "textures/items/silent_hopper_horn"
+    },
+    "replikar_blood": {
+      "textures": "textures/items/replikar_blood"
+    },
+    "relikarma_wand": {
+      "textures": "textures/items/relikarma_wand"
+    },
+    "relikarma_dualscythe": {
+      "textures": "textures/items/relikarma_dualscythe"
+    },
     "relikarma_knife": {
       "textures": "textures/items/relikarma_knife"
     },
@@ -22,6 +37,12 @@
     },
     "larva_tooth": {
       "textures": "textures/items/larva_tooth"
+    },
+    "abyss_gel": {
+      "textures": "textures/items/abyss_gel"
+    },
+    "breathable_cookie": {
+      "textures": "textures/items/breathable_cookie"
     },
     "royal_honey": {
       "textures": "textures/items/royal_honey"
@@ -49,6 +70,9 @@
     },
     "warden_horn": {
       "textures": "textures/items/warden_horn"
+    },
+    "heaven_tear": {
+      "textures": "textures/items/heaven_tear"
     },
     "artifact": {
       "textures": "textures/items/artifact"
@@ -85,6 +109,9 @@
     },
     "floatberry": {
       "textures": "textures/items/floatberry"
+    },
+    "angel_candy": {
+      "textures": "textures/items/angel_candy"
     },
     "reliarch_scythe": {
       "textures": "textures/items/reliarch_scythe"
@@ -361,6 +388,18 @@
     },
     "night_amago_cooked": {
       "textures": "textures/items/night_amago_cooked"
+    },
+    "cloud_salmon_raw": {
+      "textures": "textures/items/cloud_salmon_raw"
+    },
+    "cloud_salmon_cooked": {
+      "textures": "textures/items/cloud_salmon_cooked"
+    },
+    "angel_fish_raw": {
+      "textures": "textures/items/angel_fish_raw"
+    },
+    "angel_fish_cooked": {
+      "textures": "textures/items/angel_fish_cooked"
     },
     "magia_crystal_shard": {
       "textures": "textures/items/magia_crystal_shard"

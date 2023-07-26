@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:angel_fish",
+      "materials": {
+        "default": "default_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/angel_fish"
+      },
+      "geometry": {
+        "default": "geometry.angel_fish"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.ZRot = !query.is_in_water ? Math.cos((query.time_stamp + query.frame_alpha) * 14.32) * 90 : 0.0;",
+          "variable.AnimationAmountBlend = Math.lerp(query.time_stamp, (query.time_stamp + query.frame_alpha), query.frame_alpha);"        ]
+      },
+      "animations": {
+        "flop": "animation.cod.flop",
+        "swim": "animation.cod.swim"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.fish.general"
+        }
+      ],
+      "render_controllers": [ "controller.render.angel_fish" ],
+      "spawn_egg": {
+        "base_color": "#F8F2CC",
+        "overlay_color": "#00AFB4"
+      }
+    }
+  }
+}

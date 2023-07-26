@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:honey_carrier",
+      "materials": {
+        "default": "default_blending",
+        "outer": "default_blending"
+      },
+      "textures": {
+        "default": "textures/entity/honey_carrier"
+      },
+      "geometry": {
+        "default": "geometry.honey_carrier"
+      },
+      "animations": {
+        "look": "animation.honey_carrier.look",
+        "move": "animation.honey_carrier.move",
+        "fly": "animation.honey_carrier.fly",
+        "fly_pose": "animation.honey_carrier.fly_pose",
+        "attack": "animation.honey_carrier.attack"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.honey_carrier.move" },
+        { "fly": "controller.animation.honey_carrier.fly" },
+        { "attack": "controller.animation.honey_carrier.attack" }
+      ],
+      "render_controllers": [ "controller.render.honey_carrier" ],
+      "spawn_egg": {
+        "base_color": "#3B2616",
+        "overlay_color": "#FAD365"
+      }
+    }
+  }
+}

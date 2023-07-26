@@ -244,7 +244,8 @@
       "boss_heal_event": {
         "run_command": {
           "command": [
-            "effect @s instant_health 1 5"
+            "effect @s instant_health 1 5",
+            "music stop 3.0"
           ]
         }
       },
@@ -252,6 +253,14 @@
         "sequence": [
           {
             "add": { "component_groups": [ "battle_mode" ] }
+          },
+          {
+            "run_command": {
+              "command": [
+                "music play music.magiactor.replikarma 1 0 play_once",
+                "music queue music.magiactor.replikarma_loop 1 0 play_once"
+              ]
+            }
           }
         ]
       },
@@ -262,13 +271,19 @@
               "command": [
                 "structure load mystructure:reward_replikarma_falcon ~ ~ ~",
                 "effect @e[type=player] village_hero 1800 3",
-                "xp 50 @e[type=player]"
+                "xp 50 @e[type=player]",
+                "music stop 3.0"
               ]
             }
           }
         ]
       },
       "mabe:apoptosis": {
+        "run_command": {
+          "command": [
+            "music stop 3.0"
+          ]
+        },
         "add": {
           "component_groups": [
             "mabe:apoptosis"
@@ -280,21 +295,24 @@
           {
             "run_command": {
               "command": [
-                "summon mabe:boost ^ ^1 ^-1"
+                "summon mabe:boost ^ ^1 ^-1",
+                "music queue music.magiactor.replikarma_loop 1 0 play_once"
               ]
             }
           },
           {
             "run_command": {
               "command": [
-                "summon mabe:boost ^1 ^1 ^"
+                "summon mabe:boost ^1 ^1 ^",
+                "music queue music.magiactor.replikarma_loop 1 0 play_once"
               ]
             }
           },
           {
             "run_command": {
               "command": [
-                "summon mabe:boost ^-1 ^1 ^"
+                "summon mabe:boost ^-1 ^1 ^",
+                "music queue music.magiactor.replikarma_loop 1 0 play_once"
               ]
             }
           }

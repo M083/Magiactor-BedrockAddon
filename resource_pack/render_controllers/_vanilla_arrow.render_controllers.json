@@ -14,7 +14,8 @@
             "Texture.organ_purple_shard",
             "Texture.organ_red_shard",
             "Texture.void",
-            "Texture.canon"
+            "Texture.canon",
+            "Texture.organ_white_shard"
       	  ]
       	},
         "geometries": {
@@ -28,7 +29,8 @@
             "Geometry.organ_shard" ,
             "Geometry.organ_shard" ,
             "Geometry.default",
-            "Geometry.canon"
+            "Geometry.canon",
+            "Geometry.organ_shard" 
           ]
         },
         "materials": {
@@ -42,7 +44,8 @@
             "Material.emissive",
             "Material.emissive",
             "Material.default",
-            "Material.default"
+            "Material.default",
+            "Material.emissive"
           ]
         }
       },

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "mabe:furnace_cloud_salmon"
+    },
+
+    "tags": ["furnace", "smoker", "campfire"],
+    "input": "mabe:cloud_salmon_raw",
+    "output": "mabe:cloud_salmon_cooked"
+  }
+  
+}

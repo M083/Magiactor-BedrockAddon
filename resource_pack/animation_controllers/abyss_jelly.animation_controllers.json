@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.abyss_jelly.move": {
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "look": []
+            },
+            {
+              "roll": []
+            },
+            {
+              "swim": []
+            },
+            {
+              "tentacle": []
+            }
+          ]
+        }
+      }
+    }
+  }
+}

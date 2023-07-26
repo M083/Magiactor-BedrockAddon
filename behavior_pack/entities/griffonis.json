@@ -419,19 +419,6 @@
         "minecraft:sittable": {
         },
 
-        "minecraft:leashable": {
-          "soft_distance": 4.0,
-          "hard_distance": 6.0,
-          "max_distance": 10.0,
-          "on_leash": {
-            "event": "minecraft:on_leash",
-            "target": "self"
-          },
-          "on_unleash": {
-            "event": "minecraft:on_unleash",
-            "target": "self"
-          }
-        },
         "minecraft:rideable": {
           "seat_count": 1,
           "rider_can_interact": true,
@@ -627,6 +614,19 @@
     "components": {
       "minecraft:variant": {
         "value": 0
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0,
+        "on_leash": {
+          "event": "minecraft:on_leash",
+          "target": "self"
+        },
+        "on_unleash": {
+          "event": "minecraft:on_unleash",
+          "target": "self"
+        }
       },
       "minecraft:equippable": {
         "slots": [
@@ -911,23 +911,23 @@
           {
             "randomize": [
               {
-                "weight": 9,
-                "remove": {
-                },
-                "add": {
-                  "component_groups": [
-                    "mabe:griff_adult",
-                    "mabe:griff_wild"
-                  ]
-                }
-              },
-              {
                 "weight": 1,
                 "remove": {
                 },
                 "add": {
                   "component_groups": [
                     "mabe:griff_baby",
+                    "mabe:griff_wild"
+                  ]
+                }
+              },
+              {
+                "weight": 9,
+                "remove": {
+                },
+                "add": {
+                  "component_groups": [
+                    "mabe:griff_adult",
                     "mabe:griff_wild"
                   ]
                 }

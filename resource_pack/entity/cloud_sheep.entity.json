@@ -16,7 +16,9 @@
       },
       "animation_controllers": [
         {
-          "roll": "controller.animation.cloud_sheep.roll",
+          "roll": "controller.animation.cloud_sheep.roll"
+        },
+        {
           "walk": "controller.animation.cloud_sheep.walk"
         }
       ],

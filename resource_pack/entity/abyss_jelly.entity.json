@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:abyss_jelly",
+      "materials": {
+        "default": "default_blending",
+        "light": "default_emmisive"
+      },
+      "textures": {
+        "default": "textures/entity/abyss_jelly/abyss_jelly",
+        "light": "textures/entity/abyss_jelly/abyss_jelly_light"
+      },
+      "geometry": {
+        "default": "geometry.abyss_jelly"
+      },
+      "animations": {
+        "look" : "animation.abyss_jelly.look",
+        "roll" : "animation.abyss_jelly.body_roll",
+        "swim": "animation.abyss_jelly.swim",
+        "tentacle": "animation.abyss_jelly.tentacle"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.abyss_jelly.move" }
+      ],
+      "render_controllers": [
+        "controller.render.abyss_jelly",
+        "controller.render.abyss_jelly_light"
+      ],
+      "spawn_egg": {
+        "base_color": "#140340",
+        "overlay_color": "#C7F021"
+      }
+    }
+  }
+}

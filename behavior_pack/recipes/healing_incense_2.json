@@ -1,0 +1,38 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:healing_incense_2"
+        },
+        "key": {
+            "s": {
+                "item": "mabe:sky_tile"
+            },
+            "h": {
+                "item": "mabe:healing_incense"
+            },
+            "t": {
+                "item": "mabe:heaven_tear"
+            }
+        },
+        "pattern": [
+            " t ",
+            "   ",
+            "shs"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:healing_incense_2"
+            },
+            {
+                "count": 1,
+                "item": "mabe:heaven_tear"
+            }
+        ],
+        "tags": [
+            "ender_craft_table"
+        ]
+    }
+}

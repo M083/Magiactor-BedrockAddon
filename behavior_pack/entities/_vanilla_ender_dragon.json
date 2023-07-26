@@ -539,10 +539,20 @@
         "damage": 12
       },
       "minecraft:damage_sensor": {
-        "triggers": {
-          "cause": "fall",
-          "deals_damage": false
-        }
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": false
+          },
+          {
+            "cause": "entity_explosion",
+            "deals_damage": false
+          },
+          {
+            "cause": "block_explosion",
+            "deals_damage": false
+          }
+        ]
       },
       "minecraft:on_start_landing": {
         "event": "minecraft:start_land",
@@ -752,7 +762,7 @@
         "run_command": {
           "command" : [
             "event entity @e[type=player] ender_dragon_slay_event",
-            "structure load mystructure:reward_ender_dragon ~ ~ ~",
+            "structure load mystructure:reward_ender_dragon -10 ~10 -8",
             "effect @e[type=player] village_hero 1800 3",
             "xp 150 @e[type=player]"
           ]

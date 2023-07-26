@@ -1,0 +1,59 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.silent_hopper.move": {
+      "states": {
+        "walking": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.silent_hopper.pose": {
+      "states": {
+        "standing": {
+          "animations": [
+            {
+              "stand_pose": []
+            },
+            {
+              "look": []
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.silent_hopper.sonic_boom" : {
+      "states" : {
+        "default" : {
+          "transitions" : [
+            {
+              "sonic_attack" : "query.is_sonic_boom"
+            }
+          ]
+        },
+        "sonic_attack" : {
+          "animations" : [ 
+            {
+              "sonic_boom" : []
+            }
+          ],
+          "transitions" : [
+            {
+              "default" : "!query.is_sonic_boom"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

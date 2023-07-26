@@ -5,7 +5,7 @@
 			"identifier": "mabe:sky_pillar_feature"
 		},
 		"structure_name": "mystructure:sky_pillar",
-		"facing_direction": "random",
+		"facing_direction": "south",
 		"adjustment_radius": 0,
 		"constraints": {
 			"grounded": {},

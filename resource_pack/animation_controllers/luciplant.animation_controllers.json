@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.luciplant.walk": {
+      "states": {
+        "walking": {
+          "parameters": [ "query.modified_move_speed + 0.2" ],
+          "animations": [
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.luciplant.whip": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack": "variable.attack_time > 0.0"
+            }
+          ]
+        },
+        "attack": {
+          "animations": [ { "whip": [] } ],
+          "transitions": [
+            {
+              "default": "variable.attack_time <= 0.0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:replikarma_shark",
+      "materials": {
+        "default": "default_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/replikarma/replikarma_sniper"
+      },
+      "geometry": {
+        "default": "geometry.replikarma_shark"
+      },
+      "animations": {
+        "shoot": "animation.replikarma_shark.shoot",
+        "move": "animation.replikarma_shark.move",
+        "roll": "animation.replikarma_shark.roll",
+        "bolt_roll": "animation.replikarma_shark.bolt_roll",
+        "mode_aim": "animation.replikarma_shark.mode_aim",
+        "look": "animation.replikarma_shark.look"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.replikarma_shark.move" },
+        { "roll": "controller.animation.replikarma_shark.roll" },
+        { "look": "controller.animation.replikarma_shark.look" }
+      ],
+      "render_controllers": [ "controller.render.replikarma_sniper" ],
+      "spawn_egg": {
+        "base_color": "#4B4C4F",
+        "overlay_color": "#CE8D83"
+      }
+    }
+  }
+}

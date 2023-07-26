@@ -1,0 +1,14 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:search_feature": {
+		"description": {
+			"identifier": "mabe:rain_cloud_water_surface_feature_control_search1"
+		},
+		"places_feature": "mabe:rain_cloud_water_surface_feature_control_scatter",
+		"search_volume": {
+			"min": [ 0, -30, 0],
+			"max": [ 0, 30, 0]
+		},
+		"search_axis": "-y"
+	}
+}

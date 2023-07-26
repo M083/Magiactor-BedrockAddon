@@ -1,0 +1,19 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "mabe:rain_hole_feature"  
+		},
+		"count": 128,
+		"discard_chance_on_air_exposure": 1,
+		"replace_rules": [
+			{
+				"places_block": "minecraft:water",
+				"may_replace": [
+					"mabe:cloud_block",
+					"mabe:rain_cloud_block"
+				]
+			}
+		]
+	}	
+}

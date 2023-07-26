@@ -1,0 +1,76 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.relikarma_dualscythe",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "blade",
+					"pivot": [0, 5, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "joint",
+					"parent": "blade",
+					"pivot": [0, 5, -0.5],
+					"rotation": [0, 0, -45],
+					"cubes": [
+						{"origin": [-2, 3, -2.5], "size": [4, 4, 4], "uv": [64, 0]}
+					]
+				},
+				{
+					"name": "left_scythe",
+					"parent": "joint",
+					"pivot": [0, 4, -0.5],
+					"cubes": [
+						{"origin": [-20, 20, -1.5], "size": [7, 10, 2], "uv": [0, 0]},
+						{"origin": [-27, 18, -1.5], "size": [7, 8, 2], "uv": [0, 0]},
+						{"origin": [-31, 17, -1.5], "size": [4, 6, 2], "uv": [0, 0]},
+						{"origin": [-34, 15, -1.5], "size": [3, 5, 2], "uv": [0, 0]},
+						{"origin": [-14, 17, -1], "size": [13, 12, 1], "uv": [64, 0]},
+						{"origin": [1, 24, -1], "size": [8, 5, 1], "uv": [64, 4]},
+						{"origin": [1, 21, -1], "size": [12, 3, 1], "uv": [64, 0]},
+						{"origin": [-21, 18, -1], "size": [7, 10, 1], "uv": [64, 0]},
+						{"origin": [-28, 16, -1], "size": [8, 8, 1], "uv": [65, 0]},
+						{"origin": [-32, 14, -1], "size": [4, 7, 1], "uv": [64, 6]},
+						{"origin": [-35, 11, -1], "size": [3, 7, 1], "uv": [64, 6]},
+						{"origin": [-1, 5, -1.5], "size": [2, 30, 2], "uv": [64, 0]},
+						{"origin": [-13, 19, -1.5], "size": [12, 12, 2], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "right_scythe",
+					"parent": "joint",
+					"pivot": [0, 4, -0.5],
+					"cubes": [
+						{"origin": [1, -23, -1.5], "size": [12, 12, 2], "uv": [0, 0]},
+						{"origin": [13, -22, -1.5], "size": [7, 10, 2], "uv": [0, 0]},
+						{"origin": [20, -18, -1.5], "size": [7, 8, 2], "uv": [0, 0]},
+						{"origin": [27, -15, -1.5], "size": [4, 6, 2], "uv": [0, 0]},
+						{"origin": [31, -12, -1.5], "size": [3, 5, 2], "uv": [0, 0]},
+						{"origin": [1, -21, -1], "size": [13, 12, 1], "uv": [64, 0]},
+						{"origin": [-9, -21, -1], "size": [8, 5, 1], "uv": [64, 4]},
+						{"origin": [-13, -16, -1], "size": [12, 3, 1], "uv": [64, 0]},
+						{"origin": [14, -20, -1], "size": [7, 10, 1], "uv": [64, 0]},
+						{"origin": [20, -16, -1], "size": [8, 8, 1], "uv": [65, 0]},
+						{"origin": [28, -13, -1], "size": [4, 7, 1], "uv": [64, 6]},
+						{"origin": [32, -10, -1], "size": [3, 7, 1], "uv": [64, 6]},
+						{"origin": [-1, -27, -1.5], "size": [2, 30, 2], "uv": [64, 0]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "joint",
+					"pivot": [0, 5, -0.5]
+				}
+			]
+		}
+	]
+}

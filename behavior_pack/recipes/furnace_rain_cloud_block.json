@@ -1,0 +1,12 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "mabe:furnace_rain_cloud\block"
+    },
+
+    "tags": ["furnace"],
+    "input": "mabe:rain_cloud_block",
+    "output": "mabe:cloud_block"
+  }
+}

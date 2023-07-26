@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:karmaira_amalgam",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/karmaira"
+      },
+      "geometry": {
+        "default": "geometry.karmaira_amalgam"
+      },
+      "animations": {
+        "unit": "animation.karmaira_amalgam.unit",
+        "wing": "animation.karmaira_amalgam.wing"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.karmaira_amalgam.move" }
+      ],
+      "render_controllers": [ "controller.render.karmaira" ],
+      "spawn_egg": {
+        "base_color": "#CBEED7",
+        "overlay_color": "#EEEECB"
+      }
+    }
+  }
+}

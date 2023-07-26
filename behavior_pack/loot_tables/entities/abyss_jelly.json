@@ -1,0 +1,90 @@
+{
+  "pools": [
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "item",
+          "name": "mabe:abyss_salmon_raw",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "furnace_smelt",
+              "conditions": [
+                {
+                  "condition": "entity_properties",
+                  "entity": "this",
+                  "properties": {
+                    "on_fire": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "mabe:night_amago_raw",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "furnace_smelt",
+              "conditions": [
+                {
+                  "condition": "entity_properties",
+                  "entity": "this",
+                  "properties": {
+                    "on_fire": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 6,
+      "entries": [
+        {
+          "type": "item",
+          "name": "mabe:abyss_gel",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 4,
+      "conditions": [
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.25,
+          "looting_multiplier": 0.01
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

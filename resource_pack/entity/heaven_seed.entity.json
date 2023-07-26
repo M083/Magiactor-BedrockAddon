@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:heaven_seed",
+      "materials": {
+        "default": "default_blending"
+      },
+      "textures": {
+        "default": "textures/entity/heaven_bouquet"
+      },
+      "geometry": {
+        "default": "geometry.heaven_seed"
+      },
+      "animations": {
+        "roll": "animation.heaven_seed.roll"
+      },
+      "animation_controllers": [
+        { "roll": "controller.animation.heaven_seed.roll" }
+      ],
+      "render_controllers": [
+        "controller.render.heaven_bouquet"
+      ],
+      "spawn_egg": {
+        "base_color": "#95E0E8",
+        "overlay_color": "#6C8FA5"
+      }
+    }
+  }
+}

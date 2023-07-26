@@ -231,6 +231,52 @@
           "offset": [ 0, -1.15, 0 ]
         }
       },
+
+      "mabe:relikarma_wand_arrow": {
+        "minecraft:variant": {
+          "value": 9
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": [0.75, 0.75],
+          "time_down_event": {
+            "event": "mabe:canon_explode"
+          }
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 25,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {              
+                "event": "mabe:canon_explode",
+                "target": "self"
+              }
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 1.5,
+          "gravity": 0.015,
+          "uncertainty_base": 9,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": true,
+          "offset": [ 0, -1.15, 0 ]
+        }
+      },
+
       "mabe:organ_shard_arrow": {
         "minecraft:variant": {
           "value": 1
@@ -275,22 +321,19 @@
               "damage": 8,
               "knockback": true,
               "semi_random_diff_damage": false,
-              "destroy_on_hit": true
+              "destroy_on_hit_requires_damage": true
             },
             "stick_in_ground": {
               "shake_time" : 0
-            },
-            "remove_on_hit": {
             }
+            ,"remove_on_hit": {}
           },
           "liquid_inertia": 0.99,
           "hit_sound": "item.trident.throw",
           "hit_ground_sound": "item.trident.throw","power": 3,
-          
           "gravity": 0.015,
           "uncertainty_base": 12,
           "uncertainty_multiplier": 0,
-          "stop_on_hurt": true,
           "anchor": 1,
           "should_bounce": true,
           "multiple_targets": true,
@@ -438,7 +481,7 @@
       },
       "mabe:organ_wand_shard_arrow": {
         "minecraft:variant": {
-          "value": 4
+          "value": 10
         },
 
         "minecraft:projectile": {
@@ -513,9 +556,9 @@
           "on_hit": {
             "impact_damage": {
               "damage": 6,
+              "catch_fire": true,
               "knockback": true,
-              "semi_random_diff_damage": false,
-              "destroy_on_hit": true
+              "semi_random_diff_damage": false
             },
             "stick_in_ground": {
               "shake_time" : 0
@@ -526,8 +569,6 @@
                 "event": "mabe:summon_explode",
                 "target": "self"
               }
-            },
-            "remove_on_hit": {
             }
           },
           "liquid_inertia": 0.99,
@@ -548,6 +589,55 @@
       },
 
 
+      "mabe:dualscythe_arrow": {
+        "minecraft:variant": {
+          "value": 8
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "interact_text": "action.interact.ride.boat",
+          "family_types": [
+            "dualscythe"
+          ],
+          "seats": [
+            {
+              "position": [ 0.0, 1.0, 0.0 ]
+            }
+          ]
+        },
+        "minecraft:addrider": {
+          "entity_type": "mabe:dualscythe"
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 1,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": false,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            },
+            "remove_on_hit": {}
+          },
+          "hit_sound": "",
+          "hit_ground_sound": "",
+          "power": 0.8,
+          "liquid_inertia": 0.99,
+          "gravity": 0.01,
+          "uncertainty_base": 0,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.45, 0 ]
+        }
+      },
       "minecraft:pillager_arrow": {
         "minecraft:projectile": {
           "on_hit": {
@@ -655,6 +745,11 @@
       "mabe:summon_explode": {
         "run_command": {
           "command": "summon mabe:fire_explode"
+        },
+        "add": {
+          "component_groups": [
+            "mabe:apoptosis"
+          ]
         }
       },
       "mabe:remove": {
@@ -779,6 +874,21 @@
             "filters": {
               "all_of": [
                 { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:relikarma_dualscythe" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "mabe:dualscythe_arrow" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
                 { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:magia_white_crystal_spear" }
               ]
             },
@@ -799,7 +909,8 @@
                     { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:organ_wand_blue_1" },
                     { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:organ_wand_blue_2" },
                     { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:organ_wand_blue_3" },
-                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:organ_wand_blue_4" }
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:organ_wand_blue_4" },
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:astro_knife" }
                   ]
                 }
               ]
@@ -931,6 +1042,40 @@
               {
                 "run_command": {
                   "command": "playanimation @e[type = mabe:replikarma_falcon, c = 1] shot"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "mabe:relikarma_wand" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "mabe:relikarma_wand_arrow", "mabe:flame_particle" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "replikarma_shark" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "mabe:canon_arrow", "mabe:flame_particle" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "playanimation @e[type = mabe:replikarma_shark, c = 1] shoot"
                 }
               }
             ]

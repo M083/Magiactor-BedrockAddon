@@ -44,11 +44,37 @@
         }
       },
       "abyss_large": {
+        "minecraft:scale": {
+          "value": 1.5
+        },
         "minecraft:mark_variant": {
           "value": 1
         },
         "minecraft:loot": {
           "table": "loot_tables/entities/abyss_salmon_large.json"
+        }
+      },
+
+      "cloud": {
+        "minecraft:scale": {
+          "value": 1.5
+        },
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/cloud_salmon.json"
+        }
+      },
+      "cloud_large": {
+        "minecraft:scale": {
+          "value": 2.5
+        },
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/cloud_salmon_large.json"
         }
       }
     },
@@ -204,6 +230,14 @@
                 "add": {
                   "component_groups": [ "abyss" ]
                 }
+              },
+              {
+                "filters": {
+                  "test": "is_altitude", "operator": ">", "value": 150
+                },
+                "add": {
+                  "component_groups": [ "cloud" ]
+                }
               }
             ]
           },
@@ -222,6 +256,14 @@
                 "add": {
                   "component_groups": [ "abyss" ]
                 }
+              },
+              {
+                "filters": {
+                  "test": "is_altitude", "operator": ">", "value": 150
+                },
+                "add": {
+                  "component_groups": [ "cloud" ]
+                }
               }
             ]
           },
@@ -239,6 +281,14 @@
                 },
                 "add": {
                   "component_groups": [ "abyss_large" ]
+                }
+              },
+              {
+                "filters": {
+                  "test": "is_altitude", "operator": ">", "value": 150
+                },
+                "add": {
+                  "component_groups": [ "cloud_large" ]
                 }
               }
             ]

@@ -44,7 +44,7 @@
       },
       "follow": {
         "minecraft:flying_speed": {
-          "value": 0.9
+          "value": 0.5
         },
         "minecraft:timer": {
           "looping": false,
@@ -247,7 +247,14 @@
         "event": "death_event"
       }
     },
-    "events": {
+    "events": { 
+      "mabe:apoptosis": {
+        "add": {
+          "component_groups": [
+            "mabe:apoptosis"
+          ]
+        }
+      },
       "boss_heal_event": {
         "run_command": {
           "command": [

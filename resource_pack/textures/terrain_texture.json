@@ -4,6 +4,11 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
+    "lunar_globe": {
+      "textures": [
+        "textures/blocks/lunar_globe"
+      ]
+    },
     "wire_mesh": {
       "textures": [
         "textures/blocks/wire_mesh"
@@ -12,6 +17,16 @@
     "incense": {
       "textures": [
         "textures/blocks/incense"
+      ]
+    },
+    "healing_incense": {
+      "textures": [
+        "textures/blocks/healing_incense"
+      ]
+    },
+    "healing_incense_2": {
+      "textures": [
+        "textures/blocks/healing_incense_2"
       ]
     },
     "ender_craft_table": {
@@ -37,6 +52,11 @@
     "cloud_block": {
       "textures": [
         "textures/blocks/cloud_block"
+      ]
+    },
+    "rain_cloud_block": {
+      "textures": [
+        "textures/blocks/rain_cloud_block"
       ]
     },
     "enchanted_bookshelf_top": {

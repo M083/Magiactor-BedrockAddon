@@ -1,0 +1,18 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "mabe:random_fossil_feature"
+    },
+    "features": [
+      [ "mabe:magiactor_fossil_1_feature", 2 ],
+      [ "mabe:magiactor_fossil_2_feature", 2 ],
+      [ "mabe:magiactor_fossil_3_feature", 2 ],
+      [ "mabe:magiactor_fossil_4_feature", 2 ],
+      [ "mabe:magiactor_fossil_5_feature", 2 ],
+      [ "mabe:magiactor_fossil_6_feature", 2 ],
+      [ "mabe:magiactor_fossil_7_feature", 1 ],
+      [ "mabe:magiactor_fossil_8_feature", 1 ]
+    ]
+  }
+}

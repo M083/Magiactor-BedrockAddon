@@ -9,7 +9,7 @@
                 "item": "mabe:magia_quill_pen"
             },
             "d": {
-                "item": "minecraft:gold_block"
+                "item": "mabe:abyss_gel"
             },
             "e": {
                 "item": "mabe:helmet_craftor_2"
@@ -18,7 +18,7 @@
                 "item": "minecraft:oxidized_copper"
             },
             "g": {
-                "item": "minecraft:amethyst_block"
+                "item": "minecraft:magma"
             },
             "h": {
                 "item": "mabe:magia_light_crystal_block"

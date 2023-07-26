@@ -3,14 +3,22 @@
   "render_controllers": {
     "controller.render.salmon": {
       "arrays": {
+        "geometries": {
+          "Array.geometries": [ 
+            "Geometry.default", 
+            "Geometry.default", 
+            "Geometry.cloud"
+          ]
+        },
         "textures": {
           "Array.textures": [
             "Texture.default",
-            "Texture.abyss"
+            "Texture.abyss",
+            "Texture.cloud"
           ]
         }
       },
-      "geometry": "Geometry.default",
+      "geometry": "Array.geometries[query.mark_variant]",
       "materials": [ { "*": "Material.default" } ],
       "textures": [ "Array.textures[query.mark_variant]" ]
     }

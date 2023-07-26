@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "mabe:royal_drink"
+    },
+    "tags": [ "ender_craft_table" ],
+    "ingredients": [
+      {
+        "item": "mabe:replikar_blood"
+      },
+      {
+        "item": "mabe:royal_honey"
+      },
+      {
+        "item": "mabe:organ_drink"
+      }
+    ],
+    "priority": 1,
+    "result": {
+      "item": "mabe:royal_drink",
+      "count": 1
+    }
+  }
+}

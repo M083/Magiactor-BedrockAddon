@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:replikarma_hound",
+      "materials": {
+        "default": "default_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/replikarma/replikarma_sniper"
+      },
+      "geometry": {
+        "default": "geometry.replikarma_hound"
+      },
+      "animations": {
+        "attack": "animation.replikarma_hound.attack",
+        "walk": "animation.replikarma_hound.walk",
+        "tail": "animation.replikarma_hound.tail",
+        "look": "animation.replikarma_hound.look"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.replikarma_hound.move" },
+        { "attack": "controller.animation.replikarma_hound.attack" },
+        { "look": "controller.animation.replikarma_hound.look" }
+      ],
+      "render_controllers": [ "controller.render.replikarma_sniper" ],
+      "spawn_egg": {
+        "base_color": "#4B4C4F",
+        "overlay_color": "#CE8D83"
+      }
+    }
+  }
+}

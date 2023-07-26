@@ -6,10 +6,10 @@
         },
         "key": {
             "c": {
-                "item": "minecraft:magma_cream"
+                "item": "mabe:abyss_gel"
             },
             "s": {
-                "item": "mabe:magia_red_crystal_block"
+                "item": "minecraft:magma"
             },
             "p": {
                 "item": "mabe:boots_craftor_3"

@@ -34,7 +34,7 @@
                 "run_command": {
                     "command": [
                         "event entity @e[family=boss,type=!ender_dragon,r=64] mabe:apoptosis",
-                        "particle minecraft:knockback_roar_particle"
+                        "particle mabe:incense_particle ~ ~-0.5 ~"
                     ]
                 }
             }

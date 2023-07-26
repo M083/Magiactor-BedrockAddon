@@ -1,24 +1,30 @@
 {
-    "format_version": 2,
-    "header": {
-        "description": "Twitter : @M0_83",
-        "name": "Magiactor Behavior Pack ver2,03,000",
-        "uuid": "ef649bcf-256c-4013-9068-6a802b891083",
-        "version":[2,03,000],
-        "min_engine_version": [1, 19, 50]
-    },
-    "modules": [
-        {
-            "description": "Magiactor behavior pack",
-            "type": "data",
-            "uuid": "fe6e90c8-c925-460f-8155-c8a60b751083",
-            "version":[2,03,000]
-        }
-    ],
-    "dependencies": [
-        {
-            "uuid": "6ec6e9a8-3093-462a-9c36-dbb6a4cd1083",
-            "version":[2,03,000]
-        }
-    ]
+  "format_version": 2,
+  "header": {
+    "name": "Magiactor behavior Pack ver3,0,000",
+    "description": "Twitter@M0_83",
+    "version": [3,0,000],
+    "uuid": "ce8f8e39-f26d-4d72-9fd1-edfe51f73637",
+    "min_engine_version": [1,19,50],
+    "pack_scope": "world"
+  },
+  "modules": [
+    {
+      "type": "data",
+      "description": "behavior module",
+      "version": [3,0,000],
+      "uuid": "2616eeb0-1e05-4aef-a819-29b45a0ff1cd"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "b8b0fc6b-0543-4f06-996e-2b1cd76c6eb9",
+      "version": [3,0,000]
+    }
+  ],
+  "metadata": {
+    "generated_with": {
+      "TokaTools-Manifest-Generator": ["1.8.0"]
+    }
+  }
 }

@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.replikarma_shark.look": {
+      "states": {
+        "walking": {
+          "animations": [
+            {
+              "look": []
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.replikarma_shark.roll": {
+      "states": {
+        "walking": {
+          "animations": [
+            {
+              "roll": []
+            },
+            {
+              "bolt_roll": []
+            },
+            {
+              "mode_aim": []
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.replikarma_shark.move": {
+      "states": {
+        "walking": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "move": [
+                {
+                  "0.0": 0.25,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

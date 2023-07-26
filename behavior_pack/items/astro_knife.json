@@ -74,13 +74,57 @@
             }
           },
           {
+            "shoot": {
+              "projectile": "minecraft:arrow",
+              "launch_power": 0.6
+            }
+          },
+          {
+            "shoot": {
+              "projectile": "minecraft:arrow",
+              "launch_power": 0.6
+            }
+          },
+          {
+            "shoot": {
+              "projectile": "minecraft:arrow",
+              "launch_power": 0.6
+            }
+          },
+          {
+            "shoot": {
+              "projectile": "minecraft:arrow",
+              "launch_power": 0.6
+            }
+          },
+          {
+            "shoot": {
+              "projectile": "minecraft:arrow",
+              "launch_power": 0.6
+            }
+          },
+          {
+            "shoot": {
+              "projectile": "minecraft:arrow",
+              "launch_power": 0.6
+            }
+          },
+          {
+            "shoot": {
+              "projectile": "minecraft:arrow",
+              "launch_power": 0.6
+            }
+          },
+          {
             "run_command": {
               "command": [
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=6] ~ ~ ~ summon mabe:organ_wand_sphere",
-                "summon mabe:boost ^ ^0.5 ^",
+                //"execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=6] ~ ~ ~ summon mabe:organ_wand_sphere",
+
+                "summon mabe:boost ~ ~0.5 ~",
                 "playanimation @s animation.attack_animation.sword_rotate",
                 "damage @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!item,r=6] 22 entity_attack entity @s",
-                "playsound item.trident.throw @e[type=player] ~ ~ ~ 5 0.6"
+                "playsound item.trident.throw @e[type=player] ~ ~ ~ 5 0.6",
+                "effect @s slow_falling 2"
               ]
             }
           }

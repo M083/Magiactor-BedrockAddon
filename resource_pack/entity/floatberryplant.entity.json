@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:floatberryplant",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/floatberryplant"
+      },
+      "geometry": {
+        "default": "geometry.luciplant"
+      },
+      "animations": {
+        "walk": "animation.luciplant.walk",
+        "whip": "animation.luciplant.whip"
+      },
+      "animation_controllers": [
+        { "whip": "controller.animation.luciplant.whip" },
+        { "walk": "controller.animation.luciplant.walk" }
+      ],
+      "render_controllers": [ "controller.render.luciplant" ],
+      "spawn_egg": {
+        "base_color": "#FFEC2B",
+        "overlay_color": "#8CF900"
+      }
+    }
+  }
+}

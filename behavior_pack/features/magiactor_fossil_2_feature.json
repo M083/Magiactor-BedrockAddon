@@ -1,0 +1,29 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "mabe:magiactor_fossil_2_feature"
+		},
+		"structure_name": "mystructure:fossil_2",
+		"facing_direction": "south",
+		"adjustment_radius": 16,
+		"constraints": {
+			"grounded": {},
+			"block_intersection": {
+				"block_whitelist": [
+					"minecraft:air",
+					"minecraft:sand",
+					"minecraft:water",
+					"minecraft:gravel",
+					"minecraft:deepslate",
+					"minecraft:tuff",
+					"minecraft:netherrack",
+					"minecraft:soul_soil",
+					"minecraft:gravel",
+					"minecraft:blackstone",
+					"minecraft:lava"
+				]
+			}
+		}
+	}
+}

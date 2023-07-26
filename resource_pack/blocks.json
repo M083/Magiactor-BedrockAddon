@@ -1,6 +1,18 @@
 {
+  "mabe:lunar_globe": {
+    "textures": "lunar_globe",
+    "sound" : "amethyst_block"
+  },
   "mabe:wire_mesh": {
     "textures": "wire_mesh",
+    "sound" : "chain"
+  },
+  "mabe:healing_incense": {
+    "textures": "healing_incense",
+    "sound" : "chain"
+  },
+  "mabe:healing_incense_2": {
+    "textures": "healing_incense_2",
     "sound" : "chain"
   },
   "mabe:incense": {
@@ -26,6 +38,11 @@
     "textures": "cloud_block",
     "isotropic": true,
     "sound": "cloth"
+  },
+  "mabe:rain_cloud_block": {
+    "textures": "rain_cloud_block",
+    "isotropic": true,
+    "sound": "frog_spawn"
   },
   "mabe:enchanted_bookshelf" : {
     "sound" : "wood",

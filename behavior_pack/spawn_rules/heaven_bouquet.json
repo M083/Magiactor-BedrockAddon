@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "mabe:heaven_bouquet",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underground": {},
+        "minecraft:spawns_on_block_filter": "mabe:cloud_block",
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 7,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 2
+        },
+        "minecraft:height_filter": {
+          "min": 150,
+          "max": 320
+        },
+        "minecraft:herd": {
+          "min_size":1,
+          "max_size":1
+        }
+      }
+    ]
+  }
+}

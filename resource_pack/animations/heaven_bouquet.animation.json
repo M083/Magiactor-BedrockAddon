@@ -1,0 +1,165 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.heaven_bouquet.tentacle": {
+			"loop": true,
+			"bones": {
+				"tentacle1_1": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 11 + 75) * 30)", "math.sin(query.life_time * 3 * 24 + 75) * 30", 0]
+				},
+				"tentacle1_2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 11 + 45) * 30)", "math.sin(query.life_time * 3 * 24 + 45) * 30", 0]
+				},
+				"tentacle1_3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 11 + 15) * 30)", "math.sin(query.life_time * 3 * 24 + 15) * 30", 0]
+				},
+				"tentacle2_1": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 14 + 75) * 30)", "math.sin(query.life_time * 3 * 27 + 75) * 30", 0]
+				},
+				"tentacle2_2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 14 + 45) * 30)", "math.sin(query.life_time * 3 * 27 + 45) * 30", 0]
+				},
+				"tentacle2_3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 14 + 15) * 30)", "math.sin(query.life_time * 3 * 27 + 15) * 30", 0]
+				},
+				"tentacle3_1": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 17 + 75) * 30)", "math.sin(query.life_time * 3 * 30 + 75) * 30", 0]
+				},
+				"tentacle3_2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 17 + 45) * 30)", "math.sin(query.life_time * 3 * 30 + 45) * 30", 0]
+				},
+				"tentacle3_3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 17 + 15) * 30)", "math.sin(query.life_time * 3 * 30 + 15) * 30", 0]
+				},
+				"tentacle4_1": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 20 + 75) * 30)", "math.sin(query.life_time * 3 * 33 + 75) * 30", 0]
+				},
+				"tentacle4_2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 20 + 45) * 30)", "math.sin(query.life_time * 3 * 33 + 45) * 30", 0]
+				},
+				"tentacle4_3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 20 + 15) * 30)", "math.sin(query.life_time * 3 * 33 + 15) * 30", 0]
+				},
+				"tentacle5_1": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 23 + 75) * 30)", "math.sin(query.life_time * 3 * 36 + 75) * 30", 0]
+				},
+				"tentacle5_2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 23 + 45) * 30)", "math.sin(query.life_time * 3 * 36 + 45) * 30", 0]
+				},
+				"tentacle5_3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 23 + 15) * 30)", "math.sin(query.life_time * 3 * 36 + 15) * 30", 0]
+				},
+				"tentacle6_1": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 26 + 75) * 30)", "math.sin(query.life_time * 3 * 39 + 75) * 30", 0]
+				},
+				"tentacle6_2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 26 + 45) * 30)", "math.sin(query.life_time * 3 * 39 + 45) * 30", 0]
+				},
+				"tentacle6_3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 26 + 15) * 30)", "math.sin(query.life_time * 3 * 39 + 15) * 30", 0]
+				},
+				"tentacle7_1": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 29 + 75) * 30)", "math.sin(query.life_time * 3 * 42 + 75) * 30", 0]
+				},
+				"tentacle7_2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 29 + 45) * 30)", "math.sin(query.life_time * 3 * 42 + 45) * 30", 0]
+				},
+				"tentacle7_3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 29 + 15) * 30)", "math.sin(query.life_time * 3 * 42 + 15) * 30", 0]
+				},
+				"tentacle8_1": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 11 + 75) * 30)", "math.sin(query.life_time * 3 * 24 + 75) * 30", 0]
+				},
+				"tentacle8_2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 11 + 45) * 30)", "math.sin(query.life_time * 3 * 24 + 45) * 30", 0]
+				},
+				"tentacle8_3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 11 + 15) * 30)", "math.sin(query.life_time * 3 * 24 + 15) * 30", 0]
+				},
+				"tentacle9_1": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 14 + 75) * 30)", "math.sin(query.life_time * 3 * 27 + 75) * 30", 0]
+				},
+				"tentacle9_2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 14 + 45) * 30)", "math.sin(query.life_time * 3 * 27 + 45) * 30", 0]
+				},
+				"tentacle9_3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 14 + 15) * 30)", "math.sin(query.life_time * 3 * 27 + 15) * 30", 0]
+				},
+				"tentacle10_1": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 17 + 75) * 30)", "math.sin(query.life_time * 3 * 30 + 75) * 30", 0]
+				},
+				"tentacle10_2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 17 + 45) * 30)", "math.sin(query.life_time * 3 * 30 + 45) * 30", 0]
+				},
+				"tentacle10_3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 17 + 15) * 30)", "math.sin(query.life_time * 3 * 30 + 15) * 30", 0]
+				},
+				"tentacle11_1": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 20 + 75) * 30)", "math.sin(query.life_time * 3 * 33 + 75) * 30", 0]
+				},
+				"tentacle11_2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 20 + 45) * 30)", "math.sin(query.life_time * 3 * 33 + 45) * 30", 0]
+				},
+				"tentacle11_3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 20 + 15) * 30)", "math.sin(query.life_time * 3 * 33 + 15) * 30", 0]
+				}
+			}
+		},
+		"animation.heaven_bouquet.dorsal_fin": {
+			"loop": true,
+			"bones": {
+				"dorsal_fin1": {
+					"rotation": ["-math.abs(math.cos(query.life_time * 3 * 11 + 75) * 30)", 0, 0]
+				},
+				"dorsal_fin2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 11 + 45) * 30)", 0, 0]
+				},
+				"dorsal_fin3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 11 + 15) * 30)", 0, 0]
+				},
+				"dorsal_fin4": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 11) * 30)", 0, 0]
+				}
+			}
+		},
+		"animation.heaven_bouquet.swim": {
+			"loop": true,
+			"bones": {
+				"body1": {
+					"rotation": ["math.cos(query.life_time * 3 * 11 + 60) * 15", "math.sin(query.life_time * 3 * 24 + 60) * 15", 0],
+					"position": ["math.cos(query.life_time * 3 * 24 + 90) * 16", "-math.sin(query.life_time * 3 * 11 + 90) * 16", 0]
+				},
+				"head": {
+					"rotation": ["-math.cos(query.life_time * 3 * 11 + 75) * 30", "-math.sin(query.life_time * 3 * 24 + 75) * 30", 0]
+				},
+				"body2": {
+					"rotation": ["math.cos(query.life_time * 3 * 11 + 45) * 15", "math.sin(query.life_time * 3 * 24 + 45) * 15", 0]
+				},
+				"body3": {
+					"rotation": ["math.cos(query.life_time * 3 * 11 + 30) * 15", "math.sin(query.life_time * 3 * 24 + 30) * 15", 0]
+				},
+				"tail": {
+					"rotation": ["math.cos(query.life_time * 3 * 11 + 15) * 15", "math.sin(query.life_time * 3 * 24 + 15) * 15", 0]
+				},
+				"tentacle12_1": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 26 + 75) * 30)", "math.sin(query.life_time * 3 * 39 + 75) * 30", 0]
+				},
+				"tentacle12_2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 26 + 45) * 30)", "math.sin(query.life_time * 3 * 39 + 45) * 30", 0]
+				},
+				"tentacle12_3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 26 + 15) * 30)", "math.sin(query.life_time * 3 * 39 + 15) * 30", 0]
+				},
+				"tentacle13_1": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 26 + 75) * 30)", "-math.sin(query.life_time * 3 * 39 + 75) * 30", 0]
+				},
+				"tentacle13_2": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 26 + 45) * 30)", "-math.sin(query.life_time * 3 * 39 + 45) * 30", 0]
+				},
+				"tentacle13_3": {
+					"rotation": ["math.abs(math.cos(query.life_time * 3 * 26 + 15) * 30)", "-math.sin(query.life_time * 3 * 39 + 15) * 30", 0]
+				}
+			}
+		}
+	}
+}

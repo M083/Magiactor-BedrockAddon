@@ -1,0 +1,25 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:angel_fish_raw",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.miscFood"
+      },
+      "minecraft:icon": {
+        "texture": "angel_fish_raw"
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:use_duration": 1.6,
+      "minecraft:food": {
+        "nutrition": 2,
+        "saturation_modifier": "good",
+        "can_always_eat": false
+      }
+    }
+  }
+}

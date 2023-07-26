@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:desert_eagle",
+      "materials": {
+        "default": "default_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/desert_eagle"
+      },
+      "geometry": {
+        "default": "geometry.desert_eagle"
+      },
+      "animations": {
+        "stand_pose": "animation.desert_eagle.stand_pose",
+        "flying_pose": "animation.desert_eagle.flying_pose",
+        "fly": "animation.desert_eagle.fly",
+        "look": "animation.desert_eagle.look"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.desert_eagle.pose" },
+        { "move": "controller.animation.desert_eagle.move" }
+      ],
+      "render_controllers": [ "controller.render.desert_eagle" ],
+      "spawn_egg": {
+        "base_color": "#B39A82",
+        "overlay_color": "#7E4851"
+      }
+    }
+  }
+}

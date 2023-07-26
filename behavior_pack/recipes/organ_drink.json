@@ -16,6 +16,7 @@
         "item": "minecraft:honey_bottle"
       }
     ],
+    "priority": 1,
     "result": {
       "item": "mabe:organ_drink",
       "count": 1

@@ -1,0 +1,170 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mabe:heaven_bouquet",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "mabe:apoptosis": {
+        "minecraft:instant_despawn": {}
+      },
+      "status_easy": {
+        "minecraft:health": {
+          "value": 400,
+          "max": 400
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 1000,
+          "max": 1000
+        }
+      },
+      "boss_bar": {
+        "minecraft:boss": {
+          "name": "entity.mabe:heaven_bouquet.name"
+        }
+      }
+    },
+    "components": {
+      "minecraft:timer": {
+        "looping": true,
+        "time": [4.5, 6.5],
+        "time_down_event": {
+          "event": "summon_seed"
+        }
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "event": "add_boss"
+            }
+          }
+        ]
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 3 : 0"
+      },
+      "minecraft:type_family": {
+        "family": [ "heaven_bouquet", "monster", "boss" ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/heaven_bouquet.json"
+      },
+      "minecraft:collision_box": {
+        "width": 8.5,
+        "height": 4.5
+      },
+
+      "minecraft:movement": {
+        "value": 0.035
+      },
+      "minecraft:flying_speed": {
+        "value": 0.3
+      },
+      "minecraft:behavior.move_towards_target": {
+        "within_radius": 1.5
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:navigation.hover": {
+        "can_path_over_water": true,
+        "can_breach": true,
+        "can_sink": true,
+        "can_path_from_air": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": false
+      },
+      "minecraft:behavior.random_hover": {
+        "priority": 11,
+        "xz_dist": 8,
+        "y_dist": 12,
+        "y_offset": -1,
+        "interval": 1,
+        "hover_height": [12, 24]
+      },
+      "minecraft:movement.hover": {},
+      "minecraft:can_fly": {
+      },
+      "minecraft:health": {
+        "value": 800,
+        "max": 800
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
+      },
+      "minecraft:physics": {
+      }
+    },
+    "events": {
+      "death_event": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "structure load mystructure:reward_heaven_bouquet ~ ~ ~",
+                "effect @e[type=player] village_hero 1800 3",
+                "xp 150 @e[type=player]"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "effect @s invisibility 1 1 true",
+                "execute unless entity @p[family=ender_dragon_slayer] run event entity @s mabe:apoptosis",
+                "execute if entity @e[type=mabe:heaven_bouquet,rm=1,r=128] run event entity @s mabe:apoptosis"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          }
+        ]
+      },
+      "add_boss": {
+        "add": { "component_groups": [ "boss_bar" ] }
+      },
+      "summon_seed": {
+        "run_command": {
+          "command": [
+            "summon mabe:heaven_seed ~ ~2 ~",
+            "summon mabe:heaven_seed ~ ~2 ~",
+            "summon mabe:heaven_seed ~ ~2 ~",
+            "summon mabe:heaven_seed ~ ~2 ~"
+          ]
+        }
+      }
+    }
+  }
+}

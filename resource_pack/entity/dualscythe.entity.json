@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:dualscythe",
+      "materials": {
+        "default": "default_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/replikarma/replikarma_sniper"
+      },
+      "geometry": {
+        "default": "geometry.dualscythe"
+      },
+      "animations": {
+        "roll": "animation.dualscythe.roll"
+      },
+      "animation_controllers": [
+        { "roll": "controller.animation.dualscythe" }
+      ],
+      "render_controllers": [ "controller.render.replikarma_sniper" ]
+    }
+  }
+}

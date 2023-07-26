@@ -1,0 +1,42 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:breathable_cookie",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.miscFood"
+      },
+      "minecraft:icon": {
+        "texture": "breathable_cookie"
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:use_duration": 1.6,
+      "minecraft:food": {
+        "nutrition": 6,
+        "saturation_modifier": "good",
+        "can_always_eat": true,
+        "on_consume": {
+          "event": "food_effect",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "food_effect": {
+        "sequence": [
+          {
+            "add_mob_effect": {
+              "effect": "water_breathing",
+              "amplifier": 0,
+              "duration": 120
+            }
+          }
+        ]
+      }
+    }
+  }
+}

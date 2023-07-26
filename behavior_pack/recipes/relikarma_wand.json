@@ -1,0 +1,48 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:relikarma_wand"
+        },
+        "key": {
+            "c": {
+                "item": "minecraft:exposed_copper"
+            },
+            "b": {
+                "item": "minecraft:deepslate_bricks"
+            },
+            "p": {
+                "item": "mabe:artifact"
+            },
+            "h": {
+                "item": "mabe:replikar_blood"
+            },
+            "s": {
+                "item": "mabe:skull_wand_craftor"
+            }
+        },
+        "pattern": [
+            "sb ",
+            "bcb",
+            "hbp"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:relikarma_wand"
+            },
+            {
+                "count": 1,
+                "item": "mabe:skull_wand_craftor"
+            },
+            {
+                "count": 1,
+                "item": "mabe:artifact"
+            }
+        ],
+        "tags": [
+            "ender_craft_table"
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:angel_candy"
+        },
+        "key": {
+            "s": {
+                "item": "mabe:floatberry"
+            },
+            "r": {
+                "item": "minecraft:sugar"
+            },
+            "g": {
+                "item": "minecraft:gunpowder"
+            }
+        },
+        "pattern": [
+            " ss",
+            " rs",
+            "g  "
+        ],
+        "priority": 1,
+        "result": {
+            "count": 3,
+            "item": "mabe:angel_candy"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

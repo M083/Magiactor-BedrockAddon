@@ -3,7 +3,7 @@
     "minecraft:feature_rules": {
         "description": {
             "identifier": "mabe:high_cloud_feature_rule",
-            "places_feature": "mabe:high_cloud_feature"
+            "places_feature": "mabe:cloud_feature"
         },
         "conditions": {
             "placement_pass": "first_pass",

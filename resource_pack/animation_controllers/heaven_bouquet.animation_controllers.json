@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.heaven_bouquet.move": {
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "dorsal_fin": []
+            },
+            {
+              "swim": []
+            },
+            {
+              "tentacle": []
+            }
+          ]
+        }
+      }
+    }
+  }
+}

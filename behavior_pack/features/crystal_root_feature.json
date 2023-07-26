@@ -1,0 +1,27 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "mabe:crystal_root_feature"
+    },
+    "places_block": {
+      "name": "mabe:magia_crystal_block"
+    },
+    "enforce_survivability_rules": true,
+    "enforce_placement_rules": true,
+    "may_attach_to": {
+      "min_sides_must_attach": 2,
+      "auto_rotate": false,
+      "top": [
+        "minecraft:deepslate",
+        "mabe:magia_crystal_block"
+      ],
+      "bottom": [
+        "minecraft:air"
+      ]
+    },
+    "may_replace": [
+      "minecraft:air"
+    ]
+  }
+}

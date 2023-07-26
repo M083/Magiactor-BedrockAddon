@@ -39,6 +39,13 @@
             }
           },
           {
+            "block": "mabe:magia_white_crystal_block",
+            "speed": 60,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
             "block": "mabe:magia_light_crystal_block",
             "speed": 60,
             "on_dig": {

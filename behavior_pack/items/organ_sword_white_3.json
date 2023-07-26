@@ -25,7 +25,7 @@
       "minecraft:repairable": {
         "repair_items": [
           {
-            "items": [ "mabe:fallen_star_shard", "mabe:magia_white_crystal_shard" ],
+            "items": [ "mabe:magia_white_crystal_shard" ],
             "repair_amount": 260
           },
           {
@@ -81,7 +81,9 @@
             "run_command": {
               "command": [
                 "playanimation @s animation.attack_animation.sword_rotate",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=6] ~ ~ ~ summon mabe:organ_wand_sphere",
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=6] ~ ~ ~ summon mabe:organ_wand_shard",
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=6] ~ ~ ~ summon mabe:organ_wand_shard",
+                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=6] ~ ~ ~ summon mabe:organ_wand_shard",
                 "damage @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!item,r=6] 13 entity_attack entity @s",
                 "playsound item.trident.throw @e[type=player] ~ ~ ~ 5 0.6"
               ]

@@ -1,0 +1,73 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:spawn_rules": {
+		"description": {
+			"identifier": "minecraft:frog",
+			"population_control": "animal"
+		},
+		"conditions": [
+			{
+				"minecraft:spawns_on_surface": {},
+				"minecraft:spawns_underground": {},
+				"minecraft:spawns_on_block_filter": "mabe:cloud_block",
+				"minecraft:weight": {
+					"default": 25
+				},
+				"minecraft:height_filter": {
+					"min": 150,
+					"max": 320
+				},
+				"minecraft:herd": {
+					"min_size":2,
+					"max_size":4
+				}
+			},
+			{
+				"minecraft:spawns_underground": {},
+				"minecraft:spawns_underwater": {},
+				"minecraft:weight": {
+					"default": 30
+				},
+				"minecraft:distance_filter": {
+					"min": 12,
+					"max": 32
+				},
+				"minecraft:density_limit": {
+					"surface": 4
+				},
+				"minecraft:height_filter": {
+					"min": 150,
+					"max": 320
+				},
+				"minecraft:herd": {
+					"min_size": 2,
+					"max_size": 5
+				}
+			},
+			{
+				"minecraft:spawns_on_surface": {},
+				"minecraft:weight": {
+					"default": 10
+				},
+				"minecraft:herd": {
+					"min_size": 2,
+					"max_size": 5
+				},
+				"minecraft:biome_filter": {
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "swamp"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "mangrove_swamp"
+						}
+					]
+				}
+			}
+		]
+	}
+}

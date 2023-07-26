@@ -36,6 +36,125 @@
           },
           */
           {
+            "block":"minecraft:cherry_button",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_door",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_double_slab",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_fence",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_fence_gate",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_hanging_sign",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_leaves",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_log",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_planks",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_pressure_plate",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_sapling",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_slab",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_stairs",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_standing_sign",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_trapdoor",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_wall_sign",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
+            "block": "minecraft:cherry_wood",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
             "block": "mabe:enchanted_bookshelf",
             "speed": 40,
             "on_dig": {

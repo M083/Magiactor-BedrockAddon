@@ -21,6 +21,10 @@
         "minecraft:weight": {
           "default": 30
         },
+        "minecraft:height_filter": {
+          "min": 0,
+          "max": 120
+        },
         "minecraft:herd": {
           "min_size": 2,
           "max_size": 4

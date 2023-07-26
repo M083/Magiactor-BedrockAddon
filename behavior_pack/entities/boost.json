@@ -21,6 +21,10 @@
           "deals_damage": false
         }
       },
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
       "minecraft:behavior.knockback_roar": {
         "duration": 0.05,
         "attack_time": 0.05,

@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:cave_penguin",
+      "materials": { "default": "default_alpha" },
+      "textures": {
+        "default": "textures/entity/cave_penguin"
+      },
+      "geometry": {
+        "default": "geometry.cave_penguin"
+      },
+      "animations": {
+        "look": "animation.cave_penguin.look",
+        "stand_pose": "animation.cave_penguin.stand_pose",
+        "attack": "animation.cave_penguin.attack",
+        "walk_pose": "animation.cave_penguin.walk_pose",
+        "walk": "animation.cave_penguin.walk"
+      },
+      "animation_controllers": [
+        {
+          "attack": "controller.animation.cave_penguin.attack"
+        },
+        {
+          "pose": "controller.animation.cave_penguin.pose"
+        },
+        {
+          "walk": "controller.animation.cave_penguin.walk"
+        },
+        {
+          "walk_pose": "controller.animation.cave_penguin.walk_pose"
+        }
+      ],
+      "render_controllers": [ "controller.render.cave_penguin" ],
+      "spawn_egg": {
+        "base_color": "#A4BBB7",
+        "overlay_color": "#7D94AF"
+      }
+    }
+  }
+}

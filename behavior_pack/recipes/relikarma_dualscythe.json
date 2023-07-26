@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:relikarma_dualscythe"
+        },
+        "key": {
+            "c": {
+                "item": "minecraft:exposed_copper"
+            },
+            "b": {
+                "item": "minecraft:deepslate_bricks"
+            },
+            "p": {
+                "item": "mabe:artifact"
+            },
+            "h": {
+                "item": "mabe:replikar_blood"
+            }
+        },
+        "pattern": [
+            "bch",
+            " p ",
+            "hcb"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:relikarma_dualscythe"
+            },
+            {
+                "count": 1,
+                "item": "mabe:artifact"
+            }
+        ],
+        "tags": [
+            "ender_craft_table"
+        ]
+    }
+}

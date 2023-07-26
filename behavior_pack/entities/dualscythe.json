@@ -1,0 +1,115 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mabe:dualscythe",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "death": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": [0.5, 0.5],
+          "time_down_event": {
+            "event": "remove"
+          }
+        }
+      },
+      "remove": {
+        "minecraft:instant_despawn":{}
+      }
+    },
+    "components": {
+      "minecraft:mark_variant": {
+        "value": 3
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:health": {
+        "value": 10,
+        "max": 10
+      },
+      "minecraft:timer": {
+        "looping": false,
+        "time": [8, 8],
+        "time_down_event": {
+          "event": "death"
+        }
+      },
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:movement": {
+        "value": 0.02
+      },
+      "minecraft:loot": {
+        "table": ""
+      },
+      "minecraft:type_family": {
+        "family": [ "dualscythe", "inanimate" ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:environment_sensor": {
+        "triggers":[
+          {
+            "event": "attack"
+          }
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
+      }
+    },
+    "events": {
+      "attack": {
+        "run_command": {
+          "command": [
+            "damage @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!item,r=3.5] 22 entity_attack entity @p"
+          ]
+        }
+      },
+      "death": {
+        "add" : {
+          "component_groups": ["death"]
+        },
+        "run_command": {
+          "command": "effect @s invisibility 5 0 true"
+        }
+      },
+      "remove": {
+        "add" : {
+          "component_groups": ["remove"]
+        }
+      }
+    }
+  }
+}

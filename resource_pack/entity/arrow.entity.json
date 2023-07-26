@@ -15,6 +15,7 @@
         "organ_wand_shard":  "textures/entity/organ_yellow",
         "organ_purple_shard":  "textures/entity/organ_purple",
         "organ_red_shard":  "textures/entity/organ_red",
+        "organ_white_shard":  "textures/entity/organ_white",
         "wander_broom": "textures/entity/wander_broom",
         "magia_white_crystal_spear": "textures/entity/magia_white_crystal_spear",
         "canon": "textures/entity/canon",

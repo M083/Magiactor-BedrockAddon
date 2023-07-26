@@ -23,7 +23,7 @@
     },
     "components": {
       "minecraft:mark_variant": {
-        "value": 1
+        "value": 3
       },
       "minecraft:breathable": {
         "total_supply": 15,

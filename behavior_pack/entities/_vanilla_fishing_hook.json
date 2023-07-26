@@ -18,6 +18,11 @@
         "minecraft:loot": {
           "table": "loot_tables/gameplay/underground_fishing.json"
         }
+      },
+      "loot_sky": {
+        "minecraft:loot": {
+          "table": "loot_tables/gameplay/sky_fishing.json"
+        }
       }
     },
 
@@ -64,6 +69,14 @@
                 "value": 30
               },
               "add": { "component_groups": [ "loot_underground" ] }
+            },
+            {
+              "filters": {
+                "test": "is_altitude",
+                "operator": ">",
+                "value": 150
+              },
+              "add": { "component_groups": [ "loot_sky" ] }
             }
           ]
         }

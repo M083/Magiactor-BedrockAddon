@@ -1,0 +1,40 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:healing_incense"
+        },
+        "key": {
+            "w": {
+                "item": "mabe:magia_light_crystal_block"
+            },
+            "d": {
+                "item": "minecraft:deepslate_bricks"
+            },
+            "c": {
+                "item": "minecraft:copper_ingot"
+            },
+            "o": {
+                "item": "minecraft:exposed_copper"
+            },
+            "h": {
+                "item": "mabe:replikar_heart"
+            }
+        },
+        "pattern": [
+            "ddd",
+            "cwc",
+            "oho"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:healing_incense"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:replikar_blood",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:icon":{
+        "texture": "replikar_blood"
+      },
+      "minecraft:fuel": {
+        "duration" : 240
+      }
+    }
+  }
+}

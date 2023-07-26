@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:recovery_compass"
+        },
+        "key": {
+            "i": {
+                "item": "minecraft:iron_ingot"
+            },
+            "s": {
+                "item": "mabe:magia_light_crystal_shard"
+            }
+        },
+        "pattern": [
+            " i ",
+            "isi",
+            " i "
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "minecraft:recovery_compass"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

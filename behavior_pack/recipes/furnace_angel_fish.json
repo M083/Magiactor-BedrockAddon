@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "mabe:furnace_angel_fish"
+    },
+
+    "tags": ["furnace", "smoker", "campfire"],
+    "input": "mabe:angel_fish_raw",
+    "output": "mabe:angel_fish_cooked"
+  }
+  
+}

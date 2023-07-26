@@ -8,10 +8,12 @@
       },
       "textures": {
         "default": "textures/entity/fish/salmon",
-        "abyss": "textures/entity/abyss_salmon"
+        "abyss": "textures/entity/abyss_salmon",
+        "cloud": "textures/entity/cloud_salmon"
       },
       "geometry": {
-        "default": "geometry.salmon"
+        "default": "geometry.salmon",
+        "cloud": "geometry.cloud_salmon"
       },
       "scripts": {
         "pre_animation": [

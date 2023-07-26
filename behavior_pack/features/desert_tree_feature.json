@@ -1,0 +1,32 @@
+{
+	"format_version": "1.15.0",
+	"minecraft:tree_feature": {
+		"description": {
+			"identifier": "mabe:desert_tree_feature"
+		},
+		"may_grow_on": [
+			"minecraft:sand"
+		],
+		"may_replace": [
+			"minecraft:air"
+		],
+		"fancy_trunk": {
+			"trunk_block": {
+				"name": "minecraft:log"
+			},
+			"trunk_width": 1,
+			"trunk_height": {
+				"base": 5,
+				"variance": 4,
+				"scale": 1.0
+			},
+			"foliage_altitude_factor": 0.7,
+			"width_scale": 1.5,
+			"branches": {
+				"slope": 0.3,
+				"density": 0.3,
+				"min_altitude_factor": 0.1
+			}
+		}
+	}
+}

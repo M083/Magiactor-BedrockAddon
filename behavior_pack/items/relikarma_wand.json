@@ -1,0 +1,107 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mabe:relikarma_wand",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.sword"
+      },
+      "minecraft:icon": {
+        "texture": "relikarma_wand"
+      },
+      "minecraft:can_destroy_in_creative": true,
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 1280
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "minecraft:exposed_copper" ],
+            "repair_amount": 400
+          },
+          {
+            "items": [ "minecraft:deepslate_bricks" ],
+            "repair_amount": 400
+          },
+          {
+            "items": [ "mabe:replikar_heart" ],
+            "repair_amount": 800
+          },
+          {
+            "items": [ "mabe:replikar_blood" ],
+            "repair_amount": 800
+          },
+          {
+            "items": [ "mabe:relikarma_wand" ],
+            "repair_amount": "query.remaining_durability * 1.1"
+          }
+        ]
+      },
+      "minecraft:cooldown": {
+        "category": "weapon",
+        "duration": 1
+      },
+      "minecraft:damage": 15,
+      "minecraft:weapon": {
+        "on_hurt_entity": {
+          "event": "mabe:attacked",
+          "target": "self"
+        }
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "mabe:summon"
+        }
+      }
+    },
+    "events": {
+      "mabe:attacked": {
+        "damage": {
+          "type": "void",
+          "amount": 1
+        }
+      },
+      "mabe:summon": {
+        "sequence": [
+          {
+            "swing": {}
+          },
+          {
+            "shoot": {
+              "projectile": "minecraft:arrow",
+              "launch_power": 1.0
+            }
+          },
+          {
+            "shoot": {
+              "projectile": "minecraft:arrow",
+              "launch_power": 1.0
+            }
+          },
+          {
+            "shoot": {
+              "projectile": "minecraft:arrow",
+              "launch_power": 1.0
+            }
+          },
+          {
+            "damage": {
+              "type": "void",
+              "amount": 2
+            }
+          },
+          {
+            "run_command": {
+              "command": "playsound mob.enderdragon.hit @s ~ ~ ~ 3 1.25"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

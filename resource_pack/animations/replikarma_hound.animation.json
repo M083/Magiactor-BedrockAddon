@@ -1,0 +1,111 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.replikarma_hound.look": {
+			"animation_length": 1,
+			"loop": true,
+			"bones": {
+				"neck": {
+					"rotation": ["query.target_x_rotation", "query.target_y_rotation", 0]
+				}
+			}
+		},
+		"animation.replikarma_hound.walk": {
+			"loop": true,
+			"animation_length": 0.75,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": [-5, 0, 0],
+						"0.5833": [2, 0, 0],
+						"0.75": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, -1.78, -2],
+						"0.375": [0, -3, 0],
+						"0.5833": [0, -1.78, 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"fleft_unit": {
+					"rotation": {
+						"0.0": [0, 15, 5],
+						"0.25": [0, 0, 0],
+						"0.5": [0, -15, 5],
+						"0.625": [0, 0, -7.5],
+						"0.75": [0, 15, 5]
+					}
+				},
+				"fright_unit": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 15, -5],
+						"0.375": [0, 0, 7.5],
+						"0.5": [0, -15, -5],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"bright_unit": {
+					"rotation": {
+						"0.0": [0, -15, -5],
+						"0.25": [0, 0, 0],
+						"0.5": [0, 15, -5],
+						"0.625": [0, 0, 7.5],
+						"0.75": [0, -15, -5]
+					}
+				},
+				"bleft_unit": {
+					"rotation": {
+						"0.0": [0, -15, 5],
+						"0.125": [0, 0, -7.5],
+						"0.25": [0, 15, 5],
+						"0.5": [0, 0, 0],
+						"0.75": [0, -15, 5]
+					}
+				}
+			}
+		},
+		"animation.replikarma_hound.tail": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"tail1": {
+					"rotation": {
+						"0.0": ["Math.cos(query.life_time * 500) * 10.0", 50, 0],
+						"0.25": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"0.5": ["Math.cos(query.life_time * 500) * 10.0", -50, 0],
+						"0.75": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"1.0": ["Math.cos(query.life_time * 500) * 10.0", 50, 0]
+					}
+				},
+				"tail2": {
+					"rotation": {
+						"0.0": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"0.25": ["Math.cos(query.life_time * 500) * 10.0", 60, 0],
+						"0.5": ["Math.cos(query.life_time * 500) * 10.0", 0, 0],
+						"0.75": ["Math.cos(query.life_time * 500) * 10.0", -60, 0],
+						"1.0": ["Math.cos(query.life_time * 500) * 10.0", 0, 0]
+					}
+				}
+			}
+		},
+		"animation.replikarma_hound.attack": {
+			"animation_length": 0.375,
+			"bones": {
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.375": [0, 0, 360]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.125": [0, 0, -32],
+						"0.375": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

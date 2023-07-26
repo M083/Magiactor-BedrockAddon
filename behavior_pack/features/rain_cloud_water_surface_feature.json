@@ -1,0 +1,33 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "mabe:rain_cloud_water_surface_feature"
+    },
+    "places_block": {
+      "name": "minecraft:water"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "min_sides_must_attach": 4,
+      "auto_rotate": false,
+      "top": [
+        "minecraft:air"
+      ],
+      "sides": [
+        "mabe:cloud_block",
+        "mabe:rain_cloud_block",
+        "minecraft:water"
+      ],
+      "bottom": [
+        "mabe:cloud_block",
+        "mabe:rain_cloud_block",
+        "minecraft:water"
+      ]
+    },
+    "may_replace": [
+      "mabe:rain_cloud_block"
+    ]
+  }
+}

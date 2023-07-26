@@ -10,7 +10,10 @@
     "enforce_survivability_rules": false,
     "enforce_placement_rules": false,
     "may_replace": [
-     	"mabe:cloud_block"
+     	"mabe:cloud_block",
+      "mabe:rain_cloud_block",
+      "minecraft:air",
+      "minecraft:water"
     ]
   }
 }

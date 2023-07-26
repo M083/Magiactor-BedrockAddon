@@ -8,6 +8,9 @@
             "c": {
                 "item": "mabe:magia_quill_pen"
             },
+            "b": {
+                "item": "minecraft:quartz"
+            },
             "d": {
                 "item": "mabe:organ_wing_purple"
             },
@@ -26,7 +29,7 @@
         },
         "pattern": [
             "  c",
-            "ded",
+            "bed",
             "gfh"
         ],
         "priority": 1,

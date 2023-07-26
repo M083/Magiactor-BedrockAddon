@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "mabe:end_debris_feature"
+    },
+    "features": [
+      [ "mabe:end_debris_1_feature", 10 ],
+      [ "mabe:end_debris_2_feature", 10 ],
+      [ "mabe:end_debris_3_feature", 10 ],
+      [ "mabe:end_debris_4_feature", 10 ],
+      [ "mabe:end_debris_5_feature", 1 ]
+    ]
+  }
+}

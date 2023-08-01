@@ -133,6 +133,13 @@
       }
     },
     "events": {
+      "mabe:nether_shard": {
+        "add": {
+          "component_groups": [
+            "nether"
+          ]
+        }
+      },
       "minecraft:entity_spawned": {
         "sequence": [
           {

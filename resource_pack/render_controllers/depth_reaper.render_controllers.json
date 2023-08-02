@@ -12,7 +12,7 @@
       },
       "geometry": "Geometry.default",
       "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
-      "textures": [ "Array.textures[(query.position(1) < 0 || query.biome_has_any_tag('nether', 'the_end')) ? 1 : 0]" ]
+      "textures": [ "Array.textures[(query.position(1) < 0 || query.biome_has_any_tag('nether', 'the_end')) ? 1 : 0]", "texture.enchanted" ]
     }
   }
 }

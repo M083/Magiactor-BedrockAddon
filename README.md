@@ -15,6 +15,12 @@ Addon for Minecraft Bedrock Edition
 - [更新履歴](#更新履歴)
 
 ## お知らせ
+2023/8/2
+
+ver3.0.100をリリースしました。
+ver3.0.000をプレイしているワールドのビヘイビアーパック・リソースパックを差し替えることで引き続きプレイすることができます。
+正しく差し替えが行えないとワールドデータが破損する場合がありますので、バックアップを取ることを推奨します。
+
 2023/7/26
 
 ver3.0.000をリリースしました。
@@ -39,7 +45,7 @@ v1.20.12以降のMCBEがインストールされた端末。
 Windows10、Windows11、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
 ## ダウンロード
-### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver3.0.000/Magiactor_3_0_000.mcaddon)
+### [**最新バージョンをダウンロード**](https://github.com/M083/Magiactor-BedrockAddon/releases/download/ver3.0.100/Magiactor_3_0_100.mcaddon)
 
 ### [過去のバージョンをダウンロード](https://github.com/M083/Magiactor-BedrockAddon/releases)
 

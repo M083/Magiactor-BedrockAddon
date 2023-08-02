@@ -1,9 +1,9 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Magiactor Resource Pack ver3,0,000",
+    "name": "Magiactor Resource Pack ver3,0,100",
     "description": "Enable Magiactor Behavior pack.",
-    "version": [3,0,000],
+    "version": [3,0,100],
     "uuid": "b8b0fc6b-0543-4f06-996e-2b1cd76c6eb9",
     "min_engine_version": [1,19,50],
     "pack_scope": "world"
@@ -12,14 +12,14 @@
     {
       "type": "resources",
       "description": "resource module",
-      "version": [3,0,000],
+      "version": [3,0,100],
       "uuid": "0c297144-ca20-452c-9f1a-dc8e072cba55"
     }
   ],
   "dependencies": [
     {
       "uuid": "ce8f8e39-f26d-4d72-9fd1-edfe51f73637",
-      "version": [3,0,000]
+      "version": [3,0,100]
     }
   ],
   "metadata": {

@@ -1,25 +1,25 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Magiactor behavior Pack ver3,0,109",
-    "description": "Twitter@M0_83",
-    "version": [3,0,109],
+    "name": "Magiactor behavior Pack ver4,0,000",
+    "description": "X @M083_craft",
+    "version": [4,0,000],
     "uuid": "ce8f8e39-f26d-4d72-9fd1-edfe51f73637",
-    "min_engine_version": [1,19,50],
+    "min_engine_version": [1,20,51],
     "pack_scope": "world"
   },
   "modules": [
     {
       "type": "data",
       "description": "behavior module",
-      "version": [3,0,109],
+      "version": [4,0,000],
       "uuid": "2616eeb0-1e05-4aef-a819-29b45a0ff1cd"
     }
   ],
   "dependencies": [
     {
       "uuid": "b8b0fc6b-0543-4f06-996e-2b1cd76c6eb9",
-      "version": [3,0,109]
+      "version": [4,0,000]
     }
   ],
   "metadata": {

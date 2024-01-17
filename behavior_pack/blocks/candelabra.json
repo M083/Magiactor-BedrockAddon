@@ -30,7 +30,7 @@
                 "run_command": {
                     "command": [
                         "event entity @p mabe:arousal",
-                        "particle particle minecraft:knockback_roar_particle",
+                        "particle minecraft:knockback_roar_particle",
                         "playsound random.totem @p ~ ~ ~"
                     ]
                 }

@@ -15,7 +15,8 @@
             "Texture.organ_red_shard",
             "Texture.void",
             "Texture.canon",
-            "Texture.organ_white_shard"
+            "Texture.organ_white_shard",
+            "Texture.hastelloy_thorn"
       	  ]
       	},
         "geometries": {
@@ -30,7 +31,8 @@
             "Geometry.organ_shard" ,
             "Geometry.default",
             "Geometry.canon",
-            "Geometry.organ_shard" 
+            "Geometry.organ_shard",
+            "Geometry.hastelloy_thorn"
           ]
         },
         "materials": {
@@ -45,6 +47,7 @@
             "Material.emissive",
             "Material.default",
             "Material.default",
+            "Material.emissive",
             "Material.emissive"
           ]
         }

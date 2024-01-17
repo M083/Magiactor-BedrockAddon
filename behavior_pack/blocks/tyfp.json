@@ -1,0 +1,84 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "mabe:tyfp",
+            "properties": {
+                "mabe:block_direction": [ 2, 3, 4, 5]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
+            "minecraft:loot": "loot_tables/blocks/tyfp.json",
+            "minecraft:geometry": "geometry.tyfp",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "tyfp",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:destroy_time": 0.4,
+            "minecraft:explosion_resistance": 20,
+            "minecraft:map_color": "#B5AAA1",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 1,
+            "minecraft:on_player_placing": {
+                "event": "mabe:place_event"
+            },
+            "minecraft:on_interact" : {
+                "event": "mabe:interact_event"
+            }
+        },
+        "events": {
+            "mabe:place_event": {
+                "set_block_property": {
+                    "mabe:block_direction": "query.cardinal_facing_2d"
+                }
+            },
+            "mabe:interact_event": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": [
+                                "playsound mob.allay.hurt @p ~ ~ ~ 1 1.75"
+                            ]
+                        }
+                    },
+                    {                        
+                        "set_block_property": {
+                            "mabe:block_direction": "query.cardinal_facing_2d"
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('mabe:block_direction') == 2.0",
+                "components": {
+                    "minecraft:rotation": [0, 180, 0]
+                }
+            },
+            {
+                "condition": "q.block_property('mabe:block_direction') == 3.0",
+                "components": {
+                    "minecraft:rotation": [0, 0, 0]
+                }
+            },
+            {
+                "condition": "q.block_property('mabe:block_direction') == 4.0",
+                "components": {
+                    "minecraft:rotation": [0, 270, 0]
+                }
+            },
+            {
+                "condition": "q.block_property('mabe:block_direction') == 5.0",
+                "components": {
+                    "minecraft:rotation": [0, 90, 0]
+                }
+            }
+        ]
+    }
+}

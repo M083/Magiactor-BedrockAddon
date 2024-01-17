@@ -27,9 +27,8 @@
             "minecraft:entity_collision": false,
             "minecraft:pick_collision": {
                 "origin": [ 0.0, 0.0, 0.0],
-                "size": [ 8.0, 0.0, 0.0 ]
-            },
-            "minecraft:breathability": "air"
+                "size": [ 0.0, 0.0, 0.0 ]
+            }
         },
         "events": {
             "delete_event": {

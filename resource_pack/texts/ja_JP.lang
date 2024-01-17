@@ -7,6 +7,7 @@ entity.mabe:replikarma_falcon.name=レプリカルマ・ファルコン	#
 entity.mabe:replikarma_falcon<>.name=レプリカルマ・ファルコン	#
 entity.mabe:replikarma_axe.name=レプリカルマ・アックス	#
 entity.mabe:replikarma_scythe.name=レプリカルマ・サイズ	#
+entity.mabe:replikarma_mantis.name=レプリカルマ・マンティス	#
 entity.mabe:slag_organ.name=蛞蝓の異形	#
 entity.mabe:fish_organ.name=魚の異形	#
 entity.mabe:slag_elorgan.name=蛞蝓の畏形	#
@@ -38,6 +39,8 @@ entity.mabe:organ_shard.name=異形の破片	#
 entity.mabe:organ_shard<>.name=異形の破片	#
 entity.mabe:elorgan_shard.name=畏形の破片	#
 entity.mabe:elorgan_shard<>.name=畏形の破片	#
+entity.mabe:organ_wand_shard.name=異形の破片	#
+entity.mabe:organ_wand_shard<>.name=異形の破片	#
 entity.mabe:astrowand_bit.name=アストロワンドビット	#
 entity.mabe:astrowand_bit<>.name=アストロワンドビット	#
 
@@ -53,6 +56,18 @@ entity.mabe:silent_hopper<>.name=サイレントホッパー	#
 entity.mabe:honey_carrier.name=ハニーキャリアー	#
 entity.mabe:heaven_bouquet.name=ヘヴンズブーケ	#
 entity.mabe:heaven_seed.name=ヘヴンズシード	#
+entity.mabe:karmaira_amalgam.name=カルマイラ＝アマルガム	#
+entity.mabe:karmaira_amalgam<>.name=カルマイラ＝アマルガム	#
+entity.mabe:amalgam_wing.name=アマルガム・ウィング	#
+entity.mabe:amalgam_wing<>.name=アマルガム・ウィング	#
+entity.mabe:karmaira_stellite.name=カルマイラ＝ステライト	#
+entity.mabe:karmaira_stellite<>.name=カルマイラ＝ステライト	#
+entity.mabe:stellite_satellite.name=ステライト・サテライト	#
+entity.mabe:stellite_satellite<>.name=ステライト・サテライト	#
+entity.mabe:karmaira_hastelloy.name=カルマイラ＝ハステロイ	#
+entity.mabe:karmaira_hastelloy<>.name=カルマイラ＝ハステロイ	#
+entity.mabe:hastelloy_gate.name=ハステロイ・ゲート	#
+entity.mabe:hastelloy_gate<>.name=ハステロイ・ゲート	#
 
 entity.mabe:teleport_circle_black.name=転送陣・黒	#
 entity.mabe:teleport_circle_blue.name=転送陣・青	#
@@ -72,6 +87,7 @@ entity.mabe:teleport_circle_white.name=転送陣・白	#
 entity.mabe:teleport_circle_yellow.name=転送陣・黄	#
 
 entity.mabe:canon_explode.name=爆風	#
+entity.mabe:poison_explode.name=猛毒の爆発	#
 
 item.spawn_egg.entity.mabe:replikarma_sniper.name=レプリカルマ・スナイパーを出現させる	#
 item.spawn_egg.entity.mabe:replikarma_falcon.name=レプリカルマ・ファルコンを出現させる	#
@@ -107,10 +123,17 @@ item.spawn_egg.entity.mabe:astrowalker.name=アストロウォーカーを出現
 item.spawn_egg.entity.mabe:astroworm.name=アストロワームを出現させる	#
 item.spawn_egg.entity.mabe:replikarma_hound.name=レプリカルマ・ハウンドを出現させる	#
 item.spawn_egg.entity.mabe:replikarma_shark.name=レプリカルマ・シャークを出現させる	#
+item.spawn_egg.entity.mabe:replikarma_mantis.name=レプリカルマ・マンティスを出現させる	#
 item.spawn_egg.entity.mabe:silent_hopper.name=サイレントホッパーを出現させる	#
 item.spawn_egg.entity.mabe:honey_carrier.name=ハニーキャリアーを出現させる	#
 item.spawn_egg.entity.mabe:heaven_bouquet.name=ヘヴンズブーケを出現させる	#
 item.spawn_egg.entity.mabe:heaven_seed.name=ヘヴンズシードを出現させる	#
+item.spawn_egg.entity.mabe:karmaira_amalgam.name=カルマイラ＝アマルガムを出現させる	#
+item.spawn_egg.entity.mabe:amalgam_wing.name=アマルガム・ウィングを出現させる	#
+item.spawn_egg.entity.mabe:karmaira_stellite.name=カルマイラ＝ステライトを出現させる	#
+item.spawn_egg.entity.mabe:stellite_satellite.name=ステライト・サテライトを出現させる	#
+item.spawn_egg.entity.mabe:karmaira_hastelloy.name=カルマイラ＝ハステロイを出現させる	#
+item.spawn_egg.entity.mabe:hastelloy_gate.name=ハステロイ・ゲートを出現させる	#
 
 item.mabe:wander_broom=飛翔の箒	#
 item.mabe:item_magnet=アイテムマグネット	#
@@ -166,6 +189,10 @@ item.mabe:gas_mask_1=抗毒マスクI	#
 item.mabe:gas_mask_2=抗毒マスクII	#
 item.mabe:gas_mask_3=抗毒マスクIII	#
 item.mabe:gas_mask_4=抗毒マスクIV	#
+item.mabe:archer_hat_1=弓使いの帽子I	#
+item.mabe:archer_hat_2=弓使いの帽子II	#
+item.mabe:archer_hat_3=弓使いの帽子III	#
+item.mabe:archer_hat_4=弓使いの帽子IV	#
 
 item.mabe:wing_boots_1=飛翼のブーツI	#
 item.mabe:wing_boots_2=飛翼のブーツII	#
@@ -275,14 +302,20 @@ item.mabe:astroworm_shell=§cアストロワームの外殻§r	#
 item.mabe:replikar_blood=§cレプリカルブラッド§r	#
 item.mabe:royal_honey=§c芳醇な蜂蜜§r	#
 item.mabe:heaven_tear=§c天界の涙§r	#
+item.mabe:relikarma_gear=§cレリカルマギア§r	#
+item.mabe:reactor_amalgam=§cリアクター＝アマルガム§r	#
+item.mabe:reactor_stellite=§cリアクター＝ステライト§r	#
+item.mabe:reactor_hastelloy=§cリアクター＝ハステロイ§r	#
+item.mabe:magiactor=§cマギアクター§r	#
 
-item.mabe:nether_dust=§8ネザーダスト§r	#
-item.mabe:silent_hopper_horn=§8サイレントホッパーの角§r	#
+item.mabe:nether_dust=§cネザーダスト§r	#
+item.mabe:silent_hopper_horn=§cサイレントホッパーの角§r	#
 
 item.mabe:astrowand=§cアストロワンド§r	#
 item.mabe:astro_knife=§cアストロナイフ§r	#
 item.mabe:relikarma_dualscythe=§cレリカルマデュアルサイズ§r	#
 item.mabe:relikarma_wand=§cレリカルマワンド§r	#
+item.mabe:blade_magiactor=§cブレード＝マギアクター§r	#
 
 item.mabe:lavasta_meat=溶岩エビのむき身	#
 item.mabe:lunasta_meat=月光エビのむき身	#
@@ -339,6 +372,7 @@ tile.mabe:wire_mesh.name=金網	#
 tile.mabe:ender_craft_table.name=アストロクラフター	#
 tile.mabe:candelabra.name=覚醒の燭台	#
 tile.mabe:astrocloud_block.name=アストロクラウド	#
+tile.mabe:tyfp.name=Thank you for playing!	#
 
 enchantment.damage.arthropods=虫・異形殺し	#
 
@@ -363,3 +397,8 @@ action.interact.teleport_white=転送	#
 action.interact.teleport_yellow=転送	#
 
 death.attack.mob=%1$s は %2$s に倒された	#
+
+button.magiactor.wand=杖を振る #
+button.magiactor.sword=回転斬り #
+button.magiactor.spear=投げる #
+button.magiactor.broom=箒で飛ぶ	#

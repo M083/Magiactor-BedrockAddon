@@ -1,14 +1,14 @@
 {
-  "format_version": "1.16.100",
+  "format_version": "1.20.30",
   "minecraft:item": {
     "description": {
       "identifier": "mabe:organ_sword_1",
-      "category": "Equipment"
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
     },
     "components": {
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.sword"
-      },
       "minecraft:icon": {
         "texture": "organ_sword"
       },
@@ -53,7 +53,8 @@
         "on_use": {
           "event": "mabe:rotate_attack"
         }
-      }
+      },
+      "minecraft:interact_button": "button.magiactor.sword"
     },
     "events": {
       "mabe:attacked": {

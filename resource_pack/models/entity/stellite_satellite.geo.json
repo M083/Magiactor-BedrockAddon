@@ -1,0 +1,101 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.stellite_satellite",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 256,
+				"visible_bounds_height": 8,
+				"visible_bounds_offset": [0, 2, 0]
+			},
+			"bones": [
+				{
+					"name": "core",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "egg",
+					"parent": "core",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-8, 16, -8], "size": [16, 16, 16], "uv": [128, 128]},
+						{"origin": [-4, 20, -4], "size": [8, 64, 8], "uv": [128, 128]},
+						{"origin": [-4, 20, -4], "size": [8, 64, 8], "pivot": [0, 24, 0], "rotation": [-30, 0, 60], "uv": [128, 128]},
+						{"origin": [-4, 20, -4], "size": [8, 64, 8], "pivot": [0, 24, 0], "rotation": [30, 0, -60], "uv": [128, 128]},
+						{"origin": [-4, 20, -4], "size": [8, 64, 8], "pivot": [0, 24, 0], "rotation": [180, 0, 0], "uv": [128, 128]},
+						{"origin": [-4, 20, -4], "size": [8, 64, 8], "pivot": [0, 24, 0], "rotation": [-120, -30, 0], "uv": [128, 128]},
+						{"origin": [-4, 20, -4], "size": [8, 64, 8], "pivot": [0, 24, 0], "rotation": [120, -30, 0], "uv": [128, 128]}
+					]
+				},
+				{
+					"name": "bit",
+					"parent": "core",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-8, 16, -8], "size": [16, 16, 16], "uv": [128, 128]}
+					]
+				},
+				{
+					"name": "bit_feather_1",
+					"parent": "bit",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 46, -56], "size": [8, 4, 24], "uv": [0, 128], "mirror": true},
+						{"origin": [-6, 44, -32], "size": [12, 8, 24], "uv": [128, 0], "mirror": true},
+						{"origin": [-2, 47, -80], "size": [4, 2, 24], "uv": [152, 152], "mirror": true}
+					]
+				},
+				{
+					"name": "bit_feather_2",
+					"parent": "bit",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 46, -56], "size": [8, 4, 24], "uv": [0, 128], "mirror": true},
+						{"origin": [-6, 44, -32], "size": [12, 8, 24], "uv": [128, 0], "mirror": true},
+						{"origin": [-2, 47, -92], "size": [4, 2, 36], "uv": [140, 140], "mirror": true}
+					]
+				},
+				{
+					"name": "bit_feather_3",
+					"parent": "bit",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 46, -56], "size": [8, 4, 24], "uv": [0, 128], "mirror": true},
+						{"origin": [-6, 44, -32], "size": [12, 8, 24], "uv": [128, 0], "mirror": true},
+						{"origin": [-2, 47, -104], "size": [4, 2, 48], "uv": [128, 128], "mirror": true}
+					]
+				},
+				{
+					"name": "bit_feather_4",
+					"parent": "bit",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 46, -56], "size": [8, 4, 24], "uv": [0, 128], "mirror": true},
+						{"origin": [-6, 44, -32], "size": [12, 8, 24], "uv": [128, 0], "mirror": true},
+						{"origin": [-2, 47, -92], "size": [4, 2, 36], "uv": [140, 140], "mirror": true}
+					]
+				},
+				{
+					"name": "bit_feather_5",
+					"parent": "bit",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 46, -56], "size": [8, 4, 24], "uv": [0, 128], "mirror": true},
+						{"origin": [-6, 44, -32], "size": [12, 8, 24], "uv": [128, 0], "mirror": true},
+						{"origin": [-2, 47, -80], "size": [4, 2, 24], "uv": [152, 152], "mirror": true}
+					]
+				},
+				{
+					"name": "site",
+					"parent": "bit",
+					"pivot": [0, 24, -5],
+					"cubes": [
+						{"origin": [-1, 23, -7], "size": [2, 2, 2], "uv": [349, 349]}
+					]
+				}
+			]
+		}
+	]
+}

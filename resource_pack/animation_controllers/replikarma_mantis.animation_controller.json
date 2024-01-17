@@ -1,0 +1,102 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.replikarma_mantis.look": {
+      "states": {
+        "walking": {
+          "animations": [
+            {
+              "look": []
+            },
+            {
+              "head": []
+            },
+            {
+              "stand_pose": []
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.replikarma_mantis.move": {
+      "states": {
+        "walking": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.replikarma_mantis.boost": {
+      "states": {
+        "boost_pose": {
+          "transitions": [
+            {
+              "default" : "query.variant != 1"
+            }
+          ],
+          "animations": [
+            { "boost_pose": [] }
+          ]
+        },
+        "default": {
+          "transitions": [
+            {
+              "boost_pose" : "query.variant == 1"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.replikarma_mantis.quick_attack": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack": "variable.attack_time > 0.0 && query.variant == 2"
+            }
+          ]
+        },
+        "attack": {
+          "animations": [ { "quick_attack": [] } ],
+          "transitions": [
+            {
+              "default": "variable.attack_time <= 0.0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.replikarma_mantis.attack": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attacking" : "query.is_delayed_attacking == 1"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            {
+              "attack": []
+            }
+          ],
+          "transitions": [
+            {
+              "default" : "query.is_delayed_attacking == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

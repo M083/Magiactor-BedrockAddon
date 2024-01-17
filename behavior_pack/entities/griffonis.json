@@ -553,7 +553,7 @@
               "filters": {
                 "all_of": [
                   {"test": "has_target", "value": false },
-                  {"test": "rider_count", "operator": "=", "value": 0 },
+                  {"test": "rider_count", "operator": "==", "value": 0 },
                   {"test": "is_moving", "value": false },
                   {"test": "on_ground", "value": true },
                   { "test": "has_mob_effect", "subject": "self", "operator": "!=", "value": "regeneration" }

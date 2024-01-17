@@ -39,6 +39,15 @@
                     }
                 }
             },
+            "mabe:poison_explode": {
+                "events": {
+                    "roar": {            
+                        "pitch" : 1.65,
+                        "sound" : "random.explode",
+                        "volume" : 4.0
+                    }
+                }
+            },
             "mabe:astroworm" : {
                 "events" : {
                    "ambient" : "mob.glow_squid.ambient",
@@ -103,6 +112,126 @@
                 "pitch" : [ 0.80, 1.20 ],
                 "volume" : 1.0
             },
+            "mabe:karmaira_amalgam": {
+                "events": {
+                    "shoot": {
+                        "pitch": 1.25,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 3
+                    },
+                    "hurt": {
+                        "pitch": 0.75,
+                        "sound": "mob.allay.hurt",
+                        "volume": 3
+                    },
+                    "death": "mob.irongolem.death"
+                },
+                "pitch": [
+                    0.5,
+                    0.6
+                ],
+                "volume": 3
+            },
+            "mabe:amalgam_wing": {
+                "events": {
+                    "shoot": {
+                        "pitch": 1.25,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 3
+                    },
+                    "hurt": {
+                        "pitch": 0.75,
+                        "sound": "mob.allay.hurt",
+                        "volume": 3
+                    },
+                    "death": "mob.irongolem.death"
+                },
+                "pitch": [
+                    0.5,
+                    0.6
+                ],
+                "volume": 3
+            },
+            "mabe:karmaira_stellite": {
+                "events": {
+                    "shoot": {
+                        "pitch": 1.5,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 3
+                    },
+                    "hurt": {
+                        "pitch": 0.75,
+                        "sound": "mob.allay.hurt",
+                        "volume": 3
+                    },
+                    "death": "mob.irongolem.death"
+                },
+                "pitch": [
+                    0.5,
+                    0.6
+                ],
+                "volume": 3
+            },
+            "mabe:stellite_satellite": {
+                "events": {
+                    "shoot": {
+                        "pitch": 1.5,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 3
+                    },
+                    "hurt": {
+                        "pitch": 0.75,
+                        "sound": "mob.allay.hurt",
+                        "volume": 3
+                    },
+                    "death": "mob.irongolem.death"
+                },
+                "pitch": [
+                    0.5,
+                    0.6
+                ],
+                "volume": 3
+            },
+            "mabe:karmaira_hastelloy": {
+                "events": {
+                    "shoot": {
+                        "pitch": 1.5,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 3
+                    },
+                    "hurt": {
+                        "pitch": 0.75,
+                        "sound": "mob.allay.hurt",
+                        "volume": 3
+                    },
+                    "death": "mob.irongolem.death"
+                },
+                "pitch": [
+                    0.5,
+                    0.6
+                ],
+                "volume": 3
+            },
+            "mabe:hastelloy_gate": {
+                "events": {
+                    "shoot": {
+                        "pitch": 1.5,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 3
+                    },
+                    "hurt": {
+                        "pitch": 0.75,
+                        "sound": "mob.allay.hurt",
+                        "volume": 3
+                    },
+                    "death": "mob.irongolem.death"
+                },
+                "pitch": [
+                    0.5,
+                    0.6
+                ],
+                "volume": 3
+            },
             "mabe:replikarma_falcon": {
                 "events": {
                     "shoot": {
@@ -152,6 +281,22 @@
                 "volume": 3
             },
             "mabe:replikarma_hound": {
+                "events": {
+                    "shoot": {
+                        "pitch": 1.5,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 3
+                    },
+                    "hurt": "mob.blaze.hit",
+                    "death": "mob.irongolem.death"
+                },
+                "pitch": [
+                    0.5,
+                    0.6
+                ],
+                "volume": 3
+            },
+            "mabe:replikarma_mantis": {
                 "events": {
                     "shoot": {
                         "pitch": 1.5,

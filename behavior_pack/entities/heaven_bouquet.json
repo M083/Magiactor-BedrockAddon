@@ -110,6 +110,13 @@
       }
     },
     "events": {
+      "mabe:apoptosis": {
+        "add": {
+          "component_groups": [
+            "mabe:apoptosis"
+          ]
+        }
+      },
       "death_event": {
         "sequence": [
           {

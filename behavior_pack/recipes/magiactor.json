@@ -1,0 +1,43 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:magiactor"
+        },
+        "key": {
+            "a": {
+                "item": "mabe:reactor_amalgam"
+            },
+            "b": {
+                "item": "mabe:reactor_stellite"
+            },
+            "c": {
+                "item": "mabe:relikarma_gear"
+            },
+            "d": {
+                "item": "mabe:reactor_hastelloy"
+            },
+            "e": {
+                "item": "mabe:nether_dust"
+            },
+            "f": {
+                "item": "mabe:silent_hopper_horn"
+            }
+        },
+        "pattern": [
+            "aeb",
+            "ece",
+            "fdf"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:magiactor"
+            }
+        ],
+        "tags": [
+            "ender_craft_table"
+        ]
+    }
+}

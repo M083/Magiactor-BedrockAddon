@@ -54,6 +54,15 @@
           ]
         }
       },
+      "mabe:poison_particle": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "mabe:poison_particle_event"
+            }
+          ]
+        }
+      },
       "mabe:apoptosis": {
           "minecraft:instant_despawn": {}
       },
@@ -83,6 +92,7 @@
         }
       },
 
+
       "minecraft:player_arrow": {
         "minecraft:projectile": {
           "on_hit": {
@@ -93,6 +103,122 @@
               "destroy_on_hit": true,
               "max_critical_damage": 10,
               "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 5.0,
+          "gravity": 0.05,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "minecraft:player_arrow_1": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 2,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 20,
+              "min_critical_damage": 18,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 5.0,
+          "gravity": 0.05,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ],
+          "liquid_inertia": 1
+        }
+      },
+      "minecraft:player_arrow_2": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 3,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 24,
+              "min_critical_damage": 20,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 5.0,
+          "gravity": 0.05,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ],
+          "liquid_inertia": 1
+        }
+      },
+      "minecraft:player_arrow_3": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 4,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 27,
+              "min_critical_damage": 24,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 5.0,
+          "gravity": 0.05,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ],
+          "liquid_inertia": 1
+        }
+      },
+      "minecraft:player_arrow_4": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 5,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 30,
+              "min_critical_damage": 27,
               "power_multiplier": 0.97
             },
             "stick_in_ground": {
@@ -194,6 +320,54 @@
         }
       },
 
+      "mabe:hastelloy_arrow": {
+        "minecraft:variant": {
+          "value": 11
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "interact_text": "action.interact.ride.boat",
+          "family_types": [
+            "karmaira_hastelloy"
+          ],
+          "seats": [
+            {
+              "position": [ 0.0, 0.5, 0.0 ]
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 12,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {}
+          },
+          "filter": "mabe:karmaira_hastelloy",
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 1.75,
+          "crit_particle_on_hurt": true,
+          "gravity": 0.615,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": false,
+          "anchor": 1,
+          "homing": true,
+          "should_bounce": false,
+          "multiple_targets": true,
+          "uncertainty_base": 10,
+          "offset": [ 0, 1.5, 0 ],
+          "potion_effect": 20
+        }
+      },
       "mabe:canon_arrow": {
         "minecraft:variant": {
           "value": 9
@@ -203,6 +377,44 @@
           "time": [4.0, 4.0],
           "time_down_event": {
             "event": "mabe:canon_explode"
+          }
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 1.5,
+          "gravity": 0.015,
+          "uncertainty_base": 20,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": true,
+          "offset": [ 0, -1.15, 0 ]
+        }
+      },
+
+      "mabe:poison_canon_arrow": {
+        "minecraft:variant": {
+          "value": 9
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": [4.0, 4.0],
+          "time_down_event": {
+            "event": "mabe:poison_canon_explode"
           }
         },
         "minecraft:projectile": {
@@ -546,6 +758,87 @@
         }
       },
 
+      "mabe:satellite_arrow": {
+        "minecraft:variant": {
+          "value": 8
+        },
+
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 9,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "mob.enderdragon.hit",
+          "hit_ground_sound": "mob.enderdragon.hit",
+          "power": 6,
+          "gravity": 0.10,
+          "uncertainty_base": 0,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+
+      "mabe:karmaira_amalgam_arrow": {
+        "minecraft:variant": {
+          "value": 8
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "time": [0.2, 0.2],
+          "time_down_event": {
+            "event": "mabe:amalgam_poison_explode"
+          }
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 10,
+              "catch_fire": false,
+              "knockback": false,
+              "semi_random_diff_damage": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {              
+                "event": "mabe:poison_canon_explode",
+                "target": "self"
+              }
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 0.75,
+          
+          "gravity": 0.015,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": true,
+          "offset": [ 0, -0.1, 0 ],
+          "potion_effect": 20
+        }
+      },
 
       "mabe:lavasta_arrow": {
         "minecraft:variant": {
@@ -742,6 +1035,11 @@
           "command": "particle minecraft:eyeofender_death_explode_particle ~ ~ ~"
         }
       },
+      "mabe:poison_particle_event": {
+        "run_command": {
+          "command": "particle mabe:poison_bubble_particle ~ ~ ~"
+        }
+      },
       "mabe:summon_explode": {
         "run_command": {
           "command": "summon mabe:fire_explode"
@@ -837,6 +1135,49 @@
           }
         ]
       },
+      "mabe:poison_canon_explode": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "summon mabe:poison_explode",
+                "particle mabe:poison_explode_particle ~ ~ ~"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "mabe:apoptosis"
+              ]
+            }
+          }
+        ]
+      },
+      "mabe:poison_explode": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "summon mabe:poison_explode",
+                "particle mabe:poison_explode_particle ~ ~ ~"
+              ]
+            }
+          }
+        ]
+      },
+      "mabe:amalgam_poison_explode": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "summon mabe:poison_explode ^ ^ ^-1",
+                "particle mabe:poison_explode_particle ^ ^ ^-1"
+              ]
+            }
+          }
+        ]
+      },
       "minecraft:entity_spawned": {
         "sequence": [
           {
@@ -854,6 +1195,66 @@
             "add": {
               "component_groups" : [ "minecraft:player_arrow" ]
             }
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "head", "subject": "other", "value": "mabe:archer_hat_1" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "minecraft:player_arrow_1" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "head", "subject": "other", "value": "mabe:archer_hat_2" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "minecraft:player_arrow_2" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "head", "subject": "other", "value": "mabe:archer_hat_3" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "minecraft:player_arrow_3" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "head", "subject": "other", "value": "mabe:archer_hat_4" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "minecraft:player_arrow_4" ]
+                }
+              }
+            ]
           },
           {
             "filters": {
@@ -1030,6 +1431,66 @@
           {
             "filters": {
               "all_of": [
+                { "test": "is_family", "subject": "other", "value": "stellite_satellite" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "mabe:satellite_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "playanimation @e[type = mabe:stellite_satellite, c = 1] shot"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "karmaira_hastelloy" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "mabe:hastelloy_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "playanimation @e[type = mabe:karmaira_hastelloy, c = 1] shot"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "hastelloy_gate" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "mabe:hastelloy_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": [
+                    "tp @e[type = mabe:karmaira_hastelloy, c = 1] @s",
+                    "ride @e [r = 6] start_riding @s"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
                 { "test": "is_family", "subject": "other", "value": "replikarma_falcon" }
               ]
             },
@@ -1076,6 +1537,46 @@
               {
                 "run_command": {
                   "command": "playanimation @e[type = mabe:replikarma_shark, c = 1] shoot"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "amalgam_wing" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "mabe:poison_canon_arrow", "mabe:poison_particle" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "playanimation @e[type = mabe:amalgam_wing, c = 1] shoot"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "karmaira_amalgam" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "mabe:karmaira_amalgam_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": [
+                    "event entity @e[type = mabe:karmaira_amalgam, c = 1] to_follow"
+                  ]
                 }
               }
             ]

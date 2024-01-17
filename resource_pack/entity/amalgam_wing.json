@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:amalgam_wing",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/karmaira/amalgam"
+      },
+      "geometry": {
+        "default": "geometry.amalgam_wing"
+      },
+      "animations": {
+        "shoot": "animation.amalgam_wing.shoot",
+        "move": "animation.amalgam_wing.move",
+        "roll": "animation.amalgam_wing.roll",
+        "bolt_roll": "animation.amalgam_wing.bolt_roll",
+        "mode_aim": "animation.amalgam_wing.mode_aim",
+        "look": "animation.amalgam_wing.look"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.amalgam_wing.move" },
+        { "roll": "controller.animation.amalgam_wing.roll" },
+        { "look": "controller.animation.amalgam_wing.look" }
+      ],
+      "render_controllers": [ "controller.render.karmaira" ],
+      "spawn_egg": {
+        "base_color": "#CBEED7",
+        "overlay_color": "#EEEECB"
+      }
+    }
+  }
+}

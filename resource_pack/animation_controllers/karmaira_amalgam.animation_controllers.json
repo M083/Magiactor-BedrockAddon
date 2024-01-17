@@ -22,6 +22,83 @@
 								}
 							]
 						}
+					],
+					"transitions": [
+						{
+							"not_wing" : "query.variant == 1"
+						}
+					]
+				},
+				"not_wing": {
+					"parameters": [ "query.modified_move_speed + 0.1" ],
+					"animations": [
+						{ 
+							"unit": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						}
+					],
+					"transitions": [
+						{
+							"default" : "query.variant != 1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.karmaira_amalgam.somersault": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attacking" : "query.is_delayed_attacking == 1"
+						}
+					]
+				},
+				"attacking": {
+					"animations": [
+						{
+							"somersault": []
+						}
+					],
+					"transitions": [
+						{
+							"default" : "query.is_delayed_attacking == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.karmaira_amalgam.shot_pose": {
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"shot": []
+						}
+					],
+					"transitions": [
+						{
+							"shot" : "query.variant == 1"
+						}
+					]
+				},
+				"shot": {
+					"animations": [
+						{
+							"shot_pose": []
+						},
+						{
+							"look": []
+						}
+					],
+					"transitions": [
+						{
+							"default" : "query.variant == 0"
+						}
 					]
 				}
 			}

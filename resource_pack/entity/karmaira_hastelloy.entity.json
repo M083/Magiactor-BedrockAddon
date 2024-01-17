@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:karmaira_hastelloy",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/karmaira/hastelloy"
+      },
+      "geometry": {
+        "default": "geometry.karmaira_hastelloy"
+      },
+      "animations": {
+        "stand_pose": "animation.karmaira_hastelloy.stand_pose",
+        "right_attack": "animation.karmaira_hastelloy.right_attack",
+        "foot_spin": "animation.karmaira_hastelloy.foot_spin",
+        "foot_clock": "animation.karmaira_hastelloy.foot_clock",
+        "shot_pose": "animation.karmaira_hastelloy.shot_pose",
+        "shot_pose_end": "animation.karmaira_hastelloy.shot_pose_end",
+        "shot": "animation.karmaira_hastelloy.shot"
+      },
+      "animation_controllers": [
+        { "foot": "controller.animation.karmaira_hastelloy.foot" },
+        { "shot_pose": "controller.animation.karmaira_hastelloy.shot_pose" },
+        { "right_attack": "controller.animation.karmaira_hastelloy.right_attack" }
+      ],
+      "render_controllers": [ "controller.render.karmaira" ],
+      "spawn_egg": {
+        "base_color": "#CBEED7",
+        "overlay_color": "#EEEECB"
+      }
+    }
+  }
+}

@@ -25,6 +25,407 @@
         "use_efficiency": true,
         "destroy_speeds": [
           {
+            "block": "minecraft:lodestone",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:netherite_block",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:packed_mud",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:tuff_bricks",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:tuff_brick_slab",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:tuff_brick_stairs",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:tuff_brick_wall",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:tuff_slab",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:tuff_stairs",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:tuff_wall",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:polished_tuff",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:polished_tuff_slab",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:polished_tuff_stairs",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:polished_tuff_wall",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:chiseled_tuff",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:chiseled_tuff_bricks",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:gilded_blackstone",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:chieled_polished_blackstone",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:polished_blackstone",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:polished_blackstone_slab",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:polished_blackstone_wall",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:polished_blackstone_button",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:polished_blackstone_pressure_plate",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:polished_blackstone_brick_slab",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:polished_blackstone_brick_stairs",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:polished_blackstone_brick_wall",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:copper_door",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:copper_trapdoor",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:copper_grate",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:copper_bulb",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:chiseled_copper",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_copper_door",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_copper_trapdoor",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_copper_grate",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_copper_bulb",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_chiseled_copper",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:exposed_copper_door",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:exposed_copper_trapdoor",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:exposed_copper_grate",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:exposed_copper_bulb",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:exposed_chiseled_copper",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_exposed_copper_door",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_exposed_copper_trapdoor",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_exposed_copper_grate",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_exposed_copper_bulb",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_exposed_chiseled_copper",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:oxidized_copper_door",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:oxidized_copper_trapdoor",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:oxidized_copper_grate",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:oxidized_copper_bulb",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:oxidized_chiseled_copper",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_oxidized_copper_door",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_oxidized_copper_trapdoor",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_oxidized_copper_grate",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_oxidized_copper_bulb",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": "minecraft:waxed_oxidized_chiseled_copper",
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            } 
+          },
+          {
+            "block": {
+              "tags": "q.any_tag('stone', 'metal')"
+            },
+            "speed": 40,
+            "on_dig": {
+              "event": "mabe:on_digged"
+            }
+          },
+          {
             "block": "mabe:fallen_star",
             "speed": 40,
             "on_dig": {

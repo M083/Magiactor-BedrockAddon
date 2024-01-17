@@ -1,0 +1,84 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:tyfp"
+        },
+        "key": {
+            "a": {
+                "item": "mabe:helmet_craftor_4"
+            },
+            "b": {
+                "item": "mabe:organ_craftor_4"
+            },
+            "c": {
+                "item": "mabe:boots_craftor_4"
+            },
+            "d": {
+                "item": "mabe:candelabra"
+            },
+            "e": {
+                "item": "mabe:magiactor"
+            },
+            "f": {
+                "item": "mabe:healing_incense_2"
+            },
+            "g": {
+                "item": "mabe:artifact"
+            },
+            "h": {
+                "item": "minecraft:deepslate_bricks"
+            },
+            "i": {
+                "item": "mabe:relikarma_craftor"
+            }
+        },
+        "pattern": [
+            "abc",
+            "def",
+            "ghi"
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:tyfp"
+            },
+            {
+                "count": 1,
+                "item": "mabe:helmet_craftor_4"
+            },
+            {
+                "count": 1,
+                "item": "mabe:organ_craftor_4"
+            },
+            {
+                "count": 1,
+                "item": "mabe:boots_craftor_4"
+            },
+            {
+                "count": 1,
+                "item": "mabe:candelabra"
+            },
+            {
+                "count": 1,
+                "item": "mabe:magiactor"
+            },
+            {
+                "count": 1,
+                "item": "mabe:healing_incense_2"
+            },
+            {
+                "count": 1,
+                "item": "mabe:artifact"
+            },
+            {
+                "count": 1,
+                "item": "mabe:relikarma_craftor"
+            }
+        ],
+        "tags": [
+            "ender_craft_table"
+        ]
+    }
+}

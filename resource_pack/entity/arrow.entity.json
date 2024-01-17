@@ -18,6 +18,7 @@
         "organ_white_shard":  "textures/entity/organ_white",
         "wander_broom": "textures/entity/wander_broom",
         "magia_white_crystal_spear": "textures/entity/magia_white_crystal_spear",
+        "hastelloy_thorn": "textures/entity/karmaira/hastelloy",
         "canon": "textures/entity/canon",
         "void": "textures/entity/void"
       },
@@ -26,7 +27,8 @@
         "organ_shard": "geometry.organ_shard",
         "wander_broom": "geometry.wander_broom",
         "spear": "geometry.spear",
-        "canon": "geometry.canon"
+        "canon": "geometry.canon",
+        "hastelloy_thorn": "geometry.hastelloy_thorn"
       },
       "animations": {
         "move": "animation.arrow.move"

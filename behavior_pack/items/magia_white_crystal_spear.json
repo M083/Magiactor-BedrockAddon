@@ -1,15 +1,15 @@
 {
-  "format_version": "1.16.100",
+  "format_version": "1.20.30",
   "minecraft:item": {
     "description": {
       "identifier": "mabe:magia_white_crystal_spear",
-      "category": "Equipment"
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
     },
     
     "components": {
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.sword"
-      },
       "minecraft:icon": {
         "texture": "magia_white_crystal_spear"
       },
@@ -35,7 +35,8 @@
         "on_use": {
           "event": "mabe:throw"
         }
-      }
+      },
+      "minecraft:interact_button": "button.magiactor.spear"
     },
     "events": {
       "mabe:spear_effect": {

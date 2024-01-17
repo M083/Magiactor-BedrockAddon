@@ -1,0 +1,50 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:blade_magiactor"
+        },
+        "key": {
+            "a": {
+                "item": "mabe:magia_light_crystal_block"
+            },
+            "b": {
+                "item": "mabe:fallen_star"
+            },
+            "c": {
+                "item": "mabe:magia_crystal_block"
+            },
+            "d": {
+                "item": "mabe:magia_white_crystal_block"
+            },
+            "e": {
+                "item": "mabe:magia_red_crystal_block"
+            },
+            "f": {
+                "item": "mabe:magia_purple_crystal_block"
+            },
+            "p": {
+                "item": "mabe:magiactor"
+            }
+        },
+        "pattern": [
+            " ab",
+            "cpd",
+            "ef "
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:blade_magiactor"
+            },
+            {
+                "count": 1,
+                "item": "mabe:magiactor"
+            }
+        ],
+        "tags": [
+            "ender_craft_table"
+        ]
+    }
+}

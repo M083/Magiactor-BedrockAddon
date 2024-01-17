@@ -3,7 +3,7 @@
   "minecraft:entity": {
     "description": {
       "identifier": "mabe:karmaira_amalgam",
-      "is_spawnable": false,
+      "is_spawnable": true,
       "is_summonable": true
     },
     "component_groups": {
@@ -17,62 +17,97 @@
       },
       "status_easy": {
         "minecraft:health": {
-          "value": 200,
-          "max": 200
+          "value": 500,
+          "max": 500
         }
       },
       "status_hard": {
         "minecraft:health": {
-          "value": 400,
-          "max": 400
-        }
-      },
-      "nether": {
-        "minecraft:attack": {
-          "damage": 12,
-          "effect_name": "wither",
-          "effect_duration": 7
-        },
-        "minecraft:loot": {
-          "table": ""
-        },
-        "minecraft:fire_immune": {
-        },
-        "minecraft:mark_variant": {
-          "value": 5
+          "value": 800,
+          "max": 800
         }
       },
       "follow": {
+        "minecraft:variant": {
+          "value": 0
+        },
         "minecraft:timer": {
           "looping": false,
-          "time": [3.55, 5.55],
+          "time": [6.55, 7.55],
           "time_down_event": {
             "event": "to_avoid"
           }
         },
-        "minecraft:behavior.melee_attack": {
-          "priority": 4,
-          "cooldown_time": 1.5
+        "minecraft:attack": {
+          "damage": 15
+        },
+        "minecraft:behavior.delayed_attack": {
+          "priority": 1,
+          "attack_duration": 1.7,
+          "hit_delay_pct": 0.5,
+          "reach_multiplier": 1.75,
+          "track_target": true
+        },
+        "minecraft:behavior.summon_entity": {
+          "priority": 0,
+          "summon_choices": [
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 32.0,
+              "cooldown_time": 5.0,
+              "weight": 3,
+              "cast_duration": 2.0,
+              "particle_color": "#FF664D59",
+              "start_sound_event": "cast.spell",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 0.15,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 4,
+                  "entity_type": "mabe:amalgam_wing",
+                  "size": 6.5,
+                  "entity_lifespan": 30
+                }
+              ]
+            }
+          ]
         },
         "minecraft:behavior.nearest_attackable_target": {
-          "priority": 3,
+          "priority": 2,
           "entity_types": [
             {
               "filters": {
-                "any_of" : [
+                "any_of": [
                   {
-                    "all_of" : [
-                      {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "inanimate"},
-                      {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "monster"}
-                    ]
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "monster"
                   },
-                  {"test" : "is_family", "subject" : "other", "value" :  "necrocancer"}
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "=",
+                    "value": "replikarma"
+                  }
+                ],
+                "all_of": [
+                  {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "inanimate"},
+                  {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "boss"},
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "karmaira"
+                  }
                 ]
               },
-              "max_dist": 70
+              "max_dist": 64
             }
           ],
-          "must_see": false
+          "must_see": true
         },
         "minecraft:behavior.hurt_by_target": {
           "entity_types": [
@@ -92,44 +127,88 @@
         }
       },
       "avoid": {
+        "minecraft:variant": {
+          "value": 1
+        },
         "minecraft:timer": {
           "looping": false,
-          "time": [3.55, 5.55],
+          "time": [7.55, 10.55],
           "time_down_event": {
             "event": "to_follow"
           }
         },
-        "minecraft:behavior.avoid_mob_type": {
-          "priority": 1,
-          "entity_types":{
-            "filters": {
-              "any_of": [
-                { "test": "is_family", "subject": "other", "operator": "!=", "value": "elorgan" }
-              ]
-            },
-            "max_dist": 15,
-            "walk_speed_multiplier": 1.25,
-            "sprint_speed_multiplier": 1.25
-          }
+        "minecraft:shooter": {
+          "def": "minecraft:arrow",
+          "aux_val": 27
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "monster"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "=",
+                    "value": "replikarma"
+                  }
+                ],
+                "all_of": [
+                  {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "inanimate"},
+                  {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "boss"},
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "karmaira"
+                  }
+                ]
+              },
+              "max_dist": 64
+            }
+          ],
+          "must_see": true
+        },
+        "minecraft:behavior.ranged_attack": {
+          "priority": 3,
+          "attack_radius": 16,
+          "charge_shoot_trigger": 1.4,
+          "charge_charged_trigger": 0.25,
+          "burst_shots": 1,
+          "burst_interval": 1
         }
       }
     },
     "components": {
-      "minecraft:mark_variant": {
-        "value": 2
-      },
       "minecraft:persistent": {},
       "minecraft:damage_sensor": {
         "triggers": [
           {
+            "cause": "fall",
+            "deals_damage": false
+          },
+          {
             "on_damage": {
               "filters": {
-                "all_of": [
+                "any_of": [
                   {
                     "test": "is_family",
                     "subject": "other",
                     "operator": "==",
-                    "value": "organ"
+                    "value": "karmaira"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": "poison_explode"
                   }
                 ]
               }
@@ -156,14 +235,14 @@
       "minecraft:nameable": {
       },
       "minecraft:type_family": {
-        "family": [ "karmaira_amalgam", "monster", "boss", "organ", "elorgan", "arthropod", "undead" ]
+        "family": [ "karmaira_amalgam", "karmaira", "monster", "boss", "organ", "elorgan", "arthropod", "undead" ]
       },
       "minecraft:loot": {
         "table": ""
       },
       "minecraft:health": {
-        "value": 300,
-        "max": 300
+        "value": 650,
+        "max": 650
       },
       "minecraft:breathable": {
         "totalSupply": 15,
@@ -177,8 +256,8 @@
         "effect_duration": 10
       },
       "minecraft:collision_box": {
-        "width": 1.4,
-        "height": 0.8
+        "width": 5.4,
+        "height": 1.8
       },
       "minecraft:movement": {
         "value": 1.0
@@ -227,7 +306,7 @@
       },
       "minecraft:physics": {
         "has_gravity": false,
-        "has_collision": false
+        "has_collision": true
       },
       "minecraft:on_death": {
         "event": "death_event"
@@ -244,22 +323,12 @@
       "death_event": {
         "sequence": [
           {
-            "filters": {"test": "is_mark_variant", "subject": "self", "value": 2},
             "run_command": {
               "command": [
-                "structure load mystructure:reward_elorgan_green ~ ~ ~",
+                "structure load mystructure:reward_amalgam ~ ~ ~",
                 "effect @e[type=player] village_hero 1800 3",
-                "xp 50 @e[type=player]"
-              ]
-            }
-          },
-          {
-            "filters": {"test": "is_mark_variant", "subject": "self", "value": 5},
-            "run_command": {
-              "command": [
-                "structure load mystructure:reward_elorgan_red ~ ~ ~",
-                "effect @e[type=player] village_hero 1800 3",
-                "xp 50 @e[type=player]"
+                "xp 50 @e[type=player]",
+                "kill @e[type=mabe:amalgam_wing]"
               ]
             }
           }
@@ -280,6 +349,14 @@
           {
             "run_command": {
               "command": [
+                "effect @s invisibility 1 1 true",
+                "execute unless entity @p[family=ender_dragon_slayer] run event entity @s mabe:apoptosis"
+              ]
+            }
+          },
+          {
+            "run_command": {
+              "command": [
                 "execute if entity @e[type=mabe:karmaira_amalgam,rm=1,r=128] run event entity @s mabe:apoptosis"
               ]
             }
@@ -297,27 +374,6 @@
             "add": {
               "component_groups": [
                 "status_hard"
-              ]
-            }
-          },
-          {
-            "filters": {
-              "test": "has_biome_tag", "operator": "==", "value": "nether"
-            },
-            "add": { "component_groups": [ "nether" ] }
-          },
-          {
-            "filters": {
-              "any_of": [
-                {
-                  "test": "has_biome_tag",
-                  "value": "nether"
-                }
-              ]
-            },
-            "add": {
-              "component_groups": [
-                "nether"
               ]
             }
           },

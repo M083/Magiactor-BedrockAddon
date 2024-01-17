@@ -1,0 +1,239 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mabe:stellite_satellite",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+
+    "component_groups": {
+      "status_easy": {
+        "minecraft:shooter": {
+          "def": "minecraft:arrow"
+        },
+        "minecraft:behavior.ranged_attack": {
+          "attack_radius": 64,
+          "charge_shoot_trigger": 1.15,
+          "charge_charged_trigger": 0.6,
+          "burst_shots": 1,
+          "burst_interval": 0
+        },
+        "minecraft:health": {
+          "value": 60,
+          "max": 60
+        }
+      },
+      "status_hard": {
+        "minecraft:shooter": {
+          "def": "minecraft:arrow"
+        },
+        "minecraft:behavior.ranged_attack": {
+          "attack_radius": 64,
+          "charge_shoot_trigger": 1.15,
+          "charge_charged_trigger": 0.6,
+          "burst_shots": 1,
+          "burst_interval": 0
+        },
+        "minecraft:health": {
+          "value": 140,
+          "max": 140
+        }
+      },
+      "mabe:apoptosis": {
+          "minecraft:instant_despawn": {}
+      }
+    },
+
+    "components": {
+      "minecraft:behavior.find_mount": {
+        "priority": 1,
+        "within_radius": 64,
+        "start_delay": 0
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "monster"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "==",
+                  "value": "replikarma"
+                }
+              ],
+              "all_of": [
+                {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "inanimate"},
+                {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "boss"},
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "karmaira"
+                }
+              ]
+            },
+            "max_dist": 64
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:shooter": {
+        "def": "minecraft:arrow"
+      },
+      "minecraft:behavior.ranged_attack": {
+        "attack_radius": 64,
+        "charge_shoot_trigger": 1.15,
+        "charge_charged_trigger": 0.6,
+        "burst_shots": 1,
+        "burst_interval": 0
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:loot": {
+        "table": ""
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 1.85,
+        "height": 1.85
+      },
+      "minecraft:type_family": {
+        "family": [ "stellite_satellite", "karmaira", "monster", "organ", "elorgan", "arthropod", "undead", "boss" ]
+      },
+      "minecraft:loot": {
+        "table": ""
+      },
+      "minecraft:health": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:movement": {
+        "value": 0.01
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.01
+      },
+      "minecraft:follow_range": {
+        "value": 64,
+        "max": 64
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": "karmaira"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": "poison_explode"
+                  }
+                ]
+              }
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:behavior.float_wander": {
+        "must_reach": true
+      },
+      "minecraft:can_fly": {},
+
+      "minecraft:navigation.float": {
+        "can_path_over_water": true
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+
+      "minecraft:behavior.hurt_by_target": {
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "snow_storm"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:physics": {}
+    },
+    "events": {
+      "mabe:apoptosis": {
+        "add": {
+          "component_groups": [
+            "mabe:apoptosis"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "execute unless entity @p[family=ender_dragon_slayer] run event entity @s mabe:apoptosis"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -2,6 +2,24 @@
   "resource_pack_name": "mabe",
   "texture_name": "atlas.items",
   "texture_data": {
+    "blade_magiactor": {
+      "textures": "textures/items/blade_magiactor"
+    },
+    "magiactor": {
+      "textures": "textures/items/magiactor"
+    },
+    "relikarma_gear": {
+      "textures": "textures/items/relikarmagear"
+    },
+    "reactor_amalgam": {
+      "textures": "textures/items/reactor_amalgam"
+    },
+    "reactor_stellite": {
+      "textures": "textures/items/reactor_stellite"
+    },
+    "reactor_hastelloy": {
+      "textures": "textures/items/reactor_hastelloy"
+    },
     "astro_knife": {
       "textures": "textures/items/astro_knife"
     },
@@ -301,6 +319,9 @@
     },
     "star_shovel": {
       "textures": "textures/items/star_shovel"
+    },
+    "archer_hat": {
+      "textures": "textures/items/archer_hat"
     },
     "air_helmet": {
       "textures": "textures/items/air_helmet"

@@ -13,7 +13,7 @@
 			"bones": [
 				{
 					"name": "core",
-					"pivot": [0, 25, 0]
+					"pivot": [0, 24, 0]
 				},
 				{
 					"name": "energy_tank",
@@ -402,7 +402,7 @@
 				{
 					"name": "blade",
 					"parent": "part6",
-					"pivot": [0, 10, 87],
+					"pivot": [0, 25, 87],
 					"binding": "q.item_slot_to_bone_name(c.item_slot)",
 					"cubes": [
 						{"origin": [-25, 25, 59.5], "size": [10, 2, 7], "pivot": [0, 25.5, 79], "rotation": [180, 0, 0], "uv": [64, 0]},

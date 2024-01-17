@@ -230,7 +230,7 @@
       },
       "minecraft:physics": {
         "has_gravity": false,
-        "has_collision": false
+        "has_collision": true
       },
       "minecraft:on_death": {
         "event": "death_event"

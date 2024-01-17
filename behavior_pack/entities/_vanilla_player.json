@@ -461,7 +461,7 @@
         "sequence": [
           {
             "run_command": {
-              "command": "fill ~ ~1 ~ ~ ~1 ~ mabe:light 0 replace air"
+              "command": "fill ~ ~1 ~ ~ ~1 ~ mabe:light replace air"
             }
           }
         ]

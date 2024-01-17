@@ -1,0 +1,141 @@
+{
+	"format_version" : "1.8.0",
+	"animation_controllers" : {
+		"controller.animation.karmaira_stellite.pose" : {
+			"states" : {
+				"default": {
+					"parameters": [ "query.modified_move_speed" ],
+					"transitions": [
+						{
+							"stun" : "query.variant == 2"
+						}
+					],
+					"animations": [
+						{ 
+							"flying_pose": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						},
+						{ 
+							"hover_pose": [
+								{
+									"0.0": 1.0,
+									"1.0": 0.0
+								}
+							]
+						}
+					]
+				},
+				"stun": {
+					"transitions": [
+						{
+							"default" : "query.variant != 2"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.karmaira_stellite.wing" : {
+			"states" : {
+				"default": {
+					"parameters": [ "query.modified_move_speed+0.3" ],
+					"animations": [
+						{ 
+							"wing": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.karmaira_stellite.stun" : {
+			"states" : {
+				"default": {
+					"transitions": [
+						{
+							"stun_ground" : "query.variant == 2 && query.is_on_ground"
+						},
+						{
+							"stun_flying" : "query.variant == 2 && !query.is_on_ground"
+						}
+					]
+				},
+				"stun_ground": {
+					"transitions": [
+						{
+							"default" : "query.variant != 2"
+						},
+						{
+							"stun_flying" : "query.variant == 2 && !query.is_on_ground"
+						}
+					],
+					"animations": [
+						{ 
+							"stun_ground_pose": []
+						}
+					]
+				},
+				"stun_flying": {
+					"transitions": [
+						{
+							"default" : "query.variant != 2"
+						},
+						{
+							"stun_ground" : "query.variant == 2 && query.is_on_ground"
+						}
+					],
+					"animations": [
+						{ 
+							"stun_pose": []
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.karmaira_stellite.charge_attack" : {
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"look": []
+						}
+					],
+					"transitions": [
+						{
+							"stun" : "query.variant == 2"
+						},
+						{
+							"attacking" : "query.is_delayed_attacking == 1"
+						}
+					]
+				},
+				"attacking": {
+					"animations": [
+						{
+							"charge_attack": []
+						}
+					],
+					"transitions": [
+						{
+							"default" : "query.is_delayed_attacking == 0"
+						}
+					]
+				},
+				"stun": {
+					"transitions": [
+						{
+							"default" : "query.variant != 2"
+						}
+					]
+				}
+			}
+		}
+	}
+}

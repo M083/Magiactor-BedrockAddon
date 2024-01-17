@@ -61,6 +61,7 @@ PCならダブルクリック、スマートフォンなら[開く → Minecraft
 ワールドを新規作成します。
 
 以下の画像のように設定を編集します。
+
 **※「レシピのアンロック」をオフにしないと追加作業台のレシピが表示されません。**
 
 <img width="1200" alt="" src="https://github.com/M083/Magiactor-BedrockAddon/blob/main/screenshots/experiments.PNG?raw=true">

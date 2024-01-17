@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "mabe:archer_hat_2"
+        },
+        "key": {
+            "c": {
+                "item": "minecraft:copper_block"
+            },
+            "s": {
+                "item": "mabe:abyss_gel"
+            },
+            "f": {
+                "item": "minecraft:feather"
+            },
+            "p": {
+                "item": "mabe:helmet_craftor_2"
+            }
+        },
+        "pattern": [
+            "ssf",
+            "cpc",
+            "   "
+        ],
+        "priority": 1,
+        "result": [
+            {
+                "count": 1,
+                "item": "mabe:archer_hat_2"
+            },
+            {
+                "count": 1,
+                "item": "mabe:helmet_craftor_2"
+            }
+        ],
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

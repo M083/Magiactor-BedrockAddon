@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "mabe:blade_magiactor",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/weapons/magiactor",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.blade_magiactor"
+      },
+      "animations": {
+        "wield": "animation.magia_blade",
+        "roll": "animation.blade_magiactor.roll"
+      },
+      "scripts": {
+        "animate": ["wield", "roll"]
+      },
+      "render_controllers": ["controller.render.magia_blade"]
+    }
+  }
+}

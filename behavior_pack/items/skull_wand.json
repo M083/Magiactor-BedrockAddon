@@ -24,6 +24,7 @@
       },
       "minecraft:weapon": {
       },
+      //preview "minecraft:interact_button":"button.magiactor.wand",
       "minecraft:repairable": {
         "repair_items": [
           {

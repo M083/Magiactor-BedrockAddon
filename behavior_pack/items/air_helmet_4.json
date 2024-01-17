@@ -44,6 +44,14 @@
           {
             "items": ["mabe:air_helmet_4"],
             "repair_amount": "query.remaining_durability * 1.1"
+          },
+          {
+            "items": ["minecraft:gold_ingot"],
+            "repair_amount": 180
+          },
+          {
+            "items": ["minecraft:copper_block"],
+            "repair_amount": 180
           }
         ]
       },

@@ -1,0 +1,80 @@
+{
+	"format_version" : "1.8.0",
+	"animation_controllers" : {
+		"controller.animation.karmaira_hastelloy.foot" : {
+			"states" : {
+				"default": {
+					"animations": [
+						{ 
+							"foot_spin": []
+						},
+						{ 
+							"foot_clock": []
+						},
+						{ 
+							"stand_pose": []
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.karmaira_hastelloy.shot_pose": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"shot_pose" : "query.variant == 1"
+						}
+					]
+				},
+				"shot_pose": {
+					"animations": [
+						{
+							"shot_pose": []
+						}
+					],
+					"transitions": [
+						{
+							"shot_pose_end" : "query.variant == 0"
+						}
+					]
+				},
+				"shot_pose_end": {
+					"animations": [
+						{
+							"shot_pose_end": []
+						}
+					],
+					"transitions": [
+						{
+							"shot_pose" : "query.variant == 1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.karmaira_hastelloy.right_attack": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attacking" : "query.is_delayed_attacking == 1"
+						}
+					]
+				},
+				"attacking": {
+					"animations": [
+						{
+							"right_attack": []
+						}
+					],
+					"transitions": [
+						{
+							"default" : "query.is_delayed_attacking == 0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

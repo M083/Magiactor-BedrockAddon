@@ -9,17 +9,23 @@
         "invisible": "default_emissive_invisible"
       },
       "textures": {
-        "default": "textures/entity/karmaira"
+        "default": "textures/entity/karmaira/amalgam"
       },
       "geometry": {
         "default": "geometry.karmaira_amalgam"
       },
       "animations": {
+        "look": "animation.karmaira_amalgam.look",
         "unit": "animation.karmaira_amalgam.unit",
-        "wing": "animation.karmaira_amalgam.wing"
+        "wing": "animation.karmaira_amalgam.wing",
+        "shot_pose": "animation.karmaira_amalgam.shot_pose",
+        "shot": "animation.karmaira_amalgam.shot",
+        "somersault": "animation.karmaira_amalgam.somersault"
       },
       "animation_controllers": [
-        { "move": "controller.animation.karmaira_amalgam.move" }
+        { "move": "controller.animation.karmaira_amalgam.move" },
+        { "somersault": "controller.animation.karmaira_amalgam.somersault" },
+        { "shot_pose": "controller.animation.karmaira_amalgam.shot_pose" }
       ],
       "render_controllers": [ "controller.render.karmaira" ],
       "spawn_egg": {

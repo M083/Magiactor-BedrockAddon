@@ -18,6 +18,7 @@
       "minecraft:durability": {
         "max_durability": 1280
       },
+      //preview "minecraft:interact_button":"button.magiactor.wand",
       "minecraft:repairable": {
         "repair_items": [
           {

@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.stellite_satellite.look": {
+      "states": {
+        "standing": {
+          "animations": [
+            {
+              "look": []
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.stellite_satellite.pose": {
+      "states": {
+        "standing": {
+          "animations": [
+            {
+              "spawn": []
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.stellite_satellite.focus" : {
+      "states" : {
+        "default" : {
+          "transitions" : [
+            {
+              "focus" : "query.has_target"
+            }
+          ]
+        },
+        "focus" : {
+          "animations" : [ 
+            {
+              "focus" : []
+            }
+          ],
+          "transitions" : [
+            {
+              "default" : "!query.has_target"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

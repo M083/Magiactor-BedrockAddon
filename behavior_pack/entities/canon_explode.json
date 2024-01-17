@@ -18,6 +18,9 @@
           "deals_damage": false
         }
       },
+      "minecraft:type_family": {
+        "family": [ "canon_explode", "inanimate" ]
+      },
       "minecraft:behavior.knockback_roar": {
         "duration": 0.05,
         "attack_time": 0.05,

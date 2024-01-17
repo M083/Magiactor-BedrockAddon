@@ -1,14 +1,14 @@
 {
-  "format_version": "1.16.100",
+  "format_version": "1.20.30",
   "minecraft:item": {
     "description": {
       "identifier": "mabe:organ_sword_white_2",
-      "category": "Equipment"
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
     },
     "components": {
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.sword"
-      },
       "minecraft:icon": {
         "texture": "organ_sword_white"
       },
@@ -81,9 +81,9 @@
             "run_command": {
               "command": [
                 "playanimation @s animation.attack_animation.sword_rotate",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=6] ~ ~ ~ summon mabe:organ_wand_shard",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=6] ~ ~ ~ summon mabe:organ_wand_shard",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=6] ~ ~ ~ summon mabe:organ_wand_shard",
+                "execute at @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=6] run summon mabe:organ_wand_shard",
+                "execute at @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=6] run summon mabe:organ_wand_shard",
+                "execute at @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=6] run summon mabe:organ_wand_shard",
                 "damage @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!item,r=6] 12 entity_attack entity @s",
                 "playsound item.trident.throw @e[type=player] ~ ~ ~ 5 0.6"
               ]

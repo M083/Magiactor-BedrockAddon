@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.blade_magiactor": {
+			"loop": true,
+			"animation_length": 1.04,
+			"bones": {
+				"blade": {
+					"rotation": ["c.is_first_person ? 30.0 : 90.0", "c.is_first_person ? 5.0 : 0.0", "c.is_first_person ? -165.0 : -90.0"],
+					"position": ["c.is_first_person ? 0.0 : 0.0", "c.is_first_person ? 20.0 : 20.0", "c.is_first_person ? 10.0 : 0.0"]
+				}
+			}
+		},
+		"animation.blade_magiactor.roll": {
+			"loop": true,
+			"animation_length": 5,
+			"bones": {
+				"ring_1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"5.0": [0, 1080, 0]
+					}
+				},
+				"ring_2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"5.0": [0, -1080, 0]
+					}
+				}
+			}
+		}
+	}
+}

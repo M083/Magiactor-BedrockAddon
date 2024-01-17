@@ -1,0 +1,43 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.tyfp",
+				"texture_width": 128,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-4, 11, -4], "size": [8, 8, 8], "uv": [96, 0]},
+						{"origin": [-4, 1, -4], "size": [8, 3, 8], "uv": [96, 32]},
+						{"origin": [-4, 0, -4], "size": [8, 1, 8], "uv": [96, 32]},
+						{"origin": [4, 0, -4], "size": [8, 1, 8], "uv": [96, 32]},
+						{"origin": [-4, 0, 4], "size": [8, 1, 8], "uv": [96, 32]},
+						{"origin": [-12, 0, -4], "size": [8, 1, 8], "uv": [96, 32]},
+						{"origin": [-4, 0, -12], "size": [8, 1, 8], "uv": [96, 32]}
+					]
+				},
+				{
+					"name": "core",
+					"parent": "base",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-10, 3, -11], "size": [6, 6, 6], "uv": [0, 0]},
+						{"origin": [4, 3, -11], "size": [6, 6, 6], "uv": [0, 32]},
+						{"origin": [-15, 12, -3], "size": [6, 6, 6], "uv": [32, 32]},
+						{"origin": [9, 12, -3], "size": [6, 6, 6], "uv": [32, 0]},
+						{"origin": [4, 21, 5], "size": [6, 6, 6], "uv": [64, 32]},
+						{"origin": [-10, 21, 5], "size": [6, 6, 6], "uv": [64, 0]}
+					]
+				}
+			]
+		}
+	]
+}

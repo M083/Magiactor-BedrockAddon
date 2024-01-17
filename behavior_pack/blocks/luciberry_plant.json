@@ -2,10 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "mabe:luciberry_plant",
-            "properties": {
-                "mabe:block_direction": [ 0, 1, 2, 3]
-            }
+            "identifier": "mabe:luciberry_plant"
         },
         "components": {
             "minecraft:creative_category": {
@@ -49,58 +46,6 @@
             "minecraft:map_color": "#35FFFF",
             "minecraft:block_light_absorption": 0,
             "minecraft:block_light_emission": 0.75
-        },
-        "events": {
-            "mabe:placed": {
-                "randomize":[
-                    {
-                        "set_block_property": {
-                            "mabe:block_direction": "0"
-                        }
-                    },
-                    {
-                        "set_block_property": {
-                            "mabe:block_direction": "1"
-                        }
-                    },
-                    {
-                        "set_block_property": {
-                            "mabe:block_direction": "2"
-                        }
-                    },
-                    {
-                        "set_block_property": {
-                            "mabe:block_direction": "3"
-                        }
-                    }
-                ]
-            }
-        },
-        "permutations": [
-            {
-                "condition": "q.block_property('mabe:block_direction') == 0.0",
-                "components": {
-                    "minecraft:rotation": [0, 0, 0]
-                }
-            },
-            {
-                "condition": "q.block_property('mabe:block_direction') == 1.0",
-                "components": {
-                    "minecraft:rotation": [0, 90, 0]
-                }
-            },
-            {
-                "condition": "q.block_property('mabe:block_direction') == 2.0",
-                "components": {
-                    "minecraft:rotation": [0, 180, 0]
-                }
-            },
-            {
-                "condition": "q.block_property('mabe:block_direction') == 3.0",
-                "components": {
-                    "minecraft:rotation": [0, 270, 0]
-                }
-            }
-        ]
+        }
     }
 }

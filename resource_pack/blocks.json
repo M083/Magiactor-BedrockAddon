@@ -146,5 +146,9 @@
   "mabe:fallen_star": {
     "textures": "fallen_star",
     "sound": "amethyst_block"
+  },
+  "mabe:tyfp": {
+    "textures": "tyfp",
+    "sound": "amethyst_block"
   }
 }

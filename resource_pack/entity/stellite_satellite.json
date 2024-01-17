@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:stellite_satellite",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/karmaira/stellite"
+      },
+      "geometry": {
+        "default": "geometry.stellite_satellite"
+      },
+      "animations": {
+        "look": "animation.stellite_satellite.look",
+        "spawn": "animation.stellite_satellite.spawn",
+        "focus": "animation.stellite_satellite.focus",
+        "shot": "animation.stellite_satellite.shot"
+      },
+      "animation_controllers": [
+        { "look": "controller.animation.stellite_satellite.look" },
+        { "pose": "controller.animation.stellite_satellite.pose" },
+        { "focus": "controller.animation.stellite_satellite.focus" }
+      ],
+      "render_controllers": [ "controller.render.karmaira" ],
+      "spawn_egg": {
+        "base_color": "#CBEED7",
+        "overlay_color": "#EEEECB"
+      }
+    }
+  }
+}

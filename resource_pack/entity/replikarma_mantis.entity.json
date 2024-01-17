@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:replikarma_mantis",
+      "materials": {
+        "default": "default_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/replikarma/replikarma_sniper"
+      },
+      "geometry": {
+        "default": "geometry.replikarma_mantis"
+      },
+      "animations": {
+        "attack": "animation.replikarma_mantis.powered_attack",
+        "quick_attack": "animation.replikarma_mantis.quick_attack",
+        "walk": "animation.replikarma_mantis.walk",
+        "boost_pose": "animation.replikarma_mantis.boost_pose",
+        "stand_pose": "animation.replikarma_mantis.stand_pose",
+        "look": "animation.replikarma_mantis.look",
+        "head": "animation.replikarma_mantis.head"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.replikarma_mantis.move" },
+        { "attack": "controller.animation.replikarma_mantis.attack" },
+        { "quick_attack": "controller.animation.replikarma_mantis.quick_attack" },
+        { "look": "controller.animation.replikarma_mantis.look" },
+        { "boost": "controller.animation.replikarma_mantis.boost" }
+      ],
+      "render_controllers": [ "controller.render.replikarma_sniper" ],
+      "spawn_egg": {
+        "base_color": "#4B4C4F",
+        "overlay_color": "#CE8D83"
+      }
+    }
+  }
+}

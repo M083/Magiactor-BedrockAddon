@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mabe:karmaira_stellite",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "default_emmisive",
+        "invisible": "default_emissive_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/karmaira/stellite"
+      },
+      "geometry": {
+        "default": "geometry.karmaira_stellite"
+      },
+      "animations": {
+        "look": "animation.karmaira_stellite.look",
+        "hover_pose": "animation.karmaira_stellite.hover_pose",
+        "wing": "animation.karmaira_stellite.wing",
+        "flying_pose": "animation.karmaira_stellite.flying_pose",
+        "charge_attack": "animation.karmaira_stellite.charge_attack",
+        "stun_pose": "animation.karmaira_stellite.stun_pose",
+        "stun_ground_pose": "animation.karmaira_stellite.stun_ground_pose",
+        "wake_up": "animation.karmaira_stellite.wake_up"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.karmaira_stellite.pose" },
+        { "wing": "controller.animation.karmaira_stellite.wing" },
+        { "stun": "controller.animation.karmaira_stellite.stun" },
+        { "charge_attack": "controller.animation.karmaira_stellite.charge_attack" }
+      ],
+      "render_controllers": [ "controller.render.karmaira" ],
+      "spawn_egg": {
+        "base_color": "#CBEED7",
+        "overlay_color": "#EEEECB"
+      }
+    }
+  }
+}

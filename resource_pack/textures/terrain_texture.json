@@ -4,6 +4,11 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
+    "tyfp": {
+      "textures": [
+        "textures/blocks/tyfp"
+      ]
+    },
     "lunar_globe": {
       "textures": [
         "textures/blocks/lunar_globe"

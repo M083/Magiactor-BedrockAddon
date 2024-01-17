@@ -1,14 +1,14 @@
 {
-  "format_version": "1.16.100",
+  "format_version": "1.20.30",
   "minecraft:item": {
     "description": {
       "identifier": "mabe:organ_wand_white_4",
-      "category": "Equipment"
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
     },
     "components": {
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.sword"
-      },
       "minecraft:icon": {
         "texture": "organ_wand_white"
       },
@@ -18,6 +18,7 @@
       "minecraft:durability": {
         "max_durability": 1280
       },
+      "minecraft:interact_button":"button.magiactor.wand",
       "minecraft:repairable": {
         "repair_items": [
           {
@@ -66,12 +67,12 @@
           {
             "run_command": {
               "command": [
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard",
-                "execute @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] ~ ~ ~ summon mabe:organ_wand_shard"
+                "execute at @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] run summon mabe:organ_wand_shard",
+                "execute at @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] run summon mabe:organ_wand_shard",
+                "execute at @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] run summon mabe:organ_wand_shard",
+                "execute at @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] run summon mabe:organ_wand_shard",
+                "execute at @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] run summon mabe:organ_wand_shard",
+                "execute at @e[type=!player,family=!inanimate,type=!mabe:griffonis,type=!arrow,type=!item,r=12] run summon mabe:organ_wand_shard"
               ]
             }
           },

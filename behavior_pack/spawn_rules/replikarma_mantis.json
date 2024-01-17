@@ -2,21 +2,37 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "mabe:magiactor_sniffer",
-      "population_control": "animal"
+      "identifier": "mabe:replikarma_mantis",
+      "population_control": "monster"
     },
     "conditions": [
       {
         "minecraft:spawns_on_surface": {},
         "minecraft:spawns_underground": {},
-        "minecraft:spawns_on_block_filter": "minecraft:grass",
+
         "minecraft:brightness_filter": {
-          "min": 7,
-          "max": 15,
-          "adjust_for_weather": false
+          "min": 0,
+          "max": 7,
+          "adjust_for_weather": true
         },
+
+        "minecraft:difficulty_filter": {
+          "min": "easy",
+          "max": "hard"
+        },
+
+        "minecraft:height_filter": {
+          "min": 60,
+          "max": 150
+        },
+
         "minecraft:weight": {
-          "default": 10
+          "default": 2
+        },
+
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
         },
         "minecraft:biome_filter": {
           "all_of": [
@@ -24,14 +40,6 @@
             {"test": "has_biome_tag", "operator":"!=", "value": "the_end"},
             {"test": "has_biome_tag", "operator":"!=", "value": "deep_dark"}
           ]
-        },
-        "minecraft:height_filter": {
-          "min": 60,
-          "max": 320
-        },
-        "minecraft:herd": {
-          "min_size":2,
-          "max_size":3
         }
       }
     ]

@@ -144,7 +144,7 @@
             } 
           },
           {
-            "block": "minecraft:chieled_polished_blackstone",
+            "block": "minecraft:chiseled_polished_blackstone",
             "speed": 60,
             "on_dig": {
               "event": "mabe:on_digged"
